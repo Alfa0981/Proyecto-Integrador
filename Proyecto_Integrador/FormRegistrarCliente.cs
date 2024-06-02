@@ -1,4 +1,5 @@
-﻿using Services;
+﻿using BE;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,13 +13,15 @@ using System.Windows.Forms;
 
 namespace Proyecto_Integrador
 {
-    public partial class FormRegistrarCliente : Form
+    public partial class FormRegistrarCliente : Form, IIdiomaObserver
     {
 
 
         public FormRegistrarCliente()
         {
             InitializeComponent();
+            IdiomaManager.Instance.Suscribir(this);
+            ActualizarIdioma(IdiomaManager.Instance.IdiomaActual);
         }
 
         private void FormRegistrarCliente_Load(object sender, EventArgs e)
@@ -75,6 +78,35 @@ namespace Proyecto_Integrador
         private void nombreTxt_Enter(object sender, EventArgs e)
         {
             label1.Hide();
+        }
+
+        public void ActualizarIdioma(Idioma nuevoIdioma)
+        {
+            switch (nuevoIdioma)
+            {
+                case Idioma.Spanish:
+                    label1.Text = "Nombre";
+                    label2.Text = "Apellido";
+                    dniLbl.Text = "Dni";
+                    emailLbl.Text = "Email";
+                    telefonoLbl.Text = "Telefono";
+                    direccionLbl.Text = "Direccion";
+                    button1.Text = "Cargar";
+                    modificarBtn.Text = "Modificar";
+                    eliminarBtn.Text = "Eliminar";
+                    break;
+                case Idioma.English:
+                    label1.Text = "Name";
+                    label2.Text = "LastName";
+                    dniLbl.Text = "Dni";
+                    emailLbl.Text = "Email";
+                    telefonoLbl.Text = "Phone Number";
+                    direccionLbl.Text = "Address";
+                    button1.Text = "Load";
+                    modificarBtn.Text = "Update";
+                    eliminarBtn.Text = "Delete";
+                    break;
+            }
         }
     }
 }

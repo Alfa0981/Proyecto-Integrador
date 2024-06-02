@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMessageBox.Designer.cs">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCambiarIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCambiarIdioma.Designer.cs">
+      <DependentUpon>FormCambiarIdioma.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCambiarPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +121,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomMessageBox.resx">
+      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCambiarIdioma.resx">
+      <DependentUpon>FormCambiarIdioma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCambiarPass.resx">
       <DependentUpon>FormCambiarPass.cs</DependentUpon>
     </EmbeddedResource>

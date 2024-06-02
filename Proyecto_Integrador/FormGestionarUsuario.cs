@@ -9,10 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection.Emit;
+using Services;
 
 namespace Proyecto_Integrador
 {
-    public partial class FormGestionarUsuario : Form
+    public partial class FormGestionarUsuario : Form, IIdiomaObserver
     {
 
         BLL.Usuario gestorUsuario = new BLL.Usuario();
@@ -21,6 +22,8 @@ namespace Proyecto_Integrador
         public FormGestionarUsuario()
         {
             InitializeComponent();
+            IdiomaManager.Instance.Suscribir(this);
+            ActualizarIdioma(IdiomaManager.Instance.IdiomaActual);
         }
 
         private void cargarBtn_Click(object sender, EventArgs e)
@@ -45,29 +48,15 @@ namespace Proyecto_Integrador
 
         private bool validarInputs()
         {
-            if (string.IsNullOrWhiteSpace(nombreTxt.Text))
+            if (string.IsNullOrWhiteSpace(nombreTxt.Text) ||
+                string.IsNullOrWhiteSpace(apellidoTxt.Text) ||
+                string.IsNullOrWhiteSpace(dniTxt.Text) ||
+                string.IsNullOrWhiteSpace(emailTxt.Text))
             {
-                MessageBox.Show("El campo Nombre no puede estar vacío.");
+                MessageBox.Show("Todos los campos deben estar completos y no pueden estar vacíos.");
                 return false;
             }
-            if (string.IsNullOrWhiteSpace(apellidoTxt.Text))
-            {
-                MessageBox.Show("El campo Nombre no puede estar vacío.");
-                return false;
-            }
-            if (string.IsNullOrWhiteSpace(dniTxt.Text))
-            {
-                MessageBox.Show("El campo Nombre no puede estar vacío.");
-                return false;
-            }
-            if (string.IsNullOrWhiteSpace(emailTxt.Text))
-            {
-                MessageBox.Show("El campo Nombre no puede estar vacío.");
-                return false;
-            }
-
             return true;
-
         }
 
         private void FormGestionarUsuario_Load(object sender, EventArgs e)
@@ -188,6 +177,25 @@ namespace Proyecto_Integrador
             gestorUsuario.eliminar(usuario);
             listar();
             MessageBox.Show("Eliminado con exito.");
+        }
+
+        public void ActualizarIdioma(Idioma nuevoIdioma)
+        {
+            switch (nuevoIdioma)
+            {
+                case Idioma.Spanish:
+                    nombreLbl.Text = "Nombre";
+                    apellidoLbl.Text = "Apellido";
+                    dniLbl.Text = "Dni";
+                    emailLbl.Text = "Email";
+                    break;
+                case Idioma.English:
+                    nombreLbl.Text = "Name";
+                    apellidoLbl.Text = "LastName";
+                    dniLbl.Text = "Dni";
+                    emailLbl.Text = "Email";
+                    break;
+            }
         }
     }
 }

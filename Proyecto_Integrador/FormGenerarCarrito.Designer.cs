@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.registarClienteBtn = new System.Windows.Forms.Button();
-            this.lbl1 = new System.Windows.Forms.Label();
+            this.resumenLbl = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,15 +52,16 @@
             this.registarClienteBtn.TabIndex = 2;
             this.registarClienteBtn.Text = "Registrar Cliente";
             this.registarClienteBtn.UseVisualStyleBackColor = false;
+            this.registarClienteBtn.Click += new System.EventHandler(this.registarClienteBtn_Click);
             // 
-            // lbl1
+            // resumenLbl
             // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(113, 25);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(52, 13);
-            this.lbl1.TabIndex = 3;
-            this.lbl1.Text = "Resumen";
+            this.resumenLbl.AutoSize = true;
+            this.resumenLbl.Location = new System.Drawing.Point(113, 25);
+            this.resumenLbl.Name = "resumenLbl";
+            this.resumenLbl.Size = new System.Drawing.Size(52, 13);
+            this.resumenLbl.TabIndex = 3;
+            this.resumenLbl.Text = "Resumen";
             // 
             // dataGridView2
             // 
@@ -103,11 +104,12 @@
             this.generarCarritoBtn.TabIndex = 5;
             this.generarCarritoBtn.Text = "Generar Carrito";
             this.generarCarritoBtn.UseVisualStyleBackColor = false;
+            this.generarCarritoBtn.Click += new System.EventHandler(this.generarCarritoBtn_Click);
             // 
             // precioFinalLbl
             // 
             this.precioFinalLbl.AutoSize = true;
-            this.precioFinalLbl.Location = new System.Drawing.Point(574, 440);
+            this.precioFinalLbl.Location = new System.Drawing.Point(517, 452);
             this.precioFinalLbl.Name = "precioFinalLbl";
             this.precioFinalLbl.Size = new System.Drawing.Size(13, 13);
             this.precioFinalLbl.TabIndex = 8;
@@ -116,7 +118,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(491, 440);
+            this.label1.Location = new System.Drawing.Point(491, 423);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 7;
@@ -132,7 +134,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.generarCarritoBtn);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.resumenLbl);
             this.Controls.Add(this.registarClienteBtn);
             this.Name = "FormGenerarCarrito";
             this.Text = "FormGenerarCarrito";
@@ -145,7 +147,7 @@
         #endregion
 
         private System.Windows.Forms.Button registarClienteBtn;
-        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label resumenLbl;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;

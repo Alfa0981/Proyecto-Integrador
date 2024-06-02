@@ -12,24 +12,33 @@ using Services;
 
 namespace Proyecto_Integrador
 {
-    public partial class FormCambiarPass : Form
+    public partial class FormCambiarPass : Form, IIdiomaObserver
     {
 
         Usuario gestorUsuario = new Usuario();
         bool isClosingByMe;
+        string messageBox;
+        string nameForm;
+        string camposException;
+        string clavesException;
 
         public FormCambiarPass()
         {
             InitializeComponent();
             this.FormClosing += FormCambiarPass_FormClosing1;
+            IdiomaManager.Instance.Suscribir(this);
+            ActualizarIdioma(IdiomaManager.Instance.IdiomaActual);
         }
 
         private void FormCambiarPass_FormClosing1(object sender, FormClosingEventArgs e)
         {
             if (!isClosingByMe)
             {
-                MessageBox.Show("No puede cerrar el formulario durante esta operacion",
-                "Cerrar", MessageBoxButtons.OK, MessageBoxIcon.Question);
+               
+                CustomMessageBox.Show(
+                               messageBox,
+                               nameForm,
+                               "OK");
 
                 e.Cancel = true;
                 isClosingByMe = false;
@@ -40,10 +49,10 @@ namespace Proyecto_Integrador
         {
             if (string.IsNullOrEmpty(contraTxt.Text) || string.IsNullOrEmpty(contraX2Txt.Text)) 
             {
-                MessageBox.Show("Faltan completar campos");
+                MessageBox.Show(camposException);
             }else if(contraTxt.Text != contraX2Txt.Text)
             {
-                MessageBox.Show("Las claves son distintas");
+                MessageBox.Show(clavesException);
             }else 
             {
                 gestorUsuario.cambiarContra(SessionManager.GetInstance.Usuario, contraTxt.Text);
@@ -76,6 +85,31 @@ namespace Proyecto_Integrador
             {
                 label2.Show();
             }
-        }        
+        }
+
+        public void ActualizarIdioma(BE.Idioma nuevoIdioma)
+        {
+            switch (nuevoIdioma)
+            {
+                case BE.Idioma.Spanish:
+                    label1.Text = "Contraseña";
+                    label2.Text = "Repita Contraseña";
+                    cambiarBtn.Text = "Cambiar";
+                    camposException = "Faltan completar campos";
+                    messageBox = "No puede cerrar el formulario durante esta operacion";
+                    nameForm = "Cerrar";
+                    clavesException = "Las claves son distintas";
+                    break;
+                case BE.Idioma.English:
+                    label1.Text = "Password";
+                    label2.Text = "Repeat Password";
+                    cambiarBtn.Text = "Change";
+                    camposException = "There are missing fields";
+                    messageBox = "It is impossible to close the form during this operation";
+                    nameForm = "Close";
+                    clavesException = "The passwords are different";
+                    break;
+            }
+        }
     }
 }

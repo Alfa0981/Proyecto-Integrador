@@ -104,5 +104,11 @@ namespace BLL
             mpUsuario.modificarUsuario(usuario);
         }
 
+        public void cambiarIdioma (BE.Usuario usuario, Idioma idioma)
+        {
+            usuario.Idioma = idioma;
+            mpUsuario.modificarUsuario(usuario);
+        }
+
     }
 }

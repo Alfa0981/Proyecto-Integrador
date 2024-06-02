@@ -18,9 +18,9 @@ namespace BE
 		private string email;
 		private bool bloqueo; //por defecto 0
 		private bool activo; //por defecto 1
-		private string idioma;
+		private Idioma idioma;
 
-		public string Idioma
+		public Idioma Idioma
 		{
 			get { return idioma; }
 			set { idioma = value; }

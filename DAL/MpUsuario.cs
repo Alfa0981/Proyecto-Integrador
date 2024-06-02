@@ -15,7 +15,7 @@ namespace DAL
 
         public void crear(Usuario usuario)
         {
-            SqlParameter[] sqlParameters = new SqlParameter[7];
+            SqlParameter[] sqlParameters = new SqlParameter[8];
 
             sqlParameters[0] = new SqlParameter("@Dni", usuario.Dni );
             sqlParameters[1] = new SqlParameter("@Apellido", usuario.Apellido);
@@ -24,7 +24,8 @@ namespace DAL
             sqlParameters[4] = new SqlParameter("@Pass", usuario.Pass);
             sqlParameters[5] = new SqlParameter("@RolId", usuario.Rol.Id);
             sqlParameters[6] = new SqlParameter("@Email", usuario.Email);
-            
+            sqlParameters[7] = new SqlParameter("@Idioma", usuario.Idioma.ToString());
+
             acceso.escribir(queries.UsuarioQuery.Insertar, sqlParameters);
         }
 
@@ -71,7 +72,7 @@ namespace DAL
 
         public void modificarUsuario (Usuario usuario)
         {
-            SqlParameter[] sqlParameters = new SqlParameter[9];
+            SqlParameter[] sqlParameters = new SqlParameter[10];
 
             sqlParameters[0] = new SqlParameter("@Dni", usuario.Dni);
             sqlParameters[1] = new SqlParameter("@Apellido", usuario.Apellido);
@@ -82,6 +83,7 @@ namespace DAL
             sqlParameters[6] = new SqlParameter("@Email", usuario.Email);
             sqlParameters[7] = new SqlParameter("@Activo", usuario.Activo ? 1 : 0);
             sqlParameters[8] = new SqlParameter("@Bloqueo", usuario.Bloqueo ? 1 : 0);
+            sqlParameters[9] = new SqlParameter("@Idioma", usuario.Idioma.ToString());
 
             acceso.escribir(queries.UsuarioQuery.ModificarUsuario, sqlParameters);
 
@@ -115,7 +117,8 @@ namespace DAL
                 },
                 Email = row["email"].ToString(),
                 Bloqueo = Convert.ToBoolean(row["bloqueo"]),
-                Activo = Convert.ToBoolean(row["activo"])
+                Activo = Convert.ToBoolean(row["activo"]),
+                Idioma = Enum.TryParse(row["idioma"].ToString(), out Idioma idioma) ? idioma : Idioma.Spanish
             };
 
             return usuario;

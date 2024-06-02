@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IdiomaManager.cs" />
+    <Compile Include="IIdiomaObserver.cs" />
     <Compile Include="SessionManager.cs" />
     <Compile Include="UserEncryption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
