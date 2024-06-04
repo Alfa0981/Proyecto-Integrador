@@ -127,5 +127,12 @@ namespace Proyecto_Integrador
                     break;
             }
         }
+
+        private void seleccionarProducToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form seleccionarProd = new FormSeleccionarProducto();
+            seleccionarProd.MdiParent = this;
+            seleccionarProd.Show();
+        }
     }
 }

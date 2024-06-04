@@ -84,6 +84,7 @@ namespace Proyecto_Integrador
             dataGridView1.Columns["Pass"].Visible = false;
             dataGridView1.Columns["User"].Visible = false;
             dataGridView1.Columns["Activo"].Visible = false;
+            dataGridView1.Columns["Idioma"].Visible = false;
         }
 
         private void desbloquearBtn_Click(object sender, EventArgs e)
@@ -188,13 +189,39 @@ namespace Proyecto_Integrador
                     apellidoLbl.Text = "Apellido";
                     dniLbl.Text = "Dni";
                     emailLbl.Text = "Email";
+                    cargarBtn.Text = "Cargar";
+                    desbloquearBtn.Text = "Desbloquear";
+                    eliminarBtn.Text = "Eliminar";
+                    modificarBtn.Text = "Modificar";
                     break;
                 case Idioma.English:
                     nombreLbl.Text = "Name";
                     apellidoLbl.Text = "LastName";
                     dniLbl.Text = "Dni";
                     emailLbl.Text = "Email";
+                    cargarBtn.Text = "Save";
+                    desbloquearBtn.Text = "Unlock";
+                    eliminarBtn.Text = "Delete";
+                    modificarBtn.Text = "Update";
                     break;
+            }
+        }
+
+        private void modificarBtn_Click(object sender, EventArgs e)
+        {
+            if (validarInputs())
+            {
+                Usuario usuario = (Usuario)dataGridView1.CurrentRow.DataBoundItem;
+                usuario.Nombre = nombreTxt.Text;
+                usuario.Apellido = apellidoTxt.Text;
+                usuario.Rol = (Rol)rolCmb.SelectedItem;
+                usuario.Email = emailTxt.Text;
+                usuario.Dni = dniTxt.Text;
+
+                gestorUsuario.modificarUsuario(usuario);
+                listar();
+                MessageBox.Show("Modificado con exito.");
+
             }
         }
     }

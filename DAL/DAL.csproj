@@ -42,8 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Acceso.cs" />
+    <Compile Include="MpCarrito.cs" />
+    <Compile Include="MpCliente.cs" />
+    <Compile Include="MpFactura.cs" />
+    <Compile Include="MpProducto.cs" />
     <Compile Include="MpUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="queries\CarritoQuery.cs" />
+    <Compile Include="queries\ProductoQuery.cs" />
+    <Compile Include="queries\ClienteQuery.cs" />
     <Compile Include="queries\UsuarioQuery.cs" />
   </ItemGroup>
   <ItemGroup>

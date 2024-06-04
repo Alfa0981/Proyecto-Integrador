@@ -11,6 +11,7 @@ namespace DAL
     public class Acceso
     {
         private SqlConnection conn;
+        private SqlTransaction transaction;
 
         public SqlConnection Conn
         {
@@ -31,60 +32,92 @@ namespace DAL
             conn.Dispose();
         }
 
+        public void comenzarTransaccion()
+        {
+            if (conn == null || conn.State != ConnectionState.Open)
+            {
+                conectar();
+            }
+            transaction = conn.BeginTransaction();
+        }
+
+        public void confirmarTransaccion()
+        {
+            transaction?.Commit();
+            desconectar();
+        }
+
+        public void revertirTransaccion()
+        {
+            transaction?.Rollback();
+            desconectar();
+        }
+
         public void escribir(string query, SqlParameter[] sqlParameters)
         {
+            if (conn == null || conn.State != ConnectionState.Open)
+            {
+                conectar();
+            }
 
-            conectar();
+            SqlCommand cmd = new SqlCommand
+            {
+                Connection = conn,
+                CommandType = CommandType.Text,
+                CommandText = query
+            };
 
-            SqlCommand cmd = new SqlCommand();
+            if (transaction != null)
+            {
+                cmd.Transaction = transaction;
+            }
 
-            cmd.Connection = conn;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = query;
-            cmd.Parameters.AddRange(sqlParameters);
-
-            SqlTransaction sqlTransaction = conn.BeginTransaction();
+            if (sqlParameters != null)
+            {
+                cmd.Parameters.AddRange(sqlParameters);
+            }
 
             try
             {
-                cmd.Transaction = sqlTransaction;
                 cmd.ExecuteNonQuery();
-                sqlTransaction.Commit();
             }
             catch (Exception e)
             {
-                sqlTransaction.Rollback();
                 throw new Exception("Error al escribir en la base de datos: " + e.GetBaseException());
-
             }
-            finally {
-                desconectar();
-            }
-
         }
-
 
         public DataTable leer(string query, SqlParameter[] sqlParameters)
         {
-            conectar();
-
+            if (conn == null || conn.State != ConnectionState.Open)
+            {
+                conectar();
+            }
 
             DataTable tabla = new DataTable();
-            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
-            sqlDataAdapter.SelectCommand = new SqlCommand();
-            sqlDataAdapter.SelectCommand.CommandType = CommandType.Text;
-            sqlDataAdapter.SelectCommand.CommandText = query;
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter
+            {
+                SelectCommand = new SqlCommand
+                {
+                    CommandType = CommandType.Text,
+                    CommandText = query,
+                    Connection = conn
+                }
+            };
 
             if (sqlParameters != null)
+            {
                 sqlDataAdapter.SelectCommand.Parameters.AddRange(sqlParameters);
+            }
 
-            sqlDataAdapter.SelectCommand.Connection = conn;
+            if (transaction != null)
+            {
+                sqlDataAdapter.SelectCommand.Transaction = transaction;
+            }
 
             sqlDataAdapter.Fill(tabla);
-            desconectar();
-
             return tabla;
-
         }
     }
+
 }

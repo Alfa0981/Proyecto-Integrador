@@ -110,5 +110,10 @@ namespace BLL
             mpUsuario.modificarUsuario(usuario);
         }
 
+        public void modificarUsuario (BE.Usuario usuario)
+        {
+            mpUsuario.modificarUsuario(usuario);
+        }
+
     }
 }

@@ -109,6 +109,7 @@
             this.seleccionarProducToolStripMenuItem.Name = "seleccionarProducToolStripMenuItem";
             this.seleccionarProducToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.seleccionarProducToolStripMenuItem.Text = "Seleccionar produc";
+            this.seleccionarProducToolStripMenuItem.Click += new System.EventHandler(this.seleccionarProducToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
