@@ -39,10 +39,16 @@ namespace Proyecto_Integrador
                 usuario.User = usuario.Nombre + usuario.Apellido;
                 usuario.Pass = usuario.Dni + usuario.Apellido;
 
-                gestorUsuario.cargarUsuario(usuario);
-                listar();
-                MessageBox.Show("Carga con exito.");
-
+                try
+                {
+                    gestorUsuario.cargarUsuario(usuario);
+                    listar();
+                    MessageBox.Show("Carga con exito.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 

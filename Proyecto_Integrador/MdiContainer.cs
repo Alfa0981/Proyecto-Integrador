@@ -1,27 +1,14 @@
 ﻿using BLL;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Services;
 using BE;
-using System.Reflection.Emit;
+
 
 namespace Proyecto_Integrador
 {
     public partial class MdiContainer : Form, IIdiomaObserver
     {
-
-        string message;
-        string ok;
-        string cancel;
-        string nameForm;
-
         public MdiContainer()
         {
             InitializeComponent();
@@ -50,10 +37,10 @@ namespace Proyecto_Integrador
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult result = CustomMessageBox.Show(
-                                message,
-                                nameForm,
-                                ok,
-                                cancel);
+                                IdiomaManager.Instance.ObtenerMensaje("PreguntaCerrarSesion"),
+                                IdiomaManager.Instance.ObtenerMensaje("CerrarSesion"),
+                                IdiomaManager.Instance.ObtenerMensaje("Aceptar"),
+                                IdiomaManager.Instance.ObtenerMensaje("Cancelar"));
 
             if (result == DialogResult.OK)
             {
@@ -88,44 +75,19 @@ namespace Proyecto_Integrador
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
         {
-            switch (nuevoIdioma)
-            {
-                case Idioma.Spanish:
-                    ajustesToolStripMenuItem.Text = "Ajustes";
-                    productosToolStripMenuItem.Text = "Productos";
-                    clientesToolStripMenuItem.Text = "Clientes";
-                    ayudaToolStripMenuItem.Text = "Ayuda";
-                    adminToolStripMenuItem.Text = "Admin";
-                    logoutToolStripMenuItem.Text = "Salir";
-                    cambiarContraseñaToolStripMenuItem.Text = "Cambiar Contraseña";
-                    cambiarIdiomaToolStripMenuItem.Text = "Cambiar Idioma";
-                    seleccionarProducToolStripMenuItem.Text = "Seleccionar Producto";
-                    registrarClienteToolStripMenuItem.Text = "Registrar Cliente";
-                    gestionarUsuariosToolStripMenuItem.Text = "Gestionar Usuarios";
-                    message = "Esta seguro que desea cerrar la sesion?";
-                    nameForm = "Cerrar Sesion";
-                    ok = "Aceptar";
-                    cancel = "Cancelar";
-                    break;
-
-                case Idioma.English:
-                    ajustesToolStripMenuItem.Text = "Settings";
-                    productosToolStripMenuItem.Text = "Products";
-                    clientesToolStripMenuItem.Text = "Customers";
-                    ayudaToolStripMenuItem.Text = "Help";
-                    adminToolStripMenuItem.Text = "Admin";
-                    logoutToolStripMenuItem.Text = "Logout";
-                    cambiarContraseñaToolStripMenuItem.Text = "Change Password";
-                    cambiarIdiomaToolStripMenuItem.Text = "Cahnge Language";
-                    seleccionarProducToolStripMenuItem.Text = "Select Product";
-                    registrarClienteToolStripMenuItem.Text = "Register Client";
-                    gestionarUsuariosToolStripMenuItem.Text = "Manage Users";
-                    message = "Are you sure you want to leave the current session?";
-                    nameForm = "Logout";
-                    ok = "Accept";
-                    cancel = "Cancel";
-                    break;
-            }
+            ajustesToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("Ajustes");
+            productosToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("Productos");
+            ventasToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("Ventas");
+            generarVentaToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("GenerarVenta");
+            clientesToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("Clientes");
+            ayudaToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("Ayuda");
+            adminToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("Admin");
+            logoutToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("Salir");
+            cambiarContraseñaToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("CambiarContraseña");
+            cambiarIdiomaToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("CambiarIdioma");
+            seleccionarProducToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("SeleccionarProducto");
+            registrarClienteToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("RegistrarCliente");
+            gestionarUsuariosToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("GestionarUsuarios");
         }
 
         private void seleccionarProducToolStripMenuItem_Click(object sender, EventArgs e)
@@ -133,6 +95,20 @@ namespace Proyecto_Integrador
             Form seleccionarProd = new FormSeleccionarProducto();
             seleccionarProd.MdiParent = this;
             seleccionarProd.Show();
+        }
+
+        private void generarVentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form generarFactura = new FormGenerarFactura();
+            generarFactura.MdiParent = this;
+            generarFactura.Show();
+        }
+
+        private void registrarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form registrarCliente = new FormRegistrarCliente();
+            registrarCliente.MdiParent = this;
+            registrarCliente.Show();
         }
     }
 }

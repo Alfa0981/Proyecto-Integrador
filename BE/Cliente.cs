@@ -15,6 +15,19 @@ namespace BE
 		private string telefono;
 		private string email;
 		private int id;
+        private bool activo;
+
+        public Cliente()
+        {
+            this.activo = true;
+        }
+
+		public bool Activo
+		{
+			get { return activo; }
+			set { activo = value; }
+		}
+
 
 		public int Id
 		{
@@ -64,5 +77,10 @@ namespace BE
 			set { nombre = value; }
 		}
 
-	}
+        public override string ToString()
+        {
+			return this.nombre + " " + this.apellido;
+        }
+
+    }
 }

@@ -18,5 +18,7 @@ namespace DAL.queries
                                 nombre = @Nombre, apellido = @Apellido,pass = @Pass, rol_id = @RolId,
                                 email = @Email, activo = @Activo where usuario = @Usuario;";
         public const string SeleccionarTodosRoles = "SELECT * FROM ROL";
+        public const string BuscarDni = @"SELECT u.*, r.nombre as rol_nombre FROM Usuario u
+                                 JOIN Rol r ON u.rol_id = r.id WHERE u.dni = @Dni";
     }
 }

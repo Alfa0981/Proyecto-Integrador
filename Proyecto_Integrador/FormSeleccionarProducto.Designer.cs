@@ -40,6 +40,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(15, 83);
@@ -49,7 +51,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(545, 415);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // seleccionarBtn
             // 
@@ -91,9 +92,19 @@
             // cantNumeric
             // 
             this.cantNumeric.Location = new System.Drawing.Point(566, 238);
+            this.cantNumeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.cantNumeric.Name = "cantNumeric";
             this.cantNumeric.Size = new System.Drawing.Size(120, 20);
             this.cantNumeric.TabIndex = 9;
+            this.cantNumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // cantLbl
             // 

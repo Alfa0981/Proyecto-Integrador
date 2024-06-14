@@ -1,7 +1,9 @@
 ﻿using BE;
+using DAL.queries;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +24,31 @@ namespace DAL
                 productos.Add(ConvertirDataRowAProducto(row));
             }
             return productos;
+        }
+
+        public void crear(Producto producto)
+        {
+            SqlParameter[] sqlParameters = new SqlParameter[4];
+
+            sqlParameters[0] = new SqlParameter("@Nombre", producto.Nombre);
+            sqlParameters[1] = new SqlParameter("@Stock", producto.Stock);
+            sqlParameters[2] = new SqlParameter("@FechaExp", producto.FechaExp);
+            sqlParameters[3] = new SqlParameter("@Precio", producto.Precio);
+
+            acceso.escribir(ProductoQuery.Insertar, sqlParameters);
+        }
+
+        public void modificar(Producto producto)
+        {
+            SqlParameter[] sqlParameters = new SqlParameter[5];
+
+            sqlParameters[0] = new SqlParameter("@Id", producto.Id);
+            sqlParameters[1] = new SqlParameter("@Nombre", producto.Nombre);
+            sqlParameters[2] = new SqlParameter("@Stock", producto.Stock);
+            sqlParameters[3] = new SqlParameter("@FechaExp", producto.FechaExp);
+            sqlParameters[4] = new SqlParameter("@Precio", producto.Precio);
+
+            acceso.escribir(ProductoQuery.Modificar, sqlParameters);
         }
 
         private Producto ConvertirDataRowAProducto(DataRow row)

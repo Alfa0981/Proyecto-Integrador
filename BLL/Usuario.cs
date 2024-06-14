@@ -70,9 +70,19 @@ namespace BLL
             SessionManager.Logout();
         }
 
-        public void cargarUsuario(BE.Usuario usuario)
+        public void cargarUsuario(BE.Usuario usuarioACargar)
         {
-            usuario.Pass = UserEncryption.HashSHA256(usuario.Pass);
+            usuarioACargar.Pass = UserEncryption.HashSHA256(usuarioACargar.Pass);
+            BE.Usuario usuario = mpUsuario.buscarPorUsername(usuarioACargar.User);
+            if (usuario != null)
+            {
+                throw new Exception(IdiomaManager.Instance.ObtenerMensaje("UsuarioExisteException"));
+            }
+            usuario = mpUsuario.buscarPorDni(usuarioACargar.Dni);
+            if (usuario != null)
+            {
+                throw new Exception(IdiomaManager.Instance.ObtenerMensaje("UsuarioExisteException"));
+            }
             mpUsuario.crear(usuario);
         }
 

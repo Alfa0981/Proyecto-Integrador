@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.nombreTxt = new System.Windows.Forms.TextBox();
             this.apellidoTxt = new System.Windows.Forms.TextBox();
@@ -46,10 +40,6 @@
             this.eliminarBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.nombreLbl = new System.Windows.Forms.Label();
-            this.apellidoLbl = new System.Windows.Forms.Label();
-            this.desencriptado2Lbl = new System.Windows.Forms.Label();
-            this.desencriptado1Lbl = new System.Windows.Forms.Label();
             this.dniLbl = new System.Windows.Forms.Label();
             this.emailLbl = new System.Windows.Forms.Label();
             this.telefonoLbl = new System.Windows.Forms.Label();
@@ -59,50 +49,18 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
             this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridView1.Location = new System.Drawing.Point(70, 44);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 45);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(645, 150);
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(741, 150);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nombre";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Apellido";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "DNI";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Email";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Telefono";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Direccion";
-            this.Column6.Name = "Column6";
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // button1
             // 
@@ -127,6 +85,7 @@
             this.nombreTxt.Size = new System.Drawing.Size(321, 31);
             this.nombreTxt.TabIndex = 4;
             this.nombreTxt.Enter += new System.EventHandler(this.nombreTxt_Enter);
+            this.nombreTxt.Leave += new System.EventHandler(this.nombreTxt_Leave);
             // 
             // apellidoTxt
             // 
@@ -136,7 +95,8 @@
             this.apellidoTxt.Name = "apellidoTxt";
             this.apellidoTxt.Size = new System.Drawing.Size(321, 31);
             this.apellidoTxt.TabIndex = 5;
-            this.apellidoTxt.TextChanged += new System.EventHandler(this.apellidoTxt_TextChanged);
+            this.apellidoTxt.Enter += new System.EventHandler(this.apellidoTxt_Enter);
+            this.apellidoTxt.Leave += new System.EventHandler(this.apellidoTxt_Leave);
             // 
             // dniTxt
             // 
@@ -145,6 +105,8 @@
             this.dniTxt.Name = "dniTxt";
             this.dniTxt.Size = new System.Drawing.Size(321, 31);
             this.dniTxt.TabIndex = 6;
+            this.dniTxt.Enter += new System.EventHandler(this.dniTxt_Enter);
+            this.dniTxt.Leave += new System.EventHandler(this.dniTxt_Leave);
             // 
             // emailTxt
             // 
@@ -153,6 +115,8 @@
             this.emailTxt.Name = "emailTxt";
             this.emailTxt.Size = new System.Drawing.Size(321, 31);
             this.emailTxt.TabIndex = 7;
+            this.emailTxt.Enter += new System.EventHandler(this.emailTxt_Enter);
+            this.emailTxt.Leave += new System.EventHandler(this.emailTxt_Leave);
             // 
             // telefonoTxt
             // 
@@ -161,6 +125,8 @@
             this.telefonoTxt.Name = "telefonoTxt";
             this.telefonoTxt.Size = new System.Drawing.Size(321, 31);
             this.telefonoTxt.TabIndex = 8;
+            this.telefonoTxt.Enter += new System.EventHandler(this.telefonoTxt_Enter);
+            this.telefonoTxt.Leave += new System.EventHandler(this.telefonoTxt_Leave);
             // 
             // direccionTxt
             // 
@@ -169,6 +135,8 @@
             this.direccionTxt.Name = "direccionTxt";
             this.direccionTxt.Size = new System.Drawing.Size(321, 31);
             this.direccionTxt.TabIndex = 9;
+            this.direccionTxt.Enter += new System.EventHandler(this.direccionTxt_Enter);
+            this.direccionTxt.Leave += new System.EventHandler(this.direccionTxt_Leave);
             // 
             // modificarBtn
             // 
@@ -182,6 +150,7 @@
             this.modificarBtn.TabIndex = 10;
             this.modificarBtn.Text = "Modificar";
             this.modificarBtn.UseVisualStyleBackColor = false;
+            this.modificarBtn.Click += new System.EventHandler(this.modificarBtn_Click);
             // 
             // eliminarBtn
             // 
@@ -195,6 +164,7 @@
             this.eliminarBtn.TabIndex = 11;
             this.eliminarBtn.Text = "Eliminar";
             this.eliminarBtn.UseVisualStyleBackColor = false;
+            this.eliminarBtn.Click += new System.EventHandler(this.eliminarBtn_Click);
             // 
             // label1
             // 
@@ -207,7 +177,6 @@
             this.label1.Size = new System.Drawing.Size(58, 17);
             this.label1.TabIndex = 12;
             this.label1.Text = "Nombre";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -220,42 +189,6 @@
             this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 13;
             this.label2.Text = "Apellido";
-            // 
-            // nombreLbl
-            // 
-            this.nombreLbl.AutoSize = true;
-            this.nombreLbl.Location = new System.Drawing.Point(779, 566);
-            this.nombreLbl.Name = "nombreLbl";
-            this.nombreLbl.Size = new System.Drawing.Size(56, 13);
-            this.nombreLbl.TabIndex = 14;
-            this.nombreLbl.Text = "nombreLbl";
-            // 
-            // apellidoLbl
-            // 
-            this.apellidoLbl.AutoSize = true;
-            this.apellidoLbl.Location = new System.Drawing.Point(779, 594);
-            this.apellidoLbl.Name = "apellidoLbl";
-            this.apellidoLbl.Size = new System.Drawing.Size(57, 13);
-            this.apellidoLbl.TabIndex = 15;
-            this.apellidoLbl.Text = "apellidoLbl";
-            // 
-            // desencriptado2Lbl
-            // 
-            this.desencriptado2Lbl.AutoSize = true;
-            this.desencriptado2Lbl.Location = new System.Drawing.Point(779, 737);
-            this.desencriptado2Lbl.Name = "desencriptado2Lbl";
-            this.desencriptado2Lbl.Size = new System.Drawing.Size(35, 13);
-            this.desencriptado2Lbl.TabIndex = 17;
-            this.desencriptado2Lbl.Text = "label3";
-            // 
-            // desencriptado1Lbl
-            // 
-            this.desencriptado1Lbl.AutoSize = true;
-            this.desencriptado1Lbl.Location = new System.Drawing.Point(779, 710);
-            this.desencriptado1Lbl.Name = "desencriptado1Lbl";
-            this.desencriptado1Lbl.Size = new System.Drawing.Size(35, 13);
-            this.desencriptado1Lbl.TabIndex = 16;
-            this.desencriptado1Lbl.Text = "label4";
             // 
             // dniLbl
             // 
@@ -310,15 +243,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(884, 749);
+            this.ClientSize = new System.Drawing.Size(884, 571);
             this.Controls.Add(this.direccionLbl);
             this.Controls.Add(this.telefonoLbl);
             this.Controls.Add(this.emailLbl);
             this.Controls.Add(this.dniLbl);
-            this.Controls.Add(this.desencriptado2Lbl);
-            this.Controls.Add(this.desencriptado1Lbl);
-            this.Controls.Add(this.apellidoLbl);
-            this.Controls.Add(this.nombreLbl);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.eliminarBtn);
@@ -343,12 +272,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox nombreTxt;
         private System.Windows.Forms.TextBox apellidoTxt;
@@ -360,10 +283,6 @@
         private System.Windows.Forms.Button eliminarBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label nombreLbl;
-        private System.Windows.Forms.Label apellidoLbl;
-        private System.Windows.Forms.Label desencriptado2Lbl;
-        private System.Windows.Forms.Label desencriptado1Lbl;
         private System.Windows.Forms.Label dniLbl;
         private System.Windows.Forms.Label emailLbl;
         private System.Windows.Forms.Label telefonoLbl;

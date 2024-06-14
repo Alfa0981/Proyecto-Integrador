@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Resources;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using BE;
 
@@ -22,7 +23,7 @@ namespace Services
 
         private IdiomaManager()
         {
-            _resourceManager = new ResourceManager("MyProject.Properties.Messages", typeof(IdiomaManager).Assembly);
+            _currentCulture = CultureInfo.CurrentUICulture;
         }
 
         public void Inicializar(Usuario usuario)
@@ -46,6 +47,15 @@ namespace Services
             set
             {
                 _idiomaActual = value;
+                switch (_idiomaActual)
+                {
+                    case Idioma.Spanish:
+                        _currentCulture = new CultureInfo("es");
+                        break;
+                    case Idioma.English:
+                        _currentCulture = new CultureInfo("en");
+                        break;
+                }
                 NotificarObservadores();
             }
         }
@@ -55,9 +65,14 @@ namespace Services
             _observers.Add(observer);
         }
 
-        public void Desuscribir(IIdiomaObserver observer)
+        public CultureInfo CurrentCulture
         {
-            _observers.Remove(observer);
+            get { return _currentCulture; }
+            set
+            {
+                _currentCulture = value;
+                Thread.CurrentThread.CurrentUICulture = value;
+            }
         }
 
         private void NotificarObservadores()
@@ -70,7 +85,7 @@ namespace Services
 
         public string ObtenerMensaje(string clave)
         {
-            return _resourceManager.GetString(clave, _currentCulture);
+            return Services.Resources.Resource1.ResourceManager.GetString(clave, _currentCulture);
         }
     }
 }

@@ -18,6 +18,7 @@ namespace Proyecto_Integrador
         private List<CarritoProducto> productosEnCarrito;
         private BLL.Carrito gestorCarrito = new BLL.Carrito();
         private BLL.Cliente gestorCliente = new BLL.Cliente();
+        private BLL.Producto gestorProducto = new BLL.Producto();
         private Cliente cliente;
 
         public FormGenerarCarrito(List<CarritoProducto> productosEnCarrito)
@@ -33,9 +34,9 @@ namespace Proyecto_Integrador
         {
             dataGridView2.DataSource = productosEnCarrito.Select(p => new
             {
-                Id = p.Producto.Id,
+                p.Producto.Id,
                 Producto = p.Producto.Nombre,
-                Cantidad = p.Cantidad,
+                p.Cantidad,
                 PrecioUnitario = p.Producto.Precio,
                 PrecioTotal = p.Producto.Precio * p.Cantidad
             }).ToList();
@@ -73,7 +74,7 @@ namespace Proyecto_Integrador
         {
             Form registrarCliente = new FormRegistrarCliente();
             registrarCliente.MdiParent = this.MdiParent;
-            registrarCliente.ShowDialog();
+            registrarCliente.Show();
         }
 
         private void generarCarritoBtn_Click(object sender, EventArgs e)
@@ -93,9 +94,18 @@ namespace Proyecto_Integrador
                 string precioFinalTexto = precioFinalLbl.Text.Replace("$", "");
                 carrito.PrecioFinal = double.Parse(precioFinalTexto);
 
-                int carritoId = gestorCarrito.crearCarrito(carrito);
+                try
+                {
+                    int carritoId = gestorCarrito.crearCarrito(carrito);
 
-                MessageBox.Show($"Carrito creado con ID: {carritoId}");
+                    gestorProducto.ActualizarStock(carrito);
+
+                    MessageBox.Show("Carrito creado con ID: " + carritoId);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al crear el carrito: " + ex.Message);
+                }
             }             
         }
 

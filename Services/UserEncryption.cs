@@ -10,14 +10,19 @@ namespace Services
 {
     public abstract class UserEncryption
     {
-        public static byte[] EncryptData(byte[] data, byte[] entropy)
+        private const string key = "Hola Mundo";
+        private static readonly byte[] entropy = Encoding.UTF8.GetBytes(key);
+
+        public static string EncryptData(string data)
         {
-            return ProtectedData.Protect(data, entropy, DataProtectionScope.CurrentUser);
+            byte[] bytes = ProtectedData.Protect(Encoding.UTF8.GetBytes(data), entropy, DataProtectionScope.CurrentUser);
+            return Convert.ToBase64String(bytes);
         }
 
-        public static byte[] DecryptData(byte[] encryptedData, byte[] entropy)
+        public static string DecryptData(string encryptedData)
         {
-            return ProtectedData.Unprotect(encryptedData, entropy, DataProtectionScope.CurrentUser);
+            byte[] bytes = ProtectedData.Unprotect(Convert.FromBase64String(encryptedData), entropy, DataProtectionScope.CurrentUser);
+            return Encoding.UTF8.GetString(bytes);
         }
 
         public static string HashSHA256(string input)

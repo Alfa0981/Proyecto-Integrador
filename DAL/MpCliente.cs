@@ -59,5 +59,50 @@ namespace DAL
 
             return cliente;
         }
+
+        public Cliente buscarPorDni(string dni)
+        {
+            SqlParameter[] sqlParameters = new SqlParameter[1];
+            sqlParameters[0] = new SqlParameter("@Dni", dni);
+
+            DataTable tabla = acceso.leer(queries.ClienteQuery.BuscarPorDni, sqlParameters);
+            if (tabla.Rows.Count == 0)
+            {
+               return null;
+            }
+            else
+            {
+                return ConvertirDataRowACliente(tabla.Rows[0]);
+
+            }
+        }
+
+        public List<Cliente> buscarTodos()
+        {
+            DataTable tabla = acceso.leer(queries.ClienteQuery.SeleccionarTodos, null);
+            List<Cliente> clientes = new List<Cliente>();
+
+            foreach (DataRow row in tabla.Rows)
+            {
+                clientes.Add(ConvertirDataRowACliente(row));
+            }
+            return clientes;
+        }
+
+        public void modificar(Cliente cliente)
+        {
+            SqlParameter[] sqlParameters = new SqlParameter[8];
+
+            sqlParameters[0] = new SqlParameter("@Dni", cliente.Dni);
+            sqlParameters[1] = new SqlParameter("@Apellido", cliente.Apellido);
+            sqlParameters[2] = new SqlParameter("@Nombre", cliente.Nombre);
+            sqlParameters[3] = new SqlParameter("@Direccion", cliente.Direccion);
+            sqlParameters[4] = new SqlParameter("@Telefono", cliente.Telefono);
+            sqlParameters[5] = new SqlParameter("@Email", cliente.Email);
+            sqlParameters[6] = new SqlParameter("@Activo", cliente.Activo);
+            sqlParameters[7] = new SqlParameter("@Id", cliente.Id);
+
+            acceso.escribir(queries.ClienteQuery.Actualizar, sqlParameters);
+        }
     }
 }

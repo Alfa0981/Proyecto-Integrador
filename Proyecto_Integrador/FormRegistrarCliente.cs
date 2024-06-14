@@ -1,4 +1,5 @@
 ﻿using BE;
+using BLL;
 using Services;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,8 @@ namespace Proyecto_Integrador
     public partial class FormRegistrarCliente : Form, IIdiomaObserver
     {
 
+        BLL.Cliente gestorCliente = new BLL.Cliente();
+        BE.Cliente cliente;
 
         public FormRegistrarCliente()
         {
@@ -26,53 +29,56 @@ namespace Proyecto_Integrador
 
         private void FormRegistrarCliente_Load(object sender, EventArgs e)
         {
+            listar(); 
+            modificarBtn.Hide();
+            eliminarBtn.Hide();
+        }
 
+        private void listar()
+        {
+            dataGridView1.DataSource = gestorCliente.buscarTodos();
+            dataGridView1.Columns["Activo"].Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string nombre = nombreTxt.Text;
-            string apellido = apellidoTxt.Text;
 
-            byte[] nombreBytes = Encoding.UTF8.GetBytes(nombre);
-            byte[] apellidoBytes = Encoding.UTF8.GetBytes(apellido);
+            if (validarInputs())
+            {
+                BE.Cliente cliente = new BE.Cliente();
+                cliente.Dni = dniTxt.Text;
+                cliente.Email = emailTxt.Text;
+                string direccion = UserEncryption.EncryptData(direccionTxt.Text);
+                cliente.Direccion = direccion;
+                cliente.Nombre = nombreTxt.Text;
+                cliente.Apellido = apellidoTxt.Text;
+                cliente.Telefono = telefonoTxt.Text;
 
-            byte[] entropy = new byte[20];
-            new RNGCryptoServiceProvider().GetBytes(entropy);
-
-            byte[] nombreEncriptado = UserEncryption.EncryptData(nombreBytes, entropy);
-            byte[] apellidoEncriptado = UserEncryption.EncryptData(apellidoBytes, entropy);
-
-
-            string nombreEncriptadoBase64 = Convert.ToBase64String(nombreEncriptado);
-            string apellidoEncriptadoBase64 = Convert.ToBase64String(apellidoEncriptado);
-            nombreLbl.Text = nombreEncriptadoBase64;
-            apellidoLbl.Text = apellidoEncriptadoBase64;
-
-
-            byte[] nombreEncriptadoBytes = Convert.FromBase64String(nombreEncriptadoBase64);
-            byte[] apellidoEncriptadoBytes = Convert.FromBase64String(apellidoEncriptadoBase64);
-
-            byte[] nombreDesencriptado = UserEncryption.DecryptData(nombreEncriptadoBytes, entropy);
-            byte[] apellidoDesencriptado = UserEncryption.DecryptData(apellidoEncriptadoBytes, entropy);
-
-            string nombreOriginal = Encoding.UTF8.GetString(nombreDesencriptado);
-            string apellidoOriginal = Encoding.UTF8.GetString(apellidoDesencriptado);
-            desencriptado1Lbl.Text = nombreOriginal;
-            desencriptado2Lbl.Text = apellidoOriginal;
-
-            //hay que guardar entropy junto al atributo encriptado
-
+                try
+                {
+                    gestorCliente.crear(cliente);
+                    listar();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         }
 
-        private void apellidoTxt_TextChanged(object sender, EventArgs e)
+        private bool validarInputs()
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            if (string.IsNullOrEmpty(nombreTxt.Text)||
+                string.IsNullOrEmpty(apellidoTxt.Text) ||
+                string.IsNullOrEmpty(dniTxt.Text) ||
+                string.IsNullOrEmpty(emailTxt.Text) ||
+                string.IsNullOrEmpty(telefonoTxt.Text) ||
+                string.IsNullOrEmpty(direccionTxt.Text))
+            {
+                MessageBox.Show("");
+                return false;
+            }
+            return true;
         }
 
         private void nombreTxt_Enter(object sender, EventArgs e)
@@ -107,6 +113,114 @@ namespace Proyecto_Integrador
                     eliminarBtn.Text = "Delete";
                     break;
             }
+        }
+
+        private void apellidoTxt_Enter(object sender, EventArgs e)
+        {
+            label2.Hide();
+        }
+
+        private void apellidoTxt_Leave(object sender, EventArgs e)
+        {
+            if (apellidoTxt.Text == "")
+            {
+                label2.Show();
+            }
+        }
+
+        private void dniTxt_Enter(object sender, EventArgs e)
+        {
+            dniLbl.Hide();
+        }
+
+        private void dniTxt_Leave(object sender, EventArgs e)
+        {
+            if (dniTxt.Text == "")
+            {
+                dniLbl.Show();
+            }
+        }
+
+        private void emailTxt_Enter(object sender, EventArgs e)
+        {
+            emailLbl.Hide();
+        }
+
+        private void emailTxt_Leave(object sender, EventArgs e)
+        {
+            if (emailTxt.Text == "")
+            {
+                emailLbl.Show();
+            }
+        }
+
+        private void telefonoTxt_Enter(object sender, EventArgs e)
+        {
+            telefonoLbl.Hide();
+        }
+
+        private void telefonoTxt_Leave(object sender, EventArgs e)
+        {
+            if (telefonoTxt.Text == "")
+            {
+                telefonoLbl.Show();
+            }
+        }
+
+        private void direccionTxt_Enter(object sender, EventArgs e)
+        {
+            direccionLbl.Hide();
+        }
+
+        private void direccionTxt_Leave(object sender, EventArgs e)
+        {
+            if (direccionTxt.Text == "")
+            {
+                direccionLbl.Show();
+            }
+        }
+
+        private void nombreTxt_Leave(object sender, EventArgs e)
+        {
+            if (nombreTxt.Text == "")
+            {
+                label1.Show();
+            }
+        }
+
+        private void eliminarBtn_Click(object sender, EventArgs e)
+        {
+            gestorCliente.eliminar(cliente);
+            listar();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            cliente = (BE.Cliente)dataGridView1.CurrentRow.DataBoundItem;
+            label1.Hide();
+            label2.Hide();
+            dniLbl.Hide();
+            emailLbl.Hide();
+            direccionLbl.Hide();
+            telefonoLbl.Hide();
+
+            nombreTxt.Text = cliente.Nombre;
+            apellidoTxt.Text = cliente.Apellido;
+            dniTxt.Text = cliente.Dni;
+            emailTxt.Text = cliente.Email;
+            direccionTxt.Text = cliente.Direccion;
+            telefonoTxt.Text = cliente.Telefono;
+
+            cliente.Direccion = UserEncryption.EncryptData(cliente.Direccion);
+
+            eliminarBtn.Show();
+            modificarBtn.Show();
+        }
+
+        private void modificarBtn_Click(object sender, EventArgs e)
+        {
+            gestorCliente.modificar(cliente);
+            listar();
         }
     }
 }

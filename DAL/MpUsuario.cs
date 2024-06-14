@@ -37,7 +37,7 @@ namespace DAL
             DataTable tabla = acceso.leer(queries.UsuarioQuery.BuscarUsername, sqlParameters);
             if (tabla.Rows.Count == 0)
             {
-                throw new Exception("Credenciales invalidas");
+                return null;
             }
             else
             {
@@ -122,6 +122,23 @@ namespace DAL
             };
 
             return usuario;
+        }
+
+        public Usuario buscarPorDni(string dni)
+        {
+            SqlParameter[] sqlParameters = new SqlParameter[1];
+            sqlParameters[0] = new SqlParameter("@Dni", dni);
+
+            DataTable tabla = acceso.leer(queries.UsuarioQuery.BuscarDni, sqlParameters);
+            if (tabla.Rows.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return ConvertirDataRowAUsuario(tabla.Rows[0]);
+
+            }
         }
     }
 }

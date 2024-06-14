@@ -12,6 +12,11 @@ namespace BLL
     {
         MpCarrito mpCarrito = new MpCarrito();
 
+        public BE.Carrito buscarPorId(int id)
+        {
+            return mpCarrito.buscarPorId(id);
+        }
+
         public int crearCarrito(BE.Carrito carritoProducto)
         {
             return mpCarrito.Crear(carritoProducto);

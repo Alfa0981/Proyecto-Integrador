@@ -43,7 +43,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdiomaManager.cs" />
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
     <Compile Include="IIdiomaObserver.cs" />
+    <Compile Include="Resources\Resource1.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.en.resx</DependentUpon>
+    </Compile>
     <Compile Include="SessionManager.cs" />
     <Compile Include="UserEncryption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,6 +63,16 @@
       <Project>{a6c11c23-06ed-47ac-8724-abff4eadcfd6}</Project>
       <Name>BE</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resource1.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
