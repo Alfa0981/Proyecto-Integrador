@@ -17,10 +17,6 @@ namespace Proyecto_Integrador
 
         Usuario gestorUsuario = new Usuario();
         bool isClosingByMe;
-        string messageBox;
-        string nameForm;
-        string camposException;
-        string clavesException;
 
         public FormCambiarPass()
         {
@@ -36,8 +32,8 @@ namespace Proyecto_Integrador
             {
                
                 CustomMessageBox.Show(
-                               messageBox,
-                               nameForm,
+                               IdiomaManager.Instance.ObtenerMensaje("FormNotClosable"),
+                               IdiomaManager.Instance.ObtenerMensaje("Cerrar"),
                                "OK");
 
                 e.Cancel = true;
@@ -49,10 +45,10 @@ namespace Proyecto_Integrador
         {
             if (string.IsNullOrEmpty(contraTxt.Text) || string.IsNullOrEmpty(contraX2Txt.Text)) 
             {
-                MessageBox.Show(camposException);
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
             }else if(contraTxt.Text != contraX2Txt.Text)
             {
-                MessageBox.Show(clavesException);
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ClavesDistintasException"));
             }else 
             {
                 gestorUsuario.cambiarContra(SessionManager.GetInstance.Usuario, contraTxt.Text);
@@ -89,27 +85,9 @@ namespace Proyecto_Integrador
 
         public void ActualizarIdioma(BE.Idioma nuevoIdioma)
         {
-            switch (nuevoIdioma)
-            {
-                case BE.Idioma.Spanish:
-                    label1.Text = "Contraseña";
-                    label2.Text = "Repita Contraseña";
-                    cambiarBtn.Text = "Cambiar";
-                    camposException = "Faltan completar campos";
-                    messageBox = "No puede cerrar el formulario durante esta operacion";
-                    nameForm = "Cerrar";
-                    clavesException = "Las claves son distintas";
-                    break;
-                case BE.Idioma.English:
-                    label1.Text = "Password";
-                    label2.Text = "Repeat Password";
-                    cambiarBtn.Text = "Change";
-                    camposException = "There are missing fields";
-                    messageBox = "It is impossible to close the form during this operation";
-                    nameForm = "Close";
-                    clavesException = "The passwords are different";
-                    break;
-            }
+            label1.Text = IdiomaManager.Instance.ObtenerMensaje("Contraseña");
+            label2.Text = IdiomaManager.Instance.ObtenerMensaje("RepitaContraseña");
+            cambiarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Cambiar");
         }
     }
 }

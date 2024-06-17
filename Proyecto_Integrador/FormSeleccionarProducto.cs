@@ -32,21 +32,10 @@ namespace Proyecto_Integrador
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
         {
-            switch (nuevoIdioma)
-            {
-                case Idioma.Spanish:
-                    label2.Text = "Productos";
-                    seleccionarBtn.Text = "Añadir al Carrito";
-                    generarCarritoBtn.Text = "Ir al carrito";
-                    cantLbl.Text = "Cantidad";
-                    break;
-                case Idioma.English:
-                    label2.Text = "Products";
-                    seleccionarBtn.Text = "Add to Cart";
-                    generarCarritoBtn.Text = "Go to Cart";
-                    cantLbl.Text = "Amount";
-                    break;
-            }
+            label2.Text = IdiomaManager.Instance.ObtenerMensaje("Productos");
+            seleccionarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("AñadirCarrito");
+            generarCarritoBtn.Text = IdiomaManager.Instance.ObtenerMensaje("IrCarrito");
+            cantLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Cantidad");
         }
 
         private void seleccionarBtn_Click(object sender, EventArgs e)
@@ -76,12 +65,12 @@ namespace Proyecto_Integrador
                 }
                 else
                 {
-                    MessageBox.Show("No hay stock suficiente");
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("StockException"));
                 }
             }
             else
             {
-                MessageBox.Show("Debe seleccionar un producto primero");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("SelectAProductException"));
             }
         }
 

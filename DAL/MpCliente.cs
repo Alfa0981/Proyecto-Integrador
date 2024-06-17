@@ -1,4 +1,5 @@
 ﻿using BE;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -35,7 +36,7 @@ namespace DAL
             DataTable tabla = acceso.leer(queries.ClienteQuery.BuscarPorId, sqlParameters);
             if (tabla.Rows.Count == 0)
             {
-                throw new Exception("No existe el cliente con el id: " + id);
+                throw new Exception(IdiomaManager.Instance.ObtenerMensaje("NotFoundClient") + " " + id);
             }
             else
             {

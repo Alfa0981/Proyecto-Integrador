@@ -117,29 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Ajustes" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="Productos" xml:space="preserve">
-    <value>Products</value>
-  </data>
-  <data name="Ventas" xml:space="preserve">
-    <value>Sales</value>
-  </data>
-  <data name="GenerarVenta" xml:space="preserve">
-    <value>Generate Sale</value>
-  </data>
-  <data name="Clientes" xml:space="preserve">
-    <value>Customers</value>
-  </data>
-  <data name="Ayuda" xml:space="preserve">
-    <value>Help</value>
+  <data name="Aceptar" xml:space="preserve">
+    <value>OK</value>
   </data>
   <data name="Admin" xml:space="preserve">
     <value>Admin</value>
   </data>
-  <data name="Salir" xml:space="preserve">
-    <value>Logout</value>
+  <data name="Ajustes" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Apellido" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="AsociarCliente" xml:space="preserve">
+    <value>Associate Client</value>
+  </data>
+  <data name="Ayuda" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="AñadirCarrito" xml:space="preserve">
+    <value>Add to Cart</value>
+  </data>
+  <data name="Bienvenido" xml:space="preserve">
+    <value>Welcome!</value>
+  </data>
+  <data name="BlockingUser" xml:space="preserve">
+    <value>User blocked due to too many attempts</value>
+  </data>
+  <data name="Buscar" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Cambiar" xml:space="preserve">
+    <value>Change</value>
   </data>
   <data name="CambiarContraseña" xml:space="preserve">
     <value>Change Password</value>
@@ -147,28 +156,229 @@
   <data name="CambiarIdioma" xml:space="preserve">
     <value>Change Language</value>
   </data>
-  <data name="SeleccionarProducto" xml:space="preserve">
-    <value>Select Product</value>
+  <data name="Cantidad" xml:space="preserve">
+    <value>Quantity</value>
   </data>
-  <data name="RegistrarCliente" xml:space="preserve">
-    <value>Register Customer</value>
+  <data name="CargaConExito" xml:space="preserve">
+    <value>Load Successful</value>
   </data>
-  <data name="GestionarUsuarios" xml:space="preserve">
-    <value>Manage Users</value>
+  <data name="Cargar" xml:space="preserve">
+    <value>Load</value>
   </data>
-  <data name="PreguntaCerrarSesion" xml:space="preserve">
-    <value>Do you want to log out?</value>
+  <data name="CarritoCreado" xml:space="preserve">
+    <value>Cart created with ID:</value>
+  </data>
+  <data name="CarritoError" xml:space="preserve">
+    <value>Error creating cart:</value>
+  </data>
+  <data name="CarritoId" xml:space="preserve">
+    <value>Cart Id</value>
+  </data>
+  <data name="CarritoNotFound" xml:space="preserve">
+    <value>Cart not found</value>
+  </data>
+  <data name="CarritoVacioException" xml:space="preserve">
+    <value>You must load the cart first</value>
+  </data>
+  <data name="Cerrar" xml:space="preserve">
+    <value>Close</value>
   </data>
   <data name="CerrarSesion" xml:space="preserve">
     <value>Log Out</value>
   </data>
-  <data name="Aceptar" xml:space="preserve">
-    <value>OK</value>
+  <data name="ClavesDistintasException" xml:space="preserve">
+    <value>The keys are different</value>
   </data>
-  <data name="Cancelar" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="Cliente" xml:space="preserve">
+    <value>Client:</value>
+  </data>
+  <data name="ClienteAsociadoException" xml:space="preserve">
+    <value>You must associate a client with the cart</value>
+  </data>
+  <data name="ClienteAsociadoOK" xml:space="preserve">
+    <value>Client associated successfully</value>
+  </data>
+  <data name="Clientes" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="Contraseña" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="CredencialesInvalidas" xml:space="preserve">
+    <value>Invalid credentials</value>
+  </data>
+  <data name="CVV" xml:space="preserve">
+    <value>CVV</value>
+  </data>
+  <data name="DatosEfectivo" xml:space="preserve">
+    <value>Cash Data</value>
+  </data>
+  <data name="DatosTarjeta" xml:space="preserve">
+    <value>Card Data</value>
+  </data>
+  <data name="DesbloqueadoConExito" xml:space="preserve">
+    <value>Unlocked successfully</value>
+  </data>
+  <data name="Desbloquear" xml:space="preserve">
+    <value>Unlock</value>
+  </data>
+  <data name="Dni" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="Efectivo" xml:space="preserve">
+    <value>Cash</value>
+  </data>
+  <data name="EliminadoConExito" xml:space="preserve">
+    <value>Deleted successfully</value>
+  </data>
+  <data name="Eliminar" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="EliminarProducto" xml:space="preserve">
+    <value>Delete Product</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FaltanCamposException" xml:space="preserve">
+    <value>Missing fields</value>
+  </data>
+  <data name="FechaExp" xml:space="preserve">
+    <value>Expiration Date</value>
+  </data>
+  <data name="FechaExpException" xml:space="preserve">
+    <value>The expiration date cannot be earlier than the current month and year.</value>
+  </data>
+  <data name="FormNotClosable" xml:space="preserve">
+    <value>You cannot close the form during this operation</value>
+  </data>
+  <data name="GenerarCarrito" xml:space="preserve">
+    <value>Generate Cart</value>
+  </data>
+  <data name="GenerarVenta" xml:space="preserve">
+    <value>Generate Sale</value>
+  </data>
+  <data name="GestionarUsuarios" xml:space="preserve">
+    <value>Manage Users</value>
+  </data>
+  <data name="Ingresar" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="InsuficienteStockException" xml:space="preserve">
+    <value>There is not enough stock for the product:</value>
+  </data>
+  <data name="IrCarrito" xml:space="preserve">
+    <value>Go to Cart</value>
+  </data>
+  <data name="MainMessage" xml:space="preserve">
+    <value>Start by navigating the menu options to access the features you need, such as placing orders, managing inventory, or generating reports. If you have any questions or need help, don't hesitate to contact the support team.</value>
+  </data>
+  <data name="ModificadoConExito" xml:space="preserve">
+    <value>Modified successfully.</value>
+  </data>
+  <data name="Modificar" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="Monto" xml:space="preserve">
+    <value>Amount:</value>
+  </data>
+  <data name="MontoCliente" xml:space="preserve">
+    <value>Client Amount</value>
+  </data>
+  <data name="MontoClienteMissing" xml:space="preserve">
+    <value>Please complete the client amount.</value>
+  </data>
+  <data name="MontoInsuficiente" xml:space="preserve">
+    <value>The amount is not enough</value>
+  </data>
+  <data name="Nombre" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NotFoundClient" xml:space="preserve">
+    <value>Client with id does not exist:</value>
+  </data>
+  <data name="NumeroTarjeta" xml:space="preserve">
+    <value>Card Number</value>
+  </data>
+  <data name="OnlyNumbers" xml:space="preserve">
+    <value>Only numbers are allowed</value>
+  </data>
+  <data name="PreguntaCerrarSesion" xml:space="preserve">
+    <value>Are you sure you want to log out?</value>
+  </data>
+  <data name="ProductoEliminado" xml:space="preserve">
+    <value>Product removed from cart successfully.</value>
+  </data>
+  <data name="Productos" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="RegexFechaExpException" xml:space="preserve">
+    <value>Invalid expiration date. Use MM/YY format.</value>
+  </data>
+  <data name="RegistrarCliente" xml:space="preserve">
+    <value>Register Client</value>
+  </data>
+  <data name="RepitaContraseña" xml:space="preserve">
+    <value>Repeat Password</value>
+  </data>
+  <data name="Resumen" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="Salir" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="SeleccionarCarritoException" xml:space="preserve">
+    <value>You must select a cart</value>
+  </data>
+  <data name="SeleccionarProducto" xml:space="preserve">
+    <value>Select Product</value>
+  </data>
+  <data name="SeleccionFilaEliminar" xml:space="preserve">
+    <value>Please select a row to delete.</value>
+  </data>
+  <data name="SelectAProductException" xml:space="preserve">
+    <value>You must select a product first</value>
+  </data>
+  <data name="SqlException" xml:space="preserve">
+    <value>Error writing to database:</value>
+  </data>
+  <data name="StockException" xml:space="preserve">
+    <value>Not enough stock</value>
+  </data>
+  <data name="Tarjeta" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="TipoPago" xml:space="preserve">
+    <value>Payment Type</value>
+  </data>
+  <data name="Titular" xml:space="preserve">
+    <value>Cardholder</value>
+  </data>
+  <data name="TotalPagar" xml:space="preserve">
+    <value>Total to Pay:</value>
+  </data>
+  <data name="Transferencia" xml:space="preserve">
+    <value>Transfer</value>
+  </data>
+  <data name="UserIsBlocked" xml:space="preserve">
+    <value>The user is blocked</value>
+  </data>
+  <data name="UserIsNotActive" xml:space="preserve">
+    <value>The user is not active</value>
+  </data>
+  <data name="UsuarioAlreadyUnlocked" xml:space="preserve">
+    <value>The user is already unlocked</value>
   </data>
   <data name="UsuarioExisteException" xml:space="preserve">
-    <value>User already exist</value>
+    <value>The User already exists</value>
+  </data>
+  <data name="VentaCerrada" xml:space="preserve">
+    <value>Sale Closed</value>
+  </data>
+  <data name="VentaCerradaPlusVuelto" xml:space="preserve">
+    <value>Sale closed, the change is:</value>
+  </data>
+  <data name="Ventas" xml:space="preserve">
+    <value>Sales</value>
   </data>
 </root>

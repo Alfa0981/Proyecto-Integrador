@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Services;
 
 namespace DAL
 {
@@ -83,7 +84,7 @@ namespace DAL
             }
             catch (Exception e)
             {
-                throw new Exception("Error al escribir en la base de datos: " + e.GetBaseException());
+                throw new Exception(IdiomaManager.Instance.ObtenerMensaje("SqlException") + " " + e.GetBaseException());
             }
         }
 

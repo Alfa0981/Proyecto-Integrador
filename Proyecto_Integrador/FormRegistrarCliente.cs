@@ -57,6 +57,7 @@ namespace Proyecto_Integrador
                 try
                 {
                     gestorCliente.crear(cliente);
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CargaConExito"));
                     listar();
                 }
                 catch (Exception ex)
@@ -75,7 +76,7 @@ namespace Proyecto_Integrador
                 string.IsNullOrEmpty(telefonoTxt.Text) ||
                 string.IsNullOrEmpty(direccionTxt.Text))
             {
-                MessageBox.Show("");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
                 return false;
             }
             return true;
@@ -88,31 +89,15 @@ namespace Proyecto_Integrador
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
         {
-            switch (nuevoIdioma)
-            {
-                case Idioma.Spanish:
-                    label1.Text = "Nombre";
-                    label2.Text = "Apellido";
-                    dniLbl.Text = "Dni";
-                    emailLbl.Text = "Email";
-                    telefonoLbl.Text = "Telefono";
-                    direccionLbl.Text = "Direccion";
-                    button1.Text = "Cargar";
-                    modificarBtn.Text = "Modificar";
-                    eliminarBtn.Text = "Eliminar";
-                    break;
-                case Idioma.English:
-                    label1.Text = "Name";
-                    label2.Text = "LastName";
-                    dniLbl.Text = "Dni";
-                    emailLbl.Text = "Email";
-                    telefonoLbl.Text = "Phone Number";
-                    direccionLbl.Text = "Address";
-                    button1.Text = "Load";
-                    modificarBtn.Text = "Update";
-                    eliminarBtn.Text = "Delete";
-                    break;
-            }
+            label1.Text = IdiomaManager.Instance.ObtenerMensaje("Nombre");
+            label2.Text = IdiomaManager.Instance.ObtenerMensaje("Apellido");
+            dniLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Dni");
+            emailLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Email");
+            telefonoLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Telefono");
+            direccionLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Direccion");
+            button1.Text = IdiomaManager.Instance.ObtenerMensaje("Cargar");
+            modificarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Modificar");
+            eliminarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Eliminar");
         }
 
         private void apellidoTxt_Enter(object sender, EventArgs e)
@@ -220,6 +205,7 @@ namespace Proyecto_Integrador
         private void modificarBtn_Click(object sender, EventArgs e)
         {
             gestorCliente.modificar(cliente);
+            MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ModificadoConExito"));
             listar();
         }
     }

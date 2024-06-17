@@ -17,7 +17,6 @@ namespace Proyecto_Integrador
     {
         BLL.Usuario gestorUsuario;
         bool isClosingByMe;
-        string message;
 
         public Login()
         {
@@ -40,7 +39,7 @@ namespace Proyecto_Integrador
         {
             if (string.IsNullOrEmpty(usuarioTxt.Text) || string.IsNullOrEmpty(contraTxt.Text))
             {
-                MessageBox.Show(message);
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
             }
             else
             {
@@ -97,22 +96,9 @@ namespace Proyecto_Integrador
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
         {
-            switch (nuevoIdioma)
-            {
-                case Idioma.Spanish:
-                    label1.Text = "Usuario";
-                    label2.Text = "Contraseña";
-                    ingeresarBtn.Text = "Ingresar";
-                    message = "Faltan completar campos";
-                    break;
-
-                case Idioma.English:
-                    label1.Text = "User";
-                    label2.Text = "Password";
-                    ingeresarBtn.Text = "Login";
-                    message = "There are missing fields";
-                    break;
-            }
+            label1.Text = IdiomaManager.Instance.ObtenerMensaje("Usuario");
+            label2.Text = IdiomaManager.Instance.ObtenerMensaje("Contraseña");
+            ingeresarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Ingresar");
         }
     }
 }

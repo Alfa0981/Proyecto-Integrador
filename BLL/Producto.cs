@@ -1,4 +1,5 @@
 ﻿using DAL;
+using Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,7 +31,7 @@ namespace BLL
 
                 if (producto.Stock < 0)
                 {
-                    throw new Exception($"No hay suficiente stock para el producto: {producto.Nombre}");
+                    throw new Exception(IdiomaManager.Instance.ObtenerMensaje("InsuficienteStockException") + " " + producto.Nombre);
                 }
 
                 mpProducto.modificar(producto);

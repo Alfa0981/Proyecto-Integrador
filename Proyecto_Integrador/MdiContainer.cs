@@ -27,7 +27,7 @@ namespace Proyecto_Integrador
             this.Hide();
             Form login = new Login();
             login.ShowDialog();
-
+            ActualizarIdioma(IdiomaManager.Instance.IdiomaActual);
             Form main = new Main();
             main.MdiParent = this;
             main.Show();

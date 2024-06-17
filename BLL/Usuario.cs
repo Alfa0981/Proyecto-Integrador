@@ -26,7 +26,7 @@ namespace BLL
             {
                 bloquearUsuario(usuarioCargado);
                 contador = 0;
-                throw new Exception("Se bloqueo al usuario por demasiados intentos");
+                throw new Exception(IdiomaManager.Instance.ObtenerMensaje("BlockingUser"));
             }
             else if (validarUsuario(usuarioALoguear, usuarioCargado))
             {
@@ -36,7 +36,7 @@ namespace BLL
             else
             {
                 contador++;
-                throw new Exception("Credenciales invalidas");
+                throw new Exception(IdiomaManager.Instance.ObtenerMensaje("CredencialesInvalidas"));
             }
         }
 
@@ -99,9 +99,9 @@ namespace BLL
         private bool validarUsuario (BE.Usuario usuarioALoguear, BE.Usuario usuarioCargado)
         {
             if (usuarioCargado.Bloqueo)
-                throw new Exception("El usuario esta bloqueado");
+                throw new Exception(IdiomaManager.Instance.ObtenerMensaje("UserIsBlocked"));
             else if (!usuarioCargado.Activo)
-                throw new Exception("El usuario no esta activo");
+                throw new Exception(IdiomaManager.Instance.ObtenerMensaje("UserIsNotActive"));
             else if (usuarioCargado.Pass == usuarioALoguear.Pass)
                 return true;
             else

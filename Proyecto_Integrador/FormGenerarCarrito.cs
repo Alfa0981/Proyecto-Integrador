@@ -48,21 +48,13 @@ namespace Proyecto_Integrador
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
         {
-            switch (nuevoIdioma)
-            {
-                case Idioma.Spanish:
-                    resumenLbl.Text = "Resumen";
-                    label1.Text = "Total a Pagar:";
-                    registarClienteBtn.Text = "Registrar Cliente";
-                    generarCarritoBtn.Text = "Generar Carrito";
-                    break;
-                case Idioma.English:
-                    resumenLbl.Text = "Summary";
-                    label1.Text = "Total to pay:";
-                    registarClienteBtn.Text = "Register Cliente";
-                    generarCarritoBtn.Text = "Generate Cart";
-                    break;
-            }
+            resumenLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Resumen");
+            label1.Text = IdiomaManager.Instance.ObtenerMensaje("TotalPagar");
+            registarClienteBtn.Text = IdiomaManager.Instance.ObtenerMensaje("RegistrarCliente");
+            generarCarritoBtn.Text = IdiomaManager.Instance.ObtenerMensaje("GenerarCarrito");
+            asociarCliente.Text = IdiomaManager.Instance.ObtenerMensaje("AsociarCliente");
+            button1.Text = IdiomaManager.Instance.ObtenerMensaje("EliminarProducto");
+
         }
 
         private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -81,10 +73,10 @@ namespace Proyecto_Integrador
         {
             if (!productosEnCarrito.Any())
             {
-                MessageBox.Show("Debe cargar el carrito primero");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoVacioException"));
             }else if (cliente == null)
             {
-                MessageBox.Show("Debe asociar un cliente al carrito");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ClienteAsociadoException"));
             }
             else
             {
@@ -100,11 +92,11 @@ namespace Proyecto_Integrador
 
                     gestorProducto.ActualizarStock(carrito);
 
-                    MessageBox.Show("Carrito creado con ID: " + carritoId);
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoCreado")+ " " + carritoId);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al crear el carrito: " + ex.Message);
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoError") + " " + ex.Message);
                 }
             }             
         }
@@ -125,11 +117,11 @@ namespace Proyecto_Integrador
 
                 CargarCarrito();
 
-                MessageBox.Show("Producto eliminado del carrito correctamente.");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ProductoEliminado"));
             }
             else
             {
-                MessageBox.Show("Por favor, seleccione una fila para eliminar.");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("SeleccionFilaEliminar"));
             }
         }
         private double CalcularTotalCarrito()
@@ -141,22 +133,22 @@ namespace Proyecto_Integrador
         {
             if (string.IsNullOrEmpty(clienteIdTxt.Text))
             {
-                MessageBox.Show("Campo vacio");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
             }
             else if (!System.Text.RegularExpressions.Regex.IsMatch(clienteIdTxt.Text, "^[0-9]*$"))
             {
-                MessageBox.Show("Solo se admiten numeros");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("OnlyNumbers"));
             }
             else if (!productosEnCarrito.Any())
             {
-                MessageBox.Show("El carrito se encuentra vacio");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoVacioException"));
             }
             else
             {
                 try
                 {
                     cliente = gestorCliente.buscarPorId(int.Parse(clienteIdTxt.Text));
-                    MessageBox.Show("Cliente asociado con exito");
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ClienteAsociadoOK"));
                 }
                 catch (Exception ex)
                 {

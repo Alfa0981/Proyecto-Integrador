@@ -1,16 +1,10 @@
 ﻿using BE;
 using Services;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Proyecto_Integrador
 {
@@ -50,40 +44,19 @@ namespace Proyecto_Integrador
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
         {
-            switch (nuevoIdioma)
-            {
-                case Idioma.Spanish:
-                    tipoPagoGB.Text = "Tipo de Pago";
-                    efectivoRBtn.Text = "Efectivo";
-                    tarjetaRBtn.Text = "Tarjeta";
-                    transferenciaRBtn.Text = "Transferencia";
-                    datostarjetaGB.Text = "Datos de Tarjeta";
-                    titularLbl.Text = "Titular";
-                    numTarjetaLbl.Text = "Numero de Tarjeta";
-                    cvvLbl.Text = "CVV";
-                    fechaExpLbl.Text = "Fecha de Expiracion";
-                    datosEfectivoGB.Text = "Datos Efectivo";
-                    montoClienteLbl.Text = "Monto del cliente";
-                    montoLbl.Text = "Monto: ";
-                    generarVentaBtn.Text = "Generar Venta";
-                    break;
-
-                case Idioma.English:
-                    tipoPagoGB.Text = "Payment Type";
-                    efectivoRBtn.Text = "Cash";
-                    tarjetaRBtn.Text = "Card";
-                    transferenciaRBtn.Text = "Transfer";
-                    datostarjetaGB.Text = "Card Details";
-                    titularLbl.Text = "Owner";
-                    numTarjetaLbl.Text = "Card Number";
-                    cvvLbl.Text = "CVV";
-                    fechaExpLbl.Text = "Expiration Date";
-                    datosEfectivoGB.Text = "Cash Details";
-                    montoClienteLbl.Text = "Customer Amount";
-                    montoLbl.Text = "Amount: ";
-                    generarVentaBtn.Text = "Generarate Sell";
-                    break;
-            }
+            tipoPagoGB.Text = IdiomaManager.Instance.ObtenerMensaje("TipoPago");
+            efectivoRBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Efectivo");
+            tarjetaRBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Tarjeta");
+            transferenciaRBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Transferencia");
+            datostarjetaGB.Text = IdiomaManager.Instance.ObtenerMensaje("DatosTarjeta");
+            titularLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Titular");
+            numTarjetaLbl.Text = IdiomaManager.Instance.ObtenerMensaje("NumeroTarjeta");
+            cvvLbl.Text = IdiomaManager.Instance.ObtenerMensaje("CVV");
+            fechaExpLbl.Text = IdiomaManager.Instance.ObtenerMensaje("FechaExp");
+            datosEfectivoGB.Text = IdiomaManager.Instance.ObtenerMensaje("DatosEfectivo");
+            montoClienteLbl.Text = IdiomaManager.Instance.ObtenerMensaje("MontoCliente");
+            montoLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Monto");
+            generarVentaBtn.Text = IdiomaManager.Instance.ObtenerMensaje("GenerarVenta");
         }
 
         private void FormCobrarVenta_Load(object sender, EventArgs e)
@@ -97,16 +70,17 @@ namespace Proyecto_Integrador
             {
                 if (string.IsNullOrWhiteSpace(textBox1.Text))
                 {
-                    MessageBox.Show("Por favor, complete el monto del cliente.");
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("MontoClienteMissing"));
                 }
                 else
                 {
                     if (carrito.PrecioFinal > int.Parse(textBox1.Text))
                     {
-                        MessageBox.Show("El monto no es suficiente");
+                        MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("MontoInsuficiente"));
                         return;
                     }
-                    MessageBox.Show("Venta cerrada, el vuelto es de: " + (int.Parse(textBox1.Text)- carrito.PrecioFinal));
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("VentaCerradaPlusVuelto") 
+                        + (int.Parse(textBox1.Text)- carrito.PrecioFinal));
                 }
 
             }
@@ -117,13 +91,13 @@ namespace Proyecto_Integrador
                     string.IsNullOrWhiteSpace(cvvTxt.Text) ||
                     string.IsNullOrWhiteSpace(fechaExpTxt.Text))
                 {
-                    MessageBox.Show("Por favor, complete todos los datos de la tarjeta.");
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
                 }
                 else
                 {
                     if (!Regex.IsMatch(fechaExpTxt.Text, @"^(0[1-9]|1[0-2])\/([0-9]{2})$"))
                     {
-                        MessageBox.Show("Fecha de expiración inválida. Use el formato MM/AA.");
+                        MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("RegexFechaExpException"));
                         return;
                     }
 
@@ -136,18 +110,18 @@ namespace Proyecto_Integrador
 
                     if (fechaIngresada < new DateTime(fechaActual.Year, fechaActual.Month, 1))
                     {
-                        MessageBox.Show("La fecha de expiración no puede ser anterior al mes y año actuales.");
+                        MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FechaExpException"));
                     }
                     else
                     {
-                        MessageBox.Show("Venta cerrada");
+                        MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("VentaCerrada"));
                     }
                 }
 
             }
             else if (transferenciaRBtn.Checked)
             {
-                MessageBox.Show("Venta cerrada");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("VentaCerrada"));
             }
         }
 

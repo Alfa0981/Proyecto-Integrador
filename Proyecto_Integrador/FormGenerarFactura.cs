@@ -27,22 +27,10 @@ namespace Proyecto_Integrador
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
         {
-            switch (nuevoIdioma)
-            {
-                case Idioma.Spanish:
-                    label3.Text = "Carrito Id";
-                    cobrarVentaBtn.Text = "Cobrar Venta";
-                    buscarBtn.Text = "Buscar";
-                    clienteLbl.Text = "Cliente: ";
-                    break;
-                case Idioma.English:
-                    label3.Text = "Cart Id";
-                    cobrarVentaBtn.Text = "Pay Sale";
-                    buscarBtn.Text = "Find";
-                    clienteLbl.Text = "Client: ";
-
-                    break;
-            }
+            label3.Text = IdiomaManager.Instance.ObtenerMensaje("CarritoId");
+            cobrarVentaBtn.Text = IdiomaManager.Instance.ObtenerMensaje("CobrarVenta");
+            buscarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Buscar");
+            clienteLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Cliente");
         }
 
         private void cobrarVentaBtn_Click(object sender, EventArgs e)
@@ -55,7 +43,7 @@ namespace Proyecto_Integrador
             }
             else
             {
-                MessageBox.Show("Debe seleccionar un carrito");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("SeleccionarCarritoException"));
             }
         }
 
@@ -76,11 +64,11 @@ namespace Proyecto_Integrador
         {
             if (!System.Text.RegularExpressions.Regex.IsMatch(carritoIdTxt.Text, "^[0-9]*$"))
             {
-                MessageBox.Show("Solo se admiten numeros");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("OnlyNumbers"));
             }
             else if (string.IsNullOrEmpty(carritoIdTxt.Text))
             {
-                MessageBox.Show("Campo vacios");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
             }
             else
             {
@@ -89,7 +77,7 @@ namespace Proyecto_Integrador
 
                 if (carrito == null)
                 {
-                    MessageBox.Show("Carrito no encontrado");
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoNotFound"));
                 }
                 else
                 {

@@ -43,7 +43,7 @@ namespace Proyecto_Integrador
                 {
                     gestorUsuario.cargarUsuario(usuario);
                     listar();
-                    MessageBox.Show("Carga con exito.");
+                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CargaConExito"));
                 }
                 catch (Exception ex)
                 {
@@ -59,7 +59,7 @@ namespace Proyecto_Integrador
                 string.IsNullOrWhiteSpace(dniTxt.Text) ||
                 string.IsNullOrWhiteSpace(emailTxt.Text))
             {
-                MessageBox.Show("Todos los campos deben estar completos y no pueden estar vacíos.");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
                 return false;
             }
             return true;
@@ -99,10 +99,10 @@ namespace Proyecto_Integrador
             {
                 gestorUsuario.desbloquearUsuario(usuario);
                 listar();
-                MessageBox.Show("Desbloqueado con exito.");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("DesbloqueadoConExito"));
             }
             else
-                MessageBox.Show("El usuario ya se encuentra desbloqueado");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("UsuarioAlreadyUnlocked"));
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -183,34 +183,19 @@ namespace Proyecto_Integrador
         {
             gestorUsuario.eliminar(usuario);
             listar();
-            MessageBox.Show("Eliminado con exito.");
+            MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("EliminadoConExito"));
         }
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
         {
-            switch (nuevoIdioma)
-            {
-                case Idioma.Spanish:
-                    nombreLbl.Text = "Nombre";
-                    apellidoLbl.Text = "Apellido";
-                    dniLbl.Text = "Dni";
-                    emailLbl.Text = "Email";
-                    cargarBtn.Text = "Cargar";
-                    desbloquearBtn.Text = "Desbloquear";
-                    eliminarBtn.Text = "Eliminar";
-                    modificarBtn.Text = "Modificar";
-                    break;
-                case Idioma.English:
-                    nombreLbl.Text = "Name";
-                    apellidoLbl.Text = "LastName";
-                    dniLbl.Text = "Dni";
-                    emailLbl.Text = "Email";
-                    cargarBtn.Text = "Save";
-                    desbloquearBtn.Text = "Unlock";
-                    eliminarBtn.Text = "Delete";
-                    modificarBtn.Text = "Update";
-                    break;
-            }
+            nombreLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Nombre");
+            apellidoLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Apellido");
+            dniLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Dni");
+            emailLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Email");
+            cargarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Cargar");
+            desbloquearBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Desbloquear");
+            eliminarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Eliminar");
+            modificarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Modificar");
         }
 
         private void modificarBtn_Click(object sender, EventArgs e)
@@ -226,7 +211,7 @@ namespace Proyecto_Integrador
 
                 gestorUsuario.modificarUsuario(usuario);
                 listar();
-                MessageBox.Show("Modificado con exito.");
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ModificadoConExito"));
 
             }
         }

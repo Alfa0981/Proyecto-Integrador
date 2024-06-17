@@ -88,11 +88,74 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Añadir al Carrito.
+        /// </summary>
+        public static string AñadirCarrito {
+            get {
+                return ResourceManager.GetString("AñadirCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Apellido.
+        /// </summary>
+        public static string Apellido {
+            get {
+                return ResourceManager.GetString("Apellido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Asociar Cliente.
+        /// </summary>
+        public static string AsociarCliente {
+            get {
+                return ResourceManager.GetString("AsociarCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ayuda.
         /// </summary>
         public static string Ayuda {
             get {
                 return ResourceManager.GetString("Ayuda", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Bienvenido!.
+        /// </summary>
+        public static string Bienvenido {
+            get {
+                return ResourceManager.GetString("Bienvenido", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Se bloqueo al usuario por demasiados intentos.
+        /// </summary>
+        public static string BlockingUser {
+            get {
+                return ResourceManager.GetString("BlockingUser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Buscar.
+        /// </summary>
+        public static string Buscar {
+            get {
+                return ResourceManager.GetString("Buscar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cambiar.
+        /// </summary>
+        public static string Cambiar {
+            get {
+                return ResourceManager.GetString("Cambiar", resourceCulture);
             }
         }
         
@@ -115,6 +178,87 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cantidad.
+        /// </summary>
+        public static string Cantidad {
+            get {
+                return ResourceManager.GetString("Cantidad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Carga con exito.
+        /// </summary>
+        public static string CargaConExito {
+            get {
+                return ResourceManager.GetString("CargaConExito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cargar.
+        /// </summary>
+        public static string Cargar {
+            get {
+                return ResourceManager.GetString("Cargar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Carrito creado con ID:.
+        /// </summary>
+        public static string CarritoCreado {
+            get {
+                return ResourceManager.GetString("CarritoCreado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Error al crear el carrito:.
+        /// </summary>
+        public static string CarritoError {
+            get {
+                return ResourceManager.GetString("CarritoError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Carrito Id.
+        /// </summary>
+        public static string CarritoId {
+            get {
+                return ResourceManager.GetString("CarritoId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Carrito no encontrado.
+        /// </summary>
+        public static string CarritoNotFound {
+            get {
+                return ResourceManager.GetString("CarritoNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Debe cargar el carrito primero.
+        /// </summary>
+        public static string CarritoVacioException {
+            get {
+                return ResourceManager.GetString("CarritoVacioException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cerrar.
+        /// </summary>
+        public static string Cerrar {
+            get {
+                return ResourceManager.GetString("Cerrar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cerrar Sesion.
         /// </summary>
         public static string CerrarSesion {
@@ -124,11 +268,209 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Las claves son distintas.
+        /// </summary>
+        public static string ClavesDistintasException {
+            get {
+                return ResourceManager.GetString("ClavesDistintasException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cliente:.
+        /// </summary>
+        public static string Cliente {
+            get {
+                return ResourceManager.GetString("Cliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Debe asociar un cliente al carrito.
+        /// </summary>
+        public static string ClienteAsociadoException {
+            get {
+                return ResourceManager.GetString("ClienteAsociadoException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cliente asociado con exito.
+        /// </summary>
+        public static string ClienteAsociadoOK {
+            get {
+                return ResourceManager.GetString("ClienteAsociadoOK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Clientes.
         /// </summary>
         public static string Clientes {
             get {
                 return ResourceManager.GetString("Clientes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña.
+        /// </summary>
+        public static string Contraseña {
+            get {
+                return ResourceManager.GetString("Contraseña", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Credenciales invalidas.
+        /// </summary>
+        public static string CredencialesInvalidas {
+            get {
+                return ResourceManager.GetString("CredencialesInvalidas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a CVV.
+        /// </summary>
+        public static string CVV {
+            get {
+                return ResourceManager.GetString("CVV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Datos Efectivo.
+        /// </summary>
+        public static string DatosEfectivo {
+            get {
+                return ResourceManager.GetString("DatosEfectivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Datos de Tarjeta.
+        /// </summary>
+        public static string DatosTarjeta {
+            get {
+                return ResourceManager.GetString("DatosTarjeta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Desbloqueado con exito.
+        /// </summary>
+        public static string DesbloqueadoConExito {
+            get {
+                return ResourceManager.GetString("DesbloqueadoConExito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Desbloquear.
+        /// </summary>
+        public static string Desbloquear {
+            get {
+                return ResourceManager.GetString("Desbloquear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Dni.
+        /// </summary>
+        public static string Dni {
+            get {
+                return ResourceManager.GetString("Dni", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Efectivo.
+        /// </summary>
+        public static string Efectivo {
+            get {
+                return ResourceManager.GetString("Efectivo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminado con exito.
+        /// </summary>
+        public static string EliminadoConExito {
+            get {
+                return ResourceManager.GetString("EliminadoConExito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar.
+        /// </summary>
+        public static string Eliminar {
+            get {
+                return ResourceManager.GetString("Eliminar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar Producto.
+        /// </summary>
+        public static string EliminarProducto {
+            get {
+                return ResourceManager.GetString("EliminarProducto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Email.
+        /// </summary>
+        public static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Faltan completar campos.
+        /// </summary>
+        public static string FaltanCamposException {
+            get {
+                return ResourceManager.GetString("FaltanCamposException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Fecha de Expiracion.
+        /// </summary>
+        public static string FechaExp {
+            get {
+                return ResourceManager.GetString("FechaExp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a La fecha de expiración no puede ser anterior al mes y año actuales..
+        /// </summary>
+        public static string FechaExpException {
+            get {
+                return ResourceManager.GetString("FechaExpException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No puede cerrar el formulario durante esta operacion.
+        /// </summary>
+        public static string FormNotClosable {
+            get {
+                return ResourceManager.GetString("FormNotClosable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Generar Carrito.
+        /// </summary>
+        public static string GenerarCarrito {
+            get {
+                return ResourceManager.GetString("GenerarCarrito", resourceCulture);
             }
         }
         
@@ -151,11 +493,128 @@ namespace Services.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Monto.
+        ///   Busca una cadena traducida similar a Ingresar.
+        /// </summary>
+        public static string Ingresar {
+            get {
+                return ResourceManager.GetString("Ingresar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No hay suficiente stock para el producto:.
+        /// </summary>
+        public static string InsuficienteStockException {
+            get {
+                return ResourceManager.GetString("InsuficienteStockException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Ir al carrito.
+        /// </summary>
+        public static string IrCarrito {
+            get {
+                return ResourceManager.GetString("IrCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Comienza navegando por las opciones del menú para acceder a las funcionalidades que necesites, como registrar pedidos, gestionar inventario o generar informes. Si tienes alguna pregunta o necesitas ayuda, no dudes en contactar con el equipo de soporte..
+        /// </summary>
+        public static string MainMessage {
+            get {
+                return ResourceManager.GetString("MainMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Modificado con exito..
+        /// </summary>
+        public static string ModificadoConExito {
+            get {
+                return ResourceManager.GetString("ModificadoConExito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Modificar.
+        /// </summary>
+        public static string Modificar {
+            get {
+                return ResourceManager.GetString("Modificar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Monto:.
         /// </summary>
         public static string Monto {
             get {
                 return ResourceManager.GetString("Monto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Monto del cliente.
+        /// </summary>
+        public static string MontoCliente {
+            get {
+                return ResourceManager.GetString("MontoCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Por favor, complete el monto del cliente..
+        /// </summary>
+        public static string MontoClienteMissing {
+            get {
+                return ResourceManager.GetString("MontoClienteMissing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El monto no es suficiente.
+        /// </summary>
+        public static string MontoInsuficiente {
+            get {
+                return ResourceManager.GetString("MontoInsuficiente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nombre.
+        /// </summary>
+        public static string Nombre {
+            get {
+                return ResourceManager.GetString("Nombre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No existe el cliente con el id:.
+        /// </summary>
+        public static string NotFoundClient {
+            get {
+                return ResourceManager.GetString("NotFoundClient", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Numero de Tarjeta.
+        /// </summary>
+        public static string NumeroTarjeta {
+            get {
+                return ResourceManager.GetString("NumeroTarjeta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Solo se admiten numeros.
+        /// </summary>
+        public static string OnlyNumbers {
+            get {
+                return ResourceManager.GetString("OnlyNumbers", resourceCulture);
             }
         }
         
@@ -169,11 +628,29 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Producto eliminado del carrito correctamente..
+        /// </summary>
+        public static string ProductoEliminado {
+            get {
+                return ResourceManager.GetString("ProductoEliminado", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Productos.
         /// </summary>
         public static string Productos {
             get {
                 return ResourceManager.GetString("Productos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Fecha de expiración inválida. Use el formato MM/AA..
+        /// </summary>
+        public static string RegexFechaExpException {
+            get {
+                return ResourceManager.GetString("RegexFechaExpException", resourceCulture);
             }
         }
         
@@ -187,11 +664,38 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Repita Contraseña.
+        /// </summary>
+        public static string RepitaContraseña {
+            get {
+                return ResourceManager.GetString("RepitaContraseña", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Resumen.
+        /// </summary>
+        public static string Resumen {
+            get {
+                return ResourceManager.GetString("Resumen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Salir.
         /// </summary>
         public static string Salir {
             get {
                 return ResourceManager.GetString("Salir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Debe seleccionar un carrito.
+        /// </summary>
+        public static string SeleccionarCarritoException {
+            get {
+                return ResourceManager.GetString("SeleccionarCarritoException", resourceCulture);
             }
         }
         
@@ -205,11 +709,137 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Por favor, seleccione una fila para eliminar..
+        /// </summary>
+        public static string SeleccionFilaEliminar {
+            get {
+                return ResourceManager.GetString("SeleccionFilaEliminar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Debe seleccionar un producto primero.
+        /// </summary>
+        public static string SelectAProductException {
+            get {
+                return ResourceManager.GetString("SelectAProductException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Error al escribir en la base de datos:.
+        /// </summary>
+        public static string SqlException {
+            get {
+                return ResourceManager.GetString("SqlException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No hay stock suficiente.
+        /// </summary>
+        public static string StockException {
+            get {
+                return ResourceManager.GetString("StockException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tarjeta.
+        /// </summary>
+        public static string Tarjeta {
+            get {
+                return ResourceManager.GetString("Tarjeta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Tipo de Pago.
+        /// </summary>
+        public static string TipoPago {
+            get {
+                return ResourceManager.GetString("TipoPago", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Titular.
+        /// </summary>
+        public static string Titular {
+            get {
+                return ResourceManager.GetString("Titular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Total a Pagar:.
+        /// </summary>
+        public static string TotalPagar {
+            get {
+                return ResourceManager.GetString("TotalPagar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Transferencia.
+        /// </summary>
+        public static string Transferencia {
+            get {
+                return ResourceManager.GetString("Transferencia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El usuario esta bloqueado.
+        /// </summary>
+        public static string UserIsBlocked {
+            get {
+                return ResourceManager.GetString("UserIsBlocked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El usuario no esta activo.
+        /// </summary>
+        public static string UserIsNotActive {
+            get {
+                return ResourceManager.GetString("UserIsNotActive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a El usuario ya se encuentra desbloqueado.
+        /// </summary>
+        public static string UsuarioAlreadyUnlocked {
+            get {
+                return ResourceManager.GetString("UsuarioAlreadyUnlocked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a El Usuario ya existe.
         /// </summary>
         public static string UsuarioExisteException {
             get {
                 return ResourceManager.GetString("UsuarioExisteException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Venta Cerrada.
+        /// </summary>
+        public static string VentaCerrada {
+            get {
+                return ResourceManager.GetString("VentaCerrada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Venta cerrada, el vuelto es de:.
+        /// </summary>
+        public static string VentaCerradaPlusVuelto {
+            get {
+                return ResourceManager.GetString("VentaCerradaPlusVuelto", resourceCulture);
             }
         }
         
