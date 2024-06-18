@@ -110,7 +110,6 @@ namespace DAL
                     Id = Convert.ToInt32(row["producto_id"]),
                     Nombre = row["nombre"].ToString(),
                     Precio = Convert.ToDouble(row["precio"]),
-                    FechaExp = Convert.ToDateTime(row["fechaExp"]),
                     Stock = Convert.ToInt32(row["stock"])
                 },
                 Cantidad = Convert.ToInt32(row["cantidad"])

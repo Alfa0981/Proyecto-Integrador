@@ -204,9 +204,20 @@ namespace Proyecto_Integrador
 
         private void modificarBtn_Click(object sender, EventArgs e)
         {
-            gestorCliente.modificar(cliente);
-            MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ModificadoConExito"));
-            listar();
+            if (validarInputs())
+            {
+                cliente.Dni = dniTxt.Text;
+                cliente.Email = emailTxt.Text;
+                string direccion = UserEncryption.EncryptData(direccionTxt.Text);
+                cliente.Direccion = direccion;
+                cliente.Nombre = nombreTxt.Text;
+                cliente.Apellido = apellidoTxt.Text;
+                cliente.Telefono = telefonoTxt.Text;
+
+                gestorCliente.modificar(cliente);
+                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ModificadoConExito"));
+                listar();
+            }
         }
     }
 }

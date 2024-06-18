@@ -42,6 +42,7 @@
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,7 +101,8 @@
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.seleccionarProducToolStripMenuItem});
+            this.seleccionarProducToolStripMenuItem,
+            this.gestionarProductosToolStripMenuItem});
             this.productosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(113, 25);
@@ -110,7 +112,7 @@
             // seleccionarProducToolStripMenuItem
             // 
             this.seleccionarProducToolStripMenuItem.Name = "seleccionarProducToolStripMenuItem";
-            this.seleccionarProducToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.seleccionarProducToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
             this.seleccionarProducToolStripMenuItem.Text = "Seleccionar produc";
             this.seleccionarProducToolStripMenuItem.Click += new System.EventHandler(this.seleccionarProducToolStripMenuItem_Click);
             // 
@@ -173,6 +175,13 @@
             this.gestionarUsuariosToolStripMenuItem.Text = "Gestionar Usuarios";
             this.gestionarUsuariosToolStripMenuItem.Click += new System.EventHandler(this.gestionarUsuariosToolStripMenuItem_Click);
             // 
+            // gestionarProductosToolStripMenuItem
+            // 
+            this.gestionarProductosToolStripMenuItem.Name = "gestionarProductosToolStripMenuItem";
+            this.gestionarProductosToolStripMenuItem.Size = new System.Drawing.Size(221, 26);
+            this.gestionarProductosToolStripMenuItem.Text = "Gestionar Productos";
+            this.gestionarProductosToolStripMenuItem.Click += new System.EventHandler(this.gestionarProductosToolStripMenuItem_Click);
+            // 
             // MdiContainer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,5 +216,6 @@
         private System.Windows.Forms.ToolStripMenuItem cambiarIdiomaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ventasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generarVentaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionarProductosToolStripMenuItem;
     }
 }

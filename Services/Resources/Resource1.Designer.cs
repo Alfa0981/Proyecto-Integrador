@@ -79,6 +79,15 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Agregar.
+        /// </summary>
+        public static string Agregar {
+            get {
+                return ResourceManager.GetString("Agregar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ajustes.
         /// </summary>
         public static string Ajustes {
@@ -174,6 +183,15 @@ namespace Services.Resources {
         public static string CambiarIdioma {
             get {
                 return ResourceManager.GetString("CambiarIdioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Cancelar.
+        /// </summary>
+        public static string Cancelar {
+            get {
+                return ResourceManager.GetString("Cancelar", resourceCulture);
             }
         }
         
@@ -376,6 +394,15 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Direccion.
+        /// </summary>
+        public static string Direccion {
+            get {
+                return ResourceManager.GetString("Direccion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Dni.
         /// </summary>
         public static string Dni {
@@ -457,6 +484,15 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Formato de numero incorrecto.
+        /// </summary>
+        public static string FormatoIncorrecto {
+            get {
+                return ResourceManager.GetString("FormatoIncorrecto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a No puede cerrar el formulario durante esta operacion.
         /// </summary>
         public static string FormNotClosable {
@@ -480,6 +516,15 @@ namespace Services.Resources {
         public static string GenerarVenta {
             get {
                 return ResourceManager.GetString("GenerarVenta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Gestionar Productos.
+        /// </summary>
+        public static string GestionarProductos {
+            get {
+                return ResourceManager.GetString("GestionarProductos", resourceCulture);
             }
         }
         
@@ -619,6 +664,15 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Precio.
+        /// </summary>
+        public static string Precio {
+            get {
+                return ResourceManager.GetString("Precio", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Esta seguro que desea cerrar la sesion?.
         /// </summary>
         public static string PreguntaCerrarSesion {
@@ -736,6 +790,15 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Stock.
+        /// </summary>
+        public static string Stock {
+            get {
+                return ResourceManager.GetString("Stock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a No hay stock suficiente.
         /// </summary>
         public static string StockException {
@@ -750,6 +813,15 @@ namespace Services.Resources {
         public static string Tarjeta {
             get {
                 return ResourceManager.GetString("Tarjeta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Telefono.
+        /// </summary>
+        public static string Telefono {
+            get {
+                return ResourceManager.GetString("Telefono", resourceCulture);
             }
         }
         

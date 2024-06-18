@@ -28,12 +28,11 @@ namespace DAL
 
         public void crear(Producto producto)
         {
-            SqlParameter[] sqlParameters = new SqlParameter[4];
+            SqlParameter[] sqlParameters = new SqlParameter[3];
 
             sqlParameters[0] = new SqlParameter("@Nombre", producto.Nombre);
             sqlParameters[1] = new SqlParameter("@Stock", producto.Stock);
-            sqlParameters[2] = new SqlParameter("@FechaExp", producto.FechaExp);
-            sqlParameters[3] = new SqlParameter("@Precio", producto.Precio);
+            sqlParameters[2] = new SqlParameter("@Precio", producto.Precio);
 
             acceso.escribir(ProductoQuery.Insertar, sqlParameters);
         }
@@ -45,8 +44,8 @@ namespace DAL
             sqlParameters[0] = new SqlParameter("@Id", producto.Id);
             sqlParameters[1] = new SqlParameter("@Nombre", producto.Nombre);
             sqlParameters[2] = new SqlParameter("@Stock", producto.Stock);
-            sqlParameters[3] = new SqlParameter("@FechaExp", producto.FechaExp);
-            sqlParameters[4] = new SqlParameter("@Precio", producto.Precio);
+            sqlParameters[3] = new SqlParameter("@Precio", producto.Precio);
+            sqlParameters[4] = new SqlParameter("@Activo", producto.Activo);
 
             acceso.escribir(ProductoQuery.Modificar, sqlParameters);
         }
@@ -58,7 +57,6 @@ namespace DAL
                 Id = Convert.ToInt32(row["id"]),
                 Nombre = row["nombre"].ToString(),
                 Stock = Convert.ToInt32(row["stock"]),
-                FechaExp = Convert.ToDateTime(row["fechaExp"]),
                 Precio = Convert.ToDouble(row["precio"])
             };
 

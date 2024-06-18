@@ -11,22 +11,25 @@ namespace BE
 		private int id;
 		private string nombre;
 		private int stock;
-		private DateTime fechaExp;
 		private double precio;
+		private bool activo;
+
+		public Producto() { 
+			this.activo = true;
+		}
+
+		public bool Activo
+		{
+			get { return activo; }
+			set { activo = value; }
+		}
+
 
 		public double Precio
 		{
 			get { return precio; }
 			set { precio = value; }
 		}
-
-
-		public DateTime FechaExp
-		{
-			get { return fechaExp; }
-			set { fechaExp = value; }
-		}
-
 
 		public int Stock
 		{

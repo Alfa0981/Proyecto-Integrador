@@ -37,5 +37,10 @@ namespace BLL
                 mpProducto.modificar(producto);
             }
         }
+
+        public void crearProducto (BE.Producto producto)
+        {
+            mpProducto.crear(producto);
+        }
     }
 }

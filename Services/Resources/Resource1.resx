@@ -123,6 +123,9 @@
   <data name="Admin" xml:space="preserve">
     <value>Admin</value>
   </data>
+  <data name="Agregar" xml:space="preserve">
+    <value>Agregar</value>
+  </data>
   <data name="Ajustes" xml:space="preserve">
     <value>Ajustes</value>
   </data>
@@ -155,6 +158,9 @@
   </data>
   <data name="CambiarIdioma" xml:space="preserve">
     <value>Cambiar Idioma</value>
+  </data>
+  <data name="Cancelar" xml:space="preserve">
+    <value>Cancelar</value>
   </data>
   <data name="Cantidad" xml:space="preserve">
     <value>Cantidad</value>
@@ -222,6 +228,9 @@
   <data name="Desbloquear" xml:space="preserve">
     <value>Desbloquear</value>
   </data>
+  <data name="Direccion" xml:space="preserve">
+    <value>Direccion</value>
+  </data>
   <data name="Dni" xml:space="preserve">
     <value>Dni</value>
   </data>
@@ -249,6 +258,9 @@
   <data name="FechaExpException" xml:space="preserve">
     <value>La fecha de expiración no puede ser anterior al mes y año actuales.</value>
   </data>
+  <data name="FormatoIncorrecto" xml:space="preserve">
+    <value>Formato de numero incorrecto</value>
+  </data>
   <data name="FormNotClosable" xml:space="preserve">
     <value>No puede cerrar el formulario durante esta operacion</value>
   </data>
@@ -257,6 +269,9 @@
   </data>
   <data name="GenerarVenta" xml:space="preserve">
     <value>Generar Venta</value>
+  </data>
+  <data name="GestionarProductos" xml:space="preserve">
+    <value>Gestionar Productos</value>
   </data>
   <data name="GestionarUsuarios" xml:space="preserve">
     <value>Gestionar Usuarios</value>
@@ -303,6 +318,9 @@
   <data name="OnlyNumbers" xml:space="preserve">
     <value>Solo se admiten numeros</value>
   </data>
+  <data name="Precio" xml:space="preserve">
+    <value>Precio</value>
+  </data>
   <data name="PreguntaCerrarSesion" xml:space="preserve">
     <value>Esta seguro que desea cerrar la sesion?</value>
   </data>
@@ -342,11 +360,17 @@
   <data name="SqlException" xml:space="preserve">
     <value>Error al escribir en la base de datos:</value>
   </data>
+  <data name="Stock" xml:space="preserve">
+    <value>Stock</value>
+  </data>
   <data name="StockException" xml:space="preserve">
     <value>No hay stock suficiente</value>
   </data>
   <data name="Tarjeta" xml:space="preserve">
     <value>Tarjeta</value>
+  </data>
+  <data name="Telefono" xml:space="preserve">
+    <value>Telefono</value>
   </data>
   <data name="TipoPago" xml:space="preserve">
     <value>Tipo de Pago</value>
