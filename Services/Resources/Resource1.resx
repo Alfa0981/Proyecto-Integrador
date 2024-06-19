@@ -207,6 +207,9 @@
   <data name="Clientes" xml:space="preserve">
     <value>Clientes</value>
   </data>
+  <data name="CobrarVenta" xml:space="preserve">
+    <value>Cobrar venta</value>
+  </data>
   <data name="Contraseña" xml:space="preserve">
     <value>Contraseña</value>
   </data>

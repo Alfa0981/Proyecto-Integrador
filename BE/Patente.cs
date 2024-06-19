@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    internal class Permiso : PermisoComponent
+    internal class Patente : Perfil
     {
-        public Permiso(string nombre)
+        public Patente(string nombre)
         {
             Nombre = nombre;
         }
 
         public override string Nombre { get; }
 
-        public override void Agregar(PermisoComponent componente)
+        public override void Agregar(Perfil componente)
         {
             throw new NotImplementedException("No se puede agregar un permiso a un permiso individual.");
         }
 
-        public override void Remover(PermisoComponent componente)
+        public override void Remover(Perfil componente)
         {
             throw new NotImplementedException("No se puede remover un permiso de un permiso individual.");
         }
 
-        public override bool TienePermiso(string permiso)
+        public override bool TienePermiso(TippoPermiso permiso)
         {
-            return Nombre == permiso;
+            return Nombre == permiso.ToString();
         }
     }
 }

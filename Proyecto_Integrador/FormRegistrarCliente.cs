@@ -57,12 +57,12 @@ namespace Proyecto_Integrador
                 try
                 {
                     gestorCliente.crear(cliente);
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CargaConExito"));
+                    CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CargaConExito"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                     listar();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    CustomMessageBox.Show(ex.Message, IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
             }
         }
@@ -76,7 +76,7 @@ namespace Proyecto_Integrador
                 string.IsNullOrEmpty(telefonoTxt.Text) ||
                 string.IsNullOrEmpty(direccionTxt.Text))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 return false;
             }
             return true;
@@ -215,7 +215,7 @@ namespace Proyecto_Integrador
                 cliente.Telefono = telefonoTxt.Text;
 
                 gestorCliente.modificar(cliente);
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ModificadoConExito"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ModificadoConExito"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 listar();
             }
         }

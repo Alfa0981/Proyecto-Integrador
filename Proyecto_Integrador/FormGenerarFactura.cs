@@ -43,7 +43,8 @@ namespace Proyecto_Integrador
             }
             else
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("SeleccionarCarritoException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("SeleccionarCarritoException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
+
             }
         }
 
@@ -64,11 +65,11 @@ namespace Proyecto_Integrador
         {
             if (!System.Text.RegularExpressions.Regex.IsMatch(carritoIdTxt.Text, "^[0-9]*$"))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("OnlyNumbers"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("OnlyNumbers"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
             else if (string.IsNullOrEmpty(carritoIdTxt.Text))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
             else
             {
@@ -77,7 +78,7 @@ namespace Proyecto_Integrador
 
                 if (carrito == null)
                 {
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoNotFound"));
+                    CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoNotFound"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
                 else
                 {

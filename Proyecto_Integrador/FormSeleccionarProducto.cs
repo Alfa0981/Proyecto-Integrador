@@ -65,12 +65,12 @@ namespace Proyecto_Integrador
                 }
                 else
                 {
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("StockException"));
+                    CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("StockException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
             }
             else
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("SelectAProductException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("SelectAProductException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
         }
 

@@ -12,6 +12,14 @@ namespace BE
 		private Cliente cliente;
 		private int id;
 		private double precio;
+		private DateTime fecha;
+
+		public DateTime Fecha
+		{
+			get { return fecha; }
+			set { fecha = value; }
+		}
+
 
 		public double Precio
 		{

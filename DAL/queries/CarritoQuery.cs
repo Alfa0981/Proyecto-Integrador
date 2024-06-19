@@ -23,7 +23,7 @@ namespace DAL.queries
 
         public const string BuscarProductosPorCarritoId = @"
                                         SELECT cp.car_prod_id, cp.carrito_id, cp.producto_id, 
-                                        cp.cantidad, p.nombre, p.precio, p.fechaExp, p.stock
+                                        cp.cantidad, p.nombre, p.precio, p.stock
                                         FROM CarritoProducto cp
                                         INNER JOIN Producto p ON cp.producto_id = p.id
                                         WHERE cp.carrito_id = @CarritoId";

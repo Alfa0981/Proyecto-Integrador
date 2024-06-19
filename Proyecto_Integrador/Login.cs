@@ -39,7 +39,7 @@ namespace Proyecto_Integrador
         {
             if (string.IsNullOrEmpty(usuarioTxt.Text) || string.IsNullOrEmpty(contraTxt.Text))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
             else
             {
@@ -63,7 +63,7 @@ namespace Proyecto_Integrador
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    CustomMessageBox.Show(ex.Message, IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
             }            
         }

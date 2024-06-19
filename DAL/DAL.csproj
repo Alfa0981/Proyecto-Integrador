@@ -49,6 +49,7 @@
     <Compile Include="MpUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="queries\CarritoQuery.cs" />
+    <Compile Include="queries\FacturaQuery.cs" />
     <Compile Include="queries\ProductoQuery.cs" />
     <Compile Include="queries\ClienteQuery.cs" />
     <Compile Include="queries\UsuarioQuery.cs" />

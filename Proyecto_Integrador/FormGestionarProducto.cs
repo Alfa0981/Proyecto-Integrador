@@ -61,7 +61,7 @@ namespace Proyecto_Integrador
                 catch (Exception ex)
                 {
 
-                    MessageBox.Show(ex.Message);
+                    CustomMessageBox.Show(ex.Message, IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
             }
         }
@@ -72,17 +72,17 @@ namespace Proyecto_Integrador
                 string.IsNullOrEmpty(precioTxt.Text) ||
                 string.IsNullOrEmpty(stockTxt.Text))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 return false;
             }
             if (!System.Text.RegularExpressions.Regex.IsMatch(stockTxt.Text, "^[0-9]*$"))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("OnlyNumbers"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("OnlyNumbers"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 return false;
             }
             if (!System.Text.RegularExpressions.Regex.IsMatch(precioTxt.Text, @"^\d+(,\d+)?$"))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FormatoIncorrecto"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FormatoIncorrecto"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 return false;
             }
             return true;

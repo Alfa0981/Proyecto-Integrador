@@ -43,11 +43,11 @@ namespace Proyecto_Integrador
                 {
                     gestorUsuario.cargarUsuario(usuario);
                     listar();
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CargaConExito"));
+                    CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CargaConExito"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    CustomMessageBox.Show(ex.Message, IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
             }
         }
@@ -59,7 +59,7 @@ namespace Proyecto_Integrador
                 string.IsNullOrWhiteSpace(dniTxt.Text) ||
                 string.IsNullOrWhiteSpace(emailTxt.Text))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 return false;
             }
             return true;
@@ -99,10 +99,10 @@ namespace Proyecto_Integrador
             {
                 gestorUsuario.desbloquearUsuario(usuario);
                 listar();
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("DesbloqueadoConExito"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("DesbloqueadoConExito"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
             else
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("UsuarioAlreadyUnlocked"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("UsuarioAlreadyUnlocked"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -183,7 +183,7 @@ namespace Proyecto_Integrador
         {
             gestorUsuario.eliminar(usuario);
             listar();
-            MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("EliminadoConExito"));
+            CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("EliminadoConExito"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
         }
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
@@ -211,7 +211,7 @@ namespace Proyecto_Integrador
 
                 gestorUsuario.modificarUsuario(usuario);
                 listar();
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ModificadoConExito"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ModificadoConExito"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
 
             }
         }

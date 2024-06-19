@@ -73,10 +73,10 @@ namespace Proyecto_Integrador
         {
             if (!productosEnCarrito.Any())
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoVacioException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoVacioException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");   
             }else if (cliente == null)
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ClienteAsociadoException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ClienteAsociadoException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
             else
             {
@@ -92,11 +92,11 @@ namespace Proyecto_Integrador
 
                     gestorProducto.ActualizarStock(carrito);
 
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoCreado")+ " " + carritoId);
+                    CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoCreado") + " " + carritoId, IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoError") + " " + ex.Message);
+                    CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoError") + " " + ex.Message, IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
             }             
         }
@@ -117,11 +117,11 @@ namespace Proyecto_Integrador
 
                 CargarCarrito();
 
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ProductoEliminado"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ProductoEliminado"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
             else
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("SeleccionFilaEliminar"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("SeleccionFilaEliminar"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
         }
         private double CalcularTotalCarrito()
@@ -133,26 +133,26 @@ namespace Proyecto_Integrador
         {
             if (string.IsNullOrEmpty(clienteIdTxt.Text))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
             else if (!System.Text.RegularExpressions.Regex.IsMatch(clienteIdTxt.Text, "^[0-9]*$"))
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("OnlyNumbers"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("OnlyNumbers"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
             else if (!productosEnCarrito.Any())
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoVacioException"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("CarritoVacioException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
             }
             else
             {
                 try
                 {
                     cliente = gestorCliente.buscarPorId(int.Parse(clienteIdTxt.Text));
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ClienteAsociadoOK"));
+                    CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ClienteAsociadoOK"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    CustomMessageBox.Show(ex.Message, IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
             }
         }

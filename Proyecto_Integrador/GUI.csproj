@@ -83,6 +83,12 @@
     <Compile Include="FormGenerarFactura.Designer.cs">
       <DependentUpon>FormGenerarFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormGestionarPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionarPerfil.Designer.cs">
+      <DependentUpon>FormGestionarPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGestionarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormGenerarFactura.resx">
       <DependentUpon>FormGenerarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionarPerfil.resx">
+      <DependentUpon>FormGestionarPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGestionarProducto.resx">
       <DependentUpon>FormGestionarProducto.cs</DependentUpon>

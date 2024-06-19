@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    internal class RolComposite : PermisoComponent
+    internal class Familia : Perfil
     {
-        private readonly List<PermisoComponent> _componentes = new List<PermisoComponent>();
+        private readonly List<Perfil> _componentes = new List<Perfil>();
 
-        public RolComposite(string nombre)
+        public Familia(string nombre)
         {
             Nombre = nombre;
         }
 
         public override string Nombre { get; }
 
-        public override void Agregar(PermisoComponent componente)
+        public override void Agregar(Perfil componente)
         {
             _componentes.Add(componente);
         }
 
-        public override void Remover(PermisoComponent componente)
+        public override void Remover(Perfil componente)
         {
             _componentes.Remove(componente);
         }
 
-        public override bool TienePermiso(string permiso)
+        public override bool TienePermiso(TippoPermiso permiso)
         {
             foreach (var componente in _componentes)
             {

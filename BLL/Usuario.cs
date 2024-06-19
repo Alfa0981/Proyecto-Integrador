@@ -49,6 +49,8 @@ namespace BLL
         public void desbloquearUsuario(BE.Usuario usuarioCargado)
         {
             usuarioCargado.Bloqueo = false;
+            string contraReseteada = usuarioCargado.Dni + usuarioCargado.Apellido;
+            usuarioCargado.Pass = UserEncryption.HashSHA256(contraReseteada);
             mpUsuario.modificarUsuario(usuarioCargado);
         }
 

@@ -11,6 +11,7 @@ namespace Proyecto_Integrador
     public partial class FormCobrarVenta : Form, IIdiomaObserver
     {
         BE.Carrito carrito;
+        BLL.Factura gestorFactura = new BLL.Factura();
 
         public FormCobrarVenta(Carrito carrito)
         {
@@ -66,21 +67,33 @@ namespace Proyecto_Integrador
 
         private void generarVentaBtn_Click(object sender, EventArgs e)
         {
+            bool ventaExitosa = false;
+
             if (efectivoRBtn.Checked)
             {
                 if (string.IsNullOrWhiteSpace(textBox1.Text))
                 {
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("MontoClienteMissing"));
+                    CustomMessageBox.Show(
+                               IdiomaManager.Instance.ObtenerMensaje("MontoClienteMissing"),
+                               IdiomaManager.Instance.ObtenerMensaje(""),
+                               "OK");
                 }
                 else
                 {
                     if (carrito.PrecioFinal > int.Parse(textBox1.Text))
                     {
-                        MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("MontoInsuficiente"));
+                        CustomMessageBox.Show(
+                               IdiomaManager.Instance.ObtenerMensaje("MontoInsuficiente"),
+                               IdiomaManager.Instance.ObtenerMensaje(""),
+                               "OK");
                         return;
                     }
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("VentaCerradaPlusVuelto") 
-                        + (int.Parse(textBox1.Text)- carrito.PrecioFinal));
+                   
+                    CustomMessageBox.Show(
+                               IdiomaManager.Instance.ObtenerMensaje("VentaCerradaPlusVuelto") + (int.Parse(textBox1.Text) - carrito.PrecioFinal),
+                               IdiomaManager.Instance.ObtenerMensaje(""),
+                               "OK");
+                    ventaExitosa = true;
                 }
 
             }
@@ -91,13 +104,13 @@ namespace Proyecto_Integrador
                     string.IsNullOrWhiteSpace(cvvTxt.Text) ||
                     string.IsNullOrWhiteSpace(fechaExpTxt.Text))
                 {
-                    MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
+                    CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 }
                 else
                 {
                     if (!Regex.IsMatch(fechaExpTxt.Text, @"^(0[1-9]|1[0-2])\/([0-9]{2})$"))
                     {
-                        MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("RegexFechaExpException"));
+                        CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("RegexFechaExpException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                         return;
                     }
 
@@ -110,18 +123,30 @@ namespace Proyecto_Integrador
 
                     if (fechaIngresada < new DateTime(fechaActual.Year, fechaActual.Month, 1))
                     {
-                        MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FechaExpException"));
+                        CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FechaExpException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                     }
                     else
                     {
-                        MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("VentaCerrada"));
+                        CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("VentaCerrada"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
+                        ventaExitosa = true;
                     }
                 }
 
             }
             else if (transferenciaRBtn.Checked)
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("VentaCerrada"));
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("VentaCerrada"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
+                ventaExitosa = true;
+            }
+            if (ventaExitosa)
+            {
+                Factura factura = new Factura();
+                factura.Carrito = carrito;
+                factura.Cliente = carrito.Cliente;
+                factura.Precio = carrito.PrecioFinal;
+                factura.Fecha = DateTime.Now;
+
+                gestorFactura.crear(factura);
             }
         }
 

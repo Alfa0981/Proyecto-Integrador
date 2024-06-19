@@ -33,7 +33,7 @@ namespace Proyecto_Integrador
                
                 CustomMessageBox.Show(
                                IdiomaManager.Instance.ObtenerMensaje("FormNotClosable"),
-                               IdiomaManager.Instance.ObtenerMensaje("Cerrar"),
+                               IdiomaManager.Instance.ObtenerMensaje(""),
                                "OK");
 
                 e.Cancel = true;
@@ -45,11 +45,19 @@ namespace Proyecto_Integrador
         {
             if (string.IsNullOrEmpty(contraTxt.Text) || string.IsNullOrEmpty(contraX2Txt.Text)) 
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"));
-            }else if(contraTxt.Text != contraX2Txt.Text)
+                CustomMessageBox.Show(
+                               IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"),
+                               IdiomaManager.Instance.ObtenerMensaje(""),
+                               "OK");
+            }
+            else if(contraTxt.Text != contraX2Txt.Text)
             {
-                MessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ClavesDistintasException"));
-            }else 
+                CustomMessageBox.Show(
+                               IdiomaManager.Instance.ObtenerMensaje("ClavesDistintasException"),
+                               IdiomaManager.Instance.ObtenerMensaje(""),
+                               "OK");
+            }
+            else 
             {
                 gestorUsuario.cambiarContra(SessionManager.GetInstance.Usuario, contraTxt.Text);
                 isClosingByMe = true;

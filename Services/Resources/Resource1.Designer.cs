@@ -331,6 +331,15 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cobrar venta.
+        /// </summary>
+        public static string CobrarVenta {
+            get {
+                return ResourceManager.GetString("CobrarVenta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Contraseña.
         /// </summary>
         public static string Contraseña {

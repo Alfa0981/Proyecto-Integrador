@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\formgestionarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formgestionarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\dal\\mpfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\mpfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\formregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\formcobrarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formcobrarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\formregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\formcobrarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formcobrarventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\dal\\mpproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\mpproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\formgenerarfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formgenerarfactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\formgestionarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formgestionarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\formgestionarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formgestionarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,87 +30,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MpFactura.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpFactura.cs",
+              "RelativeDocumentMoniker": "DAL\\MpFactura.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpFactura.cs*",
+              "RelativeToolTip": "DAL\\MpFactura.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T21:22:10.55Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormGestionarUsuario.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormGestionarUsuario.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormGestionarUsuario.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormGestionarUsuario.cs",
-              "RelativeToolTip": "Proyecto_Integrador\\FormGestionarUsuario.cs",
-              "ViewState": "AQIAALQAAAAAAAAAAAD4v8wAAABSAAAA",
+              "DocumentIndex": 1,
+              "Title": "FormCobrarVenta.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormCobrarVenta.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormCobrarVenta.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormCobrarVenta.cs",
+              "RelativeToolTip": "Proyecto_Integrador\\FormCobrarVenta.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAEwJMAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:58:33.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MpProducto.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpProducto.cs",
-              "RelativeDocumentMoniker": "DAL\\MpProducto.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpProducto.cs",
-              "RelativeToolTip": "DAL\\MpProducto.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwC8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:54:59.215Z",
+              "WhenOpened": "2024-06-19T21:21:54.09Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FormRegistrarCliente.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormRegistrarCliente.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormRegistrarCliente.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormRegistrarCliente.cs*",
-              "RelativeToolTip": "Proyecto_Integrador\\FormRegistrarCliente.cs*",
-              "ViewState": "AQIAAL4AAAAAAAAAAAAMwNcAAAAAAAAA",
+              "Title": "FormCobrarVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormCobrarVenta.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormCobrarVenta.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormCobrarVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_Integrador\\FormCobrarVenta.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:41:34.062Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormRegistrarCliente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormRegistrarCliente.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormRegistrarCliente.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormRegistrarCliente.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Proyecto_Integrador\\FormRegistrarCliente.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:41:32.71Z",
+              "WhenOpened": "2024-06-19T21:21:52.49Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormGestionarProducto.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormGestionarProducto.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormGestionarProducto.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormGestionarProducto.cs",
-              "RelativeToolTip": "Proyecto_Integrador\\FormGestionarProducto.cs",
-              "ViewState": "AQIAAHkAAAAAAAAAAAAhwJ4AAAA/AAAA",
+              "DocumentIndex": 3,
+              "Title": "FormGenerarFactura.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormGenerarFactura.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormGenerarFactura.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormGenerarFactura.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_Integrador\\FormGenerarFactura.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:41:11.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-19T21:21:49.594Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormGestionarProducto.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormGestionarProducto.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormGestionarProducto.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormGestionarProducto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_Integrador\\FormGestionarProducto.cs [Dise\u00F1o]",
+              "DocumentIndex": 4,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\Login.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\Login.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\Login.cs",
+              "RelativeToolTip": "Proyecto_Integrador\\Login.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAYwEEAAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T23:41:10.431Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-19T21:18:01.27Z",
+              "EditorCaption": ""
             }
           ]
         }
