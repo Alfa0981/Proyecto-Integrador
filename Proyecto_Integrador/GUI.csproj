@@ -33,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13.4\lib\net461\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -82,6 +91,12 @@
     </Compile>
     <Compile Include="FormGenerarFactura.Designer.cs">
       <DependentUpon>FormGenerarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionarFamilias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionarFamilias.Designer.cs">
+      <DependentUpon>FormGestionarFamilias.cs</DependentUpon>
     </Compile>
     <Compile Include="FormGestionarPerfil.cs">
       <SubType>Form</SubType>
@@ -151,6 +166,9 @@
     <EmbeddedResource Include="FormGenerarFactura.resx">
       <DependentUpon>FormGenerarFactura.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionarFamilias.resx">
+      <DependentUpon>FormGestionarFamilias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormGestionarPerfil.resx">
       <DependentUpon>FormGestionarPerfil.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +202,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

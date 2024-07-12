@@ -6,6 +6,13 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.text.xml;
+using System.IO;
+using iTextSharp.tool.xml;
+using System.Text;
+
 namespace Proyecto_Integrador
 {
     public partial class FormCobrarVenta : Form, IIdiomaObserver
@@ -26,6 +33,7 @@ namespace Proyecto_Integrador
         private void inicializar()
         {
             datostarjetaGB.Hide();
+            transferenciaGB.Hide();
             datosEfectivoGB.Hide();
             precioFinalLbl.Text = carrito.PrecioFinal.ToString();
             generarVentaBtn.Hide();
@@ -50,6 +58,7 @@ namespace Proyecto_Integrador
             tarjetaRBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Tarjeta");
             transferenciaRBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Transferencia");
             datostarjetaGB.Text = IdiomaManager.Instance.ObtenerMensaje("DatosTarjeta");
+            transferenciaGB.Text = IdiomaManager.Instance.ObtenerMensaje("DatosTransferencia");
             titularLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Titular");
             numTarjetaLbl.Text = IdiomaManager.Instance.ObtenerMensaje("NumeroTarjeta");
             cvvLbl.Text = IdiomaManager.Instance.ObtenerMensaje("CVV");
@@ -58,6 +67,7 @@ namespace Proyecto_Integrador
             montoClienteLbl.Text = IdiomaManager.Instance.ObtenerMensaje("MontoCliente");
             montoLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Monto");
             generarVentaBtn.Text = IdiomaManager.Instance.ObtenerMensaje("GenerarVenta");
+            this.Text = IdiomaManager.Instance.ObtenerMensaje("FormCobrarVenta");
         }
 
         private void FormCobrarVenta_Load(object sender, EventArgs e)
@@ -147,12 +157,36 @@ namespace Proyecto_Integrador
                 factura.Fecha = DateTime.Now;
 
                 gestorFactura.crear(factura);
+                SaveFileDialog guardar = new SaveFileDialog();
+                guardar.FileName = "Venta.pdf";
+
+                string paginahtmlTexto = GenerarHtmlFactura(factura);
+
+                if (guardar.ShowDialog() == DialogResult.OK)
+                {
+                    using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                    {
+                        Document pdf = new Document(PageSize.A4, 25, 25, 25, 25);
+                        PdfWriter writer = PdfWriter.GetInstance(pdf, stream);
+                        pdf.Open();
+
+
+                        using (StringReader reader = new StringReader(paginahtmlTexto))
+                        {
+                            XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdf, reader);
+                            
+                        }
+                        pdf.Close();
+                        stream.Close();
+                    }
+                }
             }
         }
 
         private void transferenciaRBtn_Click(object sender, EventArgs e)
         {
             datostarjetaGB.Hide();
+            transferenciaGB.Show();
             datosEfectivoGB.Hide();
             generarVentaBtn.Show();
 
@@ -161,6 +195,7 @@ namespace Proyecto_Integrador
         private void tarjetaRBtn_Click(object sender, EventArgs e)
         {
             datostarjetaGB.Show();
+            transferenciaGB.Hide();
             datosEfectivoGB.Hide();
             generarVentaBtn.Show();
 
@@ -169,6 +204,7 @@ namespace Proyecto_Integrador
         private void efectivoRBtn_Click(object sender, EventArgs e)
         {
             datostarjetaGB.Hide();
+            transferenciaGB.Hide();
             datosEfectivoGB.Show();
             generarVentaBtn.Show();
         }
@@ -270,6 +306,45 @@ namespace Proyecto_Integrador
             {
                 montoClienteLbl.Show();
             }
+        }
+        public string GenerarHtmlFactura(Factura factura)
+        {
+            StringBuilder html = new StringBuilder();
+
+            html.Append("<html>");
+            html.Append("<head>");
+            html.Append("<style>");
+            html.Append("table { width: 100%; border-collapse: collapse; }");
+            html.Append("th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }");
+            html.Append("th { background-color: #f2f2f2; }");
+            html.Append("</style>");
+            html.Append("</head>");
+            html.Append("<body>");
+
+            html.Append("<h1>Factura</h1>");
+            html.Append($"<p><strong>Fecha:</strong> {factura.Fecha.ToString("dd/MM/yyyy")}</p>");
+            html.Append($"<p><strong>Cliente:</strong> {factura.Cliente.Nombre + " "+ factura.Cliente.Apellido}</p>");
+            html.Append($"<p><strong>Precio Total:</strong> ${factura.Precio}</p>");
+
+            html.Append("<h2>Productos</h2>");
+            html.Append("<table>");
+            html.Append("<tr><th>Producto</th><th>Cantidad</th><th>Precio Unitario</th><th>Subtotal</th></tr>");
+
+            foreach (var item in factura.Carrito.Productos)
+            {
+                html.Append("<tr>");
+                html.Append($"<td>{item.Producto.Nombre}</td>");
+                html.Append($"<td>{item.Cantidad}</td>");
+                html.Append($"<td>${item.Producto.Precio}</td>");
+                html.Append($"<td>${item.Cantidad * item.Producto.Precio}</td>");
+                html.Append("</tr>");
+            }
+
+            html.Append("</table>");
+            html.Append("</body>");
+            html.Append("</html>");
+
+            return html.ToString();
         }
     }
 }

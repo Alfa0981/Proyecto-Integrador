@@ -196,6 +196,7 @@ namespace Proyecto_Integrador
             desbloquearBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Desbloquear");
             eliminarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Eliminar");
             modificarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Modificar");
+            this.Text = IdiomaManager.Instance.ObtenerMensaje("FormGestionarUsuario");
         }
 
         private void modificarBtn_Click(object sender, EventArgs e)

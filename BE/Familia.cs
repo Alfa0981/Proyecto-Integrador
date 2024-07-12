@@ -6,30 +6,33 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    internal class Familia : Perfil
+    public class Familia : Perfil
     {
-        private readonly List<Perfil> _componentes = new List<Perfil>();
-
+        private readonly List<Perfil> _perfiles = new List<Perfil>();
         public Familia(string nombre)
         {
             Nombre = nombre;
+        }
+        public Familia(string nombre, params Perfil[] perfiles) : this(nombre)
+        {
+            _perfiles.AddRange(perfiles);
         }
 
         public override string Nombre { get; }
 
         public override void Agregar(Perfil componente)
         {
-            _componentes.Add(componente);
+            _perfiles.Add(componente);
         }
 
         public override void Remover(Perfil componente)
         {
-            _componentes.Remove(componente);
+            _perfiles.Remove(componente);
         }
 
-        public override bool TienePermiso(TippoPermiso permiso)
+        public override bool TienePermiso(TipoPermiso permiso)
         {
-            foreach (var componente in _componentes)
+            foreach (var componente in _perfiles)
             {
                 if (componente.TienePermiso(permiso))
                 {
@@ -38,5 +41,16 @@ namespace BE
             }
             return false;
         }
+        public List<Perfil> ObtenerSubFamilias()
+        {
+            return _perfiles;
+        }
+        public override bool EsFamilia => true;
+
+        public override string ToString()
+        {
+            return Nombre;
+        }
+
     }
 }

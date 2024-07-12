@@ -31,6 +31,7 @@ namespace Proyecto_Integrador
             cobrarVentaBtn.Text = IdiomaManager.Instance.ObtenerMensaje("CobrarVenta");
             buscarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Buscar");
             clienteLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Cliente");
+            this.Text = IdiomaManager.Instance.ObtenerMensaje("FormGenerarFactura");
         }
 
         private void cobrarVentaBtn_Click(object sender, EventArgs e)

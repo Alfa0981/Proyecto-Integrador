@@ -89,6 +89,7 @@ namespace Proyecto_Integrador
             registrarClienteToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("RegistrarCliente");
             gestionarUsuariosToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("GestionarUsuarios");
             gestionarProductosToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("GestionarProductos");
+            gestionarPerfilesToolStripMenuItem.Text = IdiomaManager.Instance.ObtenerMensaje("GestionarPerfiles");
 
         }
 
@@ -118,6 +119,13 @@ namespace Proyecto_Integrador
             Form gestionarProd = new FormGestionarProducto();
             gestionarProd.MdiParent = this;
             gestionarProd.Show();
+        }
+
+        private void gestionarPerfilesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form gestionarPerfiles = new FormGestionarPerfil();
+            gestionarPerfiles.MdiParent = this;
+            gestionarPerfiles.Show();
         }
     }
 }

@@ -126,6 +126,12 @@
   <data name="Agregar" xml:space="preserve">
     <value>Add</value>
   </data>
+  <data name="AgregarAFamilia" xml:space="preserve">
+    <value>Add to Family</value>
+  </data>
+  <data name="AgregarAPerfil" xml:space="preserve">
+    <value>Add to Profiles</value>
+  </data>
   <data name="Ajustes" xml:space="preserve">
     <value>Settings</value>
   </data>
@@ -210,6 +216,12 @@
   <data name="CobrarVenta" xml:space="preserve">
     <value>Generate Sale</value>
   </data>
+  <data name="Configurar" xml:space="preserve">
+    <value>Configure</value>
+  </data>
+  <data name="ConfigurarFamilias" xml:space="preserve">
+    <value>Configure Families</value>
+  </data>
   <data name="Contraseña" xml:space="preserve">
     <value>Password</value>
   </data>
@@ -224,6 +236,9 @@
   </data>
   <data name="DatosTarjeta" xml:space="preserve">
     <value>Card Data</value>
+  </data>
+  <data name="DatosTransferencia" xml:space="preserve">
+    <value>Transfer Data</value>
   </data>
   <data name="DesbloqueadoConExito" xml:space="preserve">
     <value>Unlocked successfully</value>
@@ -240,6 +255,9 @@
   <data name="Efectivo" xml:space="preserve">
     <value>Cash</value>
   </data>
+  <data name="ElegirIdioma" xml:space="preserve">
+    <value>Choose your language:</value>
+  </data>
   <data name="EliminadoConExito" xml:space="preserve">
     <value>Deleted successfully</value>
   </data>
@@ -255,6 +273,15 @@
   <data name="FaltanCamposException" xml:space="preserve">
     <value>Missing fields</value>
   </data>
+  <data name="FamiliaAlreadyExists" xml:space="preserve">
+    <value>Family already exists with that name</value>
+  </data>
+  <data name="Familias" xml:space="preserve">
+    <value>Families</value>
+  </data>
+  <data name="FamiliaYaExisteException" xml:space="preserve">
+    <value>Family already exists in the tree</value>
+  </data>
   <data name="FechaExp" xml:space="preserve">
     <value>Expiration Date</value>
   </data>
@@ -264,8 +291,41 @@
   <data name="FormatoIncorrecto" xml:space="preserve">
     <value>Number format incorrect</value>
   </data>
+  <data name="FormCambiarIdioma" xml:space="preserve">
+    <value>FormChangeLanguage</value>
+  </data>
+  <data name="FormCambiarPass" xml:space="preserve">
+    <value>FormChangePass</value>
+  </data>
+  <data name="FormCobrarVenta" xml:space="preserve">
+    <value>FormGenerateSale</value>
+  </data>
+  <data name="FormGenerarCarrito" xml:space="preserve">
+    <value>FormGenerateCart</value>
+  </data>
+  <data name="FormGenerarFactura" xml:space="preserve">
+    <value>FormGenerateSale</value>
+  </data>
+  <data name="FormGestionarFamilias" xml:space="preserve">
+    <value>FormManageFamilies</value>
+  </data>
+  <data name="FormGestionarPerfil" xml:space="preserve">
+    <value>FormManageProfile</value>
+  </data>
+  <data name="FormGestionarProducto" xml:space="preserve">
+    <value>FormManageProducts</value>
+  </data>
+  <data name="FormGestionarUsuario" xml:space="preserve">
+    <value>FormManageUsers</value>
+  </data>
   <data name="FormNotClosable" xml:space="preserve">
     <value>You cannot close the form during this operation</value>
+  </data>
+  <data name="FormRegistrarCliente" xml:space="preserve">
+    <value>FormRegisterClient</value>
+  </data>
+  <data name="FormSeleccionarProducto" xml:space="preserve">
+    <value>FormSelectProduct</value>
   </data>
   <data name="GenerarCarrito" xml:space="preserve">
     <value>Generate Cart</value>
@@ -273,11 +333,20 @@
   <data name="GenerarVenta" xml:space="preserve">
     <value>Generate Sale</value>
   </data>
+  <data name="GestionarFamilias" xml:space="preserve">
+    <value>Manage Families</value>
+  </data>
+  <data name="GestionarPerfiles" xml:space="preserve">
+    <value>Manage Profiles</value>
+  </data>
   <data name="GestionarProductos" xml:space="preserve">
     <value>Manage Products</value>
   </data>
   <data name="GestionarUsuarios" xml:space="preserve">
     <value>Manage Users</value>
+  </data>
+  <data name="Guardar" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="Ingresar" xml:space="preserve">
     <value>Login</value>
@@ -309,17 +378,47 @@
   <data name="MontoInsuficiente" xml:space="preserve">
     <value>The amount is not enough</value>
   </data>
+  <data name="NodoNoEsFamiliaException" xml:space="preserve">
+    <value>Can not add to a patent object</value>
+  </data>
+  <data name="NodoNoSeleccionadoException" xml:space="preserve">
+    <value>You must select a node first</value>
+  </data>
+  <data name="NoEsRootException" xml:space="preserve">
+    <value>You did not select a root node</value>
+  </data>
   <data name="Nombre" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="NoSePuedeAgregarMismaFamiliaException" xml:space="preserve">
+    <value>You cant add the same family to the tree</value>
+  </data>
+  <data name="NoSePuedeEliminarRootException" xml:space="preserve">
+    <value>It is not possible to remove the profile, use the delete button</value>
+  </data>
   <data name="NotFoundClient" xml:space="preserve">
     <value>Client with id does not exist:</value>
+  </data>
+  <data name="Nuevo" xml:space="preserve">
+    <value>New</value>
   </data>
   <data name="NumeroTarjeta" xml:space="preserve">
     <value>Card Number</value>
   </data>
   <data name="OnlyNumbers" xml:space="preserve">
     <value>Only numbers are allowed</value>
+  </data>
+  <data name="PatenteNoSeleccionadaException" xml:space="preserve">
+    <value>You must select a patent first</value>
+  </data>
+  <data name="Patentes" xml:space="preserve">
+    <value>Patents</value>
+  </data>
+  <data name="PatenteYaExisteException" xml:space="preserve">
+    <value>Patent already exists</value>
+  </data>
+  <data name="Perfiles" xml:space="preserve">
+    <value>Profiles</value>
   </data>
   <data name="Precio" xml:space="preserve">
     <value>Price</value>
@@ -332,6 +431,9 @@
   </data>
   <data name="Productos" xml:space="preserve">
     <value>Products</value>
+  </data>
+  <data name="Quitar" xml:space="preserve">
+    <value>Remove</value>
   </data>
   <data name="RegexFechaExpException" xml:space="preserve">
     <value>Invalid expiration date. Use MM/YY format.</value>
@@ -353,6 +455,9 @@
   </data>
   <data name="SeleccionarProducto" xml:space="preserve">
     <value>Select Product</value>
+  </data>
+  <data name="SeleccioneFamiliaException" xml:space="preserve">
+    <value>You must select a family first</value>
   </data>
   <data name="SeleccionFilaEliminar" xml:space="preserve">
     <value>Please select a row to delete.</value>
@@ -380,6 +485,15 @@
   </data>
   <data name="Titular" xml:space="preserve">
     <value>Cardholder</value>
+  </data>
+  <data name="TodasFamilias" xml:space="preserve">
+    <value>All Families</value>
+  </data>
+  <data name="TodasPatentes" xml:space="preserve">
+    <value>All Patents</value>
+  </data>
+  <data name="TodosPerfiles" xml:space="preserve">
+    <value>All Profiles</value>
   </data>
   <data name="TotalPagar" xml:space="preserve">
     <value>Total to Pay:</value>

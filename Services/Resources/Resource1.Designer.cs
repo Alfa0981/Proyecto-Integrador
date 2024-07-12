@@ -88,6 +88,24 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Agregar a Familia.
+        /// </summary>
+        public static string AgregarAFamilia {
+            get {
+                return ResourceManager.GetString("AgregarAFamilia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Agregar a Perfil.
+        /// </summary>
+        public static string AgregarAPerfil {
+            get {
+                return ResourceManager.GetString("AgregarAPerfil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Ajustes.
         /// </summary>
         public static string Ajustes {
@@ -340,6 +358,24 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Configurar.
+        /// </summary>
+        public static string Configurar {
+            get {
+                return ResourceManager.GetString("Configurar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Configurar Familias.
+        /// </summary>
+        public static string ConfigurarFamilias {
+            get {
+                return ResourceManager.GetString("ConfigurarFamilias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Contraseña.
         /// </summary>
         public static string Contraseña {
@@ -381,6 +417,15 @@ namespace Services.Resources {
         public static string DatosTarjeta {
             get {
                 return ResourceManager.GetString("DatosTarjeta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Datos Transferencia.
+        /// </summary>
+        public static string DatosTransferencia {
+            get {
+                return ResourceManager.GetString("DatosTransferencia", resourceCulture);
             }
         }
         
@@ -430,6 +475,15 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Elegir idioma: .
+        /// </summary>
+        public static string ElegirIdioma {
+            get {
+                return ResourceManager.GetString("ElegirIdioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Eliminado con exito.
         /// </summary>
         public static string EliminadoConExito {
@@ -475,6 +529,33 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Ya existe una Familia con ese nombre.
+        /// </summary>
+        public static string FamiliaAlreadyExists {
+            get {
+                return ResourceManager.GetString("FamiliaAlreadyExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Familias.
+        /// </summary>
+        public static string Familias {
+            get {
+                return ResourceManager.GetString("Familias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a La familia ya existe en el arbol.
+        /// </summary>
+        public static string FamiliaYaExisteException {
+            get {
+                return ResourceManager.GetString("FamiliaYaExisteException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Fecha de Expiracion.
         /// </summary>
         public static string FechaExp {
@@ -502,11 +583,110 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a FormCambiarIdioma.
+        /// </summary>
+        public static string FormCambiarIdioma {
+            get {
+                return ResourceManager.GetString("FormCambiarIdioma", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormCambiarPass.
+        /// </summary>
+        public static string FormCambiarPass {
+            get {
+                return ResourceManager.GetString("FormCambiarPass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormCobrarVenta.
+        /// </summary>
+        public static string FormCobrarVenta {
+            get {
+                return ResourceManager.GetString("FormCobrarVenta", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormGenerarCarrito.
+        /// </summary>
+        public static string FormGenerarCarrito {
+            get {
+                return ResourceManager.GetString("FormGenerarCarrito", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormGenerarFactura.
+        /// </summary>
+        public static string FormGenerarFactura {
+            get {
+                return ResourceManager.GetString("FormGenerarFactura", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormGestionarFamilias.
+        /// </summary>
+        public static string FormGestionarFamilias {
+            get {
+                return ResourceManager.GetString("FormGestionarFamilias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormGestionarPerfil.
+        /// </summary>
+        public static string FormGestionarPerfil {
+            get {
+                return ResourceManager.GetString("FormGestionarPerfil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormGestionarProducto.
+        /// </summary>
+        public static string FormGestionarProducto {
+            get {
+                return ResourceManager.GetString("FormGestionarProducto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormGestionarUsuario.
+        /// </summary>
+        public static string FormGestionarUsuario {
+            get {
+                return ResourceManager.GetString("FormGestionarUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a No puede cerrar el formulario durante esta operacion.
         /// </summary>
         public static string FormNotClosable {
             get {
                 return ResourceManager.GetString("FormNotClosable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormRegistrarCliente.
+        /// </summary>
+        public static string FormRegistrarCliente {
+            get {
+                return ResourceManager.GetString("FormRegistrarCliente", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a FormSeleccionarProducto.
+        /// </summary>
+        public static string FormSeleccionarProducto {
+            get {
+                return ResourceManager.GetString("FormSeleccionarProducto", resourceCulture);
             }
         }
         
@@ -529,6 +709,24 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Gestionar Familias.
+        /// </summary>
+        public static string GestionarFamilias {
+            get {
+                return ResourceManager.GetString("GestionarFamilias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Gestionar Perfiles.
+        /// </summary>
+        public static string GestionarPerfiles {
+            get {
+                return ResourceManager.GetString("GestionarPerfiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Gestionar Productos.
         /// </summary>
         public static string GestionarProductos {
@@ -543,6 +741,15 @@ namespace Services.Resources {
         public static string GestionarUsuarios {
             get {
                 return ResourceManager.GetString("GestionarUsuarios", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Guardar.
+        /// </summary>
+        public static string Guardar {
+            get {
+                return ResourceManager.GetString("Guardar", resourceCulture);
             }
         }
         
@@ -637,6 +844,33 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a No se puede agregar a un objeto patente.
+        /// </summary>
+        public static string NodoNoEsFamiliaException {
+            get {
+                return ResourceManager.GetString("NodoNoEsFamiliaException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Debe seleccionar un nodo primero.
+        /// </summary>
+        public static string NodoNoSeleccionadoException {
+            get {
+                return ResourceManager.GetString("NodoNoSeleccionadoException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No se ha seleccionado un nodo raiz.
+        /// </summary>
+        public static string NoEsRootException {
+            get {
+                return ResourceManager.GetString("NoEsRootException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Nombre.
         /// </summary>
         public static string Nombre {
@@ -646,11 +880,38 @@ namespace Services.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a No se puede agregar la misma familia al arbol.
+        /// </summary>
+        public static string NoSePuedeAgregarMismaFamiliaException {
+            get {
+                return ResourceManager.GetString("NoSePuedeAgregarMismaFamiliaException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a No se puede quitar el perfil, use el boton eliminar.
+        /// </summary>
+        public static string NoSePuedeEliminarRootException {
+            get {
+                return ResourceManager.GetString("NoSePuedeEliminarRootException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a No existe el cliente con el id:.
         /// </summary>
         public static string NotFoundClient {
             get {
                 return ResourceManager.GetString("NotFoundClient", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nuevo.
+        /// </summary>
+        public static string Nuevo {
+            get {
+                return ResourceManager.GetString("Nuevo", resourceCulture);
             }
         }
         
@@ -669,6 +930,42 @@ namespace Services.Resources {
         public static string OnlyNumbers {
             get {
                 return ResourceManager.GetString("OnlyNumbers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Debe seleccionar una patente.
+        /// </summary>
+        public static string PatenteNoSeleccionadaException {
+            get {
+                return ResourceManager.GetString("PatenteNoSeleccionadaException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Patentes.
+        /// </summary>
+        public static string Patentes {
+            get {
+                return ResourceManager.GetString("Patentes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a La patente ya existe.
+        /// </summary>
+        public static string PatenteYaExisteException {
+            get {
+                return ResourceManager.GetString("PatenteYaExisteException", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Perfiles.
+        /// </summary>
+        public static string Perfiles {
+            get {
+                return ResourceManager.GetString("Perfiles", resourceCulture);
             }
         }
         
@@ -705,6 +1002,15 @@ namespace Services.Resources {
         public static string Productos {
             get {
                 return ResourceManager.GetString("Productos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Quitar.
+        /// </summary>
+        public static string Quitar {
+            get {
+                return ResourceManager.GetString("Quitar", resourceCulture);
             }
         }
         
@@ -768,6 +1074,15 @@ namespace Services.Resources {
         public static string SeleccionarProducto {
             get {
                 return ResourceManager.GetString("SeleccionarProducto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Debe seleccionar una familia primero.
+        /// </summary>
+        public static string SeleccioneFamiliaException {
+            get {
+                return ResourceManager.GetString("SeleccioneFamiliaException", resourceCulture);
             }
         }
         
@@ -849,6 +1164,33 @@ namespace Services.Resources {
         public static string Titular {
             get {
                 return ResourceManager.GetString("Titular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Todas las Familias.
+        /// </summary>
+        public static string TodasFamilias {
+            get {
+                return ResourceManager.GetString("TodasFamilias", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Todas las Patentes.
+        /// </summary>
+        public static string TodasPatentes {
+            get {
+                return ResourceManager.GetString("TodasPatentes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Todos los Perfiles.
+        /// </summary>
+        public static string TodosPerfiles {
+            get {
+                return ResourceManager.GetString("TodosPerfiles", resourceCulture);
             }
         }
         

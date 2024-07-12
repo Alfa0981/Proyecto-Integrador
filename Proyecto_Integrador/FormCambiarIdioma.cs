@@ -42,7 +42,9 @@ namespace Proyecto_Integrador
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
         {
-            cambiarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("");
+            cambiarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Cambiar");
+            label1.Text = IdiomaManager.Instance.ObtenerMensaje("ElegirIdioma");
+            this.Text = IdiomaManager.Instance.ObtenerMensaje("FormCambiarIdioma");
         }
     }
 }

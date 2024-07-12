@@ -54,6 +54,7 @@ namespace Proyecto_Integrador
             generarCarritoBtn.Text = IdiomaManager.Instance.ObtenerMensaje("GenerarCarrito");
             asociarCliente.Text = IdiomaManager.Instance.ObtenerMensaje("AsociarCliente");
             button1.Text = IdiomaManager.Instance.ObtenerMensaje("EliminarProducto");
+            this.Text = IdiomaManager.Instance.ObtenerMensaje("FormGenerarCarrito");
 
         }
 

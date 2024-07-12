@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    internal class Patente : Perfil
+    public class Patente : Perfil
     {
         public Patente(string nombre)
         {
@@ -25,9 +25,14 @@ namespace BE
             throw new NotImplementedException("No se puede remover un permiso de un permiso individual.");
         }
 
-        public override bool TienePermiso(TippoPermiso permiso)
+        public override bool TienePermiso(TipoPermiso permiso)
         {
             return Nombre == permiso.ToString();
+        }
+        public override bool EsFamilia => false;
+        public override string ToString()
+        {
+            return Nombre;
         }
     }
 }

@@ -28,94 +28,95 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.treeConfigurarFamilia = new System.Windows.Forms.TreeView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grpFamilias = new System.Windows.Forms.GroupBox();
+            this.agregarFamiliaBtn = new System.Windows.Forms.Button();
+            this.configurarBtn = new System.Windows.Forms.Button();
+            this.todasFamiliasLbl = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtNombreFamilia = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.grpPatentes = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.agregarPatenteBtn = new System.Windows.Forms.Button();
-            this.treeViewFamilias = new System.Windows.Forms.TreeView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.guardarFamiliaBtn = new System.Windows.Forms.Button();
             this.patenteLB = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.configurarBtn = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.treeView2 = new System.Windows.Forms.TreeView();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button12 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button13 = new System.Windows.Forms.Button();
-            this.groupBox4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.todasPatentesLbl = new System.Windows.Forms.Label();
+            this.grpPerfiles = new System.Windows.Forms.GroupBox();
+            this.quitarBtn = new System.Windows.Forms.Button();
+            this.guardarBtn = new System.Windows.Forms.Button();
+            this.grpNuevo = new System.Windows.Forms.GroupBox();
+            this.agregarNuevoBtn = new System.Windows.Forms.Button();
+            this.nombreTxt = new System.Windows.Forms.TextBox();
+            this.nombreLbl = new System.Windows.Forms.Label();
+            this.eliminarBtn = new System.Windows.Forms.Button();
+            this.treeViewPerfiles = new System.Windows.Forms.TreeView();
+            this.todosPerfilesLbl = new System.Windows.Forms.Label();
+            this.familiasLB = new System.Windows.Forms.ListBox();
+            this.grpFamilias.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.grpPatentes.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.grpPerfiles.SuspendLayout();
+            this.grpNuevo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox4
+            // grpFamilias
             // 
-            this.groupBox4.Controls.Add(this.button7);
-            this.groupBox4.Controls.Add(this.button6);
-            this.groupBox4.Controls.Add(this.guardarFamiliaBtn);
-            this.groupBox4.Controls.Add(this.treeConfigurarFamilia);
-            this.groupBox4.Location = new System.Drawing.Point(612, 11);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox4.Size = new System.Drawing.Size(290, 431);
-            this.groupBox4.TabIndex = 9;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Configurar Familia";
+            this.grpFamilias.Controls.Add(this.familiasLB);
+            this.grpFamilias.Controls.Add(this.agregarFamiliaBtn);
+            this.grpFamilias.Controls.Add(this.configurarBtn);
+            this.grpFamilias.Controls.Add(this.todasFamiliasLbl);
+            this.grpFamilias.Location = new System.Drawing.Point(344, 410);
+            this.grpFamilias.Margin = new System.Windows.Forms.Padding(2);
+            this.grpFamilias.Name = "grpFamilias";
+            this.grpFamilias.Padding = new System.Windows.Forms.Padding(2);
+            this.grpFamilias.Size = new System.Drawing.Size(290, 322);
+            this.grpFamilias.TabIndex = 8;
+            this.grpFamilias.TabStop = false;
+            this.grpFamilias.Text = "Familias";
             // 
-            // treeConfigurarFamilia
+            // agregarFamiliaBtn
             // 
-            this.treeConfigurarFamilia.Location = new System.Drawing.Point(11, 38);
-            this.treeConfigurarFamilia.Margin = new System.Windows.Forms.Padding(2);
-            this.treeConfigurarFamilia.Name = "treeConfigurarFamilia";
-            this.treeConfigurarFamilia.Size = new System.Drawing.Size(262, 192);
-            this.treeConfigurarFamilia.TabIndex = 0;
+            this.agregarFamiliaBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.agregarFamiliaBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.agregarFamiliaBtn.FlatAppearance.BorderSize = 0;
+            this.agregarFamiliaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.agregarFamiliaBtn.Location = new System.Drawing.Point(152, 253);
+            this.agregarFamiliaBtn.Name = "agregarFamiliaBtn";
+            this.agregarFamiliaBtn.Size = new System.Drawing.Size(121, 23);
+            this.agregarFamiliaBtn.TabIndex = 13;
+            this.agregarFamiliaBtn.Text = "Agregar a Perfil ";
+            this.agregarFamiliaBtn.UseVisualStyleBackColor = false;
+            this.agregarFamiliaBtn.Click += new System.EventHandler(this.agregarFamiliaBtn_Click);
             // 
-            // groupBox2
+            // configurarBtn
             // 
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.configurarBtn);
-            this.groupBox2.Controls.Add(this.treeViewFamilias);
-            this.groupBox2.Controls.Add(this.groupBox3);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(305, 11);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(290, 431);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Familias";
+            this.configurarBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.configurarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.configurarBtn.FlatAppearance.BorderSize = 0;
+            this.configurarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.configurarBtn.Location = new System.Drawing.Point(16, 253);
+            this.configurarBtn.Name = "configurarBtn";
+            this.configurarBtn.Size = new System.Drawing.Size(105, 23);
+            this.configurarBtn.TabIndex = 12;
+            this.configurarBtn.Text = "Gestionar Familias";
+            this.configurarBtn.UseVisualStyleBackColor = false;
+            this.configurarBtn.Click += new System.EventHandler(this.configurarBtn_Click);
+            // 
+            // todasFamiliasLbl
+            // 
+            this.todasFamiliasLbl.AutoSize = true;
+            this.todasFamiliasLbl.Location = new System.Drawing.Point(13, 23);
+            this.todasFamiliasLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.todasFamiliasLbl.Name = "todasFamiliasLbl";
+            this.todasFamiliasLbl.Size = new System.Drawing.Size(90, 13);
+            this.todasFamiliasLbl.TabIndex = 7;
+            this.todasFamiliasLbl.Text = "Todas las familias";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.txtNombreFamilia);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(15, 306);
+            this.groupBox3.Location = new System.Drawing.Point(743, 925);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -123,6 +124,19 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Nueva";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.IndianRed;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(11, 62);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(71, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // txtNombreFamilia
             // 
@@ -142,40 +156,19 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Nombre";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 23);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Todas las familias";
-            // 
             // grpPatentes
             // 
-            this.grpPatentes.Controls.Add(this.button3);
-            this.grpPatentes.Controls.Add(this.patenteLB);
             this.grpPatentes.Controls.Add(this.agregarPatenteBtn);
-            this.grpPatentes.Controls.Add(this.label2);
-            this.grpPatentes.Location = new System.Drawing.Point(11, 11);
+            this.grpPatentes.Controls.Add(this.patenteLB);
+            this.grpPatentes.Controls.Add(this.todasPatentesLbl);
+            this.grpPatentes.Location = new System.Drawing.Point(50, 410);
             this.grpPatentes.Margin = new System.Windows.Forms.Padding(2);
             this.grpPatentes.Name = "grpPatentes";
             this.grpPatentes.Padding = new System.Windows.Forms.Padding(2);
-            this.grpPatentes.Size = new System.Drawing.Size(290, 431);
+            this.grpPatentes.Size = new System.Drawing.Size(290, 322);
             this.grpPatentes.TabIndex = 7;
             this.grpPatentes.TabStop = false;
             this.grpPatentes.Text = "Patentes";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Todas las patentes";
             // 
             // agregarPatenteBtn
             // 
@@ -183,46 +176,13 @@
             this.agregarPatenteBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.agregarPatenteBtn.FlatAppearance.BorderSize = 0;
             this.agregarPatenteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.agregarPatenteBtn.Location = new System.Drawing.Point(12, 253);
+            this.agregarPatenteBtn.Location = new System.Drawing.Point(76, 253);
             this.agregarPatenteBtn.Name = "agregarPatenteBtn";
             this.agregarPatenteBtn.Size = new System.Drawing.Size(121, 23);
-            this.agregarPatenteBtn.TabIndex = 10;
-            this.agregarPatenteBtn.Text = "Agregar a Familia >> ";
+            this.agregarPatenteBtn.TabIndex = 12;
+            this.agregarPatenteBtn.Text = "Agregar a Perfil ";
             this.agregarPatenteBtn.UseVisualStyleBackColor = false;
-            // 
-            // treeViewFamilias
-            // 
-            this.treeViewFamilias.Location = new System.Drawing.Point(11, 38);
-            this.treeViewFamilias.Margin = new System.Windows.Forms.Padding(2);
-            this.treeViewFamilias.Name = "treeViewFamilias";
-            this.treeViewFamilias.Size = new System.Drawing.Size(262, 192);
-            this.treeViewFamilias.TabIndex = 11;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(11, 62);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // guardarFamiliaBtn
-            // 
-            this.guardarFamiliaBtn.BackColor = System.Drawing.Color.IndianRed;
-            this.guardarFamiliaBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.guardarFamiliaBtn.FlatAppearance.BorderSize = 0;
-            this.guardarFamiliaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.guardarFamiliaBtn.Location = new System.Drawing.Point(11, 253);
-            this.guardarFamiliaBtn.Name = "guardarFamiliaBtn";
-            this.guardarFamiliaBtn.Size = new System.Drawing.Size(71, 23);
-            this.guardarFamiliaBtn.TabIndex = 12;
-            this.guardarFamiliaBtn.Text = "Guardar";
-            this.guardarFamiliaBtn.UseVisualStyleBackColor = false;
+            this.agregarPatenteBtn.Click += new System.EventHandler(this.agregarPatenteBtn_Click);
             // 
             // patenteLB
             // 
@@ -232,300 +192,196 @@
             this.patenteLB.Size = new System.Drawing.Size(258, 199);
             this.patenteLB.TabIndex = 11;
             // 
-            // groupBox1
+            // todasPatentesLbl
             // 
-            this.groupBox1.Controls.Add(this.button8);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button9);
-            this.groupBox1.Controls.Add(this.treeView1);
-            this.groupBox1.Location = new System.Drawing.Point(906, 11);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(290, 431);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Configurar Perfil";
+            this.todasPatentesLbl.AutoSize = true;
+            this.todasPatentesLbl.Location = new System.Drawing.Point(9, 23);
+            this.todasPatentesLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.todasPatentesLbl.Name = "todasPatentesLbl";
+            this.todasPatentesLbl.Size = new System.Drawing.Size(97, 13);
+            this.todasPatentesLbl.TabIndex = 5;
+            this.todasPatentesLbl.Text = "Todas las patentes";
             // 
-            // button2
+            // grpPerfiles
             // 
-            this.button2.BackColor = System.Drawing.Color.IndianRed;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(11, 253);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 23);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Guardar";
-            this.button2.UseVisualStyleBackColor = false;
+            this.grpPerfiles.Controls.Add(this.quitarBtn);
+            this.grpPerfiles.Controls.Add(this.guardarBtn);
+            this.grpPerfiles.Controls.Add(this.grpFamilias);
+            this.grpPerfiles.Controls.Add(this.grpNuevo);
+            this.grpPerfiles.Controls.Add(this.grpPatentes);
+            this.grpPerfiles.Controls.Add(this.eliminarBtn);
+            this.grpPerfiles.Controls.Add(this.treeViewPerfiles);
+            this.grpPerfiles.Controls.Add(this.todosPerfilesLbl);
+            this.grpPerfiles.Location = new System.Drawing.Point(11, 11);
+            this.grpPerfiles.Margin = new System.Windows.Forms.Padding(2);
+            this.grpPerfiles.Name = "grpPerfiles";
+            this.grpPerfiles.Padding = new System.Windows.Forms.Padding(2);
+            this.grpPerfiles.Size = new System.Drawing.Size(663, 752);
+            this.grpPerfiles.TabIndex = 13;
+            this.grpPerfiles.TabStop = false;
+            this.grpPerfiles.Text = "Perfiles";
+            this.grpPerfiles.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
-            // treeView1
+            // quitarBtn
             // 
-            this.treeView1.Location = new System.Drawing.Point(11, 38);
-            this.treeView1.Margin = new System.Windows.Forms.Padding(2);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(262, 192);
-            this.treeView1.TabIndex = 0;
+            this.quitarBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.quitarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.quitarBtn.FlatAppearance.BorderSize = 0;
+            this.quitarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.quitarBtn.Location = new System.Drawing.Point(375, 358);
+            this.quitarBtn.Name = "quitarBtn";
+            this.quitarBtn.Size = new System.Drawing.Size(71, 23);
+            this.quitarBtn.TabIndex = 19;
+            this.quitarBtn.Text = "Quitar";
+            this.quitarBtn.UseVisualStyleBackColor = false;
+            this.quitarBtn.Click += new System.EventHandler(this.quitarBtn_Click);
             // 
-            // configurarBtn
+            // guardarBtn
             // 
-            this.configurarBtn.BackColor = System.Drawing.Color.IndianRed;
-            this.configurarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.configurarBtn.FlatAppearance.BorderSize = 0;
-            this.configurarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.configurarBtn.Location = new System.Drawing.Point(100, 282);
-            this.configurarBtn.Name = "configurarBtn";
-            this.configurarBtn.Size = new System.Drawing.Size(71, 23);
-            this.configurarBtn.TabIndex = 12;
-            this.configurarBtn.Text = "Configurar";
-            this.configurarBtn.UseVisualStyleBackColor = false;
+            this.guardarBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.guardarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.guardarBtn.FlatAppearance.BorderSize = 0;
+            this.guardarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.guardarBtn.Location = new System.Drawing.Point(221, 358);
+            this.guardarBtn.Name = "guardarBtn";
+            this.guardarBtn.Size = new System.Drawing.Size(71, 23);
+            this.guardarBtn.TabIndex = 17;
+            this.guardarBtn.Text = "Guardar";
+            this.guardarBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // grpNuevo
             // 
-            this.button3.BackColor = System.Drawing.Color.IndianRed;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(139, 253);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 23);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Agregar a Perfil >> ";
-            this.button3.UseVisualStyleBackColor = false;
+            this.grpNuevo.Controls.Add(this.agregarNuevoBtn);
+            this.grpNuevo.Controls.Add(this.nombreTxt);
+            this.grpNuevo.Controls.Add(this.nombreLbl);
+            this.grpNuevo.Location = new System.Drawing.Point(50, 17);
+            this.grpNuevo.Margin = new System.Windows.Forms.Padding(2);
+            this.grpNuevo.Name = "grpNuevo";
+            this.grpNuevo.Padding = new System.Windows.Forms.Padding(2);
+            this.grpNuevo.Size = new System.Drawing.Size(232, 102);
+            this.grpNuevo.TabIndex = 13;
+            this.grpNuevo.TabStop = false;
+            this.grpNuevo.Text = "Nuevo";
             // 
-            // button4
+            // agregarNuevoBtn
             // 
-            this.button4.BackColor = System.Drawing.Color.IndianRed;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(11, 253);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(121, 23);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "Agregar a Familia >> ";
-            this.button4.UseVisualStyleBackColor = false;
+            this.agregarNuevoBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.agregarNuevoBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.agregarNuevoBtn.FlatAppearance.BorderSize = 0;
+            this.agregarNuevoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.agregarNuevoBtn.Location = new System.Drawing.Point(12, 62);
+            this.agregarNuevoBtn.Name = "agregarNuevoBtn";
+            this.agregarNuevoBtn.Size = new System.Drawing.Size(71, 23);
+            this.agregarNuevoBtn.TabIndex = 12;
+            this.agregarNuevoBtn.Text = "Agregar";
+            this.agregarNuevoBtn.UseVisualStyleBackColor = false;
+            this.agregarNuevoBtn.Click += new System.EventHandler(this.agregarNuevoBtn_Click);
             // 
-            // button5
+            // nombreTxt
             // 
-            this.button5.BackColor = System.Drawing.Color.IndianRed;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(138, 253);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(121, 23);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Agregar a Perfil >> ";
-            this.button5.UseVisualStyleBackColor = false;
+            this.nombreTxt.Location = new System.Drawing.Point(11, 37);
+            this.nombreTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.nombreTxt.Name = "nombreTxt";
+            this.nombreTxt.Size = new System.Drawing.Size(174, 20);
+            this.nombreTxt.TabIndex = 3;
             // 
-            // button6
+            // nombreLbl
             // 
-            this.button6.BackColor = System.Drawing.Color.IndianRed;
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(108, 253);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(71, 23);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Eliminar";
-            this.button6.UseVisualStyleBackColor = false;
+            this.nombreLbl.AutoSize = true;
+            this.nombreLbl.Location = new System.Drawing.Point(9, 20);
+            this.nombreLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.nombreLbl.Name = "nombreLbl";
+            this.nombreLbl.Size = new System.Drawing.Size(44, 13);
+            this.nombreLbl.TabIndex = 2;
+            this.nombreLbl.Text = "Nombre";
             // 
-            // button7
+            // eliminarBtn
             // 
-            this.button7.BackColor = System.Drawing.Color.IndianRed;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Location = new System.Drawing.Point(202, 253);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(71, 23);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Quitar";
-            this.button7.UseVisualStyleBackColor = false;
+            this.eliminarBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.eliminarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.eliminarBtn.FlatAppearance.BorderSize = 0;
+            this.eliminarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.eliminarBtn.Location = new System.Drawing.Point(298, 358);
+            this.eliminarBtn.Name = "eliminarBtn";
+            this.eliminarBtn.Size = new System.Drawing.Size(71, 23);
+            this.eliminarBtn.TabIndex = 18;
+            this.eliminarBtn.Text = "Eliminar";
+            this.eliminarBtn.UseVisualStyleBackColor = false;
+            this.eliminarBtn.Click += new System.EventHandler(this.eliminarBtn_Click);
             // 
-            // button8
+            // treeViewPerfiles
             // 
-            this.button8.BackColor = System.Drawing.Color.IndianRed;
-            this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Location = new System.Drawing.Point(200, 253);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(71, 23);
-            this.button8.TabIndex = 16;
-            this.button8.Text = "Quitar";
-            this.button8.UseVisualStyleBackColor = false;
+            this.treeViewPerfiles.Location = new System.Drawing.Point(50, 156);
+            this.treeViewPerfiles.Margin = new System.Windows.Forms.Padding(2);
+            this.treeViewPerfiles.Name = "treeViewPerfiles";
+            this.treeViewPerfiles.Size = new System.Drawing.Size(584, 192);
+            this.treeViewPerfiles.TabIndex = 14;
             // 
-            // button9
+            // todosPerfilesLbl
             // 
-            this.button9.BackColor = System.Drawing.Color.IndianRed;
-            this.button9.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Location = new System.Drawing.Point(106, 253);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(71, 23);
-            this.button9.TabIndex = 15;
-            this.button9.Text = "Eliminar";
-            this.button9.UseVisualStyleBackColor = false;
+            this.todosPerfilesLbl.AutoSize = true;
+            this.todosPerfilesLbl.Location = new System.Drawing.Point(49, 141);
+            this.todosPerfilesLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.todosPerfilesLbl.Name = "todosPerfilesLbl";
+            this.todosPerfilesLbl.Size = new System.Drawing.Size(89, 13);
+            this.todosPerfilesLbl.TabIndex = 5;
+            this.todosPerfilesLbl.Text = "Todos los perfiles";
             // 
-            // groupBox5
+            // familiasLB
             // 
-            this.groupBox5.Controls.Add(this.button13);
-            this.groupBox5.Controls.Add(this.groupBox6);
-            this.groupBox5.Controls.Add(this.treeView2);
-            this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Location = new System.Drawing.Point(11, 446);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Size = new System.Drawing.Size(290, 431);
-            this.groupBox5.TabIndex = 13;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Perfiles";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Todos los perfiles";
-            // 
-            // treeView2
-            // 
-            this.treeView2.Location = new System.Drawing.Point(8, 38);
-            this.treeView2.Margin = new System.Windows.Forms.Padding(2);
-            this.treeView2.Name = "treeView2";
-            this.treeView2.Size = new System.Drawing.Size(262, 192);
-            this.treeView2.TabIndex = 14;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.button12);
-            this.groupBox6.Controls.Add(this.textBox1);
-            this.groupBox6.Controls.Add(this.label3);
-            this.groupBox6.Location = new System.Drawing.Point(12, 283);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(232, 102);
-            this.groupBox6.TabIndex = 13;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Nueva";
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.IndianRed;
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button12.Location = new System.Drawing.Point(11, 62);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(71, 23);
-            this.button12.TabIndex = 12;
-            this.button12.Text = "Agregar";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(11, 37);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 20);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nombre";
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.Color.IndianRed;
-            this.button13.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button13.FlatAppearance.BorderSize = 0;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button13.Location = new System.Drawing.Point(96, 235);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(71, 23);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "Configurar";
-            this.button13.UseVisualStyleBackColor = false;
+            this.familiasLB.FormattingEnabled = true;
+            this.familiasLB.Location = new System.Drawing.Point(16, 39);
+            this.familiasLB.Name = "familiasLB";
+            this.familiasLB.Size = new System.Drawing.Size(258, 199);
+            this.familiasLB.TabIndex = 14;
             // 
             // FormGestionarPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(1209, 880);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.grpPatentes);
+            this.ClientSize = new System.Drawing.Size(694, 777);
+            this.Controls.Add(this.grpPerfiles);
+            this.Controls.Add(this.groupBox3);
             this.Name = "FormGestionarPerfil";
             this.Text = "FormGestionarPerfil";
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grpFamilias.ResumeLayout(false);
+            this.grpFamilias.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.grpPatentes.ResumeLayout(false);
             this.grpPatentes.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.grpPerfiles.ResumeLayout(false);
+            this.grpPerfiles.PerformLayout();
+            this.grpNuevo.ResumeLayout(false);
+            this.grpNuevo.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TreeView treeConfigurarFamilia;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grpFamilias;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox txtNombreFamilia;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label todasFamiliasLbl;
         private System.Windows.Forms.GroupBox grpPatentes;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button guardarFamiliaBtn;
-        private System.Windows.Forms.TreeView treeViewFamilias;
+        private System.Windows.Forms.Label todasPatentesLbl;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button agregarPatenteBtn;
         private System.Windows.Forms.ListBox patenteLB;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button agregarFamiliaBtn;
         private System.Windows.Forms.Button configurarBtn;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TreeView treeView2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button agregarPatenteBtn;
+        private System.Windows.Forms.GroupBox grpPerfiles;
+        private System.Windows.Forms.GroupBox grpNuevo;
+        private System.Windows.Forms.Button agregarNuevoBtn;
+        private System.Windows.Forms.TextBox nombreTxt;
+        private System.Windows.Forms.Label nombreLbl;
+        private System.Windows.Forms.TreeView treeViewPerfiles;
+        private System.Windows.Forms.Label todosPerfilesLbl;
+        private System.Windows.Forms.Button quitarBtn;
+        private System.Windows.Forms.Button guardarBtn;
+        private System.Windows.Forms.Button eliminarBtn;
+        private System.Windows.Forms.ListBox familiasLB;
     }
 }

@@ -36,6 +36,7 @@ namespace Proyecto_Integrador
             seleccionarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("AñadirCarrito");
             generarCarritoBtn.Text = IdiomaManager.Instance.ObtenerMensaje("IrCarrito");
             cantLbl.Text = IdiomaManager.Instance.ObtenerMensaje("Cantidad");
+            this.Text = IdiomaManager.Instance.ObtenerMensaje("FormSeleccionarProducto");
         }
 
         private void seleccionarBtn_Click(object sender, EventArgs e)

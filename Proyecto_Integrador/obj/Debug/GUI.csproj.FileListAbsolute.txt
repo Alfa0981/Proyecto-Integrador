@@ -59,3 +59,9 @@ C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Te
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.FormGestionarProducto.resources
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\en\Services.resources.dll
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.FormGestionarPerfil.resources
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.FormGestionarFamilias.resources
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\itextsharp.dll
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\itextsharp.xml

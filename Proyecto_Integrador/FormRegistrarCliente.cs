@@ -98,6 +98,7 @@ namespace Proyecto_Integrador
             button1.Text = IdiomaManager.Instance.ObtenerMensaje("Cargar");
             modificarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Modificar");
             eliminarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Eliminar");
+            this.Text = IdiomaManager.Instance.ObtenerMensaje("FormRegistrarCliente");
         }
 
         private void apellidoTxt_Enter(object sender, EventArgs e)

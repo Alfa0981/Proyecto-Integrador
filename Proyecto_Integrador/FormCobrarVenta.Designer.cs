@@ -37,6 +37,7 @@
             this.numTarjetaLbl = new System.Windows.Forms.Label();
             this.nrmTarjetaTxt = new System.Windows.Forms.TextBox();
             this.datostarjetaGB = new System.Windows.Forms.GroupBox();
+            this.fechaExpLbl = new System.Windows.Forms.Label();
             this.datosEfectivoGB = new System.Windows.Forms.GroupBox();
             this.montoClienteLbl = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -47,11 +48,14 @@
             this.tarjetaRBtn = new System.Windows.Forms.RadioButton();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.precioFinalLbl = new System.Windows.Forms.Label();
-            this.fechaExpLbl = new System.Windows.Forms.Label();
+            this.transferenciaGB = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.aliasLbl = new System.Windows.Forms.Label();
             this.datostarjetaGB.SuspendLayout();
             this.datosEfectivoGB.SuspendLayout();
             this.tipoPagoGB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.transferenciaGB.SuspendLayout();
             this.SuspendLayout();
             // 
             // generarVentaBtn
@@ -168,11 +172,23 @@
             this.datostarjetaGB.TabStop = false;
             this.datostarjetaGB.Text = "Datos de Tarjeta";
             // 
+            // fechaExpLbl
+            // 
+            this.fechaExpLbl.AutoSize = true;
+            this.fechaExpLbl.BackColor = System.Drawing.Color.Snow;
+            this.fechaExpLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.fechaExpLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.fechaExpLbl.Location = new System.Drawing.Point(115, 111);
+            this.fechaExpLbl.Name = "fechaExpLbl";
+            this.fechaExpLbl.Size = new System.Drawing.Size(116, 17);
+            this.fechaExpLbl.TabIndex = 31;
+            this.fechaExpLbl.Text = "Fecha Expiracion";
+            // 
             // datosEfectivoGB
             // 
             this.datosEfectivoGB.Controls.Add(this.montoClienteLbl);
             this.datosEfectivoGB.Controls.Add(this.textBox1);
-            this.datosEfectivoGB.Location = new System.Drawing.Point(15, 353);
+            this.datosEfectivoGB.Location = new System.Drawing.Point(15, 340);
             this.datosEfectivoGB.Name = "datosEfectivoGB";
             this.datosEfectivoGB.Size = new System.Drawing.Size(427, 82);
             this.datosEfectivoGB.TabIndex = 37;
@@ -283,17 +299,36 @@
             this.precioFinalLbl.TabIndex = 43;
             this.precioFinalLbl.Text = "Monto: ";
             // 
-            // fechaExpLbl
+            // transferenciaGB
             // 
-            this.fechaExpLbl.AutoSize = true;
-            this.fechaExpLbl.BackColor = System.Drawing.Color.Snow;
-            this.fechaExpLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.fechaExpLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.fechaExpLbl.Location = new System.Drawing.Point(115, 111);
-            this.fechaExpLbl.Name = "fechaExpLbl";
-            this.fechaExpLbl.Size = new System.Drawing.Size(116, 17);
-            this.fechaExpLbl.TabIndex = 31;
-            this.fechaExpLbl.Text = "Fecha Expiracion";
+            this.transferenciaGB.Controls.Add(this.aliasLbl);
+            this.transferenciaGB.Controls.Add(this.label2);
+            this.transferenciaGB.Location = new System.Drawing.Point(15, 441);
+            this.transferenciaGB.Name = "transferenciaGB";
+            this.transferenciaGB.Size = new System.Drawing.Size(427, 82);
+            this.transferenciaGB.TabIndex = 40;
+            this.transferenciaGB.TabStop = false;
+            this.transferenciaGB.Text = "Datos Transferencia";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(6, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 20);
+            this.label2.TabIndex = 44;
+            this.label2.Text = "Alias:";
+            // 
+            // aliasLbl
+            // 
+            this.aliasLbl.AutoSize = true;
+            this.aliasLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.aliasLbl.Location = new System.Drawing.Point(59, 36);
+            this.aliasLbl.Name = "aliasLbl";
+            this.aliasLbl.Size = new System.Drawing.Size(207, 20);
+            this.aliasLbl.TabIndex = 45;
+            this.aliasLbl.Text = "FABRICA.PASTAS.LOMAS";
             // 
             // FormCobrarVenta
             // 
@@ -301,6 +336,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(1015, 673);
+            this.Controls.Add(this.transferenciaGB);
             this.Controls.Add(this.precioFinalLbl);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.tipoPagoGB);
@@ -318,6 +354,8 @@
             this.tipoPagoGB.ResumeLayout(false);
             this.tipoPagoGB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.transferenciaGB.ResumeLayout(false);
+            this.transferenciaGB.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,5 +383,8 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label precioFinalLbl;
         private System.Windows.Forms.Label fechaExpLbl;
+        private System.Windows.Forms.GroupBox transferenciaGB;
+        private System.Windows.Forms.Label aliasLbl;
+        private System.Windows.Forms.Label label2;
     }
 }

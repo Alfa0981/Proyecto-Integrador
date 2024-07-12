@@ -17,21 +17,7 @@ namespace Proyecto_Integrador
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Form mdiContainer = new MdiContainer();
-            Form loginForm = new Login();
-            Form cambiarPass = new FormCambiarPass();
-
-
-            /*switch (loginForm.ShowDialog())
-            {
-                case DialogResult.OK:
-                    if (cambiarPass.ShowDialog() == DialogResult.OK)
-                        Application.Run(mdiContainer);
-                    break;
-                case DialogResult.Ignore:
-                    Application.Run(mdiContainer);
-                    break;
-            }*/
-
+            Form perfiles = new FormGestionarPerfil();
             Application.Run(mdiContainer);
             
         }

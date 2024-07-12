@@ -42,6 +42,7 @@ namespace Proyecto_Integrador
             agregarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Agregar");
             eliminarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Eliminar");
             modificarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Modificar");
+            this.Text = IdiomaManager.Instance.ObtenerMensaje("FormGestionarProducto");
         }
 
         private void agregarBtn_Click(object sender, EventArgs e)

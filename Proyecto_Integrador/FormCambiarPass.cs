@@ -96,6 +96,7 @@ namespace Proyecto_Integrador
             label1.Text = IdiomaManager.Instance.ObtenerMensaje("Contraseña");
             label2.Text = IdiomaManager.Instance.ObtenerMensaje("RepitaContraseña");
             cambiarBtn.Text = IdiomaManager.Instance.ObtenerMensaje("Cambiar");
+            this.Text = IdiomaManager.Instance.ObtenerMensaje("FormCambiarPass");
         }
     }
 }
