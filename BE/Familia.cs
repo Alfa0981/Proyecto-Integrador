@@ -13,12 +13,14 @@ namespace BE
         {
             Nombre = nombre;
         }
+
+        public Familia() { }    
         public Familia(string nombre, params Perfil[] perfiles) : this(nombre)
         {
             _perfiles.AddRange(perfiles);
         }
 
-        public override string Nombre { get; }
+        public override string Nombre { get; set; }
 
         public override void Agregar(Perfil componente)
         {

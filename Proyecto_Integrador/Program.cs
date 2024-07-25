@@ -17,7 +17,6 @@ namespace Proyecto_Integrador
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Form mdiContainer = new MdiContainer();
-            Form perfiles = new FormGestionarPerfil();
             Application.Run(mdiContainer);
             
         }

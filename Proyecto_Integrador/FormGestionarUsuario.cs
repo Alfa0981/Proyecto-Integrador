@@ -18,6 +18,7 @@ namespace Proyecto_Integrador
 
         BLL.Usuario gestorUsuario = new BLL.Usuario();
         Usuario usuario;
+        BLL.Perfil gestorPerfil = new BLL.Perfil();
 
         public FormGestionarUsuario()
         {
@@ -33,7 +34,7 @@ namespace Proyecto_Integrador
                 Usuario usuario = new Usuario();
                 usuario.Nombre = nombreTxt.Text;
                 usuario.Apellido = apellidoTxt.Text;
-                usuario.Rol = (Rol)rolCmb.SelectedItem;
+                usuario.Perfil = (Perfil)rolCmb.SelectedItem;
                 usuario.Email = emailTxt.Text;
                 usuario.Dni = dniTxt.Text;
                 usuario.User = usuario.Nombre + usuario.Apellido;
@@ -79,7 +80,7 @@ namespace Proyecto_Integrador
         private void listarRoles()
         {
             
-            rolCmb.DataSource = gestorUsuario.mostrarTodosRoles();
+            rolCmb.DataSource = gestorPerfil.obtenerTodosPerfiles();
         }
 
         private void listar()
@@ -206,7 +207,7 @@ namespace Proyecto_Integrador
                 Usuario usuario = (Usuario)dataGridView1.CurrentRow.DataBoundItem;
                 usuario.Nombre = nombreTxt.Text;
                 usuario.Apellido = apellidoTxt.Text;
-                usuario.Rol = (Rol)rolCmb.SelectedItem;
+                usuario.Perfil = (Perfil)rolCmb.SelectedItem;
                 usuario.Email = emailTxt.Text;
                 usuario.Dni = dniTxt.Text;
 

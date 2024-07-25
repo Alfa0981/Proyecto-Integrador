@@ -14,11 +14,18 @@ namespace BE
 		private string nombre;
 		private string user;
 		private string pass;
-		private Rol rol;
 		private string email;
 		private bool bloqueo; //por defecto 0
 		private bool activo; //por defecto 1
 		private Idioma idioma;
+		private Perfil perfil;
+
+		public Perfil Perfil
+		{
+			get { return perfil; }
+			set { perfil = value; }
+		}
+
 
 		public Idioma Idioma
 		{
@@ -56,12 +63,6 @@ namespace BE
 		{
 			get { return email; }
 			set { email = value; }
-		}
-
-		public Rol Rol
-		{
-			get { return rol; }
-			set { rol = value; }
 		}
 
 		public string Pass

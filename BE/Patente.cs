@@ -13,7 +13,7 @@ namespace BE
             Nombre = nombre;
         }
 
-        public override string Nombre { get; }
+        public override string Nombre { get; set; }
 
         public override void Agregar(Perfil componente)
         {

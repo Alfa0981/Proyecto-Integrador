@@ -123,10 +123,19 @@ namespace DAL
 
         private int InsertarPerfil(Perfil perfil)
         {
+            if (perfil.Tipo == "Perfil")
+            {
+
+            }else if (perfil.Tipo == null)
+            {
+                perfil.Tipo = perfil.EsFamilia ? "Familia" : "Patente";
+            }
+
             SqlParameter[] parametrosInsertarPerfil = new SqlParameter[]
             {
                 new SqlParameter("@Nombre", perfil.Nombre),
-                new SqlParameter("@Tipo", perfil.EsFamilia ? "Familia" : "Patente")
+
+                new SqlParameter("@Tipo", perfil.Tipo)
             };
 
             return Convert.ToInt32(acceso.leer(queries.PerfilQuery.InsertarPerfil, parametrosInsertarPerfil).Rows[0][0]);
@@ -208,7 +217,7 @@ namespace DAL
             List<Perfil> perfiles = new List<Perfil>();
             DataTable resultado = acceso.leer(queries.PerfilQuery.ObtenerTodosPerfilesConRelaciones, null);
 
-            Dictionary<int, Perfil> perfilesPorID = new Dictionary<int, Perfil>();
+            Dictionary<int, Familia> perfilesPorID = new Dictionary<int, Familia>();
 
             foreach (DataRow row in resultado.Rows)
             {
@@ -216,10 +225,9 @@ namespace DAL
                 string nombre = row["Nombre"].ToString();
                 string tipo = row["Tipo"].ToString();
 
-                if (tipo == "Perfil" && !perfilesPorID.ContainsKey(id))
+                if ((tipo == "Perfil" || tipo == "Familia") && !perfilesPorID.ContainsKey(id))
                 {
-                    Perfil perfil = new Familia(nombre) { Tipo = tipo }; 
-
+                    Familia perfil = new Familia(nombre) { Tipo = tipo };
                     perfil.ID = id;
                     perfilesPorID[id] = perfil;
                 }
@@ -229,22 +237,117 @@ namespace DAL
             {
                 int id = Convert.ToInt32(row["ID"]);
                 int? parentId = row["ParentID"] as int?;
+                string tipo = row["Tipo"].ToString();
+                string nombre = row["Nombre"].ToString();
 
                 if (parentId.HasValue && perfilesPorID.ContainsKey(parentId.Value))
                 {
-                    Perfil parentPerfil = perfilesPorID[parentId.Value];
+                    Familia parentPerfil = perfilesPorID[parentId.Value];
 
-                    if (perfilesPorID.ContainsKey(id))
+                    if (tipo == "Patente")
                     {
-                        Perfil childPerfil = perfilesPorID[id];
-                        parentPerfil.Agregar(childPerfil);
+                        Patente patente = new Patente(nombre);
+                        parentPerfil.Agregar(patente);
+                    }
+                    else if ((tipo == "Familia" || tipo == "Perfil") && perfilesPorID.ContainsKey(id))
+                    {
+                        Familia childFamilia = perfilesPorID[id];
+                        parentPerfil.Agregar(childFamilia);
                     }
                 }
             }
 
             perfiles.AddRange(perfilesPorID.Values);
 
-            return perfiles;
+            return perfiles.Where(p => p.Tipo == "Perfil").ToList();
+        }
+
+        public void CrearPerfil(Familia familia)
+        {
+            try
+            {
+                acceso.comenzarTransaccion();
+
+                int familiaId = ObtenerOInsertarPerfil(familia, true);
+
+                List<int> nuevasRelaciones = familia.ObtenerSubFamilias().Select(f => f.ID).ToList();
+
+                EliminarRelacionesFamilia(familiaId, nuevasRelaciones);
+
+                GuardarRelacionesFamilia(familia, familiaId, true);
+
+                acceso.confirmarTransaccion();
+            }
+            catch (Exception)
+            {
+                acceso.revertirTransaccion();
+                throw;
+            }
+        }
+
+        public void eliminarFamilia(int familiaId)
+        {
+            try
+            {
+                acceso.comenzarTransaccion();
+
+                EliminarRelacionesFamilia(familiaId);
+                EliminarFamiliaPorId(familiaId);
+
+                acceso.confirmarTransaccion();
+            }
+            catch (Exception)
+            {
+                acceso.revertirTransaccion();
+                throw;
+            }
+        }
+
+        private void EliminarRelacionesFamilia(int familiaId)
+        {
+            SqlParameter[] parametros = new SqlParameter[]
+            {
+            new SqlParameter("@FamiliaID", familiaId)
+            };
+            acceso.escribir(queries.PerfilQuery.EliminarRelacionesPorFamilia, parametros);
+        }
+
+        private void EliminarFamiliaPorId(int familiaId)
+        {
+            SqlParameter[] parametros = new SqlParameter[]
+            {
+                new SqlParameter("@FamiliaID", familiaId)
+
+            };
+            acceso.escribir(queries.PerfilQuery.EliminarFamiliaId, parametros);
+        }
+
+        public void eliminarPerfil(int id)
+        {
+            try
+            {
+                acceso.comenzarTransaccion();
+
+                EliminarRelacionesFamilia(id);
+                EliminarPerfilPorId(id);
+
+                acceso.confirmarTransaccion();
+            }
+            catch (Exception)
+            {
+                acceso.revertirTransaccion();
+                throw;
+            }
+        }
+
+        private void EliminarPerfilPorId(int familiaId)
+        {
+            SqlParameter[] parametros = new SqlParameter[]
+            {
+                new SqlParameter("@FamiliaID", familiaId)
+
+            };
+            acceso.escribir(queries.PerfilQuery.EliminarPerfilId, parametros);
         }
     }
 }

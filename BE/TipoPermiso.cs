@@ -9,6 +9,10 @@ namespace BE
     public enum TipoPermiso
     {
         VistaVentas,
-        VistaProductos
+        VistaProductos,
+        CRUDProd,
+        CRUDVentas,
+        CRUDClientes,
+        AdminPatente
     }
 }

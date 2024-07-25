@@ -8,7 +8,7 @@ namespace BE
 {
     public abstract class Perfil
     {
-        public abstract string Nombre { get; }
+        public abstract string Nombre { get; set; }
         public abstract bool EsFamilia { get; }
         public string Tipo { get; set; }
         public int ID { get; set; }

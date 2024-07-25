@@ -14,6 +14,7 @@ namespace BLL
     {
 
         MpUsuario mpUsuario = new MpUsuario();
+        BLL.Perfil gestorPerfil = new BLL.Perfil();
         int contador = 0;
 
         public bool login (BE.Usuario usuarioALoguear)
@@ -30,6 +31,13 @@ namespace BLL
             }
             else if (validarUsuario(usuarioALoguear, usuarioCargado))
             {
+                List<BE.Perfil> perfiles = gestorPerfil.obtenerTodosPerfiles();
+                BE.Perfil perfilUsuario = perfiles.FirstOrDefault(p => p.ID == usuarioCargado.Perfil.ID);
+
+                if (perfilUsuario != null)
+                {
+                    usuarioCargado.Perfil = perfilUsuario;
+                }
                 SessionManager.Login(usuarioCargado);
                 return validarPrimerLogin(usuarioCargado);
             }
@@ -85,17 +93,25 @@ namespace BLL
             {
                 throw new Exception(IdiomaManager.Instance.ObtenerMensaje("UsuarioExisteException"));
             }
-            mpUsuario.crear(usuario);
+            mpUsuario.crear(usuarioACargar);
         }
 
         public List<BE.Usuario> mostrarTodos ()
         {
-            return mpUsuario.buscarTodos();
-        }
+            List<BE.Perfil> perfiles = gestorPerfil.obtenerTodosPerfiles();
+            List<BE.Usuario> usuarios = mpUsuario.buscarTodos();
 
-        public List<BE.Rol> mostrarTodosRoles()
-        {
-            return mpUsuario.buscarTodosRoles();
+            foreach (var usuario in usuarios)
+            {
+                BE.Perfil perfilUsuario = perfiles.FirstOrDefault(p => p.ID == usuario.Perfil.ID);
+
+                if (perfilUsuario != null)
+                {
+                    usuario.Perfil = perfilUsuario;
+                }
+            }
+
+            return usuarios;
         }
 
         private bool validarUsuario (BE.Usuario usuarioALoguear, BE.Usuario usuarioCargado)

@@ -25,5 +25,20 @@ namespace BLL
         {
             return mpPerfil.ObtenerTodosPerfiles();
         }
+
+        public void crearPerfil(BE.Familia perfil)
+        {
+            mpPerfil.CrearPerfil(perfil);
+        }
+
+        public void EliminarFamilia(int id)
+        {
+            mpPerfil.eliminarFamilia(id);
+        }
+
+        public void EliminarPerfil(int id)
+        {
+            mpPerfil.eliminarPerfil(id);
+        }
     }
 }

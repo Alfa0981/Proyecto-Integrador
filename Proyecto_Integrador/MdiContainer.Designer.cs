@@ -137,7 +137,7 @@
             // generarVentaToolStripMenuItem
             // 
             this.generarVentaToolStripMenuItem.Name = "generarVentaToolStripMenuItem";
-            this.generarVentaToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.generarVentaToolStripMenuItem.Size = new System.Drawing.Size(179, 26);
             this.generarVentaToolStripMenuItem.Text = "Generar Venta";
             this.generarVentaToolStripMenuItem.Click += new System.EventHandler(this.generarVentaToolStripMenuItem_Click);
             // 
@@ -176,6 +176,7 @@
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(113, 25);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // gestionarUsuariosToolStripMenuItem
             // 

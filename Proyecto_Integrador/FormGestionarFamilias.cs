@@ -149,7 +149,25 @@ namespace Proyecto_Integrador
                 return;
             }
 
-            treeConfigurarFamilia.SelectedNode.Remove();
+            Familia familiaSeleccionado = treeConfigurarFamilia.SelectedNode.Tag as Familia;
+
+            if (familiaSeleccionado != null && familiaSeleccionado.EsFamilia)
+            {
+                try
+                {
+                    gestorPerfil.EliminarFamilia(familiaSeleccionado.ID);
+                    treeConfigurarFamilia.SelectedNode.Remove();
+                    listar();
+                }
+                catch (Exception ex)
+                {
+                    CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ErrorEliminacionException") + ": " + ex.Message, "", "OK");
+                }
+            }
+            else
+            {
+                CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("NodoNoEsFamiliaException"), "", "OK");
+            }
         }
 
         private void configurarBtn_Click(object sender, EventArgs e)

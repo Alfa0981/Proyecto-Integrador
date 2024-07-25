@@ -25,6 +25,16 @@ namespace Proyecto_Integrador
             listar();
             modificarBtn.Hide();
             eliminarBtn.Hide();
+            modificarBtn.Enabled = false;
+            eliminarBtn.Enabled = false;
+            agregarBtn.Enabled = false;
+            if (SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.CRUDProd) ||
+                SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.AdminPatente))
+            {
+                modificarBtn.Enabled = true;
+                eliminarBtn.Enabled = true;
+                agregarBtn.Enabled = true;
+            }
         }
 
         private void listar()

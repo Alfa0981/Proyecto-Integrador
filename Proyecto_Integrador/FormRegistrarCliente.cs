@@ -29,9 +29,19 @@ namespace Proyecto_Integrador
 
         private void FormRegistrarCliente_Load(object sender, EventArgs e)
         {
-            listar(); 
+            listar();
             modificarBtn.Hide();
             eliminarBtn.Hide();
+            button1.Enabled = false;
+            eliminarBtn.Enabled = false;
+            modificarBtn.Enabled = false;
+            if (SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.CRUDClientes) ||
+                SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.AdminPatente))
+            {
+                button1.Enabled = true;
+                eliminarBtn.Enabled = true;
+                modificarBtn.Enabled = true;
+            }
         }
 
         private void listar()

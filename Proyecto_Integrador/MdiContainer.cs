@@ -24,9 +24,27 @@ namespace Proyecto_Integrador
 
         private void InicializarAplicacion()
         {
+            productosToolStripMenuItem.Enabled = false;
+            ventasToolStripMenuItem.Enabled = false;
+            adminToolStripMenuItem.Enabled = false;
             this.Hide();
             Form login = new Login();
             login.ShowDialog();
+
+            if (SessionManager.GetInstance != null && SessionManager.GetInstance.Usuario != null)
+            {
+                
+                if (SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.VistaProductos) ||
+                    SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.AdminPatente))
+                    productosToolStripMenuItem.Enabled = true;
+                if (SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.VistaVentas) ||
+                    SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.AdminPatente))
+                    ventasToolStripMenuItem.Enabled = true;
+                if (SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.AdminPatente))
+                    adminToolStripMenuItem.Enabled = true;
+
+            }
+
             ActualizarIdioma(IdiomaManager.Instance.IdiomaActual);
             Form main = new Main();
             main.MdiParent = this;
@@ -126,6 +144,11 @@ namespace Proyecto_Integrador
             Form gestionarPerfiles = new FormGestionarPerfil();
             gestionarPerfiles.MdiParent = this;
             gestionarPerfiles.Show();
+        }
+
+        private void adminToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

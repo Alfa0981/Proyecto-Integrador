@@ -51,6 +51,10 @@ namespace DAL.queries
                                                 Perfil p
                                             LEFT JOIN 
                                                 PerfilRelacion pr ON p.ID = pr.RelacionadoID";
+        public const string EliminarRelacionesPorFamilia = "DELETE FROM PerfilRelacion WHERE PerfilID = @FamiliaID OR RelacionadoID = @FamiliaID;";
+        public const string EliminarFamiliaId = "DELETE FROM Perfil WHERE ID = @FamiliaID AND Tipo = 'Familia';";
+        public const string EliminarPerfilId = "DELETE FROM Perfil WHERE ID = @FamiliaID AND Tipo = 'Perfil';";
+
 
     }
 }

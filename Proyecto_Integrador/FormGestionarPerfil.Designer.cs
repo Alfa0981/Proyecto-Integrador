@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.grpFamilias = new System.Windows.Forms.GroupBox();
+            this.familiasLB = new System.Windows.Forms.ListBox();
             this.agregarFamiliaBtn = new System.Windows.Forms.Button();
             this.configurarBtn = new System.Windows.Forms.Button();
             this.todasFamiliasLbl = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.eliminarBtn = new System.Windows.Forms.Button();
             this.treeViewPerfiles = new System.Windows.Forms.TreeView();
             this.todosPerfilesLbl = new System.Windows.Forms.Label();
-            this.familiasLB = new System.Windows.Forms.ListBox();
             this.grpFamilias.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.grpPatentes.SuspendLayout();
@@ -72,6 +72,14 @@
             this.grpFamilias.TabIndex = 8;
             this.grpFamilias.TabStop = false;
             this.grpFamilias.Text = "Familias";
+            // 
+            // familiasLB
+            // 
+            this.familiasLB.FormattingEnabled = true;
+            this.familiasLB.Location = new System.Drawing.Point(16, 39);
+            this.familiasLB.Name = "familiasLB";
+            this.familiasLB.Size = new System.Drawing.Size(258, 199);
+            this.familiasLB.TabIndex = 14;
             // 
             // agregarFamiliaBtn
             // 
@@ -248,6 +256,7 @@
             this.guardarBtn.TabIndex = 17;
             this.guardarBtn.Text = "Guardar";
             this.guardarBtn.UseVisualStyleBackColor = false;
+            this.guardarBtn.Click += new System.EventHandler(this.guardarBtn_Click);
             // 
             // grpNuevo
             // 
@@ -326,14 +335,6 @@
             this.todosPerfilesLbl.Size = new System.Drawing.Size(89, 13);
             this.todosPerfilesLbl.TabIndex = 5;
             this.todosPerfilesLbl.Text = "Todos los perfiles";
-            // 
-            // familiasLB
-            // 
-            this.familiasLB.FormattingEnabled = true;
-            this.familiasLB.Location = new System.Drawing.Point(16, 39);
-            this.familiasLB.Name = "familiasLB";
-            this.familiasLB.Size = new System.Drawing.Size(258, 199);
-            this.familiasLB.TabIndex = 14;
             // 
             // FormGestionarPerfil
             // 

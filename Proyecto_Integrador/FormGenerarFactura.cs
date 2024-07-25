@@ -23,6 +23,10 @@ namespace Proyecto_Integrador
             InitializeComponent();
             IdiomaManager.Instance.Suscribir(this);
             ActualizarIdioma(IdiomaManager.Instance.IdiomaActual);
+            cobrarVentaBtn.Enabled = false;
+            if (SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.CRUDVentas) ||
+                SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.AdminPatente))
+                cobrarVentaBtn.Enabled = true;
         }
 
         public void ActualizarIdioma(Idioma nuevoIdioma)
