@@ -1,0 +1,13 @@
+{
+  "Login": "Login",
+  "Logout": "Logout",
+  "CreateUser": "Nuevo usuario creado",
+  "DeleteClient": "Cliente eliminado",
+  "UpdateClient": "cliente actualizado",
+  "AddProduct": "Producto agregado",
+  "AddSale": "Venta generada",
+  "DeleteProduct": "Producto borrado",
+  "UpdateProduct": "Producto actualizado",
+  "NewClient": "Nuevo cliente",
+  "NewProveedor": "Nuevo proveedor"
+}

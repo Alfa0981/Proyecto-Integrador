@@ -15,6 +15,7 @@ namespace BLL
 
         MpUsuario mpUsuario = new MpUsuario();
         BLL.Perfil gestorPerfil = new BLL.Perfil();
+        BLL.GestionEventos gestionEventos = new BLL.GestionEventos();
         int contador = 0;
 
         public bool login (BE.Usuario usuarioALoguear)
@@ -39,6 +40,7 @@ namespace BLL
                     usuarioCargado.Perfil = perfilUsuario;
                 }
                 SessionManager.Login(usuarioCargado);
+                gestionEventos.persistirEvento("Login", "Users", 1);
                 return validarPrimerLogin(usuarioCargado);
             }
             else
@@ -77,6 +79,7 @@ namespace BLL
 
         public void logout()
         {
+            gestionEventos.persistirEvento("Login", "Users", 1);
             SessionManager.Logout();
         }
 

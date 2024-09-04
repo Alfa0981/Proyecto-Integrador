@@ -66,3 +66,4 @@ C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Te
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\itextsharp.xml
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\Newtonsoft.Json.dll
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.BitacoraEventos.resources

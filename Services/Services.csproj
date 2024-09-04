@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Resources\descripciones-eventos.json" />
     <None Include="Resources\etiquetas-en.json" />
     <None Include="Resources\etiquetas-es.json" />
   </ItemGroup>

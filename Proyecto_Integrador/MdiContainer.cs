@@ -150,5 +150,12 @@ namespace Proyecto_Integrador
         {
 
         }
+
+        private void bitacoraEventosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form bitacoraEventos = new BitacoraEventos();
+            bitacoraEventos.MdiParent = this;
+            bitacoraEventos.Show();
+        }
     }
 }

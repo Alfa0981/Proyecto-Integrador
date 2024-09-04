@@ -44,6 +44,7 @@
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarPerfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bitacoraEventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -170,7 +171,8 @@
             // 
             this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestionarUsuariosToolStripMenuItem,
-            this.gestionarPerfilesToolStripMenuItem});
+            this.gestionarPerfilesToolStripMenuItem,
+            this.bitacoraEventosToolStripMenuItem});
             this.adminToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(113, 25);
@@ -191,6 +193,13 @@
             this.gestionarPerfilesToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.gestionarPerfilesToolStripMenuItem.Text = "Gestionar Perfiles";
             this.gestionarPerfilesToolStripMenuItem.Click += new System.EventHandler(this.gestionarPerfilesToolStripMenuItem_Click);
+            // 
+            // bitacoraEventosToolStripMenuItem
+            // 
+            this.bitacoraEventosToolStripMenuItem.Name = "bitacoraEventosToolStripMenuItem";
+            this.bitacoraEventosToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.bitacoraEventosToolStripMenuItem.Text = "Bitacora Eventos";
+            this.bitacoraEventosToolStripMenuItem.Click += new System.EventHandler(this.bitacoraEventosToolStripMenuItem_Click);
             // 
             // MdiContainer
             // 
@@ -228,5 +237,6 @@
         private System.Windows.Forms.ToolStripMenuItem generarVentaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionarProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionarPerfilesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bitacoraEventosToolStripMenuItem;
     }
 }

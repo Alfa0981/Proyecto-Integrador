@@ -43,7 +43,9 @@
   <ItemGroup>
     <Compile Include="Carrito.cs" />
     <Compile Include="CarritoProducto.cs" />
+    <Compile Include="Modulos.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Evento.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="Idioma.cs" />
     <Compile Include="Patente.cs" />
