@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackupRestore.cs" />
     <Compile Include="IdiomaManager.cs" />
     <Compile Include="IIdiomaObserver.cs" />
     <Compile Include="SessionManager.cs" />

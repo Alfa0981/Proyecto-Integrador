@@ -45,6 +45,8 @@
             this.gestionarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionarPerfilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bitacoraEventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bitacoraCambiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.backupRestoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -172,7 +174,9 @@
             this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.gestionarUsuariosToolStripMenuItem,
             this.gestionarPerfilesToolStripMenuItem,
-            this.bitacoraEventosToolStripMenuItem});
+            this.bitacoraEventosToolStripMenuItem,
+            this.bitacoraCambiosToolStripMenuItem,
+            this.backupRestoreToolStripMenuItem});
             this.adminToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
             this.adminToolStripMenuItem.Size = new System.Drawing.Size(113, 25);
@@ -200,6 +204,19 @@
             this.bitacoraEventosToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.bitacoraEventosToolStripMenuItem.Text = "Bitacora Eventos";
             this.bitacoraEventosToolStripMenuItem.Click += new System.EventHandler(this.bitacoraEventosToolStripMenuItem_Click);
+            // 
+            // bitacoraCambiosToolStripMenuItem
+            // 
+            this.bitacoraCambiosToolStripMenuItem.Name = "bitacoraCambiosToolStripMenuItem";
+            this.bitacoraCambiosToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.bitacoraCambiosToolStripMenuItem.Text = "Bitacora Cambios";
+            // 
+            // backupRestoreToolStripMenuItem
+            // 
+            this.backupRestoreToolStripMenuItem.Name = "backupRestoreToolStripMenuItem";
+            this.backupRestoreToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.backupRestoreToolStripMenuItem.Text = "Backup Restore";
+            this.backupRestoreToolStripMenuItem.Click += new System.EventHandler(this.backupRestoreToolStripMenuItem_Click);
             // 
             // MdiContainer
             // 
@@ -238,5 +255,7 @@
         private System.Windows.Forms.ToolStripMenuItem gestionarProductosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionarPerfilesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bitacoraEventosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bitacoraCambiosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem backupRestoreToolStripMenuItem;
     }
 }

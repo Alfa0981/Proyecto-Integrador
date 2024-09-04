@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Acceso.cs" />
+    <Compile Include="BackupRestore.cs" />
     <Compile Include="MpCarrito.cs" />
     <Compile Include="MpCliente.cs" />
     <Compile Include="MpEvento.cs" />

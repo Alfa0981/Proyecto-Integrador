@@ -157,5 +157,12 @@ namespace Proyecto_Integrador
             bitacoraEventos.MdiParent = this;
             bitacoraEventos.Show();
         }
+
+        private void backupRestoreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form buckupRestore = new BackupRestore();
+            buckupRestore.MdiParent = this;
+            buckupRestore.Show();
+        }
     }
 }
