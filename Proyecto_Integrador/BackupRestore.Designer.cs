@@ -45,7 +45,7 @@
             this.backupPathTxt.Multiline = true;
             this.backupPathTxt.Name = "backupPathTxt";
             this.backupPathTxt.ReadOnly = true;
-            this.backupPathTxt.Size = new System.Drawing.Size(185, 31);
+            this.backupPathTxt.Size = new System.Drawing.Size(379, 31);
             this.backupPathTxt.TabIndex = 34;
             // 
             // label6
@@ -64,7 +64,7 @@
             this.aplicarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.aplicarBtn.FlatAppearance.BorderSize = 0;
             this.aplicarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.aplicarBtn.Location = new System.Drawing.Point(241, 59);
+            this.aplicarBtn.Location = new System.Drawing.Point(417, 59);
             this.aplicarBtn.Name = "aplicarBtn";
             this.aplicarBtn.Size = new System.Drawing.Size(71, 23);
             this.aplicarBtn.TabIndex = 56;
@@ -106,7 +106,7 @@
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(241, 224);
+            this.button3.Location = new System.Drawing.Point(417, 224);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(71, 23);
             this.button3.TabIndex = 60;
@@ -131,7 +131,7 @@
             this.restoreTxt.Multiline = true;
             this.restoreTxt.Name = "restoreTxt";
             this.restoreTxt.ReadOnly = true;
-            this.restoreTxt.Size = new System.Drawing.Size(185, 31);
+            this.restoreTxt.Size = new System.Drawing.Size(379, 31);
             this.restoreTxt.TabIndex = 58;
             // 
             // BackupRestore
@@ -139,7 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(336, 351);
+            this.ClientSize = new System.Drawing.Size(549, 351);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);

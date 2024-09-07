@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\backuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\backuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\bitacoraeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\bitacoraeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\be\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|solutionrelative:be\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\proyecto_integrador\\bitacoraeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\bitacoraeventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\bll\\backuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\backuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\formregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\bll\\gestioneventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\gestioneventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\bitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\bitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\backuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\backuprestore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,50 +34,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\Usuario.cs",
+              "RelativeDocumentMoniker": "BE\\Usuario.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\Usuario.cs",
+              "RelativeToolTip": "BE\\Usuario.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAYwGkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T18:52:20.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BitacoraEventos.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BitacoraEventos.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\BitacoraEventos.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BitacoraEventos.cs*",
+              "RelativeToolTip": "Proyecto_Integrador\\BitacoraEventos.cs*",
+              "ViewState": "AQIAADEAAAAAAAAAAAAgwBUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-07T15:26:40.982Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BitacoraEventos.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BitacoraEventos.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\BitacoraEventos.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BitacoraEventos.cs",
-              "RelativeToolTip": "Proyecto_Integrador\\BitacoraEventos.cs",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAYwJIAAAAUAAAA",
+              "DocumentIndex": 5,
+              "Title": "BackupRestore.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BackupRestore.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\BackupRestore.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BackupRestore.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_Integrador\\BackupRestore.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T11:56:05.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-07T15:21:13.307Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BackupRestore.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BackupRestore.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\BackupRestore.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BackupRestore.cs*",
-              "RelativeToolTip": "Proyecto_Integrador\\BackupRestore.cs*",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCAAAAAcAAAA",
+              "DocumentIndex": 4,
+              "Title": "BitacoraCambios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BitacoraCambios.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\BitacoraCambios.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BitacoraCambios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_Integrador\\BitacoraCambios.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T11:16:04.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-07T13:21:16.035Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "BackupRestore.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\BackupRestore.cs",
-              "RelativeDocumentMoniker": "BLL\\BackupRestore.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\BackupRestore.cs",
-              "RelativeToolTip": "BLL\\BackupRestore.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Title": "FormRegistrarCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormRegistrarCliente.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormRegistrarCliente.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormRegistrarCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_Integrador\\FormRegistrarCliente.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T11:06:54.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-07T02:14:11.351Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -81,24 +108,11 @@
               "Title": "BitacoraEventos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BitacoraEventos.cs",
               "RelativeDocumentMoniker": "Proyecto_Integrador\\BitacoraEventos.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BitacoraEventos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_Integrador\\BitacoraEventos.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\BitacoraEventos.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "Proyecto_Integrador\\BitacoraEventos.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-02T00:00:57.662Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GestionEventos.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\GestionEventos.cs",
-              "RelativeDocumentMoniker": "BLL\\GestionEventos.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\GestionEventos.cs",
-              "RelativeToolTip": "BLL\\GestionEventos.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwCsAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T00:42:42.843Z",
-              "EditorCaption": ""
             }
           ]
         }

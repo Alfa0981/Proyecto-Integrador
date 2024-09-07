@@ -6,11 +6,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 
 namespace Proyecto_Integrador
 {
@@ -19,6 +21,7 @@ namespace Proyecto_Integrador
 
         BLL.Cliente gestorCliente = new BLL.Cliente();
         BE.Cliente cliente;
+        BLL.Serializacion serializacion = new BLL.Serializacion();
 
         public FormRegistrarCliente()
         {
@@ -207,8 +210,6 @@ namespace Proyecto_Integrador
             direccionTxt.Text = cliente.Direccion;
             telefonoTxt.Text = cliente.Telefono;
 
-            cliente.Direccion = UserEncryption.EncryptData(cliente.Direccion);
-
             eliminarBtn.Show();
             modificarBtn.Show();
         }
@@ -228,6 +229,96 @@ namespace Proyecto_Integrador
                 gestorCliente.modificar(cliente);
                 CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("ModificadoConExito"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
                 listar();
+            }
+        }
+
+        private void serializarBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "XML Files|*.xml";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    List<BE.Cliente> clientes = ObtenerDatosDesdeDataGridView(dataGridView1);
+                    serializacion.SerializarXML(clientes, saveFileDialog.FileName);
+
+                    MostrarArchivoSerializado(saveFileDialog.FileName);
+
+                    MessageBox.Show("Serializado con éxito.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al serializar: " + ex.Message);
+            }
+        }
+
+        private List<BE.Cliente> ObtenerDatosDesdeDataGridView(DataGridView dataGridView)
+        {
+            List<BE.Cliente> clientes = new List<BE.Cliente>();
+
+            foreach (DataGridViewRow row in dataGridView.Rows)
+            {
+                if (row.IsNewRow) continue;
+
+                BE.Cliente cliente = new BE.Cliente
+                {
+                    Id = Convert.ToInt32(row.Cells["Id"].Value),
+                    Nombre = row.Cells["Nombre"].Value.ToString(),
+                    Apellido = row.Cells["Apellido"].Value.ToString(),
+                    Email = row.Cells["Email"].Value.ToString()
+                };
+
+                clientes.Add(cliente);
+            }
+
+            return clientes;
+        }
+
+        private void MostrarArchivoSerializado(string path)
+        {
+            serializarListBox.Items.Clear();
+
+            string[] lineas = File.ReadAllLines(path);
+
+            foreach (string linea in lineas)
+            {
+                serializarListBox.Items.Add(linea);
+            }
+        }
+
+        private void desserializarBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "XML Files|*.xml";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    List<BE.Cliente> clientes = serializacion.DeserializarXML(openFileDialog.FileName);
+                    MostrarArchivoDesserializado(clientes);
+
+                    MessageBox.Show("Des-serializado con éxito.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al des-serializar: " + ex.Message);
+            }
+        }
+
+        private void MostrarArchivoDesserializado(List<BE.Cliente> clientes)
+        {
+            desserializarListBox.Items.Clear();
+
+            foreach (var cliente in clientes)
+            {
+                desserializarListBox.Items.Add($"ID: {cliente.Id}");
+                desserializarListBox.Items.Add($"Nombre: {cliente.Nombre}");
+                desserializarListBox.Items.Add($"Apellido: {cliente.Apellido}");
+                desserializarListBox.Items.Add($"Email: {cliente.Email}");
+                desserializarListBox.Items.Add("");
             }
         }
     }

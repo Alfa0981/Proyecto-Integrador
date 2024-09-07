@@ -101,5 +101,9 @@ namespace BE
 			set { id = value; }
 		}
 
-	}
+        public override string ToString()
+        {
+            return user;
+        }
+    }
 }

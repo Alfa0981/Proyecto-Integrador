@@ -57,19 +57,8 @@ namespace Proyecto_Integrador
 
         private void listar(List<Evento> eventos)
         {
-            var eventosDisplay = eventos.Select(ev => new
-            {
-                ev.Fecha,
-                ev.Hora,
-                Usuario = ev.Usuario.User,
-                ev.Modulo,
-                ev.Criticidad,
-                ev.Descripcion,
-                ev.Id
-            }).ToList();
-
             dataGridView1.DataSource = null;
-            dataGridView1.DataSource = eventosDisplay;
+            dataGridView1.DataSource = eventos;
 
         }
 
