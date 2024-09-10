@@ -291,7 +291,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(875, 817);
+            this.ClientSize = new System.Drawing.Size(875, 727);
             this.Controls.Add(this.desserializarBtn);
             this.Controls.Add(this.serializarBtn);
             this.Controls.Add(this.desserializarListBox);

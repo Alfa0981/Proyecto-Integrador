@@ -69,3 +69,8 @@ C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Te
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.BitacoraEventos.resources
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.BackupRestore.resources
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.BitacoraCambios.resources
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.NotificarProveedorForm.resources
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.OrdenCompraForm.resources
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.PedidoCotizacionForm.resources
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.RegistrarProveedorForm.resources
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.SeleccionarMejorCotizacionForm.resources

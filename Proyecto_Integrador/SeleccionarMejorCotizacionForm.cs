@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_Integrador
 {
-    public partial class SeleccionarMejorProveedorForm : Form
+    public partial class SeleccionarMejorCotizacionForm : Form
     {
-        public SeleccionarMejorProveedorForm()
+        public SeleccionarMejorCotizacionForm()
         {
             InitializeComponent();
         }

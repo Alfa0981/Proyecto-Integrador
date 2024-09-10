@@ -80,6 +80,7 @@
             this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(113, 25);
             this.ajustesToolStripMenuItem.Text = "Ajustes";
             this.ajustesToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ajustesToolStripMenuItem.Click += new System.EventHandler(this.ajustesToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 

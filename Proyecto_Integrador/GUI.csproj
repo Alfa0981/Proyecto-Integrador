@@ -167,8 +167,38 @@
     <Compile Include="MdiContainer.Designer.cs">
       <DependentUpon>MdiContainer.cs</DependentUpon>
     </Compile>
+    <Compile Include="NotificarProveedorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotificarProveedorForm.Designer.cs">
+      <DependentUpon>NotificarProveedorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompraForm.Designer.cs">
+      <DependentUpon>OrdenCompraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoCotizacionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoCotizacionForm.Designer.cs">
+      <DependentUpon>PedidoCotizacionForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarProveedorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarProveedorForm.Designer.cs">
+      <DependentUpon>RegistrarProveedorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeleccionarMejorCotizacionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeleccionarMejorCotizacionForm.Designer.cs">
+      <DependentUpon>SeleccionarMejorCotizacionForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BackupRestore.resx">
       <DependentUpon>BackupRestore.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +254,15 @@
     <EmbeddedResource Include="MdiContainer.resx">
       <DependentUpon>MdiContainer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NotificarProveedorForm.resx">
+      <DependentUpon>NotificarProveedorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompraForm.resx">
+      <DependentUpon>OrdenCompraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PedidoCotizacionForm.resx">
+      <DependentUpon>PedidoCotizacionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -233,6 +272,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistrarProveedorForm.resx">
+      <DependentUpon>RegistrarProveedorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeleccionarMejorCotizacionForm.resx">
+      <DependentUpon>SeleccionarMejorCotizacionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

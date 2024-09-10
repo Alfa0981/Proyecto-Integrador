@@ -11,6 +11,7 @@ namespace BLL
     public class Cliente
     {
         MpCliente mpCliente = new MpCliente();
+        BLL.GestionEventos gestionEventos = new BLL.GestionEventos();
 
         public BE.Cliente buscarPorId(int id)
         {
@@ -36,17 +37,20 @@ namespace BLL
                 throw new Exception();
             }
             mpCliente.crear(cliente);
+            gestionEventos.persistirEvento("Nuevo cliente", BE.Modulos.Clientes.ToString(), 2);
         }
 
         public void eliminar(BE.Cliente cliente)
         {
             cliente.Activo = false;
             mpCliente.modificar(cliente);
+            gestionEventos.persistirEvento("Cliente eliminado", BE.Modulos.Clientes.ToString(), 1);
         }
 
         public void modificar(BE.Cliente cliente)
         {
             mpCliente.modificar(cliente);
+            gestionEventos.persistirEvento("Cliente actualizado", BE.Modulos.Clientes.ToString(), 2);
         }
     }
 }

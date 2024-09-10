@@ -9,11 +9,13 @@ namespace Proyecto_Integrador
 {
     public partial class MdiContainer : Form, IIdiomaObserver
     {
+        BLL.Usuario gestorUsuario = new BLL.Usuario();
         public MdiContainer()
         {
             InitializeComponent();
             IdiomaManager.Instance.Suscribir(this);
             ActualizarIdioma(IdiomaManager.Instance.IdiomaActual);
+            this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
         }
 
 
@@ -66,7 +68,7 @@ namespace Proyecto_Integrador
                 {
                     childForm.Close();
                 }
-                SessionManager.Logout();
+                gestorUsuario.logout();
                 InicializarAplicacion(); 
             }
         }
@@ -163,6 +165,16 @@ namespace Proyecto_Integrador
             Form buckupRestore = new BackupRestore();
             buckupRestore.MdiParent = this;
             buckupRestore.Show();
+        }
+
+        private void ajustesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            gestorUsuario.logout();
         }
     }
 }

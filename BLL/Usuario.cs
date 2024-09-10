@@ -40,7 +40,7 @@ namespace BLL
                     usuarioCargado.Perfil = perfilUsuario;
                 }
                 SessionManager.Login(usuarioCargado);
-                gestionEventos.persistirEvento("Login", "Users", 1);
+                gestionEventos.persistirEvento("Login", BE.Modulos.Users.ToString(), 3);
                 return validarPrimerLogin(usuarioCargado);
             }
             else
@@ -79,7 +79,7 @@ namespace BLL
 
         public void logout()
         {
-            gestionEventos.persistirEvento("Login", "Users", 1);
+            gestionEventos.persistirEvento("Logout", BE.Modulos.Users.ToString(), 3);
             SessionManager.Logout();
         }
 
@@ -97,6 +97,7 @@ namespace BLL
                 throw new Exception(IdiomaManager.Instance.ObtenerMensaje("UsuarioExisteException"));
             }
             mpUsuario.crear(usuarioACargar);
+            gestionEventos.persistirEvento("Nuevo usuario creado", BE.Modulos.Users.ToString(), 2);
         }
 
         public List<BE.Usuario> mostrarTodos ()

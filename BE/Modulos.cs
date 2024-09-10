@@ -9,7 +9,7 @@ namespace BE
     public enum Modulos
     {
         Ventas,
-        Usuarios,
+        Users,
         Clientes,
         Productos,
         Proveedores,

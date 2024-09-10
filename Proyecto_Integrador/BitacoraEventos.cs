@@ -71,10 +71,14 @@ namespace Proyecto_Integrador
 
         private void aplicarBtn_Click(object sender, EventArgs e)
         {
-            string selectedUser = userCombo.SelectedItem as string;
-            string selectedModule = moduloCombo.SelectedItem as string;
-            string selectedEventDesc = descripcionCombo.SelectedItem as string;
-            int? selectedCriticidad = criticidadCombo.SelectedItem as int?;
+            string selectedUser = userCombo.Text;
+            string selectedModule = moduloCombo.Text;
+            string selectedEventDesc = descripcionCombo.Text;
+            int? selectedCriticidad = null;
+            if (int.TryParse(criticidadCombo.SelectedItem?.ToString(), out int criticidad))
+            {
+                selectedCriticidad = criticidad;
+            }
             DateTime? fechaInicio = fechaInicioPicker.Value;
             DateTime? fechaFin = fechaFinPicker.Value;
             bool filtrarPorFecha = flagFiltrarFechaCheck.Checked;

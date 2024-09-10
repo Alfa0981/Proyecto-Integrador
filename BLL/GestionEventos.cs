@@ -17,16 +17,19 @@ namespace BLL
 
         public void persistirEvento (string tipoEvento, string modulo, int criticidad)
         {
-            Evento evento = new Evento()
+            if (SessionManager.GetInstance != null)
             {
-                Criticidad = criticidad,
-                Descripcion = tipoEvento,
-                Modulo = modulo,
-                Usuario = SessionManager.GetInstance.Usuario,
-                Fecha = DateTime.Now.Date, 
-                Hora = DateTime.Now.TimeOfDay,
-            };
-            mpEvento.persitirEvento(evento);
+                Evento evento = new Evento()
+                {
+                    Criticidad = criticidad,
+                    Descripcion = tipoEvento,
+                    Modulo = modulo,
+                    Usuario = SessionManager.GetInstance.Usuario,
+                    Fecha = DateTime.Now.Date,
+                    Hora = DateTime.Now.TimeOfDay,
+                };
+                mpEvento.persitirEvento(evento);
+            }
         }
 
         public List<Evento> obtenerEventos()
