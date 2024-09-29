@@ -1,13 +1,47 @@
 {
-  "Login": "Login",
-  "Logout": "Logout",
-  "CreateUser": "Nuevo usuario creado",
-  "DeleteClient": "Cliente eliminado",
-  "UpdateClient": "Cliente actualizado",
-  "AddProduct": "Producto agregado",
-  "AddSale": "Venta generada",
-  "DeleteProduct": "Producto borrado",
-  "UpdateProduct": "Producto actualizado",
-  "NewClient": "Nuevo cliente",
-  "NewProveedor": "Nuevo proveedor"
+  "Login": {
+    "Descripcion": "Login",
+    "Modulo": "Users"
+  },
+  "Logout": {
+    "Descripcion": "Logout",
+    "Modulo": "Users"
+  },
+  "CreateUser": {
+    "Descripcion": "Nuevo usuario creado",
+    "Modulo": "Users"
+  },
+  "DeleteClient": {
+    "Descripcion": "Cliente eliminado",
+    "Modulo": "Clientes"
+  },
+  "UpdateClient": {
+    "Descripcion": "Cliente actualizado",
+    "Modulo": "Clientes"
+  },
+  "AddProduct": {
+    "Descripcion": "Producto agregado",
+    "Modulo": "Productos"
+  },
+  "AddSale": {
+    "Descripcion": "Venta generada",
+    "Modulo": "Ventas"
+  },
+  "DeleteProduct": {
+    "Descripcion": "Producto borrado",
+    "Modulo": "Productos"
+  },
+  "UpdateProduct": {
+    "Descripcion": "Producto actualizado",
+    "Modulo": "Productos"
+  },
+  "NewClient": {
+    "Descripcion": "Nuevo cliente",
+    "Modulo": "Clientes"
+  },
+  "NewProveedor": {
+    "Descripcion": "Nuevo proveedor",
+    "Modulo": "Proveedores"
+  }
 }
+

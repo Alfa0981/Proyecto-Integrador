@@ -46,10 +46,6 @@ namespace Services
             {
                 session = null;
             }
-            else
-            {
-                throw new Exception("Sesión no iniciada");
-            }
         }
     }
 }

@@ -241,6 +241,7 @@
             this.moduloCombo.Name = "moduloCombo";
             this.moduloCombo.Size = new System.Drawing.Size(121, 21);
             this.moduloCombo.TabIndex = 57;
+            this.moduloCombo.SelectedIndexChanged += new System.EventHandler(this.moduloCombo_SelectedIndexChanged);
             // 
             // descripcionCombo
             // 

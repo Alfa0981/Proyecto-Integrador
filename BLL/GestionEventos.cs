@@ -37,14 +37,16 @@ namespace BLL
             return mpEvento.obtenerTodos();
         }
 
-        public string[] obtenerDescsEventos()
+        public List<DescEvento> obtenerDescsEventos()
         {
-            string rutaArchivo = @"C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Services\Resources\descripciones-eventos.json";
+            string relativePath = @"..\..\..\Services\Resources\descripciones-eventos.json";
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+            string rutaArchivo = Path.GetFullPath(Path.Combine(basePath, relativePath));
             string json = File.ReadAllText(rutaArchivo);
 
-            Dictionary<string, string> descripcionesEventos = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+            Dictionary<string, DescEvento> eventos = JsonConvert.DeserializeObject<Dictionary<string, DescEvento>>(json);
 
-            return descripcionesEventos.Values.ToArray();
+            return eventos.Values.ToList();
         }
     }
 }

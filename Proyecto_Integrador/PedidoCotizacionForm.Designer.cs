@@ -37,6 +37,7 @@
             this.notificarBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.registrarProveedoresBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -150,12 +151,26 @@
             this.dataGridView2.Size = new System.Drawing.Size(741, 150);
             this.dataGridView2.TabIndex = 55;
             // 
+            // registrarProveedoresBtn
+            // 
+            this.registrarProveedoresBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.registrarProveedoresBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.registrarProveedoresBtn.FlatAppearance.BorderSize = 0;
+            this.registrarProveedoresBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.registrarProveedoresBtn.Location = new System.Drawing.Point(694, 77);
+            this.registrarProveedoresBtn.Name = "registrarProveedoresBtn";
+            this.registrarProveedoresBtn.Size = new System.Drawing.Size(71, 38);
+            this.registrarProveedoresBtn.TabIndex = 56;
+            this.registrarProveedoresBtn.Text = "Registrar Proveedor";
+            this.registrarProveedoresBtn.UseVisualStyleBackColor = false;
+            // 
             // PedidoCotizacionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(800, 599);
+            this.Controls.Add(this.registrarProveedoresBtn);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.notificarBtn);
             this.Controls.Add(this.button2);
@@ -185,5 +200,6 @@
         private System.Windows.Forms.Button notificarBtn;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button registrarProveedoresBtn;
     }
 }

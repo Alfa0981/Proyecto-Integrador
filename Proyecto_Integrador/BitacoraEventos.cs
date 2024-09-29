@@ -49,7 +49,7 @@ namespace Proyecto_Integrador
             moduloCombo.SelectedIndex = -1;
 
             descripcionCombo.DataSource = null;
-            descripcionCombo.DataSource = gestionEventos.obtenerDescsEventos();
+            descripcionCombo.DataSource = gestionEventos.obtenerDescsEventos().Select(e => e.Descripcion).ToList();
             descripcionCombo.SelectedIndex = -1;
 
             criticidadCombo.SelectedIndex = -1;
@@ -185,5 +185,17 @@ namespace Proyecto_Integrador
             return html.ToString();
         }
 
+        private void moduloCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (moduloCombo.SelectedItem != null)
+            {
+                Modulos moduloSeleccionado = (Modulos)moduloCombo.SelectedItem;
+                descripcionCombo.DataSource = gestionEventos.obtenerDescsEventos()
+                    .Where(ev => ev.Modulo == moduloSeleccionado)
+                    .Select(ev => ev.Descripcion)
+                    .ToList(); ;
+                descripcionCombo.SelectedIndex = -1;
+            }
+        }
     }
 }

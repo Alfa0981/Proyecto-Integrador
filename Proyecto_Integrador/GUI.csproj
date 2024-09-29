@@ -193,6 +193,12 @@
     <Compile Include="RegistrarProveedorForm.Designer.cs">
       <DependentUpon>RegistrarProveedorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReponerStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReponerStockForm.Designer.cs">
+      <DependentUpon>ReponerStockForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SeleccionarMejorCotizacionForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,9 @@
     </Compile>
     <EmbeddedResource Include="RegistrarProveedorForm.resx">
       <DependentUpon>RegistrarProveedorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReponerStockForm.resx">
+      <DependentUpon>ReponerStockForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SeleccionarMejorCotizacionForm.resx">
       <DependentUpon>SeleccionarMejorCotizacionForm.cs</DependentUpon>
