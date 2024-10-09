@@ -13,9 +13,10 @@ namespace BLL
 
         public void modificarProducto(BE.BitacoraCambios cambio)
         {
+            mpBitacoraCambios.desactivarTrigger();
             gestorProducto.modificarProducto(cambio.Producto);
-            mpBitacoraCambios.eliminarUltimaFila(cambio);
-            mpBitacoraCambios.updateUltimafila(cambio);
+            mpBitacoraCambios.activarYDesactivarRegistro(cambio);
+            mpBitacoraCambios.activarTrigger();
         }
 
         public List<BE.BitacoraCambios> obtenerTodos()

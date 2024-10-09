@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -14,14 +15,14 @@ namespace DAL
     {
         Acceso acceso = new Acceso();
 
-        public void eliminarUltimaFila(BitacoraCambios cambio)
+        public void activarTrigger()
         {
-            SqlParameter[] parameters = new SqlParameter[]
-            {
-                new SqlParameter("@Cod_Prod", cambio.Producto.Id)
-            };
+            acceso.escribir(queries.BitacoraCambiosQuery.ActivarTrigger, null);
+        }
 
-            acceso.escribir(queries.BitacoraCambiosQuery.DeleteUltimaFila, parameters);
+        public void desactivarTrigger()
+        {
+            acceso.escribir(queries.BitacoraCambiosQuery.DesactivarTrigger, null);
         }
 
         public List<BE.BitacoraCambios> obtenerTodos()
@@ -55,14 +56,21 @@ namespace DAL
             return cambios;
         }
 
-        public void updateUltimafila(BitacoraCambios cambio)
+        public void activarYDesactivarRegistro(BitacoraCambios cambio)
         {
+            SqlParameter[] parameters2 = new SqlParameter[]
+            {
+                new SqlParameter("@Cod_Prod", cambio.Producto.Id)
+            };
+
+            acceso.escribir(queries.BitacoraCambiosQuery.DesactivarRegistro, parameters2);
+
             SqlParameter[] parameters = new SqlParameter[]
             {
                 new SqlParameter("@Id", cambio.Id)
             };
 
-            acceso.escribir(queries.BitacoraCambiosQuery.UpdateUltimaFila, parameters);
+            acceso.escribir(queries.BitacoraCambiosQuery.ActivarRegistro, parameters);
         }
     }
 }

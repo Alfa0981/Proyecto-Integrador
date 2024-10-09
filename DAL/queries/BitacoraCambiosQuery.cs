@@ -23,14 +23,10 @@ namespace DAL.queries
                                                     INNER JOIN 
                                                         Producto p ON pc.Cod_Prod = p.id;
                                                 ";
-        public const string DeleteUltimaFila = @"DELETE FROM Productos_C
-                                                    WHERE id = (
-                                                        SELECT TOP 1 id
-                                                        FROM Productos_C
-                                                        WHERE Cod_Prod = @Cod_Prod
-                                                        ORDER BY Fecha DESC, hora DESC
-                                                    );
-                                                ";
-        public const string UpdateUltimaFila = "update Productos_C set Act = 1 where id = @Id;";
+        
+        public const string ActivarRegistro = "update Productos_C set Act = 1 where id = @Id;";
+        public const string DesactivarRegistro = "update Productos_C set Act = 0 where Cod_Prod = @Cod_Prod;";
+        public const string DesactivarTrigger = "DISABLE TRIGGER trg_AfterUpdateProductos ON Producto;";
+        public const string ActivarTrigger = "ENABLE TRIGGER trg_AfterUpdateProductos ON Producto;";
     }
 }
