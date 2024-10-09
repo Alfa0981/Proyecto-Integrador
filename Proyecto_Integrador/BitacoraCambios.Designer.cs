@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.eliminarBtn = new System.Windows.Forms.Button();
-            this.modificarBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dniLbl = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dniTxt = new System.Windows.Forms.TextBox();
-            this.apellidoTxt = new System.Windows.Forms.TextBox();
+            this.activarBtn = new System.Windows.Forms.Button();
+            this.limpiarBtn = new System.Windows.Forms.Button();
+            this.nombreLbl = new System.Windows.Forms.Label();
+            this.codProdLbl = new System.Windows.Forms.Label();
+            this.nombreTxt = new System.Windows.Forms.TextBox();
+            this.codProdTxt = new System.Windows.Forms.TextBox();
             this.flagFiltrarFechaCheck = new System.Windows.Forms.CheckBox();
             this.fechasGroup = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.fechaFinPicker = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.fechaInicioPicker = new System.Windows.Forms.DateTimePicker();
+            this.filtrarBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.fechasGroup.SuspendLayout();
             this.SuspendLayout();
@@ -60,85 +60,78 @@
             this.dataGridView1.Size = new System.Drawing.Size(741, 166);
             this.dataGridView1.TabIndex = 1;
             // 
-            // eliminarBtn
+            // activarBtn
             // 
-            this.eliminarBtn.BackColor = System.Drawing.Color.IndianRed;
-            this.eliminarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.eliminarBtn.FlatAppearance.BorderSize = 0;
-            this.eliminarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.eliminarBtn.Location = new System.Drawing.Point(602, 415);
-            this.eliminarBtn.Name = "eliminarBtn";
-            this.eliminarBtn.Size = new System.Drawing.Size(71, 23);
-            this.eliminarBtn.TabIndex = 14;
-            this.eliminarBtn.Text = "Activar";
-            this.eliminarBtn.UseVisualStyleBackColor = false;
+            this.activarBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.activarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.activarBtn.FlatAppearance.BorderSize = 0;
+            this.activarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.activarBtn.Location = new System.Drawing.Point(700, 415);
+            this.activarBtn.Name = "activarBtn";
+            this.activarBtn.Size = new System.Drawing.Size(71, 23);
+            this.activarBtn.TabIndex = 14;
+            this.activarBtn.Text = "Activar";
+            this.activarBtn.UseVisualStyleBackColor = false;
+            this.activarBtn.Click += new System.EventHandler(this.activarBtn_Click);
             // 
-            // modificarBtn
+            // limpiarBtn
             // 
-            this.modificarBtn.BackColor = System.Drawing.Color.IndianRed;
-            this.modificarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.modificarBtn.FlatAppearance.BorderSize = 0;
-            this.modificarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.modificarBtn.Location = new System.Drawing.Point(381, 415);
-            this.modificarBtn.Name = "modificarBtn";
-            this.modificarBtn.Size = new System.Drawing.Size(71, 23);
-            this.modificarBtn.TabIndex = 13;
-            this.modificarBtn.Text = "Limpiar";
-            this.modificarBtn.UseVisualStyleBackColor = false;
+            this.limpiarBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.limpiarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.limpiarBtn.FlatAppearance.BorderSize = 0;
+            this.limpiarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.limpiarBtn.Location = new System.Drawing.Point(482, 415);
+            this.limpiarBtn.Name = "limpiarBtn";
+            this.limpiarBtn.Size = new System.Drawing.Size(71, 23);
+            this.limpiarBtn.TabIndex = 13;
+            this.limpiarBtn.Text = "Limpiar";
+            this.limpiarBtn.UseVisualStyleBackColor = false;
+            this.limpiarBtn.Click += new System.EventHandler(this.limpiarBtn_Click);
             // 
-            // button1
+            // nombreLbl
             // 
-            this.button1.BackColor = System.Drawing.Color.IndianRed;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(149, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Aplicar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.nombreLbl.AutoSize = true;
+            this.nombreLbl.BackColor = System.Drawing.Color.Snow;
+            this.nombreLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.nombreLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.nombreLbl.Location = new System.Drawing.Point(110, 305);
+            this.nombreLbl.Name = "nombreLbl";
+            this.nombreLbl.Size = new System.Drawing.Size(58, 17);
+            this.nombreLbl.TabIndex = 22;
+            this.nombreLbl.Text = "Nombre";
             // 
-            // dniLbl
+            // codProdLbl
             // 
-            this.dniLbl.AutoSize = true;
-            this.dniLbl.BackColor = System.Drawing.Color.Snow;
-            this.dniLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.dniLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dniLbl.Location = new System.Drawing.Point(110, 305);
-            this.dniLbl.Name = "dniLbl";
-            this.dniLbl.Size = new System.Drawing.Size(58, 17);
-            this.dniLbl.TabIndex = 22;
-            this.dniLbl.Text = "Nombre";
+            this.codProdLbl.AutoSize = true;
+            this.codProdLbl.BackColor = System.Drawing.Color.Snow;
+            this.codProdLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.codProdLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.codProdLbl.Location = new System.Drawing.Point(110, 251);
+            this.codProdLbl.Name = "codProdLbl";
+            this.codProdLbl.Size = new System.Drawing.Size(94, 17);
+            this.codProdLbl.TabIndex = 21;
+            this.codProdLbl.Text = "Cod Producto";
             // 
-            // label2
+            // nombreTxt
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Snow;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label2.Location = new System.Drawing.Point(110, 251);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 17);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Cod Producto";
+            this.nombreTxt.Location = new System.Drawing.Point(107, 298);
+            this.nombreTxt.Multiline = true;
+            this.nombreTxt.Name = "nombreTxt";
+            this.nombreTxt.Size = new System.Drawing.Size(135, 31);
+            this.nombreTxt.TabIndex = 20;
+            this.nombreTxt.Enter += new System.EventHandler(this.nombreTxt_Enter);
+            this.nombreTxt.Leave += new System.EventHandler(this.nombreTxt_Leave);
             // 
-            // dniTxt
+            // codProdTxt
             // 
-            this.dniTxt.Location = new System.Drawing.Point(107, 298);
-            this.dniTxt.Multiline = true;
-            this.dniTxt.Name = "dniTxt";
-            this.dniTxt.Size = new System.Drawing.Size(135, 31);
-            this.dniTxt.TabIndex = 20;
-            // 
-            // apellidoTxt
-            // 
-            this.apellidoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.apellidoTxt.Location = new System.Drawing.Point(107, 245);
-            this.apellidoTxt.Multiline = true;
-            this.apellidoTxt.Name = "apellidoTxt";
-            this.apellidoTxt.Size = new System.Drawing.Size(135, 31);
-            this.apellidoTxt.TabIndex = 19;
+            this.codProdTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.codProdTxt.Location = new System.Drawing.Point(107, 245);
+            this.codProdTxt.Multiline = true;
+            this.codProdTxt.Name = "codProdTxt";
+            this.codProdTxt.Size = new System.Drawing.Size(135, 31);
+            this.codProdTxt.TabIndex = 19;
+            this.codProdTxt.Enter += new System.EventHandler(this.codProdTxt_Enter);
+            this.codProdTxt.Leave += new System.EventHandler(this.codProdTxt_Leave);
             // 
             // flagFiltrarFechaCheck
             // 
@@ -149,6 +142,7 @@
             this.flagFiltrarFechaCheck.TabIndex = 62;
             this.flagFiltrarFechaCheck.Text = "Filtrar por Fecha";
             this.flagFiltrarFechaCheck.UseVisualStyleBackColor = true;
+            this.flagFiltrarFechaCheck.CheckedChanged += new System.EventHandler(this.flagFiltrarFechaCheck_CheckedChanged);
             // 
             // fechasGroup
             // 
@@ -179,6 +173,7 @@
             this.fechaFinPicker.Name = "fechaFinPicker";
             this.fechaFinPicker.Size = new System.Drawing.Size(200, 20);
             this.fechaFinPicker.TabIndex = 43;
+            this.fechaFinPicker.ValueChanged += new System.EventHandler(this.fechaFinPicker_ValueChanged);
             // 
             // label3
             // 
@@ -196,6 +191,21 @@
             this.fechaInicioPicker.Name = "fechaInicioPicker";
             this.fechaInicioPicker.Size = new System.Drawing.Size(200, 20);
             this.fechaInicioPicker.TabIndex = 44;
+            this.fechaInicioPicker.ValueChanged += new System.EventHandler(this.fechaInicioPicker_ValueChanged);
+            // 
+            // filtrarBtn
+            // 
+            this.filtrarBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.filtrarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.filtrarBtn.FlatAppearance.BorderSize = 0;
+            this.filtrarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.filtrarBtn.Location = new System.Drawing.Point(287, 415);
+            this.filtrarBtn.Name = "filtrarBtn";
+            this.filtrarBtn.Size = new System.Drawing.Size(71, 23);
+            this.filtrarBtn.TabIndex = 64;
+            this.filtrarBtn.Text = "Filtrar";
+            this.filtrarBtn.UseVisualStyleBackColor = false;
+            this.filtrarBtn.Click += new System.EventHandler(this.filtrarBtn_Click);
             // 
             // BitacoraCambios
             // 
@@ -203,15 +213,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.filtrarBtn);
             this.Controls.Add(this.flagFiltrarFechaCheck);
             this.Controls.Add(this.fechasGroup);
-            this.Controls.Add(this.dniLbl);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.dniTxt);
-            this.Controls.Add(this.apellidoTxt);
-            this.Controls.Add(this.eliminarBtn);
-            this.Controls.Add(this.modificarBtn);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.nombreLbl);
+            this.Controls.Add(this.codProdLbl);
+            this.Controls.Add(this.nombreTxt);
+            this.Controls.Add(this.codProdTxt);
+            this.Controls.Add(this.activarBtn);
+            this.Controls.Add(this.limpiarBtn);
             this.Controls.Add(this.dataGridView1);
             this.Name = "BitacoraCambios";
             this.Text = "BitacoraCambios";
@@ -226,18 +236,18 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button eliminarBtn;
-        private System.Windows.Forms.Button modificarBtn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label dniLbl;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox dniTxt;
-        private System.Windows.Forms.TextBox apellidoTxt;
+        private System.Windows.Forms.Button activarBtn;
+        private System.Windows.Forms.Button limpiarBtn;
+        private System.Windows.Forms.Label nombreLbl;
+        private System.Windows.Forms.Label codProdLbl;
+        private System.Windows.Forms.TextBox nombreTxt;
+        private System.Windows.Forms.TextBox codProdTxt;
         private System.Windows.Forms.CheckBox flagFiltrarFechaCheck;
         private System.Windows.Forms.GroupBox fechasGroup;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker fechaFinPicker;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker fechaInicioPicker;
+        private System.Windows.Forms.Button filtrarBtn;
     }
 }

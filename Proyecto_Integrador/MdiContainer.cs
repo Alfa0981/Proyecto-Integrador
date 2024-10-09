@@ -176,5 +176,12 @@ namespace Proyecto_Integrador
         {
             gestorUsuario.logout();
         }
+
+        private void bitacoraCambiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form bitacoraCambios = new BitacoraCambios();
+            bitacoraCambios.MdiParent = this;
+            bitacoraCambios.Show();
+        }
     }
 }

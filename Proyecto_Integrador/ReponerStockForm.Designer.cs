@@ -39,6 +39,8 @@
             this.registrarProveedoresBtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -50,7 +52,7 @@
             this.ordenCompraLbl.BackColor = System.Drawing.Color.Snow;
             this.ordenCompraLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.ordenCompraLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ordenCompraLbl.Location = new System.Drawing.Point(43, 33);
+            this.ordenCompraLbl.Location = new System.Drawing.Point(43, 52);
             this.ordenCompraLbl.Name = "ordenCompraLbl";
             this.ordenCompraLbl.Size = new System.Drawing.Size(125, 17);
             this.ordenCompraLbl.TabIndex = 42;
@@ -59,7 +61,7 @@
             // clienteIdTxt
             // 
             this.clienteIdTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.clienteIdTxt.Location = new System.Drawing.Point(37, 26);
+            this.clienteIdTxt.Location = new System.Drawing.Point(37, 45);
             this.clienteIdTxt.Multiline = true;
             this.clienteIdTxt.Name = "clienteIdTxt";
             this.clienteIdTxt.Size = new System.Drawing.Size(161, 32);
@@ -156,7 +158,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(422, 293);
+            this.button1.Location = new System.Drawing.Point(548, 333);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(71, 38);
             this.button1.TabIndex = 58;
@@ -169,12 +171,34 @@
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(368, 609);
+            this.button2.Location = new System.Drawing.Point(368, 595);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(71, 38);
             this.button2.TabIndex = 59;
             this.button2.Text = "Finalizar";
             this.button2.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Snow;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.label3.Location = new System.Drawing.Point(501, 302);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 17);
+            this.label3.TabIndex = 60;
+            this.label3.Text = "Cant Desaprobados";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.textBox1.Location = new System.Drawing.Point(495, 295);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(161, 32);
+            this.textBox1.TabIndex = 61;
             // 
             // ReponerStockForm
             // 
@@ -182,6 +206,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(860, 696);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.registrarProveedoresBtn);
@@ -216,5 +242,7 @@
         private System.Windows.Forms.Button registrarProveedoresBtn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

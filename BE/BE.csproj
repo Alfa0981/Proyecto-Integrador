@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitacoraCambios.cs" />
     <Compile Include="Carrito.cs" />
     <Compile Include="CarritoProducto.cs" />
     <Compile Include="DescEvento.cs" />

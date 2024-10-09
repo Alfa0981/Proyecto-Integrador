@@ -211,6 +211,7 @@
             this.bitacoraCambiosToolStripMenuItem.Name = "bitacoraCambiosToolStripMenuItem";
             this.bitacoraCambiosToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.bitacoraCambiosToolStripMenuItem.Text = "Bitacora Cambios";
+            this.bitacoraCambiosToolStripMenuItem.Click += new System.EventHandler(this.bitacoraCambiosToolStripMenuItem_Click);
             // 
             // backupRestoreToolStripMenuItem
             // 

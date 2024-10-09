@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BackupRestore.cs" />
+    <Compile Include="BitacoraCambios.cs" />
     <Compile Include="Carrito.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Factura.cs" />

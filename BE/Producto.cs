@@ -14,7 +14,12 @@ namespace BE
 		private double precio;
 		private bool activo;
 
-		public Producto() { 
+        public override string ToString()
+        {
+            return id.ToString();
+        }
+
+        public Producto() { 
 			this.activo = true;
 		}
 
