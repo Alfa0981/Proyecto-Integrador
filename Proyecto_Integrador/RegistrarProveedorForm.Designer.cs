@@ -42,9 +42,13 @@
             this.dniTxt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.productosCombo = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.todosPerfilesLbl = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // direccionLbl
@@ -53,7 +57,7 @@
             this.direccionLbl.BackColor = System.Drawing.Color.Snow;
             this.direccionLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.direccionLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.direccionLbl.Location = new System.Drawing.Point(83, 265);
+            this.direccionLbl.Location = new System.Drawing.Point(30, 361);
             this.direccionLbl.Name = "direccionLbl";
             this.direccionLbl.Size = new System.Drawing.Size(67, 17);
             this.direccionLbl.TabIndex = 37;
@@ -65,7 +69,7 @@
             this.telefonoLbl.BackColor = System.Drawing.Color.Snow;
             this.telefonoLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.telefonoLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.telefonoLbl.Location = new System.Drawing.Point(411, 265);
+            this.telefonoLbl.Location = new System.Drawing.Point(31, 270);
             this.telefonoLbl.Name = "telefonoLbl";
             this.telefonoLbl.Size = new System.Drawing.Size(64, 17);
             this.telefonoLbl.TabIndex = 36;
@@ -77,7 +81,7 @@
             this.emailLbl.BackColor = System.Drawing.Color.Snow;
             this.emailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.emailLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.emailLbl.Location = new System.Drawing.Point(409, 219);
+            this.emailLbl.Location = new System.Drawing.Point(29, 224);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(42, 17);
             this.emailLbl.TabIndex = 35;
@@ -89,7 +93,7 @@
             this.dniLbl.BackColor = System.Drawing.Color.Snow;
             this.dniLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.dniLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dniLbl.Location = new System.Drawing.Point(79, 311);
+            this.dniLbl.Location = new System.Drawing.Point(26, 407);
             this.dniLbl.Name = "dniLbl";
             this.dniLbl.Size = new System.Drawing.Size(29, 17);
             this.dniLbl.TabIndex = 34;
@@ -101,7 +105,7 @@
             this.label1.BackColor = System.Drawing.Color.Snow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.Location = new System.Drawing.Point(79, 218);
+            this.label1.Location = new System.Drawing.Point(26, 314);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 17);
             this.label1.TabIndex = 32;
@@ -113,7 +117,7 @@
             this.eliminarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.eliminarBtn.FlatAppearance.BorderSize = 0;
             this.eliminarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.eliminarBtn.Location = new System.Drawing.Point(592, 378);
+            this.eliminarBtn.Location = new System.Drawing.Point(385, 503);
             this.eliminarBtn.Name = "eliminarBtn";
             this.eliminarBtn.Size = new System.Drawing.Size(71, 23);
             this.eliminarBtn.TabIndex = 31;
@@ -123,7 +127,7 @@
             // nombreTxt
             // 
             this.nombreTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.nombreTxt.Location = new System.Drawing.Point(76, 212);
+            this.nombreTxt.Location = new System.Drawing.Point(23, 308);
             this.nombreTxt.Multiline = true;
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(321, 31);
@@ -135,7 +139,7 @@
             this.modificarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.modificarBtn.FlatAppearance.BorderSize = 0;
             this.modificarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.modificarBtn.Location = new System.Drawing.Point(371, 378);
+            this.modificarBtn.Location = new System.Drawing.Point(494, 503);
             this.modificarBtn.Name = "modificarBtn";
             this.modificarBtn.Size = new System.Drawing.Size(71, 23);
             this.modificarBtn.TabIndex = 30;
@@ -144,7 +148,7 @@
             // 
             // direccionTxt
             // 
-            this.direccionTxt.Location = new System.Drawing.Point(76, 258);
+            this.direccionTxt.Location = new System.Drawing.Point(23, 354);
             this.direccionTxt.Multiline = true;
             this.direccionTxt.Name = "direccionTxt";
             this.direccionTxt.Size = new System.Drawing.Size(321, 31);
@@ -152,7 +156,7 @@
             // 
             // telefonoTxt
             // 
-            this.telefonoTxt.Location = new System.Drawing.Point(403, 258);
+            this.telefonoTxt.Location = new System.Drawing.Point(23, 263);
             this.telefonoTxt.Multiline = true;
             this.telefonoTxt.Name = "telefonoTxt";
             this.telefonoTxt.Size = new System.Drawing.Size(321, 31);
@@ -160,7 +164,7 @@
             // 
             // emailTxt
             // 
-            this.emailTxt.Location = new System.Drawing.Point(403, 212);
+            this.emailTxt.Location = new System.Drawing.Point(23, 217);
             this.emailTxt.Multiline = true;
             this.emailTxt.Name = "emailTxt";
             this.emailTxt.Size = new System.Drawing.Size(321, 31);
@@ -168,7 +172,7 @@
             // 
             // dniTxt
             // 
-            this.dniTxt.Location = new System.Drawing.Point(76, 304);
+            this.dniTxt.Location = new System.Drawing.Point(23, 400);
             this.dniTxt.Multiline = true;
             this.dniTxt.Name = "dniTxt";
             this.dniTxt.Size = new System.Drawing.Size(321, 31);
@@ -180,7 +184,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(139, 378);
+            this.button1.Location = new System.Drawing.Point(280, 503);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(71, 23);
             this.button1.TabIndex = 23;
@@ -198,36 +202,70 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(741, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(840, 150);
             this.dataGridView1.TabIndex = 22;
             // 
-            // comboBox1
+            // productosCombo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(603, 310);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 25);
-            this.comboBox1.TabIndex = 38;
+            this.productosCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.productosCombo.FormattingEnabled = true;
+            this.productosCombo.Location = new System.Drawing.Point(166, 34);
+            this.productosCombo.Name = "productosCombo";
+            this.productosCombo.Size = new System.Drawing.Size(121, 25);
+            this.productosCombo.TabIndex = 38;
+            this.productosCombo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.listBox1);
+            this.groupBox1.Controls.Add(this.todosPerfilesLbl);
+            this.groupBox1.Controls.Add(this.productosCombo);
+            this.groupBox1.Location = new System.Drawing.Point(361, 217);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(502, 196);
+            this.groupBox1.TabIndex = 47;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Productos";
             // 
             // todosPerfilesLbl
             // 
             this.todosPerfilesLbl.AutoSize = true;
-            this.todosPerfilesLbl.Location = new System.Drawing.Point(537, 316);
+            this.todosPerfilesLbl.Location = new System.Drawing.Point(24, 40);
             this.todosPerfilesLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.todosPerfilesLbl.Name = "todosPerfilesLbl";
-            this.todosPerfilesLbl.Size = new System.Drawing.Size(50, 13);
+            this.todosPerfilesLbl.Size = new System.Drawing.Size(88, 13);
             this.todosPerfilesLbl.TabIndex = 46;
-            this.todosPerfilesLbl.Text = "Producto";
+            this.todosPerfilesLbl.Text = "Asociar Producto";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(293, 25);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(203, 147);
+            this.listBox1.TabIndex = 47;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.IndianRed;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Location = new System.Drawing.Point(120, 94);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(71, 23);
+            this.button2.TabIndex = 48;
+            this.button2.Text = "Asociar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // RegistrarProveedorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.todosPerfilesLbl);
-            this.Controls.Add(this.comboBox1);
+            this.ClientSize = new System.Drawing.Size(928, 547);
             this.Controls.Add(this.direccionLbl);
             this.Controls.Add(this.telefonoLbl);
             this.Controls.Add(this.emailLbl);
@@ -242,9 +280,12 @@
             this.Controls.Add(this.dniTxt);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.groupBox1);
             this.Name = "RegistrarProveedorForm";
             this.Text = "RegistrarProveedorForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,7 +307,10 @@
         private System.Windows.Forms.TextBox dniTxt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox productosCombo;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label todosPerfilesLbl;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button2;
     }
 }

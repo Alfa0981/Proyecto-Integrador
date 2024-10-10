@@ -183,5 +183,12 @@ namespace Proyecto_Integrador
             bitacoraCambios.MdiParent = this;
             bitacoraCambios.Show();
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Form pedidoCotizacion = new PedidoCotizacionForm();
+            pedidoCotizacion.MdiParent = this;
+            pedidoCotizacion.Show();
+        }
     }
 }

@@ -28,33 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.proveedoresDataGrid = new System.Windows.Forms.DataGridView();
             this.todosPerfilesLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.productosCombo = new System.Windows.Forms.ComboBox();
             this.seleccionarTodosBtn = new System.Windows.Forms.Button();
             this.seleccionarBtn = new System.Windows.Forms.Button();
             this.notificarBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.ProveedoresSelectedDataGrid = new System.Windows.Forms.DataGridView();
             this.registrarProveedoresBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.limpiarBtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedoresDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProveedoresSelectedDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // proveedoresDataGrid
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.MistyRose;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 121);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(741, 150);
-            this.dataGridView1.TabIndex = 23;
+            this.proveedoresDataGrid.AllowUserToAddRows = false;
+            this.proveedoresDataGrid.AllowUserToDeleteRows = false;
+            this.proveedoresDataGrid.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.proveedoresDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.proveedoresDataGrid.GridColor = System.Drawing.SystemColors.ControlText;
+            this.proveedoresDataGrid.Location = new System.Drawing.Point(24, 121);
+            this.proveedoresDataGrid.Name = "proveedoresDataGrid";
+            this.proveedoresDataGrid.ReadOnly = true;
+            this.proveedoresDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.proveedoresDataGrid.Size = new System.Drawing.Size(741, 150);
+            this.proveedoresDataGrid.TabIndex = 23;
             // 
             // todosPerfilesLbl
             // 
@@ -72,18 +73,18 @@
             this.label1.Location = new System.Drawing.Point(22, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 49;
-            this.label1.Text = "Producto";
+            this.label1.Text = "Producto Id";
             // 
-            // comboBox1
+            // productosCombo
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(88, 24);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 25);
-            this.comboBox1.TabIndex = 48;
+            this.productosCombo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.productosCombo.FormattingEnabled = true;
+            this.productosCombo.Location = new System.Drawing.Point(88, 24);
+            this.productosCombo.Name = "productosCombo";
+            this.productosCombo.Size = new System.Drawing.Size(121, 25);
+            this.productosCombo.TabIndex = 48;
             // 
             // seleccionarTodosBtn
             // 
@@ -110,6 +111,7 @@
             this.seleccionarBtn.TabIndex = 51;
             this.seleccionarBtn.Text = "Seleccionar";
             this.seleccionarBtn.UseVisualStyleBackColor = false;
+            this.seleccionarBtn.Click += new System.EventHandler(this.seleccionarBtn_Click);
             // 
             // notificarBtn
             // 
@@ -137,19 +139,19 @@
             this.button2.Text = "Remover";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // ProveedoresSelectedDataGrid
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.MistyRose;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.GridColor = System.Drawing.SystemColors.ControlText;
-            this.dataGridView2.Location = new System.Drawing.Point(25, 350);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(741, 150);
-            this.dataGridView2.TabIndex = 55;
+            this.ProveedoresSelectedDataGrid.AllowUserToAddRows = false;
+            this.ProveedoresSelectedDataGrid.AllowUserToDeleteRows = false;
+            this.ProveedoresSelectedDataGrid.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.ProveedoresSelectedDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ProveedoresSelectedDataGrid.GridColor = System.Drawing.SystemColors.ControlText;
+            this.ProveedoresSelectedDataGrid.Location = new System.Drawing.Point(25, 350);
+            this.ProveedoresSelectedDataGrid.Name = "ProveedoresSelectedDataGrid";
+            this.ProveedoresSelectedDataGrid.ReadOnly = true;
+            this.ProveedoresSelectedDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.ProveedoresSelectedDataGrid.Size = new System.Drawing.Size(741, 150);
+            this.ProveedoresSelectedDataGrid.TabIndex = 55;
             // 
             // registrarProveedoresBtn
             // 
@@ -163,6 +165,21 @@
             this.registrarProveedoresBtn.TabIndex = 56;
             this.registrarProveedoresBtn.Text = "Registrar Proveedor";
             this.registrarProveedoresBtn.UseVisualStyleBackColor = false;
+            this.registrarProveedoresBtn.Click += new System.EventHandler(this.registrarProveedoresBtn_Click);
+            // 
+            // limpiarBtn
+            // 
+            this.limpiarBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.limpiarBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.limpiarBtn.FlatAppearance.BorderSize = 0;
+            this.limpiarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.limpiarBtn.Location = new System.Drawing.Point(239, 17);
+            this.limpiarBtn.Name = "limpiarBtn";
+            this.limpiarBtn.Size = new System.Drawing.Size(71, 38);
+            this.limpiarBtn.TabIndex = 57;
+            this.limpiarBtn.Text = "Limpiar Filtro";
+            this.limpiarBtn.UseVisualStyleBackColor = false;
+            this.limpiarBtn.Click += new System.EventHandler(this.limpiarBtn_Click);
             // 
             // PedidoCotizacionForm
             // 
@@ -170,20 +187,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(800, 599);
+            this.Controls.Add(this.limpiarBtn);
             this.Controls.Add(this.registrarProveedoresBtn);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.ProveedoresSelectedDataGrid);
             this.Controls.Add(this.notificarBtn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.seleccionarTodosBtn);
             this.Controls.Add(this.seleccionarBtn);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.productosCombo);
             this.Controls.Add(this.todosPerfilesLbl);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.proveedoresDataGrid);
             this.Name = "PedidoCotizacionForm";
             this.Text = "PedidoCotizacionForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.proveedoresDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProveedoresSelectedDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,15 +209,16 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView proveedoresDataGrid;
         private System.Windows.Forms.Label todosPerfilesLbl;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox productosCombo;
         private System.Windows.Forms.Button seleccionarTodosBtn;
         private System.Windows.Forms.Button seleccionarBtn;
         private System.Windows.Forms.Button notificarBtn;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView ProveedoresSelectedDataGrid;
         private System.Windows.Forms.Button registrarProveedoresBtn;
+        private System.Windows.Forms.Button limpiarBtn;
     }
 }
