@@ -12,7 +12,7 @@ namespace BE
         Users,
         Clientes,
         Productos,
-        Proveedores,
+        Compras,
 
     }
 }

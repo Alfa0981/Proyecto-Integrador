@@ -9,5 +9,30 @@ namespace BLL
     public class Proveedor
     {
         DAL.MpProveedor mpProveedor = new DAL.MpProveedor();
+        BLL.GestionEventos gestorEventos = new BLL.GestionEventos();
+
+        public void eliminar(BE.Proveedor proveedor)
+        {
+            proveedor.Activo = false;
+            mpProveedor.modificar(proveedor);
+            gestorEventos.persistirEvento("Proveedor eliminado", BE.Modulos.Compras.ToString(), 1);
+        }
+
+        public void insertarProveedor(BE.Proveedor proveedor)
+        {
+            mpProveedor.CrearProveedor(proveedor);
+            gestorEventos.persistirEvento("Nuevo proveedor", BE.Modulos.Compras.ToString(), 3);
+        }
+
+        public void modificar(BE.Proveedor proveedor)
+        {
+            mpProveedor.modificar(proveedor);
+            gestorEventos.persistirEvento("Proveedor modificado", BE.Modulos.Compras.ToString(),3);
+        }
+
+        public List<BE.Proveedor> obtenerTodos() 
+        {
+            return mpProveedor.obtenerTodos();
+        }
     }
 }

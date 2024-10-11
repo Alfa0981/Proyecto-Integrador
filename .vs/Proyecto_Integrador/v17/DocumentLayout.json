@@ -1,38 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\",
+  "WorkspaceRootPath": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|c:\\users\\navegador\\source\\repos\\proyecto-integrador\\dal\\mpbitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\mpbitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\proyecto_integrador\\registrarproveedorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\registrarproveedorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\dal\\queries\\bitacoracambiosquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\queries\\bitacoracambiosquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\bll\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\bll\\bitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\bitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\proyecto_integrador\\formregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\proyecto_integrador\\bitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\bitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\registrarproveedorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\registrarproveedorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\proyecto_integrador\\bitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\bitacoracambios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\dal\\mpproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\mpproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\navegador\\source\\repos\\proyecto-integrador\\proyecto_integrador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\be\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|solutionrelative:be\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\dal\\mpproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\mpproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\proyecto_integrador\\formgestionarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\formgestionarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\dal\\queries\\proveedorquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\queries\\proveedorquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,104 +46,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MpBitacoraCambios.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\DAL\\MpBitacoraCambios.cs",
-              "RelativeDocumentMoniker": "DAL\\MpBitacoraCambios.cs",
-              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\DAL\\MpBitacoraCambios.cs*",
-              "RelativeToolTip": "DAL\\MpBitacoraCambios.cs*",
-              "ViewState": "AgIAADgAAAAAAAAAAADwv0gAAABWAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ProveedorQuery.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\queries\\ProveedorQuery.cs",
+              "RelativeDocumentMoniker": "DAL\\queries\\ProveedorQuery.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\queries\\ProveedorQuery.cs",
+              "RelativeToolTip": "DAL\\queries\\ProveedorQuery.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAUwCsAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T21:24:36.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T12:31:00.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BitacoraCambios.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\BLL\\BitacoraCambios.cs",
-              "RelativeDocumentMoniker": "BLL\\BitacoraCambios.cs",
-              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\BLL\\BitacoraCambios.cs",
-              "RelativeToolTip": "BLL\\BitacoraCambios.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBEAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\Proveedor.cs",
+              "RelativeDocumentMoniker": "BE\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\Proveedor.cs",
+              "RelativeToolTip": "BE\\Proveedor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T23:02:49.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T11:55:57.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BitacoraCambios.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\BitacoraCambios.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\BitacoraCambios.cs",
-              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\BitacoraCambios.cs",
-              "RelativeToolTip": "Proyecto_Integrador\\BitacoraCambios.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAcwH0AAAArAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "MpProveedor.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpProveedor.cs",
+              "RelativeDocumentMoniker": "DAL\\MpProveedor.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpProveedor.cs",
+              "RelativeToolTip": "DAL\\MpProveedor.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAADwv2sAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T22:21:23.651Z",
+              "WhenOpened": "2024-10-11T11:54:00.929Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BitacoraCambiosQuery.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\DAL\\queries\\BitacoraCambiosQuery.cs",
-              "RelativeDocumentMoniker": "DAL\\queries\\BitacoraCambiosQuery.cs",
-              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\DAL\\queries\\BitacoraCambiosQuery.cs",
-              "RelativeToolTip": "DAL\\queries\\BitacoraCambiosQuery.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAiwBsAAABrAAAAAAAAAA==",
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\Proveedor.cs",
+              "RelativeDocumentMoniker": "BLL\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\Proveedor.cs",
+              "RelativeToolTip": "BLL\\Proveedor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T21:23:18.936Z",
+              "WhenOpened": "2024-10-11T11:51:13.312Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BitacoraCambios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\BitacoraCambios.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\BitacoraCambios.cs",
-              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\BitacoraCambios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_Integrador\\BitacoraCambios.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "FormRegistrarCliente.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormRegistrarCliente.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormRegistrarCliente.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\FormRegistrarCliente.cs",
+              "RelativeToolTip": "Proyecto_Integrador\\FormRegistrarCliente.cs",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAAAL8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T22:21:20.557Z",
+              "WhenOpened": "2024-10-10T21:28:09.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegistrarProveedorForm.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\RegistrarProveedorForm.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\RegistrarProveedorForm.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\RegistrarProveedorForm.cs",
+              "RelativeToolTip": "Proyecto_Integrador\\RegistrarProveedorForm.cs",
+              "ViewState": "AQIAALkAAAAAAAAAAAAwwN0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T21:32:23.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistrarProveedorForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\RegistrarProveedorForm.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\RegistrarProveedorForm.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\RegistrarProveedorForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_Integrador\\RegistrarProveedorForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T21:31:09.5Z",
               "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MpProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\DAL\\MpProducto.cs",
-              "RelativeDocumentMoniker": "DAL\\MpProducto.cs",
-              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\DAL\\MpProducto.cs",
-              "RelativeToolTip": "DAL\\MpProducto.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAhwCsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T23:17:16.713Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\Program.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\Program.cs",
-              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\Program.cs",
-              "RelativeToolTip": "Proyecto_Integrador\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T22:21:36.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormGestionarProducto.cs",
-              "DocumentMoniker": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\FormGestionarProducto.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\FormGestionarProducto.cs",
-              "ToolTip": "C:\\Users\\Navegador\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\FormGestionarProducto.cs",
-              "RelativeToolTip": "Proyecto_Integrador\\FormGestionarProducto.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAAACkAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T21:11:12.106Z"
             }
           ]
         }

@@ -15,6 +15,19 @@ namespace BE
         private string direccion;
         private string dni;
         private List<Producto> productos;
+        private bool activo;
+
+        public Proveedor()
+        {
+            activo = true;
+        }
+
+        public bool Activo
+        {
+            get { return activo; }
+            set { activo = value; }
+        }
+
 
         public int Id
         {

@@ -32,7 +32,7 @@
             this.telefonoLbl = new System.Windows.Forms.Label();
             this.emailLbl = new System.Windows.Forms.Label();
             this.dniLbl = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.nombreLbl = new System.Windows.Forms.Label();
             this.eliminarBtn = new System.Windows.Forms.Button();
             this.nombreTxt = new System.Windows.Forms.TextBox();
             this.modificarBtn = new System.Windows.Forms.Button();
@@ -44,9 +44,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.productosCombo = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.todosPerfilesLbl = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.removerProductoBtn = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.todosPerfilesLbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -99,17 +101,17 @@
             this.dniLbl.TabIndex = 34;
             this.dniLbl.Text = "Dni";
             // 
-            // label1
+            // nombreLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Snow;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.label1.Location = new System.Drawing.Point(26, 314);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Nombre";
+            this.nombreLbl.AutoSize = true;
+            this.nombreLbl.BackColor = System.Drawing.Color.Snow;
+            this.nombreLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.nombreLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.nombreLbl.Location = new System.Drawing.Point(26, 314);
+            this.nombreLbl.Name = "nombreLbl";
+            this.nombreLbl.Size = new System.Drawing.Size(58, 17);
+            this.nombreLbl.TabIndex = 32;
+            this.nombreLbl.Text = "Nombre";
             // 
             // eliminarBtn
             // 
@@ -123,6 +125,7 @@
             this.eliminarBtn.TabIndex = 31;
             this.eliminarBtn.Text = "Eliminar";
             this.eliminarBtn.UseVisualStyleBackColor = false;
+            this.eliminarBtn.Click += new System.EventHandler(this.eliminarBtn_Click);
             // 
             // nombreTxt
             // 
@@ -132,6 +135,8 @@
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(321, 31);
             this.nombreTxt.TabIndex = 24;
+            this.nombreTxt.Enter += new System.EventHandler(this.nombreTxt_Enter);
+            this.nombreTxt.Leave += new System.EventHandler(this.nombreTxt_Leave);
             // 
             // modificarBtn
             // 
@@ -145,38 +150,51 @@
             this.modificarBtn.TabIndex = 30;
             this.modificarBtn.Text = "Modificar";
             this.modificarBtn.UseVisualStyleBackColor = false;
+            this.modificarBtn.Click += new System.EventHandler(this.modificarBtn_Click);
             // 
             // direccionTxt
             // 
+            this.direccionTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.direccionTxt.Location = new System.Drawing.Point(23, 354);
             this.direccionTxt.Multiline = true;
             this.direccionTxt.Name = "direccionTxt";
             this.direccionTxt.Size = new System.Drawing.Size(321, 31);
             this.direccionTxt.TabIndex = 29;
+            this.direccionTxt.Enter += new System.EventHandler(this.direccionTxt_Enter);
+            this.direccionTxt.Leave += new System.EventHandler(this.direccionTxt_Leave);
             // 
             // telefonoTxt
             // 
+            this.telefonoTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.telefonoTxt.Location = new System.Drawing.Point(23, 263);
             this.telefonoTxt.Multiline = true;
             this.telefonoTxt.Name = "telefonoTxt";
             this.telefonoTxt.Size = new System.Drawing.Size(321, 31);
             this.telefonoTxt.TabIndex = 28;
+            this.telefonoTxt.Enter += new System.EventHandler(this.telefonoTxt_Enter);
+            this.telefonoTxt.Leave += new System.EventHandler(this.telefonoTxt_Leave);
             // 
             // emailTxt
             // 
+            this.emailTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.emailTxt.Location = new System.Drawing.Point(23, 217);
             this.emailTxt.Multiline = true;
             this.emailTxt.Name = "emailTxt";
             this.emailTxt.Size = new System.Drawing.Size(321, 31);
             this.emailTxt.TabIndex = 27;
+            this.emailTxt.Enter += new System.EventHandler(this.emailTxt_Enter);
+            this.emailTxt.Leave += new System.EventHandler(this.emailTxt_Leave);
             // 
             // dniTxt
             // 
+            this.dniTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.dniTxt.Location = new System.Drawing.Point(23, 400);
             this.dniTxt.Multiline = true;
             this.dniTxt.Name = "dniTxt";
             this.dniTxt.Size = new System.Drawing.Size(321, 31);
             this.dniTxt.TabIndex = 26;
+            this.dniTxt.Enter += new System.EventHandler(this.dniTxt_Enter);
+            this.dniTxt.Leave += new System.EventHandler(this.dniTxt_Leave);
             // 
             // button1
             // 
@@ -190,6 +208,7 @@
             this.button1.TabIndex = 23;
             this.button1.Text = "Cargar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -202,8 +221,9 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(840, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(625, 150);
             this.dataGridView1.TabIndex = 22;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // productosCombo
             // 
@@ -217,6 +237,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.removerProductoBtn);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Controls.Add(this.todosPerfilesLbl);
@@ -228,23 +249,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Productos";
             // 
-            // todosPerfilesLbl
+            // removerProductoBtn
             // 
-            this.todosPerfilesLbl.AutoSize = true;
-            this.todosPerfilesLbl.Location = new System.Drawing.Point(24, 40);
-            this.todosPerfilesLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.todosPerfilesLbl.Name = "todosPerfilesLbl";
-            this.todosPerfilesLbl.Size = new System.Drawing.Size(88, 13);
-            this.todosPerfilesLbl.TabIndex = 46;
-            this.todosPerfilesLbl.Text = "Asociar Producto";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(293, 25);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(203, 147);
-            this.listBox1.TabIndex = 47;
+            this.removerProductoBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.removerProductoBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.removerProductoBtn.FlatAppearance.BorderSize = 0;
+            this.removerProductoBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.removerProductoBtn.Location = new System.Drawing.Point(120, 137);
+            this.removerProductoBtn.Name = "removerProductoBtn";
+            this.removerProductoBtn.Size = new System.Drawing.Size(71, 23);
+            this.removerProductoBtn.TabIndex = 49;
+            this.removerProductoBtn.Text = "Remover";
+            this.removerProductoBtn.UseVisualStyleBackColor = false;
+            this.removerProductoBtn.Click += new System.EventHandler(this.removerProductoBtn_Click);
             // 
             // button2
             // 
@@ -260,17 +277,46 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(293, 25);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(203, 147);
+            this.listBox1.TabIndex = 47;
+            // 
+            // todosPerfilesLbl
+            // 
+            this.todosPerfilesLbl.AutoSize = true;
+            this.todosPerfilesLbl.Location = new System.Drawing.Point(24, 40);
+            this.todosPerfilesLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.todosPerfilesLbl.Name = "todosPerfilesLbl";
+            this.todosPerfilesLbl.Size = new System.Drawing.Size(88, 13);
+            this.todosPerfilesLbl.TabIndex = 46;
+            this.todosPerfilesLbl.Text = "Asociar Producto";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "Proveedores";
+            // 
             // RegistrarProveedorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(928, 547);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.direccionLbl);
             this.Controls.Add(this.telefonoLbl);
             this.Controls.Add(this.emailLbl);
             this.Controls.Add(this.dniLbl);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.nombreLbl);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.nombreTxt);
             this.Controls.Add(this.modificarBtn);
@@ -297,7 +343,7 @@
         private System.Windows.Forms.Label telefonoLbl;
         private System.Windows.Forms.Label emailLbl;
         private System.Windows.Forms.Label dniLbl;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label nombreLbl;
         private System.Windows.Forms.Button eliminarBtn;
         private System.Windows.Forms.TextBox nombreTxt;
         private System.Windows.Forms.Button modificarBtn;
@@ -312,5 +358,7 @@
         private System.Windows.Forms.Label todosPerfilesLbl;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button removerProductoBtn;
     }
 }

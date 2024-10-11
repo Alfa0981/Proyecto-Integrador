@@ -60,6 +60,7 @@
     <Compile Include="queries\PerfilQuery.cs" />
     <Compile Include="queries\ProductoQuery.cs" />
     <Compile Include="queries\ClienteQuery.cs" />
+    <Compile Include="queries\ProveedorQuery.cs" />
     <Compile Include="queries\UsuarioQuery.cs" />
   </ItemGroup>
   <ItemGroup>

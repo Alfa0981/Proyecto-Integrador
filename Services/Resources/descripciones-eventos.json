@@ -41,7 +41,11 @@
   },
   "NewProveedor": {
     "Descripcion": "Nuevo proveedor",
-    "Modulo": "Proveedores"
+    "Modulo": "Compras"
+  },
+  "UpdateProveedor": {
+    "Descripcion": "Proveedor modificado",
+    "Modulo": "Compras"
   }
 }
 
