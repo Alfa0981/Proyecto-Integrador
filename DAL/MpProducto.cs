@@ -17,13 +17,42 @@ namespace DAL
         public List<Producto> buscarTodos()
         {
             DataTable tabla = acceso.leer(queries.ProductoQuery.SeleccionarTodos, null);
-            List<Producto> productos = new List<Producto>();
+            Dictionary<int, Producto> productosDict = new Dictionary<int, Producto>();
 
             foreach (DataRow row in tabla.Rows)
             {
-                productos.Add(ConvertirDataRowAProducto(row));
+                int productoId = Convert.ToInt32(row["id"]);
+
+                if (!productosDict.ContainsKey(productoId))
+                {
+                    Producto producto = ConvertirDataRowAProducto(row);
+                    productosDict[productoId] = producto;
+                }
+
+                Proveedor proveedor = ConvertirDataRowAProveedor(row);
+                if (proveedor != null && proveedor.Id > 0)
+                {
+                    productosDict[productoId].Proveedores.Add(proveedor);
+                }
             }
-            return productos;
+            return productosDict.Values.ToList();
+        }
+
+        private Proveedor ConvertirDataRowAProveedor(DataRow row)
+        {
+            if (row["ProveedorId"] == DBNull.Value)
+                return null;
+
+            return new Proveedor
+            {
+                Id = Convert.ToInt32(row["ProveedorId"]),
+                Nombre = row["ProveedorNombre"].ToString(),
+                Dni = row["dni"].ToString(),
+                Direccion = row["direccion"].ToString(),
+                Telefono = row["telefono"].ToString(),
+                Email = row["email"].ToString(),
+                Activo = Convert.ToBoolean(row["activo"])
+            };
         }
 
         public void crear(Producto producto)
@@ -52,15 +81,14 @@ namespace DAL
 
         private Producto ConvertirDataRowAProducto(DataRow row)
         {
-            Producto producto = new Producto
+            return new Producto
             {
                 Id = Convert.ToInt32(row["id"]),
                 Nombre = row["nombre"].ToString(),
                 Stock = Convert.ToInt32(row["stock"]),
-                Precio = Convert.ToDouble(row["precio"])
+                Precio = Convert.ToDouble(row["precio"]),
+                Proveedores = new List<Proveedor>() 
             };
-
-            return producto;
         }
     }
 }

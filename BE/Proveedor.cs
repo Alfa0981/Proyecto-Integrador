@@ -17,6 +17,11 @@ namespace BE
         private List<Producto> productos;
         private bool activo;
 
+        public override string ToString()
+        {
+            return nombre;
+        }
+
         public Proveedor()
         {
             activo = true;
@@ -69,6 +74,20 @@ namespace BE
         {
             get { return productos; }
             set { productos = value; }
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Proveedor otroProveedor)
+            {
+                return this.Id == otroProveedor.Id;
+            }
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            return Id.GetHashCode();
         }
     }
 

@@ -48,6 +48,7 @@
     <Compile Include="MpCliente.cs" />
     <Compile Include="MpEvento.cs" />
     <Compile Include="MpFactura.cs" />
+    <Compile Include="MpPedidoCotizacion.cs" />
     <Compile Include="MpPerfil.cs" />
     <Compile Include="MpProducto.cs" />
     <Compile Include="MpProveedor.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="queries\CarritoQuery.cs" />
     <Compile Include="queries\EventoQuery.cs" />
     <Compile Include="queries\FacturaQuery.cs" />
+    <Compile Include="queries\PedidoCotizacionQuery.cs" />
     <Compile Include="queries\PerfilQuery.cs" />
     <Compile Include="queries\ProductoQuery.cs" />
     <Compile Include="queries\ClienteQuery.cs" />

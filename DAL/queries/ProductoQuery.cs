@@ -8,7 +8,11 @@ namespace DAL.queries
 {
     internal class ProductoQuery
     {
-        public const string SeleccionarTodos = @"SELECT p.* FROM Producto p WHERE p.activo = 1";
+        public const string SeleccionarTodos = @"SELECT p.*, pr.id AS ProveedorId, pr.nombre AS ProveedorNombre, pr.dni, pr.direccion, pr.telefono, pr.email, pr.activo
+                                                FROM Producto p
+                                                LEFT JOIN ProveedorProducto pp ON p.id = pp.ProductoId
+                                                LEFT JOIN Proveedor pr ON pp.ProveedorId = pr.id AND pr.activo = 1
+                                                WHERE p.activo = 1;";
         public const string Modificar = @"UPDATE Producto
                                             SET nombre = @Nombre,
                                                 stock = @Stock,

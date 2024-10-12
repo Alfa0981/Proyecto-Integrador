@@ -13,8 +13,16 @@ namespace BE
 		private int stock;
 		private double precio;
 		private bool activo;
+		private List<Proveedor> proveedores;
 
-        public override string ToString()
+		public List<Proveedor> Proveedores
+		{
+			get { return proveedores; }
+			set { proveedores = value; }
+		}
+
+
+		public override string ToString()
         {
             return id.ToString();
         }
