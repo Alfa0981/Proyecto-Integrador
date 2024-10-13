@@ -56,6 +56,7 @@
     <Compile Include="Perfil.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Familia.cs" />
+    <Compile Include="ProductoReposicion.cs" />
     <Compile Include="Proveedor.cs" />
     <Compile Include="TipoPermiso.cs" />
     <Compile Include="Usuario.cs" />

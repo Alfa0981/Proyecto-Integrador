@@ -10,9 +10,17 @@ namespace BE
     {
         private int id;
         private DateTime fechaEmitida;
-        private DateTime fechaRecibido;
+        private DateTime? fechaRecibido;
         private List<Producto> productos;
         private Proveedor proveedor;
+        private double total;
+
+        public double Total
+        {
+            get { return total; }
+            set { total = value; }
+        }
+
 
         public int Id
         {
@@ -26,7 +34,7 @@ namespace BE
             set { fechaEmitida = value; }
         }
 
-        public DateTime FechaRecibido
+        public DateTime? FechaRecibido
         {
             get { return fechaRecibido; }
             set { fechaRecibido = value; }

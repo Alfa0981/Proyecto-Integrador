@@ -103,6 +103,7 @@ namespace Proyecto_Integrador
                 Productos = new List<Producto>(),
                 Proveedor = (Proveedor)proveedorCombo.SelectedItem
             };
+            double totalGasto = 0;
 
             foreach (DataGridViewRow row in productosSeleccionadosDataGrid.Rows)
             {
@@ -113,13 +114,17 @@ namespace Proyecto_Integrador
                     Precio = Convert.ToDouble(row.Cells["PrecioUnitario"].Value),
                     Stock = int.Parse(row.Cells["Cantidad"].Value.ToString())
                 };
+
+                double subtotal = producto.Precio * producto.Stock;
+                totalGasto += subtotal;
                 orden.Productos.Add(producto);
             }
+            orden.Total = totalGasto;
 
             try
             {
-                gestorOrdenCompra.persistirOrden(orden);
-                Form pagarProveedor = new PagarProveedorForm();
+                orden.Id = gestorOrdenCompra.persistirOrden(orden);
+                Form pagarProveedor = new PagarProveedorForm(orden);
                 pagarProveedor.MdiParent = this.MdiParent;
                 pagarProveedor.Show();
             }

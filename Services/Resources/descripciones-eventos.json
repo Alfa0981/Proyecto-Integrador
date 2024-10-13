@@ -54,6 +54,10 @@
   "NewORdenCompra": {
     "Descripcion": "Orden Compra creado",
     "Modulo": "Compras"
+  },
+  "UpdateOrdenComra": {
+    "Descripcion": "Orden Compra recibida",
+    "Modulo": "Compras"
   }
 }
 

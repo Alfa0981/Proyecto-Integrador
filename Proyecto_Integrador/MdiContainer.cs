@@ -204,5 +204,12 @@ namespace Proyecto_Integrador
             proveedores.MdiParent = this;
             proveedores.Show();
         }
+
+        private void recibirProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form reponerStock = new ReponerStockForm();
+            reponerStock.MdiParent = this;
+            reponerStock.Show();
+        }
     }
 }

@@ -12,10 +12,23 @@ namespace BLL
         MpOrdenCompra mpOrdenCompra = new MpOrdenCompra();
         BLL.GestionEventos gestorEventos = new BLL.GestionEventos();
 
-        public void persistirOrden(BE.OrdenCompra orden)
+        public BE.OrdenCompra buscarPorId(int idOrdenCompra)
         {
-            mpOrdenCompra.persistirOrden(orden);
+            return mpOrdenCompra.buscarPorId(idOrdenCompra);
+        }
+
+        public int persistirOrden(BE.OrdenCompra orden)
+        {
+            int id = mpOrdenCompra.persistirOrden(orden);
             gestorEventos.persistirEvento("Orden Compra creado", BE.Modulos.Compras.ToString(), 1);
+            return id;
+        }
+
+        public void recibirOrden(BE.OrdenCompra ordenCompra)
+        {
+            ordenCompra.FechaRecibido = DateTime.Now;
+            mpOrdenCompra.modificarOrden(ordenCompra);
+            gestorEventos.persistirEvento("Orden Compra recibida", BE.Modulos.Compras.ToString(), 1);
         }
     }
 }

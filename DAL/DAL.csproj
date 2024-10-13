@@ -52,6 +52,7 @@
     <Compile Include="MpPedidoCotizacion.cs" />
     <Compile Include="MpPerfil.cs" />
     <Compile Include="MpProducto.cs" />
+    <Compile Include="MpProductoReposicion.cs" />
     <Compile Include="MpProveedor.cs" />
     <Compile Include="MpUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="queries\PerfilQuery.cs" />
     <Compile Include="queries\ProductoQuery.cs" />
     <Compile Include="queries\ClienteQuery.cs" />
+    <Compile Include="queries\ProductoReposicionQuery.cs" />
     <Compile Include="queries\ProveedorQuery.cs" />
     <Compile Include="queries\UsuarioQuery.cs" />
   </ItemGroup>
