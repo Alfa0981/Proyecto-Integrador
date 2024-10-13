@@ -20,6 +20,10 @@ namespace BLL
 
         public void insertarProveedor(BE.Proveedor proveedor)
         {
+            if (mpProveedor.buscarPorDni(proveedor) != null)
+            {
+                throw new Exception("El proveedor ya existe");
+            }
             mpProveedor.CrearProveedor(proveedor);
             gestorEventos.persistirEvento("Nuevo proveedor", BE.Modulos.Compras.ToString(), 3);
         }

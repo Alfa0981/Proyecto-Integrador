@@ -310,7 +310,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(928, 547);
+            this.ClientSize = new System.Drawing.Size(928, 588);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.direccionLbl);
             this.Controls.Add(this.telefonoLbl);

@@ -79,8 +79,15 @@ namespace Proyecto_Integrador
                 proveedor.Telefono = telefonoTxt.Text;
                 proveedor.Productos = productos;
 
-                gestorProveedor.insertarProveedor(proveedor);
-                listar();
+                try
+                {
+                    gestorProveedor.insertarProveedor(proveedor);
+                    listar();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
             }
         }
 

@@ -8,6 +8,8 @@ namespace DAL.queries
 {
     public class ProveedorQuery
     {
+        public const string BuscarPorDni = @"
+        SELECT * FROM Proveedor p WHERE p.Dni = @Dni AND p.Activo = 1";
         public const string ObtenerTodos = @"SELECT 
                                                 p.id AS ProveedorId, 
                                                 p.Nombre AS ProveedorNombre, 

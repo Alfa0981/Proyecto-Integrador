@@ -125,5 +125,34 @@ namespace DAL
                 acceso.revertirTransaccion();
             }
         }
+
+        public BE.Proveedor buscarPorDni(Proveedor proveedor)
+        {
+            Proveedor proveedorEncontrado = null;
+
+            SqlParameter[] sqlParameters = new SqlParameter[]
+            {
+                new SqlParameter("@Dni", proveedor.Dni),
+            };
+
+            DataTable table = acceso.leer(queries.ProveedorQuery.BuscarPorDni, sqlParameters);
+
+            if (table.Rows.Count > 0)
+            {
+                DataRow row = table.Rows[0];
+
+                proveedorEncontrado = new Proveedor
+                {
+                    Id = Convert.ToInt32(row["Id"]),
+                    Nombre = row["Nombre"].ToString(),
+                    Email = row["Email"].ToString(),
+                    Telefono = row["Telefono"].ToString(),
+                    Direccion = row["Direccion"].ToString(),
+                    Dni = row["Dni"].ToString(),
+                };
+            }
+
+            return proveedorEncontrado;
+        }
     }
 }
