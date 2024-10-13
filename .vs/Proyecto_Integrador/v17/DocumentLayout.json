@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\ordencompraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\ordencompraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\ordencompraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\ordencompraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\bll\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\dal\\mpordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\mpordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\dal\\queries\\ordencompraquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\queries\\ordencompraquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\pedidocotizacionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\pedidocotizacionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\be\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|solutionrelative:be\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\proyecto_integrador\\pedidocotizacionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\pedidocotizacionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\dal\\mppedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\mppedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\bll\\pedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\pedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\dal\\queries\\pedidocotizacionquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\queries\\pedidocotizacionquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\dal\\mpproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\mpproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\be\\pedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|solutionrelative:be\\pedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|c:\\users\\tomas\\onedrive - universidad abierta interamericana\\compu vieja\\facu\\tercer a\u00F1o\\ing software\\proyecto-integrador-git\\be\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A6C11C23-06ED-47AC-8724-ABFF4EADCFD6}|BE\\BE.csproj|solutionrelative:be\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,119 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MpProveedor.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpProveedor.cs",
-              "RelativeDocumentMoniker": "DAL\\MpProveedor.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpProveedor.cs",
-              "RelativeToolTip": "DAL\\MpProveedor.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAgwEUAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "MpOrdenCompra.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpOrdenCompra.cs",
+              "RelativeDocumentMoniker": "DAL\\MpOrdenCompra.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpOrdenCompra.cs",
+              "RelativeToolTip": "DAL\\MpOrdenCompra.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwBMAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T23:01:06.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PedidoCotizacionQuery.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\queries\\PedidoCotizacionQuery.cs",
-              "RelativeDocumentMoniker": "DAL\\queries\\PedidoCotizacionQuery.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\queries\\PedidoCotizacionQuery.cs",
-              "RelativeToolTip": "DAL\\queries\\PedidoCotizacionQuery.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAACuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T22:46:49.551Z",
+              "WhenOpened": "2024-10-12T02:06:04.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PedidoCotizacion.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\PedidoCotizacion.cs",
-              "RelativeDocumentMoniker": "BLL\\PedidoCotizacion.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\PedidoCotizacion.cs",
-              "RelativeToolTip": "BLL\\PedidoCotizacion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA4AAAAuAAAA",
+              "Title": "OrdenCompraQuery.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\queries\\OrdenCompraQuery.cs",
+              "RelativeDocumentMoniker": "DAL\\queries\\OrdenCompraQuery.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\queries\\OrdenCompraQuery.cs",
+              "RelativeToolTip": "DAL\\queries\\OrdenCompraQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T22:15:39.757Z",
+              "WhenOpened": "2024-10-12T02:05:43.71Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MpPedidoCotizacion.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpPedidoCotizacion.cs",
-              "RelativeDocumentMoniker": "DAL\\MpPedidoCotizacion.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\DAL\\MpPedidoCotizacion.cs",
-              "RelativeToolTip": "DAL\\MpPedidoCotizacion.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBMAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T22:15:20.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "PedidoCotizacionForm.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\PedidoCotizacionForm.cs",
               "RelativeDocumentMoniker": "Proyecto_Integrador\\PedidoCotizacionForm.cs",
               "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\PedidoCotizacionForm.cs",
               "RelativeToolTip": "Proyecto_Integrador\\PedidoCotizacionForm.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAAAJUAAAAMAAAA",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAYwFMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T20:31:11.025Z",
+              "WhenOpened": "2024-10-12T01:57:34.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PedidoCotizacionForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\PedidoCotizacionForm.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\PedidoCotizacionForm.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\PedidoCotizacionForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_Integrador\\PedidoCotizacionForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T20:30:56.904Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "OrdenCompra.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\OrdenCompra.cs",
-              "RelativeDocumentMoniker": "BE\\OrdenCompra.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\OrdenCompra.cs",
-              "RelativeToolTip": "BE\\OrdenCompra.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAADwvw8AAAAkAAAA",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\OrdenCompra.cs",
+              "RelativeDocumentMoniker": "BLL\\OrdenCompra.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BLL\\OrdenCompra.cs",
+              "RelativeToolTip": "BLL\\OrdenCompra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T20:07:43.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PedidoCotizacion.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\PedidoCotizacion.cs",
-              "RelativeDocumentMoniker": "BE\\PedidoCotizacion.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\PedidoCotizacion.cs",
-              "RelativeToolTip": "BE\\PedidoCotizacion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T20:07:32.421Z",
+              "WhenOpened": "2024-10-12T01:35:42.529Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Proveedor.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\Proveedor.cs",
-              "RelativeDocumentMoniker": "BE\\Proveedor.cs",
-              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\BE\\Proveedor.cs",
-              "RelativeToolTip": "BE\\Proveedor.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAADwv1kAAAAkAAAA",
+              "Title": "OrdenCompraForm.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\OrdenCompraForm.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\OrdenCompraForm.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\OrdenCompraForm.cs",
+              "RelativeToolTip": "Proyecto_Integrador\\OrdenCompraForm.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDMAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T11:55:57.452Z",
+              "WhenOpened": "2024-10-12T00:23:23.012Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdenCompraForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\OrdenCompraForm.cs",
+              "RelativeDocumentMoniker": "Proyecto_Integrador\\OrdenCompraForm.cs",
+              "ToolTip": "C:\\Users\\tomas\\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\\Compu vieja\\Facu\\Tercer a\u00F1o\\Ing Software\\Proyecto-Integrador-git\\Proyecto_Integrador\\OrdenCompraForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Proyecto_Integrador\\OrdenCompraForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T00:21:47.49Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class PedidoCotizacion
+    public class OrdenCompra
     {
-
-        MpPedidoCotizacion mpPedidoCotizacion = new MpPedidoCotizacion();
+        MpOrdenCompra mpOrdenCompra = new MpOrdenCompra();
         BLL.GestionEventos gestorEventos = new BLL.GestionEventos();
 
-        public void persistirPedidosCotizacion (List<BE.PedidoCotizacion> pedidosCotizacion)
+        public void persistirOrden(BE.OrdenCompra orden)
         {
-            mpPedidoCotizacion.persistirPedidosCotizacion(pedidosCotizacion);
+            mpOrdenCompra.persistirOrden(orden);
             gestorEventos.persistirEvento("Orden Compra creado", BE.Modulos.Compras.ToString(), 1);
         }
     }

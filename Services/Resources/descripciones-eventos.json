@@ -46,6 +46,14 @@
   "UpdateProveedor": {
     "Descripcion": "Proveedor modificado",
     "Modulo": "Compras"
+  },
+  "NewPedidoCotizacion": {
+    "Descripcion": "Pedido de Cotizacion creado",
+    "Modulo": "Compras"
+  },
+  "NewORdenCompra": {
+    "Descripcion": "Orden Compra creado",
+    "Modulo": "Compras"
   }
 }
 

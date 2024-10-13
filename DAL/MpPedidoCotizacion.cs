@@ -41,6 +41,7 @@ namespace DAL
             catch (Exception ex)
             {
                 acceso.revertirTransaccion();
+                throw new Exception("Error al persistir el pedido de cotizacion", ex);
             }
         }
     }

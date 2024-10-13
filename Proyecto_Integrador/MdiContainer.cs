@@ -190,5 +190,19 @@ namespace Proyecto_Integrador
             pedidoCotizacion.MdiParent = this;
             pedidoCotizacion.Show();
         }
+
+        private void ordenCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form ordenCompra = new OrdenCompraForm();
+            ordenCompra.MdiParent = this;
+            ordenCompra.Show();
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form proveedores = new RegistrarProveedorForm();
+            proveedores.MdiParent = this;
+            proveedores.Show();
+        }
     }
 }

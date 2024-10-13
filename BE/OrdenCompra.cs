@@ -9,7 +9,6 @@ namespace BE
     public class OrdenCompra
     {
         private int id;
-        private string estado;
         private DateTime fechaEmitida;
         private DateTime fechaRecibido;
         private List<Producto> productos;
@@ -19,12 +18,6 @@ namespace BE
         {
             get { return id; }
             set { id = value; }
-        }
-
-        public string Estado
-        {
-            get { return estado; }
-            set { estado = value; }
         }
 
         public DateTime FechaEmitida

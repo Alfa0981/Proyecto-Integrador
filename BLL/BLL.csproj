@@ -50,6 +50,7 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="GestionEventos.cs" />
+    <Compile Include="OrdenCompra.cs" />
     <Compile Include="PedidoCotizacion.cs" />
     <Compile Include="Perfil.cs" />
     <Compile Include="Producto.cs" />

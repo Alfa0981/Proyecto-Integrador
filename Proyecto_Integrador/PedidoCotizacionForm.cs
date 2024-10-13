@@ -146,8 +146,15 @@ namespace Proyecto_Integrador
 
                 pedidos.Add(pedidoCotizacion);
             }
-            
-            gestorPedidos.persistirPedidosCotizacion(pedidos);
+
+            try
+            {
+                gestorPedidos.persistirPedidosCotizacion(pedidos);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Se produjo un error: " + ex.Message);
+            }
         }
     }
 }
