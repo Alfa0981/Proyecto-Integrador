@@ -78,6 +78,7 @@ namespace Proyecto_Integrador
                 proveedor.Nombre = nombreTxt.Text;
                 proveedor.Telefono = telefonoTxt.Text;
                 proveedor.Productos = productos;
+                proveedor.NumeroCuenta = datosBancariosTxt.Text;
 
                 try
                 {
@@ -98,6 +99,7 @@ namespace Proyecto_Integrador
                 string.IsNullOrEmpty(emailTxt.Text) ||
                 string.IsNullOrEmpty(telefonoTxt.Text) ||
                 string.IsNullOrEmpty(direccionTxt.Text) ||
+                string.IsNullOrEmpty(datosBancariosTxt.Text) ||
                 productos.Count == 0)
             {
                 CustomMessageBox.Show(IdiomaManager.Instance.ObtenerMensaje("FaltanCamposException"), IdiomaManager.Instance.ObtenerMensaje(""), "OK");
@@ -179,6 +181,7 @@ namespace Proyecto_Integrador
             emailLbl.Hide();
             direccionLbl.Hide();
             telefonoLbl.Hide();
+            datosBancariosLbl.Hide();
 
             nombreTxt.Text = proveedor.Nombre;
             dniTxt.Text = proveedor.Dni;
@@ -186,6 +189,7 @@ namespace Proyecto_Integrador
             direccionTxt.Text = proveedor.Direccion;
             telefonoTxt.Text = proveedor.Telefono;
             productos = proveedor.Productos;
+            datosBancariosTxt.Text = proveedor.NumeroCuenta;
 
             listBox1.Items.Clear();
             foreach (var producto in proveedor.Productos)
@@ -228,6 +232,27 @@ namespace Proyecto_Integrador
         {
             gestorProveedor.eliminar(proveedor);
             listar();
+        }
+
+        private void datosBancariosTxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void datosBancariosTxt_Enter(object sender, EventArgs e)
+        {
+            datosBancariosLbl.Hide();
+        }
+
+        private void datosBancariosTxt_Leave(object sender, EventArgs e)
+        {
+            if (datosBancariosTxt.Text == "")
+            {
+                datosBancariosLbl.Show();
+            }
         }
     }
 }

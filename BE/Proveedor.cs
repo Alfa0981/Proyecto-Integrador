@@ -16,6 +16,14 @@ namespace BE
         private string dni;
         private List<Producto> productos;
         private bool activo;
+        private string numeroCuenta;
+
+        public string NumeroCuenta
+        {
+            get { return numeroCuenta; }
+            set { numeroCuenta = value; }
+        }
+
 
         public override string ToString()
         {

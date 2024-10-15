@@ -22,5 +22,6 @@ namespace DAL.queries
         public const string Insertar = @"
                                         INSERT INTO Producto (nombre, stock, precio) 
                                         VALUES (@Nombre, @Stock, @Precio);";
+        public const string ModificarStock = "UPDATE Producto SET Stock = Stock + @cantidad WHERE id = @idProducto";
     }
 }

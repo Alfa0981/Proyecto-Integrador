@@ -14,7 +14,9 @@ namespace Proyecto_Integrador
     {
         BLL.OrdenCompra gestorOrdenCompra = new BLL.OrdenCompra();
         BLL.ProductoReposicion gestorProductoReposicion = new BLL.ProductoReposicion();
+        BLL.Producto gestorProducto = new BLL.Producto();
         List<BE.ProductoReposicion> productosReposicion = new List<BE.ProductoReposicion>();
+        List<BE.Producto> productosLista = new List<BE.Producto>();
         BE.OrdenCompra ordenCompra;
 
         public ReponerStockForm()
@@ -106,8 +108,15 @@ namespace Proyecto_Integrador
                 MessageBox.Show("Debe seleccionar una cantidad válida");
                 return;
             }
-         
+
+            BE.Producto producto = new BE.Producto()
+            {
+                Nombre = nombreProducto,
+                Stock = cantidadAprobada,
+                Id = idProducto,
+            };
             productosAprobadosDataGrid.Rows.Add(nombreProducto, cantidadAprobada, idProducto);
+            productosLista.Add(producto);
 
             if ((cantidadIngresante - cantidadAprobada) != 0)
             {
@@ -152,7 +161,16 @@ namespace Proyecto_Integrador
             }
 
             if (cantidadIngresante - cantidadDesaprobada != 0)
-            productosAprobadosDataGrid.Rows.Add(nombreProducto, cantidadIngresante - cantidadDesaprobada, idProducto);
+            {
+                BE.Producto producto = new BE.Producto()
+                {
+                    Nombre = nombreProducto,
+                    Stock = cantidadIngresante - cantidadDesaprobada,
+                    Id = idProducto,
+                };
+                productosAprobadosDataGrid.Rows.Add(nombreProducto, cantidadIngresante - cantidadDesaprobada, idProducto);
+                productosLista.Add(producto);
+            }
 
             if (cantidadDesaprobada != 0)
             {
@@ -182,10 +200,21 @@ namespace Proyecto_Integrador
             if (productosDataGrid.Rows.Count == 0)
             {
                 gestorOrdenCompra.recibirOrden(ordenCompra);
-                foreach (var producto in productosReposicion)
+                if (productosLista.Count != 0) 
                 {
-                    gestorProductoReposicion.insertarRegistro(producto);
+                    foreach (var producto in productosLista)
+                    {
+                        gestorProducto.actualizarStockPorId(producto);
+                    }
                 }
+                if (productosReposicion.Count != 0)
+                {
+                    foreach (var producto in productosReposicion)
+                    {
+                        gestorProductoReposicion.insertarRegistro(producto);
+                    }
+                }
+                
                 MessageBox.Show("Orden recibida con exito");
                 refrescarDataGrids();
             }

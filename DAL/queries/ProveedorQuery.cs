@@ -17,6 +17,7 @@ namespace DAL.queries
                                                 p.Telefono, 
                                                 p.Direccion, 
                                                 p.Dni, 
+                                                p.NumeroCuenta,
                                                 pr.id AS ProductoId, 
                                                 pr.Nombre AS ProductoNombre, 
                                                 pr.Stock,
@@ -29,8 +30,8 @@ namespace DAL.queries
                                                 Producto pr ON pp.ProductoId = pr.id
                                             WHERE p.Activo = 1;
                                             ";
-        public const string InsertarProveedor = @"INSERT INTO Proveedor (Nombre, Email, Telefono, Direccion, Dni) 
-                                                    VALUES (@Nombre, @Email, @Telefono, @Direccion, @Dni);
+        public const string InsertarProveedor = @"INSERT INTO Proveedor (Nombre, Email, Telefono, Direccion, Dni, NumeroCuenta) 
+                                                    VALUES (@Nombre, @Email, @Telefono, @Direccion, @Dni, @NumeroCuenta);
                                                    SELECT SCOPE_IDENTITY();";
 
         public const string InsertarProveedorProducto = @"INSERT INTO ProveedorProducto (ProveedorId, ProductoId) 
@@ -41,7 +42,8 @@ namespace DAL.queries
                                                 dni = @Dni,
                                                 telefono = @Telefono,
                                                 email = @Email,
-                                                activo = @Activo
+                                                activo = @Activo,
+                                                numeroCuenta = @NumeroCuenta
                                             WHERE id = @Id;";
         public const string EliminarPorProveedor = @"DELETE FROM ProveedorProducto 
                                              WHERE ProveedorId = @ProveedorId;";

@@ -35,6 +35,7 @@ namespace DAL
                         Telefono = row["Telefono"].ToString(),
                         Direccion = row["Direccion"].ToString(),
                         Dni = row["Dni"].ToString(),
+                        NumeroCuenta = row["NumeroCuenta"].ToString(),
                         Productos = new List<BE.Producto>() 
                     };
 
@@ -64,7 +65,8 @@ namespace DAL
                 new SqlParameter("@Email", proveedor.Email),
                 new SqlParameter("@Telefono", proveedor.Telefono),
                 new SqlParameter("@Direccion", proveedor.Direccion),
-                new SqlParameter("@Dni", proveedor.Dni)
+                new SqlParameter("@Dni", proveedor.Dni),
+                new SqlParameter("@NumeroCuenta", proveedor.NumeroCuenta),
             };
 
             int idProveedor = Convert.ToInt32(acceso.leer(queries.ProveedorQuery.InsertarProveedor, parametrosProveedor).Rows[0][0]);
@@ -96,7 +98,8 @@ namespace DAL
                     new SqlParameter("@Telefono", proveedor.Telefono),
                     new SqlParameter("@Email", proveedor.Email),
                     new SqlParameter("@Activo", proveedor.Activo),
-                    new SqlParameter("@Id", proveedor.Id)
+                    new SqlParameter("@Id", proveedor.Id),
+                    new SqlParameter("@NumeroCuenta", proveedor.NumeroCuenta),
                 };
 
                 acceso.escribir(queries.ProveedorQuery.Actualizar, sqlParameters);

@@ -49,6 +49,8 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.todosPerfilesLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.datosBancariosLbl = new System.Windows.Forms.Label();
+            this.datosBancariosTxt = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -221,7 +223,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(625, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(785, 150);
             this.dataGridView1.TabIndex = 22;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -242,7 +244,7 @@
             this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Controls.Add(this.todosPerfilesLbl);
             this.groupBox1.Controls.Add(this.productosCombo);
-            this.groupBox1.Location = new System.Drawing.Point(361, 217);
+            this.groupBox1.Location = new System.Drawing.Point(362, 254);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(502, 196);
             this.groupBox1.TabIndex = 47;
@@ -305,12 +307,38 @@
             this.label1.TabIndex = 49;
             this.label1.Text = "Proveedores";
             // 
+            // datosBancariosLbl
+            // 
+            this.datosBancariosLbl.AutoSize = true;
+            this.datosBancariosLbl.BackColor = System.Drawing.Color.Snow;
+            this.datosBancariosLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.datosBancariosLbl.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.datosBancariosLbl.Location = new System.Drawing.Point(26, 454);
+            this.datosBancariosLbl.Name = "datosBancariosLbl";
+            this.datosBancariosLbl.Size = new System.Drawing.Size(112, 17);
+            this.datosBancariosLbl.TabIndex = 51;
+            this.datosBancariosLbl.Text = "Datos Bancarios";
+            // 
+            // datosBancariosTxt
+            // 
+            this.datosBancariosTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
+            this.datosBancariosTxt.Location = new System.Drawing.Point(23, 447);
+            this.datosBancariosTxt.Multiline = true;
+            this.datosBancariosTxt.Name = "datosBancariosTxt";
+            this.datosBancariosTxt.Size = new System.Drawing.Size(321, 31);
+            this.datosBancariosTxt.TabIndex = 50;
+            this.datosBancariosTxt.Enter += new System.EventHandler(this.datosBancariosTxt_Enter);
+            this.datosBancariosTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.datosBancariosTxt_KeyPress);
+            this.datosBancariosTxt.Leave += new System.EventHandler(this.datosBancariosTxt_Leave);
+            // 
             // RegistrarProveedorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(928, 588);
+            this.Controls.Add(this.datosBancariosLbl);
+            this.Controls.Add(this.datosBancariosTxt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.direccionLbl);
             this.Controls.Add(this.telefonoLbl);
@@ -360,5 +388,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button removerProductoBtn;
+        private System.Windows.Forms.Label datosBancariosLbl;
+        private System.Windows.Forms.TextBox datosBancariosTxt;
     }
 }

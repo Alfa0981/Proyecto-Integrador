@@ -90,5 +90,16 @@ namespace DAL
                 Proveedores = new List<Proveedor>() 
             };
         }
+
+        public void modificarStock(Producto producto)
+        {
+            SqlParameter[] parameters2 = new SqlParameter[]
+            {
+                new SqlParameter("@cantidad", producto.Stock),
+                new SqlParameter("@idProducto", producto.Id)
+            };
+
+            acceso.escribir(queries.ProductoQuery.ModificarStock, parameters2);
+        }
     }
 }
