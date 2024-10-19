@@ -124,3 +124,4 @@ C:\Users\Navegador\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\obj\Debu
 C:\Users\Navegador\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\obj\Debug\GUI.csproj.Up2Date
 C:\Users\Navegador\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.exe
 C:\Users\Navegador\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.pdb
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\obj\Debug\Proyecto_Integrador.ReparacionDB.resources

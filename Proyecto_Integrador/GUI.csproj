@@ -199,6 +199,12 @@
     <Compile Include="RegistrarProveedorForm.Designer.cs">
       <DependentUpon>RegistrarProveedorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReparacionDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReparacionDB.Designer.cs">
+      <DependentUpon>ReparacionDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReponerStockForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -283,6 +289,9 @@
     </Compile>
     <EmbeddedResource Include="RegistrarProveedorForm.resx">
       <DependentUpon>RegistrarProveedorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReparacionDB.resx">
+      <DependentUpon>ReparacionDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReponerStockForm.resx">
       <DependentUpon>ReponerStockForm.cs</DependentUpon>

@@ -1,9 +1,14 @@
 ﻿using BE;
+using BLL;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+using iTextSharp.tool.xml;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +41,30 @@ namespace Proyecto_Integrador
 
         private void generarVentaBtn_Click(object sender, EventArgs e)
         {
+            SaveFileDialog guardar = new SaveFileDialog();
+            guardar.FileName = "Orden.pdf";
+
+            string paginahtmlTexto = GenerarHtmlOrdenCompra();
+
+            if (guardar.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream stream = new FileStream(guardar.FileName, FileMode.Create))
+                {
+                    Document pdf = new Document(PageSize.A4, 25, 25, 25, 25);
+                    PdfWriter writer = PdfWriter.GetInstance(pdf, stream);
+                    pdf.Open();
+
+
+                    using (StringReader reader = new StringReader(paginahtmlTexto))
+                    {
+                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdf, reader);
+
+                    }
+                    pdf.Close();
+                    stream.Close();
+                }
+            }
+
             MessageBox.Show("Validando el pago al proveedor...");
             MessageBox.Show("Pago validado con exito.");
         }
@@ -46,6 +75,46 @@ namespace Proyecto_Integrador
             dataGridView2.Columns.Add("NombreProducto", "Nombre del Producto");
             dataGridView2.Columns.Add("PrecioUnitario", "Precio Unitario");
             dataGridView2.Columns.Add("Cantidad", "Cantidad");
+        }
+
+        public string GenerarHtmlOrdenCompra()
+        {
+            StringBuilder html = new StringBuilder();
+
+            html.Append("<html>");
+            html.Append("<head>");
+            html.Append("<style>");
+            html.Append("table { width: 100%; border-collapse: collapse; }");
+            html.Append("th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ddd; }");
+            html.Append("th { background-color: #f2f2f2; }");
+            html.Append("</style>");
+            html.Append("</head>");
+            html.Append("<body>");
+
+            html.Append("<h1>Orden Compra</h1>");
+            html.Append($"<p><strong>Fecha:</strong> {ordenCompra.FechaEmitida.ToString("dd/MM/yyyy")}</p>");
+            html.Append($"<p><strong>Proveedor:</strong> {ordenCompra.Proveedor.Nombre}</p>");
+            html.Append($"<p><strong>Precio Total:</strong> ${ordenCompra.Total}</p>");
+
+            html.Append("<h2>Productos</h2>");
+            html.Append("<table>");
+            html.Append("<tr><th>Producto</th><th>Cantidad</th><th>Precio Unitario</th><th>Subtotal</th></tr>");
+
+            foreach (var item in ordenCompra.Productos)
+            {
+                html.Append("<tr>");
+                html.Append($"<td>{item.Nombre}</td>");
+                html.Append($"<td>{item.Stock}</td>");
+                html.Append($"<td>${item.Precio}</td>");
+                html.Append($"<td>${item.Stock * item.Precio}</td>");
+                html.Append("</tr>");
+            }
+
+            html.Append("</table>");
+            html.Append("</body>");
+            html.Append("</html>");
+
+            return html.ToString();
         }
     }
 }
