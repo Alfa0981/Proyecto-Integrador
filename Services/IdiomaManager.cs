@@ -27,7 +27,8 @@ namespace Services
         private IdiomaManager()
         {
             _currentCulture = CultureInfo.CurrentUICulture;
-            string relativePath = @"..\..\..\Services\Resources\etiquetas-es.json";
+            string relativePath = @"..\Services\Resources\etiquetas-es.json";
+            //relativePath = @"..\..\..\Services\Resources\etiquetas-es.json";
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string filePath = Path.GetFullPath(Path.Combine(basePath, relativePath));
             Etiquetas = CargarEtiquetas(filePath);
@@ -42,11 +43,13 @@ namespace Services
             switch (_idiomaActual)
             {
                 case Idioma.Spanish:
-                    relativePath = @"..\..\..\Services\Resources\etiquetas-es.json";
+                    relativePath = @"..\Services\Resources\etiquetas-es.json";
+                    //relativePath = @"..\..\..\Services\Resources\etiquetas-es.json";
                     _currentCulture = new CultureInfo("es");
                     break;
                 case Idioma.English:
-                    relativePath = @"..\..\..\Services\Resources\etiquetas-en.json";
+                    relativePath = @"..\Services\Resources\etiquetas-en.json";
+                    //relativePath = @"..\..\..\Services\Resources\etiquetas-en.json";
                     _currentCulture = new CultureInfo("en");
                     break;
             }
@@ -66,11 +69,14 @@ namespace Services
                 switch (_idiomaActual)
                 {
                     case Idioma.Spanish:
-                        relativePath = @"..\..\..\Services\Resources\etiquetas-es.json";
+                        relativePath = @"..\Services\Resources\etiquetas-es.json";
+                        //relativePath = @"..\..\..\Services\Resources\etiquetas-es.json";
+
                         _currentCulture = new CultureInfo("es");
                         break;
                     case Idioma.English:
-                        relativePath = @"..\..\..\Services\Resources\etiquetas-en.json";
+                        relativePath = @"..\Services\Resources\etiquetas-en.json";
+                        //relativePath = @"..\..\..\Services\Resources\etiquetas-en.json";
                         _currentCulture = new CultureInfo("en");
                         break;
                 }
@@ -106,7 +112,6 @@ namespace Services
 
         public string ObtenerMensaje(string clave)
         {
-            //return Services.Resources.Resource1.ResourceManager.GetString(clave, _currentCulture);
             if (Etiquetas.TryGetValue(clave, out string mensaje))
             {
                 return mensaje;
