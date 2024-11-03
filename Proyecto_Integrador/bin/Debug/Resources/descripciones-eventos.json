@@ -1,0 +1,63 @@
+{
+  "Login": {
+    "Descripcion": "Login",
+    "Modulo": "Users"
+  },
+  "Logout": {
+    "Descripcion": "Logout",
+    "Modulo": "Users"
+  },
+  "CreateUser": {
+    "Descripcion": "Nuevo usuario creado",
+    "Modulo": "Users"
+  },
+  "DeleteClient": {
+    "Descripcion": "Cliente eliminado",
+    "Modulo": "Clientes"
+  },
+  "UpdateClient": {
+    "Descripcion": "Cliente actualizado",
+    "Modulo": "Clientes"
+  },
+  "AddProduct": {
+    "Descripcion": "Producto agregado",
+    "Modulo": "Productos"
+  },
+  "AddSale": {
+    "Descripcion": "Venta generada",
+    "Modulo": "Ventas"
+  },
+  "DeleteProduct": {
+    "Descripcion": "Producto borrado",
+    "Modulo": "Productos"
+  },
+  "UpdateProduct": {
+    "Descripcion": "Producto actualizado",
+    "Modulo": "Productos"
+  },
+  "NewClient": {
+    "Descripcion": "Nuevo cliente",
+    "Modulo": "Clientes"
+  },
+  "NewProveedor": {
+    "Descripcion": "Nuevo proveedor",
+    "Modulo": "Compras"
+  },
+  "UpdateProveedor": {
+    "Descripcion": "Proveedor modificado",
+    "Modulo": "Compras"
+  },
+  "NewPedidoCotizacion": {
+    "Descripcion": "Pedido de Cotizacion creado",
+    "Modulo": "Compras"
+  },
+  "NewORdenCompra": {
+    "Descripcion": "Orden Compra creado",
+    "Modulo": "Compras"
+  },
+  "UpdateOrdenComra": {
+    "Descripcion": "Orden Compra recibida",
+    "Modulo": "Compras"
+  }
+}
+
