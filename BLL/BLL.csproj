@@ -48,6 +48,7 @@
     <Compile Include="BitacoraCambios.cs" />
     <Compile Include="Carrito.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="DV.cs" />
     <Compile Include="Factura.cs" />
     <Compile Include="GestionEventos.cs" />
     <Compile Include="OrdenCompra.cs" />

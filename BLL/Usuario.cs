@@ -39,8 +39,14 @@ namespace BLL
                 {
                     usuarioCargado.Perfil = perfilUsuario;
                 }
+
                 SessionManager.Login(usuarioCargado);
                 gestionEventos.persistirEvento("Login", BE.Modulos.Users.ToString(), 3);
+
+                if (!DV.Instance.VerificarIntegridad())
+                {
+                    throw new IntegrityException();
+                }
                 return validarPrimerLogin(usuarioCargado);
             }
             else

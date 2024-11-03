@@ -35,3 +35,16 @@ C:\Users\Navegador\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.csproj.Cor
 C:\Users\Navegador\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.csproj.Up2Date
 C:\Users\Navegador\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.dll
 C:\Users\Navegador\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.pdb
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\bin\Debug\DAL.dll
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\bin\Debug\DAL.pdb
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\bin\Debug\BE.dll
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\bin\Debug\Services.dll
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\bin\Debug\BE.pdb
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\bin\Debug\Services.pdb
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.csproj.Up2Date
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.dll
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.pdb

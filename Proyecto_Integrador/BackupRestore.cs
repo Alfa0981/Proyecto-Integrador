@@ -14,10 +14,15 @@ namespace Proyecto_Integrador
     {
         BLL.BackupRestore backupRestore;
 
-        public BackupRestore()
+        public BackupRestore(bool isOnlyRestoring)
         {
             InitializeComponent();
             backupRestore = new BLL.BackupRestore();
+
+            backupPathTxt.Visible = !isOnlyRestoring;
+            aplicarBtn.Visible = !isOnlyRestoring;
+            realizarBackupBtn.Visible = !isOnlyRestoring;
+            pathBackupLbl.Visible = !isOnlyRestoring;
         }
 
         private void aplicarBtn_Click(object sender, EventArgs e)
@@ -74,6 +79,8 @@ namespace Proyecto_Integrador
                     backupRestore.RealizarRestore(restoreTxt.Text);
                     MessageBox.Show("Restauración realizada con éxito.");
                     restoreTxt.Text = "";
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
                 }
                 catch (Exception ex)
                 {

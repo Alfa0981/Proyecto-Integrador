@@ -16,3 +16,9 @@ C:\Users\Navegador\Source\Repos\Proyecto-Integrador\BE\obj\Debug\BE.csproj.Assem
 C:\Users\Navegador\Source\Repos\Proyecto-Integrador\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\Navegador\Source\Repos\Proyecto-Integrador\BE\obj\Debug\BE.dll
 C:\Users\Navegador\Source\Repos\Proyecto-Integrador\BE\obj\Debug\BE.pdb
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\BE\bin\Debug\BE.dll
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\BE\bin\Debug\BE.pdb
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\BE\obj\Debug\BE.dll
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\BE\obj\Debug\BE.pdb

@@ -162,7 +162,7 @@ namespace Proyecto_Integrador
 
         private void backupRestoreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form buckupRestore = new BackupRestore();
+            Form buckupRestore = new BackupRestore(false);
             buckupRestore.MdiParent = this;
             buckupRestore.Show();
         }

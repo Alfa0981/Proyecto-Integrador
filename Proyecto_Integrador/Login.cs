@@ -61,6 +61,21 @@ namespace Proyecto_Integrador
                     isClosingByMe = true;
                     this.Close();                   
                 }
+                catch(IntegrityException ex)
+                {
+                    isClosingByMe = true;
+                    this.Close();
+                    if (SessionManager.GetInstance.Usuario.Perfil.TienePermiso(TipoPermiso.AdminPatente))
+                    {
+                        Form reparacionDB = new ReparacionDB();
+                        reparacionDB.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("El sistema no se encuentra disponible de momento. Contacte a un administrador para obtener mas ayuda.");
+                        Application.Exit();
+                    }
+                }
                 catch(Exception ex)
                 {
                     CustomMessageBox.Show(ex.Message, IdiomaManager.Instance.ObtenerMensaje(""), "OK");
