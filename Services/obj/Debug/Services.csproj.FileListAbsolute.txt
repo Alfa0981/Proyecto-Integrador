@@ -40,3 +40,6 @@ C:\Users\tomas\Source\Repos\Proyecto-Integrador\Services\obj\Debug\Services.cspr
 C:\Users\tomas\Source\Repos\Proyecto-Integrador\Services\obj\Debug\Services.csproj.Up2Date
 C:\Users\tomas\Source\Repos\Proyecto-Integrador\Services\obj\Debug\Services.dll
 C:\Users\tomas\Source\Repos\Proyecto-Integrador\Services\obj\Debug\Services.pdb
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Services\bin\Debug\Resources\descripciones-eventos.json
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Services\bin\Debug\Resources\etiquetas-en.json
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Services\bin\Debug\Resources\etiquetas-es.json
