@@ -38,6 +38,7 @@
             this.precioTxt = new System.Windows.Forms.TextBox();
             this.eliminarBtn = new System.Windows.Forms.Button();
             this.modificarBtn = new System.Windows.Forms.Button();
+            this.ayudaBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,12 +164,27 @@
             this.modificarBtn.UseVisualStyleBackColor = false;
             this.modificarBtn.Click += new System.EventHandler(this.modificarBtn_Click);
             // 
+            // ayudaBtn
+            // 
+            this.ayudaBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.ayudaBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.ayudaBtn.FlatAppearance.BorderSize = 0;
+            this.ayudaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ayudaBtn.Location = new System.Drawing.Point(50, 444);
+            this.ayudaBtn.Name = "ayudaBtn";
+            this.ayudaBtn.Size = new System.Drawing.Size(71, 39);
+            this.ayudaBtn.TabIndex = 54;
+            this.ayudaBtn.Text = "Ayuda";
+            this.ayudaBtn.UseVisualStyleBackColor = false;
+            this.ayudaBtn.Click += new System.EventHandler(this.ayudaBtn_Click);
+            // 
             // FormGestionarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
             this.ClientSize = new System.Drawing.Size(778, 558);
+            this.Controls.Add(this.ayudaBtn);
             this.Controls.Add(this.modificarBtn);
             this.Controls.Add(this.eliminarBtn);
             this.Controls.Add(this.precioLbl);
@@ -199,5 +215,6 @@
         private System.Windows.Forms.TextBox precioTxt;
         private System.Windows.Forms.Button eliminarBtn;
         private System.Windows.Forms.Button modificarBtn;
+        private System.Windows.Forms.Button ayudaBtn;
     }
 }
