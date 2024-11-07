@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.1" version="22.1" PreviousModules="simple" Modules="enterprise" RootPath="." Language="en" Id="{1CF2F946-552A-4C72-BCBE-9848E16AF9D7}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="ActSyncAppComponent;CPLAppletComponent;AutorunComponent;GameUxComponent;SilverlightSlnComponent;SharePointSlnComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.dll" Value="..\BE\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.dll_1" Value="..\BE\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.dll_2" Value="..\BE\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.dll_3" Value="..\BE\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.dll_4" Value="..\BE\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.pdb" Value="..\BE\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.pdb_1" Value="..\BE\obj\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.pdb_2" Value="..\BE\obj\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.pdb_3" Value="..\BE\obj\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BE.pdb_4" Value="..\BE\obj\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BLL.dll" Value="..\BLL\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BLL.dll_1" Value="..\BLL\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BLL.pdb" Value="..\BLL\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BLL.pdb_1" Value="..\BLL\obj\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_BouncyCastle.Cryptography.dll" Value="..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_DAL.dll" Value="..\DAL\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_DAL.dll_1" Value="..\DAL\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_DAL.dll_2" Value="..\BLL\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_DAL.pdb" Value="..\DAL\obj\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_DAL.pdb_1" Value="..\DAL\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll" Value="..\packages\Newtonsoft.Json.13.0.3\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_1" Value="..\Services\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_2" Value="..\packages\Newtonsoft.Json.13.0.3\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_3" Value="..\packages\Newtonsoft.Json.13.0.3\lib\net45"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Proyecto_Integrador.exe" Value="..\Proyecto_Integrador\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Proyecto_Integrador.exe.config" Value="..\Proyecto_Integrador\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Proyecto_Integrador.pdb" Value="..\Proyecto_Integrador\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Services.dll" Value="..\Services\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Services.dll_1" Value="..\Services\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Services.dll_2" Value="..\Services\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Services.dll_3" Value="..\Services\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Services.pdb" Value="..\Services\obj\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Services.pdb_1" Value="..\Services\obj\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Services.pdb_2" Value="..\Services\obj\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Services.pdb_3" Value="..\Services\bin\Debug"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_descripcioneseventos.json" Value="..\BLL\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_descripcioneseventos.json_1" Value="..\DAL\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_descripcioneseventos.json_2" Value="..\Proyecto_Integrador\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_descripcioneseventos.json_3" Value="..\Services\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_etiquetasen.json" Value="..\BLL\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_etiquetasen.json_1" Value="..\DAL\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_etiquetasen.json_2" Value="..\Proyecto_Integrador\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_etiquetasen.json_3" Value="..\Services\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_etiquetases.json" Value="..\BLL\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_etiquetases.json_1" Value="..\DAL\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_etiquetases.json_2" Value="..\Proyecto_Integrador\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_etiquetases.json_3" Value="..\Services\bin\Debug\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_itextsharp.dll" Value="..\packages\iTextSharp.5.5.13.4\lib\net461"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_itextsharp.xmlworker.dll" Value="..\packages\itextsharp.xmlworker.5.5.13.4\lib\net461"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.dll" Value="BE.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.dll_1" Value="BE.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.dll_2" Value="BE.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.dll_3" Value="BE.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.dll_4" Value="BE.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.pdb" Value="BE.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_1" Value="BE.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_2" Value="BE.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_3" Value="BE.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_4" Value="BE.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BLL.dll" Value="BLL.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BLL.dll_1" Value="BLL.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BLL.pdb" Value="BLL.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BLL.pdb_1" Value="BLL.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_BouncyCastle.Cryptography.dll" Value="BouncyCastle.Cryptography.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_DAL.dll" Value="DAL.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_DAL.dll_1" Value="DAL.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_DAL.dll_2" Value="DAL.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_DAL.pdb" Value="DAL.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_DAL.pdb_1" Value="DAL.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_1" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_2" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_3" Value="Newtonsoft.Json.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Proyecto_Integrador.exe" Value="Proyecto_Integrador.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Proyecto_Integrador.exe.config" Value="Proyecto_Integrador.exe.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Proyecto_Integrador.pdb" Value="Proyecto_Integrador.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Services.dll" Value="Services.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Services.dll_1" Value="Services.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Services.dll_2" Value="Services.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Services.dll_3" Value="Services.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Services.pdb" Value="Services.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Services.pdb_1" Value="Services.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Services.pdb_2" Value="Services.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Services.pdb_3" Value="Services.pdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json" Value="descripciones-eventos.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json_1" Value="descripciones-eventos.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json_2" Value="descripciones-eventos.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json_3" Value="descripciones-eventos.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json" Value="etiquetas-en.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json_1" Value="etiquetas-en.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json_2" Value="etiquetas-en.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json_3" Value="etiquetas-en.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json" Value="etiquetas-es.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json_1" Value="etiquetas-es.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json_2" Value="etiquetas-es.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json_3" Value="etiquetas-es.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_itextsharp.dll" Value="itextsharp.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_itextsharp.xmlworker.dll" Value="itextsharp.xmlworker.dll"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOREPAIR" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="TomasInc"/>
+    <ROW Property="ProductCode" Value="1033:{83121DD8-7555-42A1-A33C-0556413E34A2} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Gestor Compras Ventas"/>
+    <ROW Property="ProductVersion" Value="1.0.7" Options="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{CB7A979C-5F2F-4FB6-8DD8-11139A55EFE2}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="BE_Dir" Directory_Parent="APPDIR" DefaultDir="BE"/>
+    <ROW Directory="BLL_Dir" Directory_Parent="APPDIR" DefaultDir="BLL"/>
+    <ROW Directory="DAL_Dir" Directory_Parent="APPDIR" DefaultDir="DAL"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="GUI_Dir" Directory_Parent="APPDIR" DefaultDir="GUI"/>
+    <ROW Directory="Resources_1_Dir" Directory_Parent="BLL_Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="Resources_2_Dir" Directory_Parent="DAL_Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="Resources_3_Dir" Directory_Parent="GUI_Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="Resources_Dir" Directory_Parent="Services_Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="Services_Dir" Directory_Parent="APPDIR" DefaultDir="Services"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{46589654-784C-4E71-9BC4-F5E90C8677BA}"/>
+    <ROW Component="ProductInformation" Value="{32C3298B-5569-48B6-A70C-E27DA0CE603D}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{ABF4141D-1F11-492B-8DF6-5BF28EAEDC64}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{46589654-784C-4E71-9BC4-F5E90C8677BA}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="BE_PrimaryOutput" ComponentId="{DF8B678E-898B-4095-83C2-C80C29D99BF0}" Directory_="BE_Dir" Attributes="0" KeyPath="BE.dll"/>
+    <ROW Component="BE_SymbolsOutput" ComponentId="{AC56D1F3-6B4A-4E3A-84A7-5DC768641973}" Directory_="BE_Dir" Attributes="0" KeyPath="BE.pdb"/>
+    <ROW Component="BLL_ContentOutput_Resources" ComponentId="{40D6F4B3-B4B9-4FE1-B8EE-3D765415136C}" Directory_="Resources_1_Dir" Attributes="0" KeyPath="descripcioneseventos.json" Type="0"/>
+    <ROW Component="BLL_PrimaryOutput" ComponentId="{572AF9E4-9D35-4798-8CF8-AB776AB0EDC0}" Directory_="BLL_Dir" Attributes="0" KeyPath="BLL.dll"/>
+    <ROW Component="BLL_References" ComponentId="{B3BB99ED-30BC-4678-B824-7711126F384E}" Directory_="BLL_Dir" Attributes="0" KeyPath="Services.dll"/>
+    <ROW Component="BLL_SymbolsOutput" ComponentId="{AC1CB0F8-77E4-4A1C-9DB9-571FD7CD9AA7}" Directory_="BLL_Dir" Attributes="0" KeyPath="BE.pdb_1"/>
+    <ROW Component="DAL_ContentOutput_Resources" ComponentId="{4BDF8465-14D1-426E-BAFD-AAD071A2AA1D}" Directory_="Resources_2_Dir" Attributes="0" KeyPath="descripcioneseventos.json_1" Type="0"/>
+    <ROW Component="DAL_PrimaryOutput" ComponentId="{24816129-FE5D-40E4-B9E7-8871709C97A4}" Directory_="DAL_Dir" Attributes="0" KeyPath="DAL.dll_1"/>
+    <ROW Component="DAL_References" ComponentId="{CD9D672D-C85D-481C-8849-8AA97523AF88}" Directory_="DAL_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll_1"/>
+    <ROW Component="DAL_SymbolsOutput" ComponentId="{92A5117C-30EC-4223-962E-0D21EEEFCEF6}" Directory_="DAL_Dir" Attributes="0" KeyPath="BE.pdb_2"/>
+    <ROW Component="GUI_ContentOutput_Resources" ComponentId="{0B7ED409-985D-4785-AE48-149D78715E7E}" Directory_="Resources_3_Dir" Attributes="0" KeyPath="descripcioneseventos.json_2" Type="0"/>
+    <ROW Component="GUI_PrimaryOutput" ComponentId="{240FBB67-4D6A-41FD-94D5-A92BA652AFA1}" Directory_="GUI_Dir" Attributes="0" KeyPath="Proyecto_Integrador.exe"/>
+    <ROW Component="GUI_References" ComponentId="{3799C900-5BC6-4FD3-9583-D7851C62B965}" Directory_="GUI_Dir" Attributes="0" KeyPath="DAL.dll_2"/>
+    <ROW Component="GUI_SymbolsOutput" ComponentId="{5E0D7501-1719-46FE-8511-E46724E953F9}" Directory_="GUI_Dir" Attributes="0" KeyPath="BE.pdb_3"/>
+    <ROW Component="ProductInformation" ComponentId="{32C3298B-5569-48B6-A70C-E27DA0CE603D}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{D156AF1B-2BB4-4766-A1BA-BA1D91BB3FBE}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="Services_ContentOutput_Resources" ComponentId="{ED214C60-CD64-4D04-BE3C-3BEA7F6A31F5}" Directory_="Resources_Dir" Attributes="0" KeyPath="descripcioneseventos.json_3" Type="0"/>
+    <ROW Component="Services_PrimaryOutput" ComponentId="{725A3861-9EB5-4887-8FB4-263C2057D2C4}" Directory_="Services_Dir" Attributes="0" KeyPath="Services.dll_3"/>
+    <ROW Component="Services_References" ComponentId="{05A8FEF1-E612-44AB-A923-038FFC3349C0}" Directory_="Services_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll_3"/>
+    <ROW Component="Services_SymbolsOutput" ComponentId="{5F96171F-5705-43BE-B439-1BDEDF97854E}" Directory_="Services_Dir" Attributes="0" KeyPath="BE.pdb_4"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="BE.dll" Component_="BE_PrimaryOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.dll&gt;" SelfReg="false"/>
+    <ROW File="BE.pdb" Component_="BE_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.pdb&gt;" SelfReg="false"/>
+    <ROW File="BLL.dll" Component_="BLL_PrimaryOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BLL.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BLL.dll&gt;" SelfReg="false"/>
+    <ROW File="BE.dll_1" Component_="BLL_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.dll_1&gt;" SelfReg="false"/>
+    <ROW File="DAL.dll" Component_="BLL_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_DAL.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_DAL.dll&gt;" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="BLL_References" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll&gt;" SelfReg="false"/>
+    <ROW File="Services.dll" Component_="BLL_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Services.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Services.dll&gt;" SelfReg="false"/>
+    <ROW File="BE.pdb_1" Component_="BLL_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.pdb_1&gt;" SelfReg="false"/>
+    <ROW File="BLL.pdb" Component_="BLL_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BLL.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BLL.pdb&gt;" SelfReg="false"/>
+    <ROW File="DAL.pdb" Component_="BLL_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_DAL.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_DAL.pdb&gt;" SelfReg="false"/>
+    <ROW File="Services.pdb" Component_="BLL_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Services.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Services.pdb&gt;" SelfReg="false"/>
+    <ROW File="DAL.dll_1" Component_="DAL_PrimaryOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_DAL.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_DAL.dll_1&gt;" SelfReg="false"/>
+    <ROW File="BE.dll_2" Component_="DAL_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.dll_2&gt;" SelfReg="false"/>
+    <ROW File="Services.dll_1" Component_="DAL_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Services.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Services.dll_1&gt;" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll_1" Component_="DAL_References" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_1&gt;" SelfReg="false"/>
+    <ROW File="BE.pdb_2" Component_="DAL_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.pdb_2&gt;" SelfReg="false"/>
+    <ROW File="DAL.pdb_1" Component_="DAL_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_DAL.pdb_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_DAL.pdb_1&gt;" SelfReg="false"/>
+    <ROW File="Services.pdb_1" Component_="DAL_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Services.pdb_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Services.pdb_1&gt;" SelfReg="false"/>
+    <ROW File="Proyecto_Integrador.exe" Component_="GUI_PrimaryOutput" FileName="PROYEC~2.EXE|[|AI_PROPPATH_FILENAME_PERBUILD_Proyecto_Integrador.exe]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Proyecto_Integrador.exe&gt;" SelfReg="false" DigSign="true"/>
+    <ROW File="Proyecto_Integrador.exe.config" Component_="GUI_PrimaryOutput" FileName="PROYEC~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_Proyecto_Integrador.exe.config]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Proyecto_Integrador.exe.config&gt;" SelfReg="false"/>
+    <ROW File="BE.dll_3" Component_="GUI_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.dll_3&gt;" SelfReg="false"/>
+    <ROW File="BLL.dll_1" Component_="GUI_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BLL.dll_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BLL.dll_1&gt;" SelfReg="false"/>
+    <ROW File="BouncyCastle.Cryptography.dll" Component_="GUI_References" FileName="BOUNCY~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_BouncyCastle.Cryptography.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BouncyCastle.Cryptography.dll&gt;" SelfReg="false"/>
+    <ROW File="itextsharp.dll" Component_="GUI_References" FileName="ITEXTS~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_itextsharp.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_itextsharp.dll&gt;" SelfReg="false"/>
+    <ROW File="itextsharp.xmlworker.dll" Component_="GUI_References" FileName="ITEXTS~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_itextsharp.xmlworker.dll]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_itextsharp.xmlworker.dll&gt;" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll_2" Component_="GUI_References" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_2&gt;" SelfReg="false"/>
+    <ROW File="Services.dll_2" Component_="GUI_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Services.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Services.dll_2&gt;" SelfReg="false"/>
+    <ROW File="DAL.dll_2" Component_="GUI_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_DAL.dll_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_DAL.dll_2&gt;" SelfReg="false"/>
+    <ROW File="BE.pdb_3" Component_="GUI_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.pdb_3&gt;" SelfReg="false"/>
+    <ROW File="BLL.pdb_1" Component_="GUI_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BLL.pdb_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BLL.pdb_1&gt;" SelfReg="false"/>
+    <ROW File="Proyecto_Integrador.pdb" Component_="GUI_SymbolsOutput" FileName="PROYEC~2.PDB|[|AI_PROPPATH_FILENAME_PERBUILD_Proyecto_Integrador.pdb]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Proyecto_Integrador.pdb&gt;" SelfReg="false"/>
+    <ROW File="Services.pdb_2" Component_="GUI_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Services.pdb_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Services.pdb_2&gt;" SelfReg="false"/>
+    <ROW File="Services.dll_3" Component_="Services_PrimaryOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Services.dll_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Services.dll_3&gt;" SelfReg="false"/>
+    <ROW File="BE.dll_4" Component_="Services_References" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll_4]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.dll_4&gt;" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll_3" Component_="Services_References" FileName="NEWTON~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_3&gt;" SelfReg="false"/>
+    <ROW File="BE.pdb_4" Component_="Services_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_4]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_BE.pdb_4&gt;" SelfReg="false"/>
+    <ROW File="Services.pdb_3" Component_="Services_SymbolsOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Services.pdb_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Services.pdb_3&gt;" SelfReg="false"/>
+    <ROW File="descripcioneseventos.json" Component_="BLL_ContentOutput_Resources" FileName="DESCRI~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_descripcioneseventos.json&gt;" SelfReg="false"/>
+    <ROW File="etiquetasen.json" Component_="BLL_ContentOutput_Resources" FileName="ETIQUE~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_etiquetasen.json&gt;" SelfReg="false"/>
+    <ROW File="etiquetases.json" Component_="BLL_ContentOutput_Resources" FileName="ETIQUE~3.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_etiquetases.json&gt;" SelfReg="false"/>
+    <ROW File="descripcioneseventos.json_1" Component_="DAL_ContentOutput_Resources" FileName="DESCRI~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_descripcioneseventos.json_1&gt;" SelfReg="false"/>
+    <ROW File="etiquetasen.json_1" Component_="DAL_ContentOutput_Resources" FileName="ETIQUE~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_etiquetasen.json_1&gt;" SelfReg="false"/>
+    <ROW File="etiquetases.json_1" Component_="DAL_ContentOutput_Resources" FileName="ETIQUE~3.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json_1]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_etiquetases.json_1&gt;" SelfReg="false"/>
+    <ROW File="descripcioneseventos.json_2" Component_="GUI_ContentOutput_Resources" FileName="DESCRI~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_descripcioneseventos.json_2&gt;" SelfReg="false"/>
+    <ROW File="etiquetasen.json_2" Component_="GUI_ContentOutput_Resources" FileName="ETIQUE~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_etiquetasen.json_2&gt;" SelfReg="false"/>
+    <ROW File="etiquetases.json_2" Component_="GUI_ContentOutput_Resources" FileName="ETIQUE~3.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json_2]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_etiquetases.json_2&gt;" SelfReg="false"/>
+    <ROW File="descripcioneseventos.json_3" Component_="Services_ContentOutput_Resources" FileName="DESCRI~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_descripcioneseventos.json_3&gt;" SelfReg="false"/>
+    <ROW File="etiquetasen.json_3" Component_="Services_ContentOutput_Resources" FileName="ETIQUE~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_etiquetasen.json_3&gt;" SelfReg="false"/>
+    <ROW File="etiquetases.json_3" Component_="Services_ContentOutput_Resources" FileName="ETIQUE~3.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json_3]" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_etiquetases.json_3&gt;" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_BE.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BE.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BE.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BE.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BE.dll_4" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.dll_4]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.dll_4]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BE.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BE.pdb_1" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.pdb_1]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BE.pdb_2" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.pdb_2]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BE.pdb_3" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.pdb_3]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BE.pdb_4" Path="[|AI_PROPPATH_DIR_PERBUILD_BE.pdb_4]\[|AI_PROPPATH_FILENAME_PERBUILD_BE.pdb_4]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BLL.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_BLL.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_BLL.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BLL.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_BLL.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_BLL.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BLL.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_BLL.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_BLL.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BLL.pdb_1" Path="[|AI_PROPPATH_DIR_PERBUILD_BLL.pdb_1]\[|AI_PROPPATH_FILENAME_PERBUILD_BLL.pdb_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_BouncyCastle.Cryptography.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_BouncyCastle.Cryptography.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_BouncyCastle.Cryptography.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_DAL.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_DAL.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_DAL.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_DAL.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_DAL.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_DAL.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_DAL.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_DAL.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_DAL.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_DAL.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_DAL.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_DAL.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_DAL.pdb_1" Path="[|AI_PROPPATH_DIR_PERBUILD_DAL.pdb_1]\[|AI_PROPPATH_FILENAME_PERBUILD_DAL.pdb_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Newtonsoft.Json.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Newtonsoft.Json.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Newtonsoft.Json.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Proyecto_Integrador.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_Proyecto_Integrador.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_Proyecto_Integrador.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Proyecto_Integrador.exe.config" Path="[|AI_PROPPATH_DIR_PERBUILD_Proyecto_Integrador.exe.config]\[|AI_PROPPATH_FILENAME_PERBUILD_Proyecto_Integrador.exe.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Proyecto_Integrador.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_Proyecto_Integrador.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_Proyecto_Integrador.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Services.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Services.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Services.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Services.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Services.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Services.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Services.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Services.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Services.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Services.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Services.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Services.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Services.pdb" Path="[|AI_PROPPATH_DIR_PERBUILD_Services.pdb]\[|AI_PROPPATH_FILENAME_PERBUILD_Services.pdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Services.pdb_1" Path="[|AI_PROPPATH_DIR_PERBUILD_Services.pdb_1]\[|AI_PROPPATH_FILENAME_PERBUILD_Services.pdb_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Services.pdb_2" Path="[|AI_PROPPATH_DIR_PERBUILD_Services.pdb_2]\[|AI_PROPPATH_FILENAME_PERBUILD_Services.pdb_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Services.pdb_3" Path="[|AI_PROPPATH_DIR_PERBUILD_Services.pdb_3]\[|AI_PROPPATH_FILENAME_PERBUILD_Services.pdb_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_descripcioneseventos.json" Path="[|AI_PROPPATH_DIR_PERBUILD_descripcioneseventos.json]\[|AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_descripcioneseventos.json_1" Path="[|AI_PROPPATH_DIR_PERBUILD_descripcioneseventos.json_1]\[|AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_descripcioneseventos.json_2" Path="[|AI_PROPPATH_DIR_PERBUILD_descripcioneseventos.json_2]\[|AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_descripcioneseventos.json_3" Path="[|AI_PROPPATH_DIR_PERBUILD_descripcioneseventos.json_3]\[|AI_PROPPATH_FILENAME_PERBUILD_descripcioneseventos.json_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_etiquetasen.json" Path="[|AI_PROPPATH_DIR_PERBUILD_etiquetasen.json]\[|AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_etiquetasen.json_1" Path="[|AI_PROPPATH_DIR_PERBUILD_etiquetasen.json_1]\[|AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_etiquetasen.json_2" Path="[|AI_PROPPATH_DIR_PERBUILD_etiquetasen.json_2]\[|AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_etiquetasen.json_3" Path="[|AI_PROPPATH_DIR_PERBUILD_etiquetasen.json_3]\[|AI_PROPPATH_FILENAME_PERBUILD_etiquetasen.json_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_etiquetases.json" Path="[|AI_PROPPATH_DIR_PERBUILD_etiquetases.json]\[|AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_etiquetases.json_1" Path="[|AI_PROPPATH_DIR_PERBUILD_etiquetases.json_1]\[|AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_etiquetases.json_2" Path="[|AI_PROPPATH_DIR_PERBUILD_etiquetases.json_2]\[|AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_etiquetases.json_3" Path="[|AI_PROPPATH_DIR_PERBUILD_etiquetases.json_3]\[|AI_PROPPATH_FILENAME_PERBUILD_etiquetases.json_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_itextsharp.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_itextsharp.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_itextsharp.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_itextsharp.xmlworker.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_itextsharp.xmlworker.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_itextsharp.xmlworker.dll]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" GeneralOptions="o" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="249"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="252"/>
+    <ROW Action="AI_AppSearchEx" Condition="AI_BOOTSTRAPPER" Sequence="251"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="PreparePrereqDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\PreparePrereqDlg.aip"/>
+    <ROW Fragment="PrerequisitesDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\PrerequisitesDlg.aip"/>
+    <ROW Fragment="ProgressPrereqDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\ProgressPrereqDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+    <ROW Fragment="WelcomePrereqDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomePrereqDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.JsonFileComponent">
+    <ROW JsonFile="descripcioneseventos.json" FileName="DESCRI~1.JSO|descripciones-eventos.json" DirProperty="Resources_Dir" Component="Services_SymbolsOutput" RootProperty="Root" Flags="22" IndentUnits="2"/>
+    <ROW JsonFile="etiquetasen.json" FileName="ETIQUE~1.JSO|etiquetas-en.json" DirProperty="Resources_Dir" Component="Services_SymbolsOutput" RootProperty="Root_1" Flags="22" IndentUnits="2"/>
+    <ROW JsonFile="etiquetases.json" FileName="ETIQUE~2.JSO|etiquetas-es.json" DirProperty="Resources_Dir" Component="Services_SymbolsOutput" RootProperty="Root_2" Flags="22" IndentUnits="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.JsonPropertyComponent">
+    <ROW JsonProperty="AadirCarrito" Parent="Root_1" Name="AñadirCarrito" Condition="1" Order="9" Flags="57" Value="Add to Cart"/>
+    <ROW JsonProperty="AadirCarrito_1" Parent="Root_2" Name="AñadirCarrito" Condition="1" Order="9" Flags="57" Value="Añadir al Carrito"/>
+    <ROW JsonProperty="Aceptar" Parent="Root_1" Name="Aceptar" Condition="1" Order="0" Flags="57" Value="OK"/>
+    <ROW JsonProperty="Aceptar_1" Parent="Root_2" Name="Aceptar" Condition="1" Order="0" Flags="57" Value="OK"/>
+    <ROW JsonProperty="AddProduct" Parent="Root" Name="AddProduct" Condition="1" Order="5" Flags="60"/>
+    <ROW JsonProperty="AddSale" Parent="Root" Name="AddSale" Condition="1" Order="6" Flags="60"/>
+    <ROW JsonProperty="Admin" Parent="Root_1" Name="Admin" Condition="1" Order="1" Flags="57" Value="Admin"/>
+    <ROW JsonProperty="Admin_1" Parent="Root_2" Name="Admin" Condition="1" Order="1" Flags="57" Value="Admin"/>
+    <ROW JsonProperty="Agregar" Parent="Root_1" Name="Agregar" Condition="1" Order="2" Flags="57" Value="Add"/>
+    <ROW JsonProperty="AgregarAFamilia" Parent="Root_1" Name="AgregarAFamilia" Condition="1" Order="3" Flags="57" Value="Add to Family"/>
+    <ROW JsonProperty="AgregarAFamilia_1" Parent="Root_2" Name="AgregarAFamilia" Condition="1" Order="3" Flags="57" Value="Agregar a Familia"/>
+    <ROW JsonProperty="AgregarAPerfil" Parent="Root_1" Name="AgregarAPerfil" Condition="1" Order="4" Flags="57" Value="Add to Profiles"/>
+    <ROW JsonProperty="AgregarAPerfil_1" Parent="Root_2" Name="AgregarAPerfil" Condition="1" Order="4" Flags="57" Value="Agregar a Perfil"/>
+    <ROW JsonProperty="Agregar_1" Parent="Root_2" Name="Agregar" Condition="1" Order="2" Flags="57" Value="Agregar"/>
+    <ROW JsonProperty="Ajustes" Parent="Root_1" Name="Ajustes" Condition="1" Order="5" Flags="57" Value="Settings"/>
+    <ROW JsonProperty="Ajustes_1" Parent="Root_2" Name="Ajustes" Condition="1" Order="5" Flags="57" Value="Ajustes"/>
+    <ROW JsonProperty="Apellido" Parent="Root_1" Name="Apellido" Condition="1" Order="6" Flags="57" Value="Surname"/>
+    <ROW JsonProperty="Apellido_1" Parent="Root_2" Name="Apellido" Condition="1" Order="6" Flags="57" Value="Apellido"/>
+    <ROW JsonProperty="AsociarCliente" Parent="Root_1" Name="AsociarCliente" Condition="1" Order="7" Flags="57" Value="Associate Client"/>
+    <ROW JsonProperty="AsociarCliente_1" Parent="Root_2" Name="AsociarCliente" Condition="1" Order="7" Flags="57" Value="Asociar Cliente"/>
+    <ROW JsonProperty="Ayuda" Parent="Root_1" Name="Ayuda" Condition="1" Order="8" Flags="57" Value="Help"/>
+    <ROW JsonProperty="Ayuda_1" Parent="Root_2" Name="Ayuda" Condition="1" Order="8" Flags="57" Value="Ayuda"/>
+    <ROW JsonProperty="Bienvenido" Parent="Root_1" Name="Bienvenido" Condition="1" Order="10" Flags="57" Value="Welcome!"/>
+    <ROW JsonProperty="Bienvenido_1" Parent="Root_2" Name="Bienvenido" Condition="1" Order="10" Flags="57" Value="Bienvenido!"/>
+    <ROW JsonProperty="BlockingUser" Parent="Root_1" Name="BlockingUser" Condition="1" Order="11" Flags="57" Value="User blocked due to too many attempts"/>
+    <ROW JsonProperty="BlockingUser_1" Parent="Root_2" Name="BlockingUser" Condition="1" Order="11" Flags="57" Value="Se bloqueo al usuario por demasiados intentos"/>
+    <ROW JsonProperty="Buscar" Parent="Root_1" Name="Buscar" Condition="1" Order="12" Flags="57" Value="Search"/>
+    <ROW JsonProperty="Buscar_1" Parent="Root_2" Name="Buscar" Condition="1" Order="12" Flags="57" Value="Buscar"/>
+    <ROW JsonProperty="CVV" Parent="Root_1" Name="CVV" Condition="1" Order="37" Flags="57" Value="CVV"/>
+    <ROW JsonProperty="CVV_1" Parent="Root_2" Name="CVV" Condition="1" Order="37" Flags="57" Value="CVV"/>
+    <ROW JsonProperty="Cambiar" Parent="Root_1" Name="Cambiar" Condition="1" Order="13" Flags="57" Value="Change"/>
+    <ROW JsonProperty="CambiarContrasea" Parent="Root_1" Name="CambiarContraseña" Condition="1" Order="14" Flags="57" Value="Change Password"/>
+    <ROW JsonProperty="CambiarContrasea_1" Parent="Root_2" Name="CambiarContraseña" Condition="1" Order="14" Flags="57" Value="Cambiar Contraseña"/>
+    <ROW JsonProperty="CambiarIdioma" Parent="Root_1" Name="CambiarIdioma" Condition="1" Order="15" Flags="57" Value="Change Language"/>
+    <ROW JsonProperty="CambiarIdioma_1" Parent="Root_2" Name="CambiarIdioma" Condition="1" Order="15" Flags="57" Value="Cambiar Idioma"/>
+    <ROW JsonProperty="Cambiar_1" Parent="Root_2" Name="Cambiar" Condition="1" Order="13" Flags="57" Value="Cambiar"/>
+    <ROW JsonProperty="Cancelar" Parent="Root_1" Name="Cancelar" Condition="1" Order="16" Flags="57" Value="Cancel"/>
+    <ROW JsonProperty="Cancelar_1" Parent="Root_2" Name="Cancelar" Condition="1" Order="16" Flags="57" Value="Cancelar"/>
+    <ROW JsonProperty="Cantidad" Parent="Root_1" Name="Cantidad" Condition="1" Order="17" Flags="57" Value="Quantity"/>
+    <ROW JsonProperty="Cantidad_1" Parent="Root_2" Name="Cantidad" Condition="1" Order="17" Flags="57" Value="Cantidad"/>
+    <ROW JsonProperty="CargaConExito" Parent="Root_1" Name="CargaConExito" Condition="1" Order="18" Flags="57" Value="Load Successful"/>
+    <ROW JsonProperty="CargaConExito_1" Parent="Root_2" Name="CargaConExito" Condition="1" Order="18" Flags="57" Value="Carga con exito"/>
+    <ROW JsonProperty="Cargar" Parent="Root_1" Name="Cargar" Condition="1" Order="19" Flags="57" Value="Load"/>
+    <ROW JsonProperty="Cargar_1" Parent="Root_2" Name="Cargar" Condition="1" Order="19" Flags="57" Value="Cargar"/>
+    <ROW JsonProperty="CarritoCreado" Parent="Root_1" Name="CarritoCreado" Condition="1" Order="20" Flags="57" Value="Cart created with ID:"/>
+    <ROW JsonProperty="CarritoCreado_1" Parent="Root_2" Name="CarritoCreado" Condition="1" Order="20" Flags="57" Value="Carrito creado con ID:"/>
+    <ROW JsonProperty="CarritoError" Parent="Root_1" Name="CarritoError" Condition="1" Order="21" Flags="57" Value="Error creating cart:"/>
+    <ROW JsonProperty="CarritoError_1" Parent="Root_2" Name="CarritoError" Condition="1" Order="21" Flags="57" Value="Error al crear el carrito:"/>
+    <ROW JsonProperty="CarritoId" Parent="Root_1" Name="CarritoId" Condition="1" Order="22" Flags="57" Value="Cart Id"/>
+    <ROW JsonProperty="CarritoId_1" Parent="Root_2" Name="CarritoId" Condition="1" Order="22" Flags="57" Value="Carrito Id"/>
+    <ROW JsonProperty="CarritoNotFound" Parent="Root_1" Name="CarritoNotFound" Condition="1" Order="23" Flags="57" Value="Cart not found"/>
+    <ROW JsonProperty="CarritoNotFound_1" Parent="Root_2" Name="CarritoNotFound" Condition="1" Order="23" Flags="57" Value="Carrito no encontrado"/>
+    <ROW JsonProperty="CarritoVacioException" Parent="Root_1" Name="CarritoVacioException" Condition="1" Order="24" Flags="57" Value="You must load the cart first"/>
+    <ROW JsonProperty="CarritoVacioException_1" Parent="Root_2" Name="CarritoVacioException" Condition="1" Order="24" Flags="57" Value="Debe cargar el carrito primero"/>
+    <ROW JsonProperty="Cerrar" Parent="Root_1" Name="Cerrar" Condition="1" Order="25" Flags="57" Value="Close"/>
+    <ROW JsonProperty="CerrarSesion" Parent="Root_1" Name="CerrarSesion" Condition="1" Order="26" Flags="57" Value="Log Out"/>
+    <ROW JsonProperty="CerrarSesion_1" Parent="Root_2" Name="CerrarSesion" Condition="1" Order="26" Flags="57" Value="Cerrar Sesion"/>
+    <ROW JsonProperty="Cerrar_1" Parent="Root_2" Name="Cerrar" Condition="1" Order="25" Flags="57" Value="Cerrar"/>
+    <ROW JsonProperty="ClavesDistintasException" Parent="Root_1" Name="ClavesDistintasException" Condition="1" Order="27" Flags="57" Value="The keys are different"/>
+    <ROW JsonProperty="ClavesDistintasException_1" Parent="Root_2" Name="ClavesDistintasException" Condition="1" Order="27" Flags="57" Value="Las claves son distintas"/>
+    <ROW JsonProperty="Cliente" Parent="Root_1" Name="Cliente" Condition="1" Order="28" Flags="57" Value="Client:"/>
+    <ROW JsonProperty="ClienteAsociadoException" Parent="Root_1" Name="ClienteAsociadoException" Condition="1" Order="29" Flags="57" Value="You must associate a client with the cart"/>
+    <ROW JsonProperty="ClienteAsociadoException_1" Parent="Root_2" Name="ClienteAsociadoException" Condition="1" Order="29" Flags="57" Value="Debe asociar un cliente al carrito"/>
+    <ROW JsonProperty="ClienteAsociadoOK" Parent="Root_1" Name="ClienteAsociadoOK" Condition="1" Order="30" Flags="57" Value="Client associated successfully"/>
+    <ROW JsonProperty="ClienteAsociadoOK_1" Parent="Root_2" Name="ClienteAsociadoOK" Condition="1" Order="30" Flags="57" Value="Cliente asociado con exito"/>
+    <ROW JsonProperty="Cliente_1" Parent="Root_2" Name="Cliente" Condition="1" Order="28" Flags="57" Value="Cliente:"/>
+    <ROW JsonProperty="Clientes" Parent="Root_1" Name="Clientes" Condition="1" Order="31" Flags="57" Value="Clients"/>
+    <ROW JsonProperty="Clientes_1" Parent="Root_2" Name="Clientes" Condition="1" Order="31" Flags="57" Value="Clientes"/>
+    <ROW JsonProperty="CobrarVenta" Parent="Root_1" Name="CobrarVenta" Condition="1" Order="32" Flags="57" Value="Generate Sale"/>
+    <ROW JsonProperty="CobrarVenta_1" Parent="Root_2" Name="CobrarVenta" Condition="1" Order="32" Flags="57" Value="Cobrar venta"/>
+    <ROW JsonProperty="Configurar" Parent="Root_1" Name="Configurar" Condition="1" Order="33" Flags="57" Value="Configure"/>
+    <ROW JsonProperty="ConfigurarFamilias" Parent="Root_1" Name="ConfigurarFamilias" Condition="1" Order="34" Flags="57" Value="Configure Families"/>
+    <ROW JsonProperty="ConfigurarFamilias_1" Parent="Root_2" Name="ConfigurarFamilias" Condition="1" Order="34" Flags="57" Value="Configurar Familias"/>
+    <ROW JsonProperty="Configurar_1" Parent="Root_2" Name="Configurar" Condition="1" Order="33" Flags="57" Value="Configurar"/>
+    <ROW JsonProperty="Contrasea" Parent="Root_1" Name="Contraseña" Condition="1" Order="35" Flags="57" Value="Password"/>
+    <ROW JsonProperty="Contrasea_1" Parent="Root_2" Name="Contraseña" Condition="1" Order="35" Flags="57" Value="Contraseña"/>
+    <ROW JsonProperty="CreateUser" Parent="Root" Name="CreateUser" Condition="1" Order="2" Flags="60"/>
+    <ROW JsonProperty="CredencialesInvalidas" Parent="Root_1" Name="CredencialesInvalidas" Condition="1" Order="36" Flags="57" Value="Invalid credentials"/>
+    <ROW JsonProperty="CredencialesInvalidas_1" Parent="Root_2" Name="CredencialesInvalidas" Condition="1" Order="36" Flags="57" Value="Credenciales invalidas"/>
+    <ROW JsonProperty="DatosEfectivo" Parent="Root_1" Name="DatosEfectivo" Condition="1" Order="38" Flags="57" Value="Cash Data"/>
+    <ROW JsonProperty="DatosEfectivo_1" Parent="Root_2" Name="DatosEfectivo" Condition="1" Order="38" Flags="57" Value="Datos Efectivo"/>
+    <ROW JsonProperty="DatosTarjeta" Parent="Root_1" Name="DatosTarjeta" Condition="1" Order="39" Flags="57" Value="Card Data"/>
+    <ROW JsonProperty="DatosTarjeta_1" Parent="Root_2" Name="DatosTarjeta" Condition="1" Order="39" Flags="57" Value="Datos de Tarjeta"/>
+    <ROW JsonProperty="DatosTransferencia" Parent="Root_1" Name="DatosTransferencia" Condition="1" Order="40" Flags="57" Value="Transfer Data"/>
+    <ROW JsonProperty="DatosTransferencia_1" Parent="Root_2" Name="DatosTransferencia" Condition="1" Order="40" Flags="57" Value="Datos Transferencia"/>
+    <ROW JsonProperty="DeleteClient" Parent="Root" Name="DeleteClient" Condition="1" Order="3" Flags="60"/>
+    <ROW JsonProperty="DeleteProduct" Parent="Root" Name="DeleteProduct" Condition="1" Order="7" Flags="60"/>
+    <ROW JsonProperty="DesbloqueadoConExito" Parent="Root_1" Name="DesbloqueadoConExito" Condition="1" Order="41" Flags="57" Value="Unlocked successfully"/>
+    <ROW JsonProperty="DesbloqueadoConExito_1" Parent="Root_2" Name="DesbloqueadoConExito" Condition="1" Order="41" Flags="57" Value="Desbloqueado con exito"/>
+    <ROW JsonProperty="Desbloquear" Parent="Root_1" Name="Desbloquear" Condition="1" Order="42" Flags="57" Value="Unlock"/>
+    <ROW JsonProperty="Desbloquear_1" Parent="Root_2" Name="Desbloquear" Condition="1" Order="42" Flags="57" Value="Desbloquear"/>
+    <ROW JsonProperty="Descripcion" Parent="Login" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Login"/>
+    <ROW JsonProperty="Descripcion_1" Parent="Logout" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Logout"/>
+    <ROW JsonProperty="Descripcion_10" Parent="NewProveedor" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Nuevo proveedor"/>
+    <ROW JsonProperty="Descripcion_11" Parent="UpdateProveedor" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Proveedor modificado"/>
+    <ROW JsonProperty="Descripcion_12" Parent="NewPedidoCotizacion" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Pedido de Cotizacion creado"/>
+    <ROW JsonProperty="Descripcion_13" Parent="NewORdenCompra" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Orden Compra creado"/>
+    <ROW JsonProperty="Descripcion_14" Parent="UpdateOrdenComra" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Orden Compra recibida"/>
+    <ROW JsonProperty="Descripcion_2" Parent="CreateUser" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Nuevo usuario creado"/>
+    <ROW JsonProperty="Descripcion_3" Parent="DeleteClient" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Cliente eliminado"/>
+    <ROW JsonProperty="Descripcion_4" Parent="UpdateClient" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Cliente actualizado"/>
+    <ROW JsonProperty="Descripcion_5" Parent="AddProduct" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Producto agregado"/>
+    <ROW JsonProperty="Descripcion_6" Parent="AddSale" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Venta generada"/>
+    <ROW JsonProperty="Descripcion_7" Parent="DeleteProduct" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Producto borrado"/>
+    <ROW JsonProperty="Descripcion_8" Parent="UpdateProduct" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Producto actualizado"/>
+    <ROW JsonProperty="Descripcion_9" Parent="NewClient" Name="Descripcion" Condition="1" Order="0" Flags="57" Value="Nuevo cliente"/>
+    <ROW JsonProperty="Direccion" Parent="Root_1" Name="Direccion" Condition="1" Order="43" Flags="57" Value="Address"/>
+    <ROW JsonProperty="Direccion_1" Parent="Root_2" Name="Direccion" Condition="1" Order="43" Flags="57" Value="Direccion"/>
+    <ROW JsonProperty="Dni" Parent="Root_1" Name="Dni" Condition="1" Order="44" Flags="57" Value="Dni"/>
+    <ROW JsonProperty="Dni_1" Parent="Root_2" Name="Dni" Condition="1" Order="44" Flags="57" Value="Dni"/>
+    <ROW JsonProperty="Efectivo" Parent="Root_1" Name="Efectivo" Condition="1" Order="45" Flags="57" Value="Cash"/>
+    <ROW JsonProperty="Efectivo_1" Parent="Root_2" Name="Efectivo" Condition="1" Order="45" Flags="57" Value="Efectivo"/>
+    <ROW JsonProperty="ElegirIdioma" Parent="Root_1" Name="ElegirIdioma" Condition="1" Order="46" Flags="57" Value="Choose your language:"/>
+    <ROW JsonProperty="ElegirIdioma_1" Parent="Root_2" Name="ElegirIdioma" Condition="1" Order="46" Flags="57" Value="Elegir idioma: "/>
+    <ROW JsonProperty="EliminadoConExito" Parent="Root_1" Name="EliminadoConExito" Condition="1" Order="47" Flags="57" Value="Deleted successfully"/>
+    <ROW JsonProperty="EliminadoConExito_1" Parent="Root_2" Name="EliminadoConExito" Condition="1" Order="47" Flags="57" Value="Eliminado con exito"/>
+    <ROW JsonProperty="Eliminar" Parent="Root_1" Name="Eliminar" Condition="1" Order="48" Flags="57" Value="Delete"/>
+    <ROW JsonProperty="EliminarProducto" Parent="Root_1" Name="EliminarProducto" Condition="1" Order="49" Flags="57" Value="Delete Product"/>
+    <ROW JsonProperty="EliminarProducto_1" Parent="Root_2" Name="EliminarProducto" Condition="1" Order="49" Flags="57" Value="Eliminar Producto"/>
+    <ROW JsonProperty="Eliminar_1" Parent="Root_2" Name="Eliminar" Condition="1" Order="48" Flags="57" Value="Eliminar"/>
+    <ROW JsonProperty="Email" Parent="Root_1" Name="Email" Condition="1" Order="50" Flags="57" Value="Email"/>
+    <ROW JsonProperty="Email_1" Parent="Root_2" Name="Email" Condition="1" Order="50" Flags="57" Value="Email"/>
+    <ROW JsonProperty="FaltanCamposException" Parent="Root_1" Name="FaltanCamposException" Condition="1" Order="51" Flags="57" Value="Missing fields"/>
+    <ROW JsonProperty="FaltanCamposException_1" Parent="Root_2" Name="FaltanCamposException" Condition="1" Order="51" Flags="57" Value="Faltan completar campos"/>
+    <ROW JsonProperty="FamiliaAlreadyExists" Parent="Root_1" Name="FamiliaAlreadyExists" Condition="1" Order="52" Flags="57" Value="Family already exists with that name"/>
+    <ROW JsonProperty="FamiliaAlreadyExists_1" Parent="Root_2" Name="FamiliaAlreadyExists" Condition="1" Order="52" Flags="57" Value="Ya existe una Familia con ese nombre"/>
+    <ROW JsonProperty="FamiliaYaExisteException" Parent="Root_1" Name="FamiliaYaExisteException" Condition="1" Order="54" Flags="57" Value="Family already exists in the tree"/>
+    <ROW JsonProperty="FamiliaYaExisteException_1" Parent="Root_2" Name="FamiliaYaExisteException" Condition="1" Order="54" Flags="57" Value="La familia ya existe en el arbol"/>
+    <ROW JsonProperty="Familias" Parent="Root_1" Name="Familias" Condition="1" Order="53" Flags="57" Value="Families"/>
+    <ROW JsonProperty="Familias_1" Parent="Root_2" Name="Familias" Condition="1" Order="53" Flags="57" Value="Familias"/>
+    <ROW JsonProperty="FechaExp" Parent="Root_1" Name="FechaExp" Condition="1" Order="55" Flags="57" Value="Expiration Date"/>
+    <ROW JsonProperty="FechaExpException" Parent="Root_1" Name="FechaExpException" Condition="1" Order="56" Flags="57" Value="The expiration date cannot be earlier than the current month and year."/>
+    <ROW JsonProperty="FechaExpException_1" Parent="Root_2" Name="FechaExpException" Condition="1" Order="56" Flags="57" Value="La fecha de expiracion no puede ser anterior al mes y año actuales."/>
+    <ROW JsonProperty="FechaExp_1" Parent="Root_2" Name="FechaExp" Condition="1" Order="55" Flags="57" Value="Fecha de Expiracion"/>
+    <ROW JsonProperty="FormCambiarIdioma" Parent="Root_1" Name="FormCambiarIdioma" Condition="1" Order="58" Flags="57" Value="FormChangeLanguage"/>
+    <ROW JsonProperty="FormCambiarIdioma_1" Parent="Root_2" Name="FormCambiarIdioma" Condition="1" Order="58" Flags="57" Value="FormCambiarIdioma"/>
+    <ROW JsonProperty="FormCambiarPass" Parent="Root_1" Name="FormCambiarPass" Condition="1" Order="59" Flags="57" Value="FormChangePass"/>
+    <ROW JsonProperty="FormCambiarPass_1" Parent="Root_2" Name="FormCambiarPass" Condition="1" Order="59" Flags="57" Value="FormCambiarPass"/>
+    <ROW JsonProperty="FormCobrarVenta" Parent="Root_1" Name="FormCobrarVenta" Condition="1" Order="60" Flags="57" Value="FormGenerateSale"/>
+    <ROW JsonProperty="FormCobrarVenta_1" Parent="Root_2" Name="FormCobrarVenta" Condition="1" Order="60" Flags="57" Value="FormCobrarVenta"/>
+    <ROW JsonProperty="FormGenerarCarrito" Parent="Root_1" Name="FormGenerarCarrito" Condition="1" Order="61" Flags="57" Value="FormGenerateCart"/>
+    <ROW JsonProperty="FormGenerarCarrito_1" Parent="Root_2" Name="FormGenerarCarrito" Condition="1" Order="61" Flags="57" Value="FormGenerarCarrito"/>
+    <ROW JsonProperty="FormGenerarFactura" Parent="Root_1" Name="FormGenerarFactura" Condition="1" Order="62" Flags="57" Value="FormGenerateSale"/>
+    <ROW JsonProperty="FormGenerarFactura_1" Parent="Root_2" Name="FormGenerarFactura" Condition="1" Order="62" Flags="57" Value="FormGenerarFactura"/>
+    <ROW JsonProperty="FormGestionarFamilias" Parent="Root_1" Name="FormGestionarFamilias" Condition="1" Order="63" Flags="57" Value="FormManageFamilies"/>
+    <ROW JsonProperty="FormGestionarFamilias_1" Parent="Root_2" Name="FormGestionarFamilias" Condition="1" Order="63" Flags="57" Value="FormGestionarFamilias"/>
+    <ROW JsonProperty="FormGestionarPerfil" Parent="Root_1" Name="FormGestionarPerfil" Condition="1" Order="64" Flags="57" Value="FormManageProfile"/>
+    <ROW JsonProperty="FormGestionarPerfil_1" Parent="Root_2" Name="FormGestionarPerfil" Condition="1" Order="64" Flags="57" Value="FormGestionarPerfil"/>
+    <ROW JsonProperty="FormGestionarProducto" Parent="Root_1" Name="FormGestionarProducto" Condition="1" Order="65" Flags="57" Value="FormManageProducts"/>
+    <ROW JsonProperty="FormGestionarProducto_1" Parent="Root_2" Name="FormGestionarProducto" Condition="1" Order="65" Flags="57" Value="FormGestionarProducto"/>
+    <ROW JsonProperty="FormGestionarUsuario" Parent="Root_1" Name="FormGestionarUsuario" Condition="1" Order="66" Flags="57" Value="FormManageUsers"/>
+    <ROW JsonProperty="FormGestionarUsuario_1" Parent="Root_2" Name="FormGestionarUsuario" Condition="1" Order="66" Flags="57" Value="FormGestionarUsuario"/>
+    <ROW JsonProperty="FormNotClosable" Parent="Root_1" Name="FormNotClosable" Condition="1" Order="67" Flags="57" Value="You cannot close the form during this operation"/>
+    <ROW JsonProperty="FormNotClosable_1" Parent="Root_2" Name="FormNotClosable" Condition="1" Order="67" Flags="57" Value="No puede cerrar el formulario durante esta operacion"/>
+    <ROW JsonProperty="FormRegistrarCliente" Parent="Root_1" Name="FormRegistrarCliente" Condition="1" Order="68" Flags="57" Value="FormRegisterClient"/>
+    <ROW JsonProperty="FormRegistrarCliente_1" Parent="Root_2" Name="FormRegistrarCliente" Condition="1" Order="68" Flags="57" Value="FormRegistrarCliente"/>
+    <ROW JsonProperty="FormSeleccionarProducto" Parent="Root_1" Name="FormSeleccionarProducto" Condition="1" Order="69" Flags="57" Value="FormSelectProduct"/>
+    <ROW JsonProperty="FormSeleccionarProducto_1" Parent="Root_2" Name="FormSeleccionarProducto" Condition="1" Order="69" Flags="57" Value="FormSeleccionarProducto"/>
+    <ROW JsonProperty="FormatoIncorrecto" Parent="Root_1" Name="FormatoIncorrecto" Condition="1" Order="57" Flags="57" Value="Number format incorrect"/>
+    <ROW JsonProperty="FormatoIncorrecto_1" Parent="Root_2" Name="FormatoIncorrecto" Condition="1" Order="57" Flags="57" Value="Formato de numero incorrecto"/>
+    <ROW JsonProperty="GenerarCarrito" Parent="Root_1" Name="GenerarCarrito" Condition="1" Order="70" Flags="57" Value="Generate Cart"/>
+    <ROW JsonProperty="GenerarCarrito_1" Parent="Root_2" Name="GenerarCarrito" Condition="1" Order="70" Flags="57" Value="Generar Carrito"/>
+    <ROW JsonProperty="GenerarVenta" Parent="Root_1" Name="GenerarVenta" Condition="1" Order="71" Flags="57" Value="Generate Sale"/>
+    <ROW JsonProperty="GenerarVenta_1" Parent="Root_2" Name="GenerarVenta" Condition="1" Order="71" Flags="57" Value="Generar Venta"/>
+    <ROW JsonProperty="GestionarFamilias" Parent="Root_1" Name="GestionarFamilias" Condition="1" Order="72" Flags="57" Value="Manage Families"/>
+    <ROW JsonProperty="GestionarFamilias_1" Parent="Root_2" Name="GestionarFamilias" Condition="1" Order="72" Flags="57" Value="Gestionar Familias"/>
+    <ROW JsonProperty="GestionarPerfiles" Parent="Root_1" Name="GestionarPerfiles" Condition="1" Order="73" Flags="57" Value="Manage Profiles"/>
+    <ROW JsonProperty="GestionarPerfiles_1" Parent="Root_2" Name="GestionarPerfiles" Condition="1" Order="73" Flags="57" Value="Gestionar Perfiles"/>
+    <ROW JsonProperty="GestionarProductos" Parent="Root_1" Name="GestionarProductos" Condition="1" Order="74" Flags="57" Value="Manage Products"/>
+    <ROW JsonProperty="GestionarProductos_1" Parent="Root_2" Name="GestionarProductos" Condition="1" Order="74" Flags="57" Value="Gestionar Productos"/>
+    <ROW JsonProperty="GestionarUsuarios" Parent="Root_1" Name="GestionarUsuarios" Condition="1" Order="75" Flags="57" Value="Manage Users"/>
+    <ROW JsonProperty="GestionarUsuarios_1" Parent="Root_2" Name="GestionarUsuarios" Condition="1" Order="75" Flags="57" Value="Gestionar Usuarios"/>
+    <ROW JsonProperty="Guardar" Parent="Root_1" Name="Guardar" Condition="1" Order="76" Flags="57" Value="Save"/>
+    <ROW JsonProperty="Guardar_1" Parent="Root_2" Name="Guardar" Condition="1" Order="76" Flags="57" Value="Guardar"/>
+    <ROW JsonProperty="Ingresar" Parent="Root_1" Name="Ingresar" Condition="1" Order="77" Flags="57" Value="Login"/>
+    <ROW JsonProperty="Ingresar_1" Parent="Root_2" Name="Ingresar" Condition="1" Order="77" Flags="57" Value="Ingresar"/>
+    <ROW JsonProperty="InsuficienteStockException" Parent="Root_1" Name="InsuficienteStockException" Condition="1" Order="78" Flags="57" Value="There is not enough stock for the product:"/>
+    <ROW JsonProperty="InsuficienteStockException_1" Parent="Root_2" Name="InsuficienteStockException" Condition="1" Order="78" Flags="57" Value="No hay suficiente stock para el producto:"/>
+    <ROW JsonProperty="IrCarrito" Parent="Root_1" Name="IrCarrito" Condition="1" Order="79" Flags="57" Value="Go to Cart"/>
+    <ROW JsonProperty="IrCarrito_1" Parent="Root_2" Name="IrCarrito" Condition="1" Order="79" Flags="57" Value="Ir al carrito"/>
+    <ROW JsonProperty="Login" Parent="Root" Name="Login" Condition="1" Order="0" Flags="60"/>
+    <ROW JsonProperty="Logout" Parent="Root" Name="Logout" Condition="1" Order="1" Flags="60"/>
+    <ROW JsonProperty="MainMessage" Parent="Root_1" Name="MainMessage" Condition="1" Order="80" Flags="57" Value="Start by navigating the menu options to access the features you need, such as placing orders, managing inventory, or generating reports. If you have any questions or need help, don&apos;t hesitate to contact the support team."/>
+    <ROW JsonProperty="MainMessage_1" Parent="Root_2" Name="MainMessage" Condition="1" Order="80" Flags="57" Value="Comienza navegando por las opciones del menu para acceder a las funcionalidades que necesites, como registrar pedidos, gestionar inventario o generar informes. Si tienes alguna pregunta o necesitas ayuda, no dudes en contactar con el equipo de soporte."/>
+    <ROW JsonProperty="ModificadoConExito" Parent="Root_1" Name="ModificadoConExito" Condition="1" Order="81" Flags="57" Value="Modified successfully."/>
+    <ROW JsonProperty="ModificadoConExito_1" Parent="Root_2" Name="ModificadoConExito" Condition="1" Order="81" Flags="57" Value="Modificado con exito."/>
+    <ROW JsonProperty="Modificar" Parent="Root_1" Name="Modificar" Condition="1" Order="82" Flags="57" Value="Modify"/>
+    <ROW JsonProperty="Modificar_1" Parent="Root_2" Name="Modificar" Condition="1" Order="82" Flags="57" Value="Modificar"/>
+    <ROW JsonProperty="Modulo" Parent="Login" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Users"/>
+    <ROW JsonProperty="Modulo_1" Parent="Logout" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Users"/>
+    <ROW JsonProperty="Modulo_10" Parent="NewProveedor" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Compras"/>
+    <ROW JsonProperty="Modulo_11" Parent="UpdateProveedor" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Compras"/>
+    <ROW JsonProperty="Modulo_12" Parent="NewPedidoCotizacion" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Compras"/>
+    <ROW JsonProperty="Modulo_13" Parent="NewORdenCompra" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Compras"/>
+    <ROW JsonProperty="Modulo_14" Parent="UpdateOrdenComra" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Compras"/>
+    <ROW JsonProperty="Modulo_2" Parent="CreateUser" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Users"/>
+    <ROW JsonProperty="Modulo_3" Parent="DeleteClient" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Clientes"/>
+    <ROW JsonProperty="Modulo_4" Parent="UpdateClient" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Clientes"/>
+    <ROW JsonProperty="Modulo_5" Parent="AddProduct" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Productos"/>
+    <ROW JsonProperty="Modulo_6" Parent="AddSale" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Ventas"/>
+    <ROW JsonProperty="Modulo_7" Parent="DeleteProduct" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Productos"/>
+    <ROW JsonProperty="Modulo_8" Parent="UpdateProduct" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Productos"/>
+    <ROW JsonProperty="Modulo_9" Parent="NewClient" Name="Modulo" Condition="1" Order="1" Flags="57" Value="Clientes"/>
+    <ROW JsonProperty="Monto" Parent="Root_1" Name="Monto" Condition="1" Order="83" Flags="57" Value="Amount:"/>
+    <ROW JsonProperty="MontoCliente" Parent="Root_1" Name="MontoCliente" Condition="1" Order="84" Flags="57" Value="Client Amount"/>
+    <ROW JsonProperty="MontoClienteMissing" Parent="Root_1" Name="MontoClienteMissing" Condition="1" Order="85" Flags="57" Value="Please complete the client amount."/>
+    <ROW JsonProperty="MontoClienteMissing_1" Parent="Root_2" Name="MontoClienteMissing" Condition="1" Order="85" Flags="57" Value="Por favor, complete el monto del cliente."/>
+    <ROW JsonProperty="MontoCliente_1" Parent="Root_2" Name="MontoCliente" Condition="1" Order="84" Flags="57" Value="Monto del cliente"/>
+    <ROW JsonProperty="MontoInsuficiente" Parent="Root_1" Name="MontoInsuficiente" Condition="1" Order="86" Flags="57" Value="The amount is not enough"/>
+    <ROW JsonProperty="MontoInsuficiente_1" Parent="Root_2" Name="MontoInsuficiente" Condition="1" Order="86" Flags="57" Value="El monto no es suficiente"/>
+    <ROW JsonProperty="Monto_1" Parent="Root_2" Name="Monto" Condition="1" Order="83" Flags="57" Value="Monto:"/>
+    <ROW JsonProperty="NewClient" Parent="Root" Name="NewClient" Condition="1" Order="9" Flags="60"/>
+    <ROW JsonProperty="NewORdenCompra" Parent="Root" Name="NewORdenCompra" Condition="1" Order="13" Flags="60"/>
+    <ROW JsonProperty="NewPedidoCotizacion" Parent="Root" Name="NewPedidoCotizacion" Condition="1" Order="12" Flags="60"/>
+    <ROW JsonProperty="NewProveedor" Parent="Root" Name="NewProveedor" Condition="1" Order="10" Flags="60"/>
+    <ROW JsonProperty="NoEsRootException" Parent="Root_1" Name="NoEsRootException" Condition="1" Order="89" Flags="57" Value="You did not select a root node"/>
+    <ROW JsonProperty="NoEsRootException_1" Parent="Root_2" Name="NoEsRootException" Condition="1" Order="89" Flags="57" Value="No se ha seleccionado un nodo raiz"/>
+    <ROW JsonProperty="NoSePuedeAgregarMismaFamiliaExcep_1" Parent="Root_2" Name="NoSePuedeAgregarMismaFamiliaException" Condition="1" Order="91" Flags="57" Value="No se puede agregar la misma familia al arbol"/>
+    <ROW JsonProperty="NoSePuedeAgregarMismaFamiliaExcepti" Parent="Root_1" Name="NoSePuedeAgregarMismaFamiliaException" Condition="1" Order="91" Flags="57" Value="You cant add the same family to the tree"/>
+    <ROW JsonProperty="NoSePuedeEliminarRootException" Parent="Root_1" Name="NoSePuedeEliminarRootException" Condition="1" Order="92" Flags="57" Value="It is not possible to remove the profile, use the delete button"/>
+    <ROW JsonProperty="NoSePuedeEliminarRootException_1" Parent="Root_2" Name="NoSePuedeEliminarRootException" Condition="1" Order="92" Flags="57" Value="No se puede quitar el perfil, use el boton eliminar"/>
+    <ROW JsonProperty="NodoNoEsFamiliaException" Parent="Root_1" Name="NodoNoEsFamiliaException" Condition="1" Order="87" Flags="57" Value="Can not add to a patent object"/>
+    <ROW JsonProperty="NodoNoEsFamiliaException_1" Parent="Root_2" Name="NodoNoEsFamiliaException" Condition="1" Order="87" Flags="57" Value="No se puede agregar a un objeto patente"/>
+    <ROW JsonProperty="NodoNoSeleccionadoException" Parent="Root_1" Name="NodoNoSeleccionadoException" Condition="1" Order="88" Flags="57" Value="You must select a node first"/>
+    <ROW JsonProperty="NodoNoSeleccionadoException_1" Parent="Root_2" Name="NodoNoSeleccionadoException" Condition="1" Order="88" Flags="57" Value="Debe seleccionar un nodo primero"/>
+    <ROW JsonProperty="Nombre" Parent="Root_1" Name="Nombre" Condition="1" Order="90" Flags="57" Value="Name"/>
+    <ROW JsonProperty="Nombre_1" Parent="Root_2" Name="Nombre" Condition="1" Order="90" Flags="57" Value="Nombre"/>
+    <ROW JsonProperty="NotFoundClient" Parent="Root_1" Name="NotFoundClient" Condition="1" Order="93" Flags="57" Value="Client with id does not exist:"/>
+    <ROW JsonProperty="NotFoundClient_1" Parent="Root_2" Name="NotFoundClient" Condition="1" Order="93" Flags="57" Value="No existe el cliente con el id:"/>
+    <ROW JsonProperty="Nuevo" Parent="Root_1" Name="Nuevo" Condition="1" Order="94" Flags="57" Value="New"/>
+    <ROW JsonProperty="Nuevo_1" Parent="Root_2" Name="Nuevo" Condition="1" Order="94" Flags="57" Value="Nuevo"/>
+    <ROW JsonProperty="NumeroTarjeta" Parent="Root_1" Name="NumeroTarjeta" Condition="1" Order="95" Flags="57" Value="Card Number"/>
+    <ROW JsonProperty="NumeroTarjeta_1" Parent="Root_2" Name="NumeroTarjeta" Condition="1" Order="95" Flags="57" Value="Numero de Tarjeta"/>
+    <ROW JsonProperty="OnlyNumbers" Parent="Root_1" Name="OnlyNumbers" Condition="1" Order="96" Flags="57" Value="Only numbers are allowed"/>
+    <ROW JsonProperty="OnlyNumbers_1" Parent="Root_2" Name="OnlyNumbers" Condition="1" Order="96" Flags="57" Value="Solo se admiten numeros"/>
+    <ROW JsonProperty="PatenteNoSeleccionadaException" Parent="Root_1" Name="PatenteNoSeleccionadaException" Condition="1" Order="97" Flags="57" Value="You must select a patent first"/>
+    <ROW JsonProperty="PatenteNoSeleccionadaException_1" Parent="Root_2" Name="PatenteNoSeleccionadaException" Condition="1" Order="97" Flags="57" Value="Debe seleccionar una patente"/>
+    <ROW JsonProperty="PatenteYaExisteException" Parent="Root_1" Name="PatenteYaExisteException" Condition="1" Order="99" Flags="57" Value="Patent already exists"/>
+    <ROW JsonProperty="PatenteYaExisteException_1" Parent="Root_2" Name="PatenteYaExisteException" Condition="1" Order="99" Flags="57" Value="La patente ya existe"/>
+    <ROW JsonProperty="Patentes" Parent="Root_1" Name="Patentes" Condition="1" Order="98" Flags="57" Value="Patents"/>
+    <ROW JsonProperty="Patentes_1" Parent="Root_2" Name="Patentes" Condition="1" Order="98" Flags="57" Value="Patentes"/>
+    <ROW JsonProperty="Perfiles" Parent="Root_1" Name="Perfiles" Condition="1" Order="100" Flags="57" Value="Profiles"/>
+    <ROW JsonProperty="Perfiles_1" Parent="Root_2" Name="Perfiles" Condition="1" Order="100" Flags="57" Value="Perfiles"/>
+    <ROW JsonProperty="Precio" Parent="Root_1" Name="Precio" Condition="1" Order="101" Flags="57" Value="Price"/>
+    <ROW JsonProperty="Precio_1" Parent="Root_2" Name="Precio" Condition="1" Order="101" Flags="57" Value="Precio"/>
+    <ROW JsonProperty="PreguntaCerrarSesion" Parent="Root_1" Name="PreguntaCerrarSesion" Condition="1" Order="102" Flags="57" Value="Are you sure you want to log out?"/>
+    <ROW JsonProperty="PreguntaCerrarSesion_1" Parent="Root_2" Name="PreguntaCerrarSesion" Condition="1" Order="102" Flags="57" Value="Esta seguro que desea cerrar la sesion?"/>
+    <ROW JsonProperty="ProductoEliminado" Parent="Root_1" Name="ProductoEliminado" Condition="1" Order="103" Flags="57" Value="Product removed from cart successfully."/>
+    <ROW JsonProperty="ProductoEliminado_1" Parent="Root_2" Name="ProductoEliminado" Condition="1" Order="103" Flags="57" Value="Producto eliminado del carrito correctamente."/>
+    <ROW JsonProperty="Productos" Parent="Root_1" Name="Productos" Condition="1" Order="104" Flags="57" Value="Products"/>
+    <ROW JsonProperty="Productos_1" Parent="Root_2" Name="Productos" Condition="1" Order="104" Flags="57" Value="Productos"/>
+    <ROW JsonProperty="Quitar" Parent="Root_1" Name="Quitar" Condition="1" Order="105" Flags="57" Value="Remove"/>
+    <ROW JsonProperty="Quitar_1" Parent="Root_2" Name="Quitar" Condition="1" Order="105" Flags="57" Value="Quitar"/>
+    <ROW JsonProperty="RegexFechaExpException" Parent="Root_1" Name="RegexFechaExpException" Condition="1" Order="106" Flags="57" Value="Invalid expiration date. Use MM/YY format."/>
+    <ROW JsonProperty="RegexFechaExpException_1" Parent="Root_2" Name="RegexFechaExpException" Condition="1" Order="106" Flags="57" Value="Fecha de expiracion invalida. Use el formato MM/AA."/>
+    <ROW JsonProperty="RegistrarCliente" Parent="Root_1" Name="RegistrarCliente" Condition="1" Order="107" Flags="57" Value="Register Client"/>
+    <ROW JsonProperty="RegistrarCliente_1" Parent="Root_2" Name="RegistrarCliente" Condition="1" Order="107" Flags="57" Value="Registrar Cliente"/>
+    <ROW JsonProperty="RepitaContrasea" Parent="Root_1" Name="RepitaContrase&#65533;a" Condition="1" Order="108" Flags="57" Value="Repeat Password"/>
+    <ROW JsonProperty="RepitaContrasea_1" Parent="Root_2" Name="RepitaContrase&#65533;a" Condition="1" Order="108" Flags="57" Value="Repita Contraseña"/>
+    <ROW JsonProperty="Resumen" Parent="Root_1" Name="Resumen" Condition="1" Order="109" Flags="57" Value="Summary"/>
+    <ROW JsonProperty="Resumen_1" Parent="Root_2" Name="Resumen" Condition="1" Order="109" Flags="57" Value="Resumen"/>
+    <ROW JsonProperty="Root" Name="Root" Condition="1" Order="0" Flags="60"/>
+    <ROW JsonProperty="Root_1" Name="Root" Condition="1" Order="0" Flags="60"/>
+    <ROW JsonProperty="Root_2" Name="Root" Condition="1" Order="0" Flags="60"/>
+    <ROW JsonProperty="Salir" Parent="Root_1" Name="Salir" Condition="1" Order="110" Flags="57" Value="Exit"/>
+    <ROW JsonProperty="Salir_1" Parent="Root_2" Name="Salir" Condition="1" Order="110" Flags="57" Value="Salir"/>
+    <ROW JsonProperty="SeleccionFilaEliminar" Parent="Root_1" Name="SeleccionFilaEliminar" Condition="1" Order="114" Flags="57" Value="Please select a row to delete."/>
+    <ROW JsonProperty="SeleccionFilaEliminar_1" Parent="Root_2" Name="SeleccionFilaEliminar" Condition="1" Order="114" Flags="57" Value="Por favor, seleccione una fila para eliminar."/>
+    <ROW JsonProperty="SeleccionarCarritoException" Parent="Root_1" Name="SeleccionarCarritoException" Condition="1" Order="111" Flags="57" Value="You must select a cart"/>
+    <ROW JsonProperty="SeleccionarCarritoException_1" Parent="Root_2" Name="SeleccionarCarritoException" Condition="1" Order="111" Flags="57" Value="Debe seleccionar un carrito"/>
+    <ROW JsonProperty="SeleccionarProducto" Parent="Root_1" Name="SeleccionarProducto" Condition="1" Order="112" Flags="57" Value="Select Product"/>
+    <ROW JsonProperty="SeleccionarProducto_1" Parent="Root_2" Name="SeleccionarProducto" Condition="1" Order="112" Flags="57" Value="Seleccionar Producto"/>
+    <ROW JsonProperty="SeleccioneFamiliaException" Parent="Root_1" Name="SeleccioneFamiliaException" Condition="1" Order="113" Flags="57" Value="You must select a family first"/>
+    <ROW JsonProperty="SeleccioneFamiliaException_1" Parent="Root_2" Name="SeleccioneFamiliaException" Condition="1" Order="113" Flags="57" Value="Debe seleccionar una familia primero"/>
+    <ROW JsonProperty="SelectAProductException" Parent="Root_1" Name="SelectAProductException" Condition="1" Order="115" Flags="57" Value="You must select a product first"/>
+    <ROW JsonProperty="SelectAProductException_1" Parent="Root_2" Name="SelectAProductException" Condition="1" Order="115" Flags="57" Value="Debe seleccionar un producto primero"/>
+    <ROW JsonProperty="SqlException" Parent="Root_1" Name="SqlException" Condition="1" Order="116" Flags="57" Value="Error writing to database:"/>
+    <ROW JsonProperty="SqlException_1" Parent="Root_2" Name="SqlException" Condition="1" Order="116" Flags="57" Value="Error al escribir en la base de datos:"/>
+    <ROW JsonProperty="Stock" Parent="Root_1" Name="Stock" Condition="1" Order="117" Flags="57" Value="Stock"/>
+    <ROW JsonProperty="StockException" Parent="Root_1" Name="StockException" Condition="1" Order="118" Flags="57" Value="Not enough stock"/>
+    <ROW JsonProperty="StockException_1" Parent="Root_2" Name="StockException" Condition="1" Order="118" Flags="57" Value="No hay stock suficiente"/>
+    <ROW JsonProperty="Stock_1" Parent="Root_2" Name="Stock" Condition="1" Order="117" Flags="57" Value="Stock"/>
+    <ROW JsonProperty="Tarjeta" Parent="Root_1" Name="Tarjeta" Condition="1" Order="119" Flags="57" Value="Card"/>
+    <ROW JsonProperty="Tarjeta_1" Parent="Root_2" Name="Tarjeta" Condition="1" Order="119" Flags="57" Value="Tarjeta"/>
+    <ROW JsonProperty="Telefono" Parent="Root_1" Name="Telefono" Condition="1" Order="120" Flags="57" Value="Phone Number"/>
+    <ROW JsonProperty="Telefono_1" Parent="Root_2" Name="Telefono" Condition="1" Order="120" Flags="57" Value="Telefono"/>
+    <ROW JsonProperty="TipoPago" Parent="Root_1" Name="TipoPago" Condition="1" Order="121" Flags="57" Value="Payment Type"/>
+    <ROW JsonProperty="TipoPago_1" Parent="Root_2" Name="TipoPago" Condition="1" Order="121" Flags="57" Value="Tipo de Pago"/>
+    <ROW JsonProperty="Titular" Parent="Root_1" Name="Titular" Condition="1" Order="122" Flags="57" Value="Cardholder"/>
+    <ROW JsonProperty="Titular_1" Parent="Root_2" Name="Titular" Condition="1" Order="122" Flags="57" Value="Titular"/>
+    <ROW JsonProperty="TodasFamilias" Parent="Root_1" Name="TodasFamilias" Condition="1" Order="123" Flags="57" Value="All Families"/>
+    <ROW JsonProperty="TodasFamilias_1" Parent="Root_2" Name="TodasFamilias" Condition="1" Order="123" Flags="57" Value="Todas las Familias"/>
+    <ROW JsonProperty="TodasPatentes" Parent="Root_1" Name="TodasPatentes" Condition="1" Order="124" Flags="57" Value="All Patents"/>
+    <ROW JsonProperty="TodasPatentes_1" Parent="Root_2" Name="TodasPatentes" Condition="1" Order="124" Flags="57" Value="Todas las Patentes"/>
+    <ROW JsonProperty="TodosPerfiles" Parent="Root_1" Name="TodosPerfiles" Condition="1" Order="125" Flags="57" Value="All Profiles"/>
+    <ROW JsonProperty="TodosPerfiles_1" Parent="Root_2" Name="TodosPerfiles" Condition="1" Order="125" Flags="57" Value="Todos los Perfiles"/>
+    <ROW JsonProperty="TotalPagar" Parent="Root_1" Name="TotalPagar" Condition="1" Order="126" Flags="57" Value="Total to Pay:"/>
+    <ROW JsonProperty="TotalPagar_1" Parent="Root_2" Name="TotalPagar" Condition="1" Order="126" Flags="57" Value="Total a Pagar:"/>
+    <ROW JsonProperty="Transferencia" Parent="Root_1" Name="Transferencia" Condition="1" Order="127" Flags="57" Value="Transfer"/>
+    <ROW JsonProperty="Transferencia_1" Parent="Root_2" Name="Transferencia" Condition="1" Order="127" Flags="57" Value="Transferencia"/>
+    <ROW JsonProperty="UpdateClient" Parent="Root" Name="UpdateClient" Condition="1" Order="4" Flags="60"/>
+    <ROW JsonProperty="UpdateOrdenComra" Parent="Root" Name="UpdateOrdenComra" Condition="1" Order="14" Flags="60"/>
+    <ROW JsonProperty="UpdateProduct" Parent="Root" Name="UpdateProduct" Condition="1" Order="8" Flags="60"/>
+    <ROW JsonProperty="UpdateProveedor" Parent="Root" Name="UpdateProveedor" Condition="1" Order="11" Flags="60"/>
+    <ROW JsonProperty="UserIsBlocked" Parent="Root_1" Name="UserIsBlocked" Condition="1" Order="128" Flags="57" Value="The user is blocked"/>
+    <ROW JsonProperty="UserIsBlocked_1" Parent="Root_2" Name="UserIsBlocked" Condition="1" Order="128" Flags="57" Value="El usuario esta bloqueado"/>
+    <ROW JsonProperty="UserIsNotActive" Parent="Root_1" Name="UserIsNotActive" Condition="1" Order="129" Flags="57" Value="The user is not active"/>
+    <ROW JsonProperty="UserIsNotActive_1" Parent="Root_2" Name="UserIsNotActive" Condition="1" Order="129" Flags="57" Value="El usuario no esta activo"/>
+    <ROW JsonProperty="Usuario" Parent="Root_1" Name="Usuario" Condition="1" Order="132" Flags="57" Value="User"/>
+    <ROW JsonProperty="UsuarioAlreadyUnlocked" Parent="Root_1" Name="UsuarioAlreadyUnlocked" Condition="1" Order="130" Flags="57" Value="The user is already unlocked"/>
+    <ROW JsonProperty="UsuarioAlreadyUnlocked_1" Parent="Root_2" Name="UsuarioAlreadyUnlocked" Condition="1" Order="130" Flags="57" Value="El usuario ya se encuentra desbloqueado"/>
+    <ROW JsonProperty="UsuarioExisteException" Parent="Root_1" Name="UsuarioExisteException" Condition="1" Order="131" Flags="57" Value="The User already exists"/>
+    <ROW JsonProperty="UsuarioExisteException_1" Parent="Root_2" Name="UsuarioExisteException" Condition="1" Order="131" Flags="57" Value="El Usuario ya existe"/>
+    <ROW JsonProperty="Usuario_1" Parent="Root_2" Name="Usuario" Condition="1" Order="132" Flags="57" Value="User"/>
+    <ROW JsonProperty="VentaCerrada" Parent="Root_1" Name="VentaCerrada" Condition="1" Order="133" Flags="57" Value="Sale Closed"/>
+    <ROW JsonProperty="VentaCerradaPlusVuelto" Parent="Root_1" Name="VentaCerradaPlusVuelto" Condition="1" Order="134" Flags="57" Value="Sale closed, the change is:"/>
+    <ROW JsonProperty="VentaCerradaPlusVuelto_1" Parent="Root_2" Name="VentaCerradaPlusVuelto" Condition="1" Order="134" Flags="57" Value="Venta cerrada, el vuelto es de:"/>
+    <ROW JsonProperty="VentaCerrada_1" Parent="Root_2" Name="VentaCerrada" Condition="1" Order="133" Flags="57" Value="Venta Cerrada"/>
+    <ROW JsonProperty="Ventas" Parent="Root_1" Name="Ventas" Condition="1" Order="135" Flags="57" Value="Sales"/>
+    <ROW JsonProperty="Ventas_1" Parent="Root_2" Name="Ventas" Condition="1" Order="135" Flags="57" Value="Ventas"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_JsonCommit" Description="Committing JSON file configurations." DescriptionLocId="ActionText.Description.AI_JsonCommit" Template="Committing JSON file configurations." TemplateLocId="ActionText.Template.AI_JsonCommit"/>
+    <ROW Action="AI_JsonConfig" Description="Executing JSON file configurations" DescriptionLocId="ActionText.Description.AI_JsonConfig" Template="Configuring JSON file: &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_JsonConfig"/>
+    <ROW Action="AI_JsonInstall" Description="Generating actions to configure JSON files" DescriptionLocId="ActionText.Description.AI_JsonInstall"/>
+    <ROW Action="AI_JsonRemove" Description="Executing JSON file configurations" DescriptionLocId="ActionText.Description.AI_JsonRemove" Template="Configuring JSON file: &quot;[1]&quot;" TemplateLocId="ActionText.Template.AI_JsonRemove"/>
+    <ROW Action="AI_JsonRollback" Description="Rolling back JSON file configurations." DescriptionLocId="ActionText.Description.AI_JsonRollback" Template="Rolling back JSON file configurations." TemplateLocId="ActionText.Template.AI_JsonRollback"/>
+    <ROW Action="AI_JsonUninstall" Description="Generating actions to configure JSON files" DescriptionLocId="ActionText.Description.AI_JsonUninstall"/>
+    <ROW Action="AI_SqlConfig" Description="Executing install SQL scripts" DescriptionLocId="ActionText.Description.AI_SqlConfig" Template="Connection: [1]  Script: [2]" TemplateLocId="ActionText.Template.AI_SqlConfig"/>
+    <ROW Action="AI_SqlInstall" Description="Generating actions to configure databases for install SQL script execution" DescriptionLocId="ActionText.Description.AI_SqlInstall"/>
+    <ROW Action="AI_SqlMaint" Description="Executing maintenance SQL scripts" DescriptionLocId="ActionText.Description.AI_SqlMaint" Template="Connection: [1]  Script: [2]" TemplateLocId="ActionText.Template.AI_SqlMaint"/>
+    <ROW Action="AI_SqlRemove" Description="Executing uninstall SQL scripts" DescriptionLocId="ActionText.Description.AI_SqlRemove" Template="Connection: [1]  Script: [2]" TemplateLocId="ActionText.Template.AI_SqlRemove"/>
+    <ROW Action="AI_SqlRollback" Description="Executing rollback SQL scripts" DescriptionLocId="ActionText.Description.AI_SqlRollback" Template="Connection: [1]  Script: [2]" TemplateLocId="ActionText.Template.AI_SqlRollback"/>
+    <ROW Action="AI_SqlUninstall" Description="Generating actions to configure databases for uninstall SQL script execution" DescriptionLocId="ActionText.Description.AI_SqlUninstall"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="jsonCfg.dll" SourcePath="&lt;AI_CUSTACTS&gt;jsonCfg.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+    <ROW Name="sql.dll" SourcePath="&lt;AI_CUSTACTS&gt;sql.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="AdminBrowseDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="65539" Text="Change current destination folder" TextStyle="[DlgTitleFont]" Order="1300" TextLocId="Control.Text.AdminBrowseDlg#Title" MsiKey="AdminBrowseDlg#Title"/>
+    <ROW Dialog_="AdminInstallPointDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Network Location" TextStyle="[DlgTitleFont]" Order="1000" TextLocId="Control.Text.AdminInstallPointDlg#Title" MsiKey="AdminInstallPointDlg#Title"/>
+    <ROW Dialog_="BrowseDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Change current destination folder" TextStyle="[DlgTitleFont]" Order="1300" TextLocId="Control.Text.BrowseDlg#Title" MsiKey="BrowseDlg#Title"/>
+    <ROW Dialog_="CustomizeDlg" Control="BottomLine" Type="Line" X="5" Y="234" Width="368" Height="0" Attributes="1" Order="100" MsiKey="CustomizeDlg#BottomLine"/>
+    <ROW Dialog_="CustomizeDlg" Control="Tree" Type="SelectionTree" X="25" Y="85" Width="175" Height="95" Attributes="7" Property="_BrowseProperty" Text="Tree of selections" Order="200" TextLocId="Control.Text.CustomizeDlg#Tree" MsiKey="CustomizeDlg#Tree"/>
+    <ROW Dialog_="CustomizeDlg" Control="Logo" Type="Text" X="4" Y="228" Width="70" Height="12" Attributes="1" Text="Advanced Installer" Order="300" TextLocId="Control.Text.CustomizeDlg#Logo" MsiKey="CustomizeDlg#Logo"/>
+    <ROW Dialog_="CustomizeDlg" Control="Back" Type="PushButton" X="180" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Back]" Order="400" TextLocId="-" MsiKey="CustomizeDlg#Back" Options="1"/>
+    <ROW Dialog_="CustomizeDlg" Control="Next" Type="PushButton" X="236" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Next]" Order="500" TextLocId="-" MsiKey="CustomizeDlg#Next" Options="1"/>
+    <ROW Dialog_="CustomizeDlg" Control="DiskCost" Type="PushButton" X="91" Y="243" Width="76" Height="17" Attributes="3" Text="Disk &amp;Usage" Order="600" TextLocId="Control.Text.CustomizeDlg#DiskCost" MsiKey="CustomizeDlg#DiskCost"/>
+    <ROW Dialog_="CustomizeDlg" Control="Cancel" Type="PushButton" X="304" Y="243" Width="56" Height="17" Attributes="3" Text="[ButtonText_Cancel]" Order="700" TextLocId="-" MsiKey="CustomizeDlg#Cancel" Options="1"/>
+    <ROW Dialog_="CustomizeDlg" Control="BannerBitmap" Type="Bitmap" X="0" Y="0" Width="370" Height="44" Attributes="1048577" Text="[BannerBitmap]" Order="800" MsiKey="CustomizeDlg#BannerBitmap"/>
+    <ROW Dialog_="CustomizeDlg" Control="Description" Type="Text" X="25" Y="23" Width="280" Height="20" Attributes="196611" Text="Select a .bak file." Order="900" MsiKey="CustomizeDlg#Description"/>
+    <ROW Dialog_="CustomizeDlg" Control="BannerLine" Type="Line" X="0" Y="44" Width="372" Height="0" Attributes="1" Order="1000" MsiKey="CustomizeDlg#BannerLine"/>
+    <ROW Dialog_="CustomizeDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Select File" TextStyle="[DlgTitleFont]" Order="1100" MsiKey="CustomizeDlg#Title"/>
+    <ROW Dialog_="CustomizeDlg" Control="Location" Type="Text" X="55" Y="190" Width="215" Height="20" Attributes="3" Property="APPDIR" Text="&lt;The selection&apos;s path&gt;" Order="1200" TextLocId="Control.Text.CustomizeDlg#Location" MsiKey="CustomizeDlg#Location"/>
+    <ROW Dialog_="CustomizeDlg" Control="LocationLabel" Type="Text" X="15" Y="190" Width="50" Height="10" Attributes="3" Text="Location:" Order="1300" TextLocId="Control.Text.CustomizeDlg#LocationLabel" MsiKey="CustomizeDlg#LocationLabel"/>
+    <ROW Dialog_="CustomizeDlg" Control="PushButton_1" Type="PushButton" X="269" Y="190" Width="90" Height="18" Attributes="3" Text="[ButtonText_Browse]" Help="|" Order="1400" HelpLocId="Control.Help.FolderDlg#Browse"/>
+    <ROW Dialog_="CustomizeDlg" Control="Box" Type="GroupBox" X="210" Y="81" Width="140" Height="98" Attributes="1" Order="1500" MsiKey="CustomizeDlg#Box"/>
+    <ROW Dialog_="CustomizeDlg" Control="ItemSize" Type="Text" X="215" Y="128" Width="131" Height="50" Attributes="3" Text="The size of the currently selected item." Order="1600" TextLocId="Control.Text.CustomizeDlg#ItemSize" MsiKey="CustomizeDlg#ItemSize"/>
+    <ROW Dialog_="CustomizeDlg" Control="ItemDescription" Type="Text" X="215" Y="90" Width="131" Height="30" Attributes="3" Text="Multiline description of the currently selected item." Order="1700" TextLocId="Control.Text.CustomizeDlg#ItemDescription" MsiKey="CustomizeDlg#ItemDescription"/>
+    <ROW Dialog_="CustomizeDlg" Control="Text" Type="Text" X="25" Y="55" Width="320" Height="20" Attributes="3" Text="Click on the icons in the tree below to change the way features will be installed." Order="1800" TextLocId="Control.Text.CustomizeDlg#Text" MsiKey="CustomizeDlg#Text"/>
+    <ROW Dialog_="DiskCostDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Disk Space Requirements" TextStyle="[DlgTitleFont]" Order="600" TextLocId="Control.Text.DiskCostDlg#Title" MsiKey="DiskCostDlg#Title"/>
+    <ROW Dialog_="FilesInUse" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Files in Use" TextStyle="[DlgTitleFont]" Order="700" TextLocId="Control.Text.FilesInUse#Title" MsiKey="FilesInUse#Title"/>
+    <ROW Dialog_="FolderDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Select Installation Folder" TextStyle="[DlgTitleFont]" Order="1000" TextLocId="Control.Text.FolderDlg#Title" MsiKey="FolderDlg#Title"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="RepairButton" Type="PushButton" X="56" Y="65" Width="38" Height="38" Attributes="7864323" Text="[RepairIcon]" Help="Repair Installation|" Order="100" HelpLocId="Control.Help.MaintenanceTypeDlg#RepairButton" MsiKey="MaintenanceTypeDlg#RepairButton"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="ChangeLabel" Type="Text" X="105" Y="65" Width="100" Height="10" Attributes="3" Text="Reinstall" TextStyle="[DlgTitleFont]" Order="200" MsiKey="MaintenanceTypeDlg#ChangeLabel"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="ChangeButton" Type="PushButton" X="5" Y="65" Width="38" Height="38" Attributes="7864322" Text="[CustomSetupIcon]" Help="Modify Installation|" Order="300" HelpLocId="Control.Help.MaintenanceTypeDlg#ChangeButton" MsiKey="MaintenanceTypeDlg#ChangeButton"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="RepairLabel" Type="Text" X="105" Y="114" Width="100" Height="10" Attributes="2" Text="Re&amp;pair" TextStyle="[DlgTitleFont]" Order="400" TextLocId="Control.Text.MaintenanceTypeDlg#RepairLabel" MsiKey="MaintenanceTypeDlg#RepairLabel"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="RemoveButton" Type="PushButton" X="56" Y="163" Width="38" Height="38" Attributes="7864323" Text="[RemoveIcon]" Help="Remove Installation|" Order="600" HelpLocId="Control.Help.MaintenanceTypeDlg#RemoveButton" MsiKey="MaintenanceTypeDlg#RemoveButton"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="ChangeText" Type="Text" X="105" Y="78" Width="230" Height="20" Attributes="3" Text="Allows users to reinstall the program" Order="1400" MsiKey="MaintenanceTypeDlg#ChangeText"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="Title" Type="Text" X="15" Y="6" Width="240" Height="15" Attributes="196611" Text="Reinstall or Remove installation" TextStyle="[DlgTitleFont]" Order="1600" MsiKey="MaintenanceTypeDlg#Title"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control="RepairText" Type="Text" X="105" Y="127" Width="230" Height="30" Attributes="2" Text="Repairs errors in the most recent installation state - fixes missing or corrupt files, shortcuts and registry entries." Order="1700" TextLocId="Control.Text.MaintenanceTypeDlg#RepairText" MsiKey="MaintenanceTypeDlg#RepairText"/>
+    <ROW Dialog_="OutOfDiskDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Out of Disk Space" TextStyle="[DlgTitleFont]" Order="600" TextLocId="Control.Text.OutOfDiskDlg#Title" MsiKey="OutOfDiskDlg#Title"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Out of Disk Space" TextStyle="[DlgTitleFont]" Order="1100" TextLocId="Control.Text.OutOfRbDiskDlg#Title" MsiKey="OutOfRbDiskDlg#Title"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Remove [ProductName]" TextStyle="DlgFontBold8" Order="700" TextLocId="Control.Text.VerifyRemoveDlg#Title" MsiKey="VerifyRemoveDlg#Title"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Repair" Type="PushButton" X="236" Y="243" Width="56" Height="17" Attributes="3" Text="Reinstall" Order="100" MsiKey="VerifyRepairDlg#Repair" Options="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Title" Type="Text" X="14" Y="6" Width="200" Height="15" Attributes="196611" Text="Reinstall [ProductName]" TextStyle="DlgFontBold8" Order="700" MsiKey="VerifyRepairDlg#Title"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Text" Type="Text" X="25" Y="70" Width="320" Height="60" Attributes="3" Text="Click &quot;Reinstall&quot; to reinstall the program of [ProductName].  Click &quot;Cancel&quot; to exit the wizard." Order="800" MsiKey="VerifyRepairDlg#Text"/>
+    <ROW Dialog_="VerifyRepairDlg" Control="Description" Type="Text" X="25" Y="23" Width="280" Height="15" Attributes="196611" Text="The [Wizard] is ready to begin the reinstall of [ProductName]." Order="900" MsiKey="VerifyRepairDlg#Description"/>
+    <ATTRIBUTE name="DeletedRows" value="CustomizeDlg#Browse@CustomizeDlg#Reset@UI.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlConditionComponent">
+    <ATTRIBUTE name="DeletedRows" value="CustomizeDlg#Browse#Hide#Installed@UI.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="CustomizeDlg" Control_="PushButton_1" Event="[_BrowseProperty]" Argument="APPDIR" Condition="1" Ordering="0"/>
+    <ROW Dialog_="CustomizeDlg" Control_="PushButton_1" Event="SpawnDialog" Argument="BrowseDlg" Condition="1" Ordering="1"/>
+    <ROW Dialog_="WelcomePrereqDlg" Control_="Next" Event="NewDialog" Argument="PrerequisitesDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ROW Dialog_="PrerequisitesDlg" Control_="Back" Event="NewDialog" Argument="WelcomePrereqDlg" Condition="AI_BOOTSTRAPPER" Ordering="1"/>
+    <ATTRIBUTE name="DeletedRows" value="CustomizeDlg#Browse#SelectionBrowse#BrowseDlg#1@CustomizeDlg#Reset#Reset#0#1@UI.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DATA_SETTER_1" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DATA_SETTER_2" Type="51" Source="CustomActionData" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER_3" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DATA_SETTER_4" Type="51" Source="CustomActionData" Target="[~]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER_2"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_JsonCommit" Type="11777" Source="jsonCfg.dll" Target="OnJsonCommit" WithoutSeq="true"/>
+    <ROW Action="AI_JsonConfig" Type="11265" Source="jsonCfg.dll" Target="OnJsonConfig" WithoutSeq="true"/>
+    <ROW Action="AI_JsonInstall" Type="1" Source="jsonCfg.dll" Target="OnJsonInstall" AdditionalSeq="AI_DATA_SETTER_3"/>
+    <ROW Action="AI_JsonRemove" Type="11265" Source="jsonCfg.dll" Target="OnJsonRemove" WithoutSeq="true"/>
+    <ROW Action="AI_JsonRollback" Type="11521" Source="jsonCfg.dll" Target="OnJsonRollback" WithoutSeq="true"/>
+    <ROW Action="AI_JsonUninstall" Type="1" Source="jsonCfg.dll" Target="OnJsonUninstall" AdditionalSeq="AI_DATA_SETTER_4"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_SqlConfig" Type="9217" Source="sql.dll" Target="OnSqlConfig" WithoutSeq="true"/>
+    <ROW Action="AI_SqlInstall" Type="1" Source="sql.dll" Target="OnSqlInstall" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_SqlMaint" Type="9217" Source="sql.dll" Target="OnSqlMaint" WithoutSeq="true"/>
+    <ROW Action="AI_SqlRemove" Type="9217" Source="sql.dll" Target="OnSqlRemove" WithoutSeq="true"/>
+    <ROW Action="AI_SqlRollback" Type="9473" Source="sql.dll" Target="OnSqlRollback" WithoutSeq="true"/>
+    <ROW Action="AI_SqlUninstall" Type="1" Source="sql.dll" Target="OnSqlUninstall" AdditionalSeq="AI_DATA_SETTER_1"/>
+    <ROW Action="BrowseForFile" Type="1" Source="aicustact.dll" Target="BrowseForFile" WithoutSeq="true" Options="1"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiEventMappingComponent">
+    <ATTRIBUTE name="DeletedRows" value="CustomizeDlg#Reset#SelectionNoItems@UI.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="BE_PrimaryOutput"/>
+    <ROW Feature_="MainFeature" Component_="BE_SymbolsOutput"/>
+    <ROW Feature_="MainFeature" Component_="BLL_PrimaryOutput"/>
+    <ROW Feature_="MainFeature" Component_="BLL_References"/>
+    <ROW Feature_="MainFeature" Component_="BLL_SymbolsOutput"/>
+    <ROW Feature_="MainFeature" Component_="DAL_PrimaryOutput"/>
+    <ROW Feature_="MainFeature" Component_="DAL_References"/>
+    <ROW Feature_="MainFeature" Component_="DAL_SymbolsOutput"/>
+    <ROW Feature_="MainFeature" Component_="GUI_PrimaryOutput"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="GUI_References"/>
+    <ROW Feature_="MainFeature" Component_="GUI_SymbolsOutput"/>
+    <ROW Feature_="MainFeature" Component_="Services_PrimaryOutput"/>
+    <ROW Feature_="MainFeature" Component_="Services_References"/>
+    <ROW Feature_="MainFeature" Component_="Services_SymbolsOutput"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+    <ROW Feature_="MainFeature" Component_="BLL_ContentOutput_Resources"/>
+    <ROW Feature_="MainFeature" Component_="DAL_ContentOutput_Resources"/>
+    <ROW Feature_="MainFeature" Component_="GUI_ContentOutput_Resources"/>
+    <ROW Feature_="MainFeature" Component_="Services_ContentOutput_Resources"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_SqlInstall" Condition="(VersionNT &gt;= 500) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5502"/>
+    <ROW Action="AI_DATA_SETTER" Condition="(VersionNT &gt;= 500) AND (REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5501"/>
+    <ROW Action="AI_SqlUninstall" Condition="(VersionNT &gt;= 500) AND (REMOVE=&quot;ALL&quot;)" Sequence="1702"/>
+    <ROW Action="AI_DATA_SETTER_1" Condition="(VersionNT &gt;= 500) AND (REMOVE=&quot;ALL&quot;)" Sequence="1701"/>
+    <ROW Action="AI_JsonInstall" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5102"/>
+    <ROW Action="AI_DATA_SETTER_3" Condition="(REMOVE &lt;&gt; &quot;ALL&quot;)" Sequence="5101"/>
+    <ROW Action="AI_JsonUninstall" Condition="(REMOVE)" Sequence="3102"/>
+    <ROW Action="AI_DATA_SETTER_4" Condition="(REMOVE)" Sequence="3101"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="102" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6596" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="1399" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER_2" Sequence="1398"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="102"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="AdvancedInstaller" Root="-1" Key="Software\Caphyon\Advanced Installer" Name="\"/>
+    <ROW Registry="Caphyon" Root="-1" Key="Software\Caphyon" Name="\"/>
+    <ROW Registry="LZMA" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA" Name="\"/>
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductCode_1" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]" Name="\"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="ProductVersion_1" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="GestorCompras" Directory_="DesktopFolder" Name="GESTOR~1|Gestor Compras" Component_="GUI_PrimaryOutput" Target="[#Proyecto_Integrador.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="GUI_Dir"/>
+    <ROW Shortcut="Proyecto_Integrador" Directory_="SHORTCUTDIR" Name="PROYEC~1|Proyecto_Integrador" Component_="GUI_PrimaryOutput" Target="[#Proyecto_Integrador.exe]" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MultipleInstancesComponent">
+    <ATTRIBUTE name="MajorUpgradeInstances" value="DefaultBuild:false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="F7FFACAB7B45DD9978BDC104C78D26" DisplayName="SQL Server Express 2022" VersionMin="16.0" SetupFileUrl="https://download.microsoft.com/download/3/8/d/38de7036-2433-4207-8eae-06e247e17b25/SQLEXPR_x64_ENU.exe" Location="1" ExactSize="279293816" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64" Operator="1" ComLine="/UpdateEnabled=False" NoUiComLine="/q /IACCEPTSQLSERVERLICENSETERMS /ACTION=Install /FEATURES=SQLEngine /INSTANCENAME=SQLEXPRESS" Options="kxrR" MD5="44497e90745a3636ea10fc1e25a25e34" TargetName="SQL Server Express 2022"/>
+    <ATTRIBUTE name="PrereqsOrder" value="F7FFACAB7B45DD9978BDC104C78D26"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="F7FFACAB7B45DD9978BDC104C78D26Syste" Prereq="F7FFACAB7B45DD9978BDC104C78D26" SearchType="2" SearchString="HKLM\SOFTWARE\Microsoft\Microsoft SQL Server\160\SQL2022\CurrentVersion\Version" VerMin="16.0.1000.6" Order="1" Property="PreReqSearch_F7FFACAB7B45DD9978BDC1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SqlConnectionComponent">
+    <ROW ConnectionName="Predef" Condition="1" Dbms="0" OdbcResource="SQL Server" Server="(local)" Port="1433" Database="ProyectoIntegrador" Username="[LogonUser]" Flags="14" Order="0" LoginTimeout="60"/>
+    <ROW ConnectionName="Predef_1" Condition="1" Dbms="0" OdbcResource="SQL Server" Server="(local)" Port="1433" Database="Database" Username="sa" Flags="6" Order="1" LoginTimeout="60"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SqlScriptComponent">
+    <ROW ScriptName="Create_Schema" ConnectionName="Predef" Condition="1" Separator="GO" ScriptInline="-- Inline SQL script&#13;&#10;USE [ProyectoIntegrador]&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[Carrito]    Script Date: 27/10/2024 11:17:48 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[Carrito]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[Carrito](&#13;&#10;&#9;[id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[cliente_id] [int] NOT NULL,&#13;&#10;&#9;[precioFinal] [float] NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[CarritoProducto]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[CarritoProducto]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[CarritoProducto](&#13;&#10;&#9;[car_prod_id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[carrito_id] [int] NOT NULL,&#13;&#10;&#9;[producto_id] [int] NOT NULL,&#13;&#10;&#9;[cantidad] [int] NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[car_prod_id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[Cliente]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[Cliente]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[Cliente](&#13;&#10;&#9;[id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[nombre] [nvarchar](100) NOT NULL,&#13;&#10;&#9;[apellido] [nvarchar](100) NOT NULL,&#13;&#10;&#9;[direccion] [nvarchar](max) NULL,&#13;&#10;&#9;[dni] [nvarchar](20) NOT NULL,&#13;&#10;&#9;[telefono] [nvarchar](20) NULL,&#13;&#10;&#9;[email] [nvarchar](100) NOT NULL,&#13;&#10;&#9;[activo] [bit] NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],&#13;&#10;UNIQUE NONCLUSTERED &#13;&#10;(&#13;&#10;&#9;[email] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],&#13;&#10;UNIQUE NONCLUSTERED &#13;&#10;(&#13;&#10;&#9;[dni] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[Eventos]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[Eventos]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[Eventos](&#13;&#10;&#9;[evento_id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[usuario_id] [int] NOT NULL,&#13;&#10;&#9;[fecha] [date] NULL,&#13;&#10;&#9;[hora] [time](7) NOT NULL,&#13;&#10;&#9;[modulo] [varchar](50) NOT NULL,&#13;&#10;&#9;[descripcion] [varchar](255) NOT NULL,&#13;&#10;&#9;[criticidad] [int] NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[evento_id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[Factura]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[Factura]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[Factura](&#13;&#10;&#9;[id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[carrito_id] [int] NOT NULL,&#13;&#10;&#9;[cliente_id] [int] NOT NULL,&#13;&#10;&#9;[precio] [float] NOT NULL,&#13;&#10;&#9;[fecha] [date] NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[OrdenCompra]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[OrdenCompra]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[OrdenCompra](&#13;&#10;&#9;[Id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[ProveedorId] [int] NOT NULL,&#13;&#10;&#9;[FechaEmitida] [date] NOT NULL,&#13;&#10;&#9;[FechaRecibido] [date] NULL,&#13;&#10;&#9;[Total] [decimal](18, 2) NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[Id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[OrdenCompraProducto]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[OrdenCompraProducto]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[OrdenCompraProducto](&#13;&#10;&#9;[OrdenCompraId] [int] NOT NULL,&#13;&#10;&#9;[ProductoId] [int] NOT NULL,&#13;&#10;&#9;[Cantidad] [int] NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[OrdenCompraId] ASC,&#13;&#10;&#9;[ProductoId] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[PedidoCotizacion]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[PedidoCotizacion]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[PedidoCotizacion](&#13;&#10;&#9;[Id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[ProveedorId] [int] NOT NULL,&#13;&#10;&#9;[FechaEmision] [date] NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[Id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[PedidoCotizacionProducto]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[PedidoCotizacionProducto]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[PedidoCotizacionProducto](&#13;&#10;&#9;[PedidoCotizacionId] [int] NOT NULL,&#13;&#10;&#9;[ProductoId] [int] NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[PedidoCotizacionId] ASC,&#13;&#10;&#9;[ProductoId] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[Perfil]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[Perfil]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[Perfil](&#13;&#10;&#9;[ID] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[Nombre] [nvarchar](255) NOT NULL,&#13;&#10;&#9;[Tipo] [nvarchar](50) NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[ID] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY],&#13;&#10; CONSTRAINT [UC_Nombre] UNIQUE NONCLUSTERED &#13;&#10;(&#13;&#10;&#9;[Nombre] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[PerfilRelacion]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[PerfilRelacion]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[PerfilRelacion](&#13;&#10;&#9;[PerfilID] [int] NOT NULL,&#13;&#10;&#9;[RelacionadoID] [int] NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[PerfilID] ASC,&#13;&#10;&#9;[RelacionadoID] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[Producto]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[Producto]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[Producto](&#13;&#10;&#9;[id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[nombre] [nvarchar](100) NOT NULL,&#13;&#10;&#9;[stock] [int] NOT NULL,&#13;&#10;&#9;[precio] [float] NOT NULL,&#13;&#10;&#9;[activo] [bit] NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[Productos_C]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[Productos_C]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[Productos_C](&#13;&#10;&#9;[id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[Cod_Prod] [int] NULL,&#13;&#10;&#9;[Nombre] [nvarchar](100) NULL,&#13;&#10;&#9;[Fecha] [date] NULL,&#13;&#10;&#9;[Act] [bit] NULL,&#13;&#10;&#9;[Stock] [int] NULL,&#13;&#10;&#9;[hora] [time](7) NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[ProductosReposicion]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[ProductosReposicion]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[ProductosReposicion](&#13;&#10;&#9;[Id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[ProductoId] [int] NOT NULL,&#13;&#10;&#9;[OrdenCompraId] [int] NOT NULL,&#13;&#10;&#9;[Faltantes] [int] NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[Id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[Proveedor]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[Proveedor]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[Proveedor](&#13;&#10;&#9;[Id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[Nombre] [nvarchar](100) NOT NULL,&#13;&#10;&#9;[Email] [nvarchar](100) NULL,&#13;&#10;&#9;[Telefono] [nvarchar](50) NULL,&#13;&#10;&#9;[Direccion] [nvarchar](200) NULL,&#13;&#10;&#9;[Dni] [nvarchar](20) NULL,&#13;&#10;&#9;[Activo] [bit] NULL,&#13;&#10;&#9;[NumeroCuenta] [varchar](50) NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[Id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[ProveedorProducto]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[ProveedorProducto]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[ProveedorProducto](&#13;&#10;&#9;[ProveedorId] [int] NOT NULL,&#13;&#10;&#9;[ProductoId] [int] NOT NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[ProveedorId] ASC,&#13;&#10;&#9;[ProductoId] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;/****** Object:  Table [dbo].[Usuario]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[Usuario]&apos;) AND type in (N&apos;U&apos;))&#13;&#10;BEGIN&#13;&#10;CREATE TABLE [dbo].[Usuario](&#13;&#10;&#9;[id] [int] IDENTITY(1,1) NOT NULL,&#13;&#10;&#9;[dni] [varchar](20) NOT NULL,&#13;&#10;&#9;[apellido] [varchar](50) NOT NULL,&#13;&#10;&#9;[nombre] [varchar](50) NOT NULL,&#13;&#10;&#9;[usuario] [varchar](50) NOT NULL,&#13;&#10;&#9;[pass] [varchar](255) NOT NULL,&#13;&#10;&#9;[perfil_id] [int] NOT NULL,&#13;&#10;&#9;[email] [varchar](100) NULL,&#13;&#10;&#9;[bloqueo] [bit] NULL,&#13;&#10;&#9;[activo] [bit] NULL,&#13;&#10;&#9;[idioma] [varchar](50) NULL,&#13;&#10;PRIMARY KEY CLUSTERED &#13;&#10;(&#13;&#10;&#9;[id] ASC&#13;&#10;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]&#13;&#10;) ON [PRIMARY]&#13;&#10;END&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[DF__Cliente__activo__14270015]&apos;) AND type = &apos;D&apos;)&#13;&#10;BEGIN&#13;&#10;ALTER TABLE [dbo].[Cliente] ADD  DEFAULT ((1)) FOR [activo]&#13;&#10;END&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[DF__PedidoCot__Fecha__6E8B6712]&apos;) AND type = &apos;D&apos;)&#13;&#10;BEGIN&#13;&#10;ALTER TABLE [dbo].[PedidoCotizacion] ADD  DEFAULT (getdate()) FOR [FechaEmision]&#13;&#10;END&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[DF__Producto__activo__2739D489]&apos;) AND type = &apos;D&apos;)&#13;&#10;BEGIN&#13;&#10;ALTER TABLE [dbo].[Producto] ADD  DEFAULT ((1)) FOR [activo]&#13;&#10;END&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[DF__Productos_C__Act__44952D46]&apos;) AND type = &apos;D&apos;)&#13;&#10;BEGIN&#13;&#10;ALTER TABLE [dbo].[Productos_C] ADD  DEFAULT ((1)) FOR [Act]&#13;&#10;END&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[DF__Proveedor__Activ__5A846E65]&apos;) AND type = &apos;D&apos;)&#13;&#10;BEGIN&#13;&#10;ALTER TABLE [dbo].[Proveedor] ADD  DEFAULT ((1)) FOR [Activo]&#13;&#10;END&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[DF__Usuario__bloqueo__09746778]&apos;) AND type = &apos;D&apos;)&#13;&#10;BEGIN&#13;&#10;ALTER TABLE [dbo].[Usuario] ADD  DEFAULT ((0)) FOR [bloqueo]&#13;&#10;END&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N&apos;[dbo].[DF__Usuario__activo__0A688BB1]&apos;) AND type = &apos;D&apos;)&#13;&#10;BEGIN&#13;&#10;ALTER TABLE [dbo].[Usuario] ADD  DEFAULT ((1)) FOR [activo]&#13;&#10;END&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Carrito__cliente__04E4BC85]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Carrito]&apos;))&#13;&#10;ALTER TABLE [dbo].[Carrito]  WITH CHECK ADD FOREIGN KEY([cliente_id])&#13;&#10;REFERENCES [dbo].[Cliente] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__CarritoPr__carri__07C12930]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[CarritoProducto]&apos;))&#13;&#10;ALTER TABLE [dbo].[CarritoProducto]  WITH CHECK ADD FOREIGN KEY([carrito_id])&#13;&#10;REFERENCES [dbo].[Carrito] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__CarritoPr__produ__08B54D69]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[CarritoProducto]&apos;))&#13;&#10;ALTER TABLE [dbo].[CarritoProducto]  WITH CHECK ADD FOREIGN KEY([producto_id])&#13;&#10;REFERENCES [dbo].[Producto] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Eventos__usuario__2EA5EC27]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Eventos]&apos;))&#13;&#10;ALTER TABLE [dbo].[Eventos]  WITH CHECK ADD FOREIGN KEY([usuario_id])&#13;&#10;REFERENCES [dbo].[Usuario] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Factura__carrito__58D1301D]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Factura]&apos;))&#13;&#10;ALTER TABLE [dbo].[Factura]  WITH CHECK ADD FOREIGN KEY([carrito_id])&#13;&#10;REFERENCES [dbo].[Carrito] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Factura__cliente__59C55456]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Factura]&apos;))&#13;&#10;ALTER TABLE [dbo].[Factura]  WITH CHECK ADD FOREIGN KEY([cliente_id])&#13;&#10;REFERENCES [dbo].[Cliente] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__OrdenComp__Prove__640DD89F]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[OrdenCompra]&apos;))&#13;&#10;ALTER TABLE [dbo].[OrdenCompra]  WITH CHECK ADD FOREIGN KEY([ProveedorId])&#13;&#10;REFERENCES [dbo].[Proveedor] ([Id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__OrdenComp__Orden__762C88DA]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[OrdenCompraProducto]&apos;))&#13;&#10;ALTER TABLE [dbo].[OrdenCompraProducto]  WITH CHECK ADD FOREIGN KEY([OrdenCompraId])&#13;&#10;REFERENCES [dbo].[OrdenCompra] ([Id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__OrdenComp__Produ__7720AD13]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[OrdenCompraProducto]&apos;))&#13;&#10;ALTER TABLE [dbo].[OrdenCompraProducto]  WITH CHECK ADD FOREIGN KEY([ProductoId])&#13;&#10;REFERENCES [dbo].[Producto] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__PedidoCot__Prove__6F7F8B4B]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[PedidoCotizacion]&apos;))&#13;&#10;ALTER TABLE [dbo].[PedidoCotizacion]  WITH CHECK ADD FOREIGN KEY([ProveedorId])&#13;&#10;REFERENCES [dbo].[Proveedor] ([Id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__PedidoCot__Pedid__725BF7F6]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[PedidoCotizacionProducto]&apos;))&#13;&#10;ALTER TABLE [dbo].[PedidoCotizacionProducto]  WITH CHECK ADD FOREIGN KEY([PedidoCotizacionId])&#13;&#10;REFERENCES [dbo].[PedidoCotizacion] ([Id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__PedidoCot__Produ__73501C2F]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[PedidoCotizacionProducto]&apos;))&#13;&#10;ALTER TABLE [dbo].[PedidoCotizacionProducto]  WITH CHECK ADD FOREIGN KEY([ProductoId])&#13;&#10;REFERENCES [dbo].[Producto] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__PerfilRel__Perfi__662B2B3B]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[PerfilRelacion]&apos;))&#13;&#10;ALTER TABLE [dbo].[PerfilRelacion]  WITH CHECK ADD FOREIGN KEY([PerfilID])&#13;&#10;REFERENCES [dbo].[Perfil] ([ID])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__PerfilRel__Relac__671F4F74]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[PerfilRelacion]&apos;))&#13;&#10;ALTER TABLE [dbo].[PerfilRelacion]  WITH CHECK ADD FOREIGN KEY([RelacionadoID])&#13;&#10;REFERENCES [dbo].[Perfil] ([ID])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Productos__Cod_P__4589517F]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Productos_C]&apos;))&#13;&#10;ALTER TABLE [dbo].[Productos_C]  WITH CHECK ADD FOREIGN KEY([Cod_Prod])&#13;&#10;REFERENCES [dbo].[Producto] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Productos__Orden__7EC1CEDB]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[ProductosReposicion]&apos;))&#13;&#10;ALTER TABLE [dbo].[ProductosReposicion]  WITH CHECK ADD FOREIGN KEY([OrdenCompraId])&#13;&#10;REFERENCES [dbo].[OrdenCompra] ([Id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Productos__Produ__7FB5F314]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[ProductosReposicion]&apos;))&#13;&#10;ALTER TABLE [dbo].[ProductosReposicion]  WITH CHECK ADD FOREIGN KEY([ProductoId])&#13;&#10;REFERENCES [dbo].[Producto] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Proveedor__Produ__5E54FF49]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[ProveedorProducto]&apos;))&#13;&#10;ALTER TABLE [dbo].[ProveedorProducto]  WITH CHECK ADD FOREIGN KEY([ProductoId])&#13;&#10;REFERENCES [dbo].[Producto] ([id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Proveedor__Prove__5D60DB10]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[ProveedorProducto]&apos;))&#13;&#10;ALTER TABLE [dbo].[ProveedorProducto]  WITH CHECK ADD FOREIGN KEY([ProveedorId])&#13;&#10;REFERENCES [dbo].[Proveedor] ([Id])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N&apos;[dbo].[FK__Usuario__perfil___0B5CAFEA]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Usuario]&apos;))&#13;&#10;ALTER TABLE [dbo].[Usuario]  WITH CHECK ADD FOREIGN KEY([perfil_id])&#13;&#10;REFERENCES [dbo].[Perfil] ([ID])&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.check_constraints WHERE object_id = OBJECT_ID(N&apos;[dbo].[CK__Perfil__Tipo__634EBE90]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Perfil]&apos;))&#13;&#10;ALTER TABLE [dbo].[Perfil]  WITH CHECK ADD  CONSTRAINT [CK__Perfil__Tipo__634EBE90] CHECK  (([Tipo]=&apos;Patente&apos; OR [Tipo]=&apos;Familia&apos; OR [Tipo]=&apos;Perfil&apos;))&#13;&#10;GO&#13;&#10;IF  EXISTS (SELECT * FROM sys.check_constraints WHERE object_id = OBJECT_ID(N&apos;[dbo].[CK__Perfil__Tipo__634EBE90]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Perfil]&apos;))&#13;&#10;ALTER TABLE [dbo].[Perfil] CHECK CONSTRAINT [CK__Perfil__Tipo__634EBE90]&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.check_constraints WHERE object_id = OBJECT_ID(N&apos;[dbo].[CK_Tipo]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Perfil]&apos;))&#13;&#10;ALTER TABLE [dbo].[Perfil]  WITH CHECK ADD  CONSTRAINT [CK_Tipo] CHECK  (([Tipo]=&apos;Perfil&apos; OR [Tipo]=&apos;Patente&apos; OR [Tipo]=&apos;Familia&apos;))&#13;&#10;GO&#13;&#10;IF  EXISTS (SELECT * FROM sys.check_constraints WHERE object_id = OBJECT_ID(N&apos;[dbo].[CK_Tipo]&apos;) AND parent_object_id = OBJECT_ID(N&apos;[dbo].[Perfil]&apos;))&#13;&#10;ALTER TABLE [dbo].[Perfil] CHECK CONSTRAINT [CK_Tipo]&#13;&#10;GO&#13;&#10;/****** Object:  Trigger [dbo].[trg_AfterUpdateProductos]    Script Date: 27/10/2024 11:17:49 ******/&#13;&#10;SET ANSI_NULLS ON&#13;&#10;GO&#13;&#10;SET QUOTED_IDENTIFIER ON&#13;&#10;GO&#13;&#10;IF NOT EXISTS (SELECT * FROM sys.triggers WHERE object_id = OBJECT_ID(N&apos;[dbo].[trg_AfterUpdateProductos]&apos;))&#13;&#10;EXEC dbo.sp_executesql @statement = N&apos;CREATE TRIGGER [dbo].[trg_AfterUpdateProductos]&#13;&#10;ON [dbo].[Producto]&#13;&#10;AFTER UPDATE&#13;&#10;AS&#13;&#10;BEGIN&#13;&#10;&#13;&#10;&#9;UPDATE Productos_C set act = 0 WHERE Cod_Prod = (SELECT id FROM inserted);&#13;&#10;&#13;&#10;    INSERT INTO Productos_C (Cod_Prod, Nombre, Fecha, stock, hora)&#13;&#10;    SELECT &#13;&#10;        i.id,        &#13;&#10;        i.Nombre,          &#13;&#10;        GETDATE(),         &#13;&#10;        i.stock,&#13;&#10;&#9;&#9;CONVERT(TIME, GETDATE())&#13;&#10;    FROM &#13;&#10;        inserted i;&#13;&#10;&#13;&#10;END;&apos; &#13;&#10;GO&#13;&#10;ALTER TABLE [dbo].[Producto] ENABLE TRIGGER [trg_AfterUpdateProductos]&#13;&#10;GO&#13;&#10;INSERT INTO Perfil (Nombre, Tipo) VALUES (&apos;Admin&apos;, &apos;Perfil&apos;);&#13;&#10;DECLARE @PerfilID INT = SCOPE_IDENTITY();&#13;&#10;&#13;&#10;INSERT INTO Perfil (Nombre, Tipo) VALUES (&apos;AdminPatente&apos;, &apos;Patente&apos;);&#13;&#10;DECLARE @PatenteID INT = SCOPE_IDENTITY();&#13;&#10;&#13;&#10;INSERT INTO PerfilRelacion (PerfilID, RelacionadoID) VALUES (@PerfilID, @PatenteID);&#13;&#10;&#13;&#10;INSERT INTO Usuario (dni, apellido, nombre, usuario, pass, perfil_id, email)&#13;&#10;VALUES (&#13;&#10;    &apos;43581351&apos;, &#13;&#10;    &apos;almada&apos;, &#13;&#10;    &apos;tomas&apos;, &#13;&#10;    &apos;tomasalmada&apos;,&#13;&#10;    &apos;a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3&apos;, &#13;&#10;    @PerfilID, &#13;&#10;    &apos;almadatomas@gmail.com&apos;&#13;&#10;);&#13;&#10;&#13;&#10; " Flags="18" Order="0"/>
+    <ROW ScriptName="Restore" ConnectionName="Predef_1" Condition="1" Separator="GO" ScriptText="..\..\..\Trabajo Diploma\Create_Schema.sql" Flags="80" Order="0"/>
+    <ATTRIBUTE name="ImpersonateUser" value="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VsProjectComponent">
+    <ROW ProjectId="{a6c11c23-06ed-47ac-8724-abff4eadcfd6}" ProjectName="BE" OutputGroup="PrimaryOutput" OutputFile="BE.dll"/>
+    <ROW ProjectId="{a6c11c23-06ed-47ac-8724-abff4eadcfd6}" ProjectName="BE" OutputGroup="SymbolsOutput" OutputFile="BE.pdb"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="PrimaryOutput" OutputFile="BLL.dll"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="References" OutputFile="BE.dll_1"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="References" OutputFile="DAL.dll"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="References" OutputFile="Newtonsoft.Json.dll"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="References" OutputFile="Services.dll"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="SymbolsOutput" OutputFile="BE.pdb_1"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="SymbolsOutput" OutputFile="BLL.pdb"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="SymbolsOutput" OutputFile="DAL.pdb"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="SymbolsOutput" OutputFile="Services.pdb"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="PrimaryOutput" OutputFile="DAL.dll_1"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="References" OutputFile="BE.dll_2"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="References" OutputFile="Services.dll_1"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="References" OutputFile="Newtonsoft.Json.dll_1"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="SymbolsOutput" OutputFile="BE.pdb_2"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="SymbolsOutput" OutputFile="DAL.pdb_1"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="SymbolsOutput" OutputFile="Services.pdb_1"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="PrimaryOutput" OutputFile="Proyecto_Integrador.exe" OutputFileShortcut="Proyecto_Integrador"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="PrimaryOutput" OutputFile="Proyecto_Integrador.exe.config"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="References" OutputFile="BE.dll_3"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="References" OutputFile="BLL.dll_1"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="References" OutputFile="BouncyCastle.Cryptography.dll"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="References" OutputFile="itextsharp.dll"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="References" OutputFile="itextsharp.xmlworker.dll"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="References" OutputFile="Newtonsoft.Json.dll_2"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="References" OutputFile="Services.dll_2"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="References" OutputFile="DAL.dll_2"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="SymbolsOutput" OutputFile="BE.pdb_3"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="SymbolsOutput" OutputFile="BLL.pdb_1"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="SymbolsOutput" OutputFile="Proyecto_Integrador.pdb"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="SymbolsOutput" OutputFile="Services.pdb_2"/>
+    <ROW ProjectId="{70d61e66-3510-45eb-95d8-79123e9d9421}" ProjectName="Services" OutputGroup="PrimaryOutput" OutputFile="Services.dll_3"/>
+    <ROW ProjectId="{70d61e66-3510-45eb-95d8-79123e9d9421}" ProjectName="Services" OutputGroup="References" OutputFile="BE.dll_4"/>
+    <ROW ProjectId="{70d61e66-3510-45eb-95d8-79123e9d9421}" ProjectName="Services" OutputGroup="References" OutputFile="Newtonsoft.Json.dll_3"/>
+    <ROW ProjectId="{70d61e66-3510-45eb-95d8-79123e9d9421}" ProjectName="Services" OutputGroup="SymbolsOutput" OutputFile="BE.pdb_4"/>
+    <ROW ProjectId="{70d61e66-3510-45eb-95d8-79123e9d9421}" ProjectName="Services" OutputGroup="SymbolsOutput" OutputFile="Services.pdb_3"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="ContentOutput" OutputFile="descripcioneseventos.json"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="ContentOutput" OutputFile="etiquetasen.json"/>
+    <ROW ProjectId="{d778f8dc-b674-42a6-9471-b00814ce26a5}" ProjectName="BLL" OutputGroup="ContentOutput" OutputFile="etiquetases.json"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="ContentOutput" OutputFile="descripcioneseventos.json_1"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="ContentOutput" OutputFile="etiquetasen.json_1"/>
+    <ROW ProjectId="{5712f660-1eab-4191-8e26-83b179fa0e27}" ProjectName="DAL" OutputGroup="ContentOutput" OutputFile="etiquetases.json_1"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="ContentOutput" OutputFile="descripcioneseventos.json_2"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="ContentOutput" OutputFile="etiquetasen.json_2"/>
+    <ROW ProjectId="{4dbaecf7-c060-45ef-9e95-420be2ce9320}" ProjectName="GUI" OutputGroup="ContentOutput" OutputFile="etiquetases.json_2"/>
+    <ROW ProjectId="{70d61e66-3510-45eb-95d8-79123e9d9421}" ProjectName="Services" OutputGroup="ContentOutput" OutputFile="descripcioneseventos.json_3"/>
+    <ROW ProjectId="{70d61e66-3510-45eb-95d8-79123e9d9421}" ProjectName="Services" OutputGroup="ContentOutput" OutputFile="etiquetasen.json_3"/>
+    <ROW ProjectId="{70d61e66-3510-45eb-95d8-79123e9d9421}" ProjectName="Services" OutputGroup="ContentOutput" OutputFile="etiquetases.json_3"/>
+  </COMPONENT>
+</DOCUMENT>

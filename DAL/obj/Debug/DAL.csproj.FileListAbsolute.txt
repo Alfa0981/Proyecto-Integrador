@@ -48,3 +48,6 @@ C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.csproj.CoreCom
 C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.csproj.Up2Date
 C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.dll
 C:\Users\tomas\Source\Repos\Proyecto-Integrador\DAL\obj\Debug\DAL.pdb
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\DAL\bin\Debug\Resources\descripciones-eventos.json
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\DAL\bin\Debug\Resources\etiquetas-en.json
+C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\DAL\bin\Debug\Resources\etiquetas-es.json

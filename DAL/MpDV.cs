@@ -27,12 +27,7 @@ namespace DAL
         {
             List<Dictionary<string, object>> filas = new List<Dictionary<string, object>>();
 
-            SqlParameter[] parametros = new SqlParameter[]
-            {
-                new SqlParameter("@Tabla", tabla)
-            };
-
-            var dataTable = acceso.leer($"SELECT * FROM {tabla}", parametros);
+            var dataTable = acceso.leer($"SELECT * FROM {tabla}", null);
 
             foreach (System.Data.DataRow row in dataTable.Rows)
             {
