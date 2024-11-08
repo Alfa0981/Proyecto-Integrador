@@ -185,3 +185,19 @@ C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Te
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\Ayuda\img\cargar_producto.png
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\Ayuda\img\modificar_producto.png
 C:\Users\tomas\OneDrive - UNIVERSIDAD ABIERTA INTERAMERICANA\Compu vieja\Facu\Tercer año\Ing Software\Proyecto-Integrador-git\Proyecto_Integrador\bin\Debug\Ayuda\img\eliminar_producto.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\gestionar-productos.html
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\cargar_producto.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\eliminar_producto.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\modificar_producto.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\generar-carrito.html
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\seleccionar-producto.html
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\eliminar_producto_carrito.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\generar_carrito.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\generar_factura.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\seleccionar_productos.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\generar-factura.html
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\cobrar-venta.html
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\pago_efectivo.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\pago_tarjeta.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\pago_transferencia.png
+C:\Users\tomas\Source\Repos\Proyecto-Integrador\Proyecto_Integrador\bin\Debug\Ayuda\img\seleccionar_tipo_pago.png
