@@ -36,6 +36,7 @@
             this.generarVentaBtn = new System.Windows.Forms.Button();
             this.proveedorLbl = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.ayudaBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,9 +44,10 @@
             // 
             this.precioFinalLbl.AutoSize = true;
             this.precioFinalLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.precioFinalLbl.Location = new System.Drawing.Point(80, 45);
+            this.precioFinalLbl.Location = new System.Drawing.Point(147, 83);
+            this.precioFinalLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.precioFinalLbl.Name = "precioFinalLbl";
-            this.precioFinalLbl.Size = new System.Drawing.Size(30, 20);
+            this.precioFinalLbl.Size = new System.Drawing.Size(56, 32);
             this.precioFinalLbl.TabIndex = 48;
             this.precioFinalLbl.Text = "xxx";
             // 
@@ -53,9 +55,10 @@
             // 
             this.montoLbl.AutoSize = true;
             this.montoLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.montoLbl.Location = new System.Drawing.Point(12, 45);
+            this.montoLbl.Location = new System.Drawing.Point(22, 83);
+            this.montoLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.montoLbl.Name = "montoLbl";
-            this.montoLbl.Size = new System.Drawing.Size(62, 20);
+            this.montoLbl.Size = new System.Drawing.Size(108, 32);
             this.montoLbl.TabIndex = 47;
             this.montoLbl.Text = "Monto: ";
             // 
@@ -65,19 +68,22 @@
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.MistyRose;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(16, 134);
+            this.dataGridView2.Location = new System.Drawing.Point(29, 247);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(373, 220);
+            this.dataGridView2.RowHeadersWidth = 72;
+            this.dataGridView2.Size = new System.Drawing.Size(684, 406);
             this.dataGridView2.TabIndex = 49;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(22, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 20);
+            this.label1.Size = new System.Drawing.Size(352, 32);
             this.label1.TabIndex = 50;
             this.label1.Text = "Codigo de Orden Compra: ";
             // 
@@ -85,9 +91,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(215, 9);
+            this.label2.Location = new System.Drawing.Point(394, 17);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 20);
+            this.label2.Size = new System.Drawing.Size(56, 32);
             this.label2.TabIndex = 51;
             this.label2.Text = "xxx";
             // 
@@ -97,9 +104,10 @@
             this.generarVentaBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
             this.generarVentaBtn.FlatAppearance.BorderSize = 0;
             this.generarVentaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.generarVentaBtn.Location = new System.Drawing.Point(174, 400);
+            this.generarVentaBtn.Location = new System.Drawing.Point(319, 738);
+            this.generarVentaBtn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.generarVentaBtn.Name = "generarVentaBtn";
-            this.generarVentaBtn.Size = new System.Drawing.Size(71, 39);
+            this.generarVentaBtn.Size = new System.Drawing.Size(130, 72);
             this.generarVentaBtn.TabIndex = 52;
             this.generarVentaBtn.Text = "Pagar";
             this.generarVentaBtn.UseVisualStyleBackColor = false;
@@ -109,9 +117,10 @@
             // 
             this.proveedorLbl.AutoSize = true;
             this.proveedorLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.proveedorLbl.Location = new System.Drawing.Point(103, 88);
+            this.proveedorLbl.Location = new System.Drawing.Point(189, 162);
+            this.proveedorLbl.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.proveedorLbl.Name = "proveedorLbl";
-            this.proveedorLbl.Size = new System.Drawing.Size(30, 20);
+            this.proveedorLbl.Size = new System.Drawing.Size(56, 32);
             this.proveedorLbl.TabIndex = 54;
             this.proveedorLbl.Text = "xxx";
             // 
@@ -119,18 +128,35 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(12, 88);
+            this.label6.Location = new System.Drawing.Point(22, 162);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 20);
+            this.label6.Size = new System.Drawing.Size(153, 32);
             this.label6.TabIndex = 53;
             this.label6.Text = "Proveedor:";
             // 
+            // ayudaBtn
+            // 
+            this.ayudaBtn.BackColor = System.Drawing.Color.IndianRed;
+            this.ayudaBtn.FlatAppearance.BorderColor = System.Drawing.Color.Maroon;
+            this.ayudaBtn.FlatAppearance.BorderSize = 0;
+            this.ayudaBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ayudaBtn.Location = new System.Drawing.Point(583, 145);
+            this.ayudaBtn.Margin = new System.Windows.Forms.Padding(6);
+            this.ayudaBtn.Name = "ayudaBtn";
+            this.ayudaBtn.Size = new System.Drawing.Size(130, 72);
+            this.ayudaBtn.TabIndex = 55;
+            this.ayudaBtn.Text = "Ayuda";
+            this.ayudaBtn.UseVisualStyleBackColor = false;
+            this.ayudaBtn.Click += new System.EventHandler(this.ayudaBtn_Click);
+            // 
             // PagarProveedorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSalmon;
-            this.ClientSize = new System.Drawing.Size(415, 532);
+            this.ClientSize = new System.Drawing.Size(761, 982);
+            this.Controls.Add(this.ayudaBtn);
             this.Controls.Add(this.proveedorLbl);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.generarVentaBtn);
@@ -139,6 +165,7 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.precioFinalLbl);
             this.Controls.Add(this.montoLbl);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "PagarProveedorForm";
             this.Text = "PagarProveedorForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -156,5 +183,6 @@
         private System.Windows.Forms.Button generarVentaBtn;
         private System.Windows.Forms.Label proveedorLbl;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button ayudaBtn;
     }
 }

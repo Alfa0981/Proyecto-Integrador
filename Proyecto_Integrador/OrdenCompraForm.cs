@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -131,6 +132,24 @@ namespace Proyecto_Integrador
             catch (Exception ex)
             {
                 MessageBox.Show("Se produjo un error: " + ex.Message);
+            }
+        }
+
+        private void ayudaBtn_Click(object sender, EventArgs e)
+        {
+            string rutaHtml = Path.Combine(Application.StartupPath, "Ayuda", "orden-compra.html");
+
+            if (File.Exists(rutaHtml))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = rutaHtml,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("El archivo de ayuda no se encontró.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

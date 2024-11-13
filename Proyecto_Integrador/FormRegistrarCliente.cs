@@ -321,5 +321,23 @@ namespace Proyecto_Integrador
                 desserializarListBox.Items.Add("");
             }
         }
+
+        private void ayudaBtn_Click(object sender, EventArgs e)
+        {
+            string rutaHtml = Path.Combine(Application.StartupPath, "Ayuda", "registrar-cliente.html");
+
+            if (File.Exists(rutaHtml))
+            {
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = rutaHtml,
+                    UseShellExecute = true
+                });
+            }
+            else
+            {
+                MessageBox.Show("El archivo de ayuda no se encontró.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
