@@ -17,6 +17,7 @@ namespace BLL
         {
             mpPedidoCotizacion.persistirPedidosCotizacion(pedidosCotizacion);
             gestorEventos.persistirEvento("Orden Compra creado", BE.Modulos.Compras.ToString(), 1);
+            DV.Instance.Generar();
         }
     }
 }

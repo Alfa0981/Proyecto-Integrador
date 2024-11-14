@@ -21,6 +21,7 @@ namespace BLL
         {
             int id = mpOrdenCompra.persistirOrden(orden);
             gestorEventos.persistirEvento("Orden Compra creado", BE.Modulos.Compras.ToString(), 1);
+            DV.Instance.Generar();
             return id;
         }
 
@@ -29,6 +30,7 @@ namespace BLL
             ordenCompra.FechaRecibido = DateTime.Now;
             mpOrdenCompra.modificarOrden(ordenCompra);
             gestorEventos.persistirEvento("Orden Compra recibida", BE.Modulos.Compras.ToString(), 1);
+            DV.Instance.Generar();
         }
     }
 }

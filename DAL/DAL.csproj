@@ -55,6 +55,7 @@
     <Compile Include="MpProducto.cs" />
     <Compile Include="MpProductoReposicion.cs" />
     <Compile Include="MpProveedor.cs" />
+    <Compile Include="MpReportes.cs" />
     <Compile Include="MpUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="queries\BitacoraCambiosQuery.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="queries\ClienteQuery.cs" />
     <Compile Include="queries\ProductoReposicionQuery.cs" />
     <Compile Include="queries\ProveedorQuery.cs" />
+    <Compile Include="queries\ReporteQuery.cs" />
     <Compile Include="queries\UsuarioQuery.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +82,9 @@
       <Project>{70d61e66-3510-45eb-95d8-79123e9d9421}</Project>
       <Name>Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="queries\scripts-generadores\generador-ventas.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

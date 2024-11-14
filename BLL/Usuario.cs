@@ -60,6 +60,7 @@ namespace BLL
         {
             usuarioCargado.Bloqueo = true;
             mpUsuario.modificarUsuario(usuarioCargado);
+            DV.Instance.Generar();
         }
 
         public void desbloquearUsuario(BE.Usuario usuarioCargado)
@@ -68,6 +69,7 @@ namespace BLL
             string contraReseteada = usuarioCargado.Dni + usuarioCargado.Apellido;
             usuarioCargado.Pass = UserEncryption.HashSHA256(contraReseteada);
             mpUsuario.modificarUsuario(usuarioCargado);
+            DV.Instance.Generar();
         }
 
         private bool validarPrimerLogin(BE.Usuario usuarioCargado)
@@ -81,6 +83,7 @@ namespace BLL
         {
             usuario.Pass = UserEncryption.HashSHA256(nuevaContra);
             mpUsuario.modificarUsuario (usuario);
+            DV.Instance.Generar();
         }
 
         public void logout()
@@ -104,6 +107,7 @@ namespace BLL
             }
             mpUsuario.crear(usuarioACargar);
             gestionEventos.persistirEvento("Nuevo usuario creado", BE.Modulos.Users.ToString(), 2);
+            DV.Instance.Generar();
         }
 
         public List<BE.Usuario> mostrarTodos ()
@@ -140,17 +144,20 @@ namespace BLL
         {
             usuario.Activo = false;
             mpUsuario.modificarUsuario(usuario);
+            DV.Instance.Generar();
         }
 
         public void cambiarIdioma (BE.Usuario usuario, Idioma idioma)
         {
             usuario.Idioma = idioma;
             mpUsuario.modificarUsuario(usuario);
+            DV.Instance.Generar();
         }
 
         public void modificarUsuario (BE.Usuario usuario)
         {
             mpUsuario.modificarUsuario(usuario);
+            DV.Instance.Generar();
         }
 
     }

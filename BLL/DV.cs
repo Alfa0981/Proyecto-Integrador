@@ -15,7 +15,7 @@ namespace BLL
         public static DV Instance => _instance ?? (_instance = new DV());
         MpDV mpDV = new MpDV();
 
-        private static readonly string[] tablas = {"Carrito", "Cliente", "Factura", "OrdenCompra", "PedidoCotizacion", "Carrito", "Producto", "Proveedor", "Usuario"};
+        private static readonly string[] tablas = {"Carrito", "Cliente", "Factura", "OrdenCompra", "PedidoCotizacion", "Producto", "Proveedor", "Usuario"};
         long DVHCalculado = 0;
         long DVVCalculado = 0;
 

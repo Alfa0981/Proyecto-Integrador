@@ -19,7 +19,9 @@ namespace BLL
 
         public int crearCarrito(BE.Carrito carritoProducto)
         {
-            return mpCarrito.Crear(carritoProducto);
+            int id = mpCarrito.Crear(carritoProducto);
+            DV.Instance.Generar();
+            return id;
         }
     }
 }

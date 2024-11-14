@@ -38,6 +38,7 @@ namespace BLL
             }
             mpCliente.crear(cliente);
             gestionEventos.persistirEvento("Nuevo cliente", BE.Modulos.Clientes.ToString(), 2);
+            DV.Instance.Generar();
         }
 
         public void eliminar(BE.Cliente cliente)
@@ -45,12 +46,14 @@ namespace BLL
             cliente.Activo = false;
             mpCliente.modificar(cliente);
             gestionEventos.persistirEvento("Cliente eliminado", BE.Modulos.Clientes.ToString(), 1);
+            DV.Instance.Generar();
         }
 
         public void modificar(BE.Cliente cliente)
         {
             mpCliente.modificar(cliente);
             gestionEventos.persistirEvento("Cliente actualizado", BE.Modulos.Clientes.ToString(), 2);
+            DV.Instance.Generar();
         }
     }
 }

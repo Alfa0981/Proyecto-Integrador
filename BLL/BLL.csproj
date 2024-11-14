@@ -57,6 +57,7 @@
     <Compile Include="Producto.cs" />
     <Compile Include="ProductoReposicion.cs" />
     <Compile Include="Proveedor.cs" />
+    <Compile Include="Reportes.cs" />
     <Compile Include="Serializacion.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

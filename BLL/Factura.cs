@@ -16,6 +16,7 @@ namespace BLL
         {
             mpFactura.crear(factura);
             gestionEventos.persistirEvento("Venta generada", BE.Modulos.Ventas.ToString(), 1);
+            DV.Instance.Generar();
         }
     }
 }

@@ -22,6 +22,7 @@ namespace BLL
         {
             mpProducto.modificar(producto);
             gestionEventos.persistirEvento("Producto actualizado", BE.Modulos.Productos.ToString(), 3);
+            DV.Instance.Generar();
         }
 
         public void ActualizarStock(BE.Carrito carrito)
@@ -38,6 +39,7 @@ namespace BLL
 
                 mpProducto.modificar(producto);
                 gestionEventos.persistirEvento("Producto actualizado", BE.Modulos.Productos.ToString(), 3);
+                DV.Instance.Generar();
             }
         }
 
@@ -45,12 +47,14 @@ namespace BLL
         {
             mpProducto.crear(producto);
             gestionEventos.persistirEvento("Producto agregado", BE.Modulos.Productos.ToString(), 4);
+            DV.Instance.Generar();
         }
 
         public void actualizarStockPorId(BE.Producto producto)
         {
             mpProducto.modificarStock(producto);
             gestionEventos.persistirEvento("Producto actualizado", BE.Modulos.Productos.ToString(), 3);
+            DV.Instance.Generar();
         }
     }
 }

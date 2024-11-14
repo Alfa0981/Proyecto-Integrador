@@ -3,40 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\proyecto_integrador\\ayuda\\generar-factura.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\ayuda\\generar-factura.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\dv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\dv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\proyecto_integrador\\ayuda\\generar-carrito.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\ayuda\\generar-carrito.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\proyecto_integrador\\ayuda\\pagar-proveedor.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\ayuda\\pagar-proveedor.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\proyecto_integrador\\pagarproveedorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\pagarproveedorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\proyecto_integrador\\pagarproveedorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\pagarproveedorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\pedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\pedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\proyecto_integrador\\reponerstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\reponerstockform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\proyecto_integrador\\ayuda\\orden-compra.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\ayuda\\orden-compra.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\proyecto_integrador\\ordencompraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\ordencompraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\proyecto_integrador\\ordencompraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DBAECF7-C060-45EF-9E95-420BE2CE9320}|Proyecto_Integrador\\GUI.csproj|solutionrelative:proyecto_integrador\\ordencompraform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,19 +46,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "pagar-proveedor.html",
-              "DocumentMoniker": "C:\\Users\\tomas\\Source\\Repos\\Proyecto-Integrador\\Proyecto_Integrador\\Ayuda\\pagar-proveedor.html",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\Ayuda\\pagar-proveedor.html",
-              "ToolTip": "C:\\Users\\tomas\\Source\\Repos\\Proyecto-Integrador\\Proyecto_Integrador\\Ayuda\\pagar-proveedor.html",
-              "RelativeToolTip": "Proyecto_Integrador\\Ayuda\\pagar-proveedor.html",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-13T20:30:26.544Z",
+              "DocumentIndex": 0,
+              "Title": "DV.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\DV.cs",
+              "RelativeDocumentMoniker": "BLL\\DV.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\DV.cs",
+              "RelativeToolTip": "BLL\\DV.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T19:01:21.017Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -67,104 +68,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PagarProveedorForm.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\PagarProveedorForm.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\PagarProveedorForm.cs",
-              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\PagarProveedorForm.cs",
-              "RelativeToolTip": "Proyecto_Integrador\\PagarProveedorForm.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAQwHwAAAANAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Usuario.cs",
+              "RelativeDocumentMoniker": "BLL\\Usuario.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Usuario.cs",
+              "RelativeToolTip": "BLL\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAtwEcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T20:29:56.655Z",
+              "WhenOpened": "2024-11-14T18:52:41.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Proveedor.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Proveedor.cs",
+              "RelativeDocumentMoniker": "BLL\\Proveedor.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Proveedor.cs",
+              "RelativeToolTip": "BLL\\Proveedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T19:04:57.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PagarProveedorForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\PagarProveedorForm.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\PagarProveedorForm.cs",
-              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\PagarProveedorForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_Integrador\\PagarProveedorForm.cs [Dise\u00F1o]",
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Producto.cs",
+              "RelativeDocumentMoniker": "BLL\\Producto.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Producto.cs",
+              "RelativeToolTip": "BLL\\Producto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T20:29:42.442Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "OrdenCompraForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\OrdenCompraForm.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\OrdenCompraForm.cs",
-              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\OrdenCompraForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Proyecto_Integrador\\OrdenCompraForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T20:25:49.697Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "orden-compra.html",
-              "DocumentMoniker": "C:\\Users\\tomas\\Source\\Repos\\Proyecto-Integrador\\Proyecto_Integrador\\Ayuda\\orden-compra.html",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\Ayuda\\orden-compra.html",
-              "ToolTip": "C:\\Users\\tomas\\Source\\Repos\\Proyecto-Integrador\\Proyecto_Integrador\\Ayuda\\orden-compra.html",
-              "RelativeToolTip": "Proyecto_Integrador\\Ayuda\\orden-compra.html",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-13T20:24:49.481Z",
+              "WhenOpened": "2024-11-14T19:04:44.406Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "OrdenCompraForm.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\OrdenCompraForm.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\OrdenCompraForm.cs",
-              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\OrdenCompraForm.cs",
-              "RelativeToolTip": "Proyecto_Integrador\\OrdenCompraForm.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAQwIsAAABaAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "PedidoCotizacion.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\PedidoCotizacion.cs",
+              "RelativeDocumentMoniker": "BLL\\PedidoCotizacion.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\PedidoCotizacion.cs",
+              "RelativeToolTip": "BLL\\PedidoCotizacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T20:24:21.872Z",
+              "WhenOpened": "2024-11-14T19:04:30.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ReponerStockForm.cs",
-              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\ReponerStockForm.cs",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\ReponerStockForm.cs",
-              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\ReponerStockForm.cs",
-              "RelativeToolTip": "Proyecto_Integrador\\ReponerStockForm.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAAAwwOwAAAAMAAAAAAAAAA==",
+              "Title": "OrdenCompra.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\OrdenCompra.cs",
+              "RelativeDocumentMoniker": "BLL\\OrdenCompra.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\OrdenCompra.cs",
+              "RelativeToolTip": "BLL\\OrdenCompra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T19:58:10.441Z",
+              "WhenOpened": "2024-11-14T19:04:20.748Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "generar-factura.html",
-              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\Ayuda\\generar-factura.html",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\Ayuda\\generar-factura.html",
-              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\Ayuda\\generar-factura.html",
-              "RelativeToolTip": "Proyecto_Integrador\\Ayuda\\generar-factura.html",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-08T20:18:14.295Z",
+              "DocumentIndex": 6,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Factura.cs",
+              "RelativeDocumentMoniker": "BLL\\Factura.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Factura.cs",
+              "RelativeToolTip": "BLL\\Factura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T19:04:16.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "generar-carrito.html",
-              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\Ayuda\\generar-carrito.html",
-              "RelativeDocumentMoniker": "Proyecto_Integrador\\Ayuda\\generar-carrito.html",
-              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\Proyecto_Integrador\\Ayuda\\generar-carrito.html",
-              "RelativeToolTip": "Proyecto_Integrador\\Ayuda\\generar-carrito.html",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-08T19:46:49.751Z",
+              "DocumentIndex": 8,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Cliente.cs",
+              "RelativeDocumentMoniker": "BLL\\Cliente.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Cliente.cs",
+              "RelativeToolTip": "BLL\\Cliente.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwDcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T19:03:44.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Carrito.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Carrito.cs",
+              "RelativeDocumentMoniker": "BLL\\Carrito.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Carrito.cs",
+              "RelativeToolTip": "BLL\\Carrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T19:01:40.984Z",
               "EditorCaption": ""
             }
           ]
