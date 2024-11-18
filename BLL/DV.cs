@@ -15,7 +15,7 @@ namespace BLL
         public static DV Instance => _instance ?? (_instance = new DV());
         MpDV mpDV = new MpDV();
 
-        private static readonly string[] tablas = {"Carrito", "Cliente", "Factura", "OrdenCompra", "PedidoCotizacion", "Producto", "Proveedor", "Usuario"};
+        private static readonly string[] tablas = {"Carrito", "Cliente", "Factura", "OrdenCompra", "PedidoCotizacion", "Producto", "Proveedor"};
         long DVHCalculado = 0;
         long DVVCalculado = 0;
 
@@ -40,7 +40,6 @@ namespace BLL
                 long DVH = CalcularCRC32(filaConcatenada.ToString());
                 DVHs.Add(DVH);
             }
-
             return DVHs.Sum() % 1000000000000;
         }
 
@@ -50,6 +49,10 @@ namespace BLL
 
             Dictionary<string, StringBuilder> columnasConcatenadas = new Dictionary<string, StringBuilder>();
 
+            if (filas.Count == 0)
+            {
+                return 0;
+            }
             foreach (var columna in filas.First().Keys)
             {
                 columnasConcatenadas[columna] = new StringBuilder();

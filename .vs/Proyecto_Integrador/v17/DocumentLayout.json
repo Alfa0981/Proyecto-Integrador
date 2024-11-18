@@ -7,35 +7,43 @@
       "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\dv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{464DC20D-E271-4F7E-B9CF-5936BF793B8F}|SetupProject\\SetupProject.aiproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\SetupProject\\SetupProject.aip||{AE40A4D1-A614-4A08-B9E2-B74E011783ED}",
+      "RelativeMoniker": "D:0:0:{464DC20D-E271-4F7E-B9CF-5936BF793B8F}|SetupProject\\SetupProject.aiproj|solutionrelative:SetupProject\\SetupProject.aip||{AE40A4D1-A614-4A08-B9E2-B74E011783ED}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\dal\\mpordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5712F660-1EAB-4191-8E26-83B179FA0E27}|DAL\\DAL.csproj|solutionrelative:dal\\mpordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\bll\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\proveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\bll\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\pedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\bll\\pedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\pedidocotizacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\bll\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\ordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\bll\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\bll\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|c:\\users\\tomas\\source\\repos\\proyecto-integrador\\bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D778F8DC-B674-42A6-9471-B00814CE26A5}|BLL\\BLL.csproj|solutionrelative:bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -56,7 +64,7 @@
               "RelativeDocumentMoniker": "BLL\\DV.cs",
               "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\DV.cs",
               "RelativeToolTip": "BLL\\DV.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwBEAAACOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-14T19:01:21.017Z",
               "IsPinned": true,
@@ -67,8 +75,35 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "SetupProject.aip",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\SetupProject\\SetupProject.aip",
+              "RelativeDocumentMoniker": "SetupProject\\SetupProject.aip",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\SetupProject\\SetupProject.aip",
+              "RelativeToolTip": "SetupProject\\SetupProject.aip",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHISURBVDhPhVNLKERRGD5zETU1NlaEmCI7r0QSSRQrC7JRYiElyWqwsZKITIkNsmCBQuxsKNmNd1aSR2bkWV4hcX3fuefmuHl89c33/XPO/5//PK5LAE89STGQA3AdXFXccvuO3qG/wzRNu0A1ZJpewz24Bq7evnsmas66btZHKk05osFQWqZUhwesAHu7r2sLoPv5TfNVHNBhFyhRquMcXAQDuy/eHGgaOIMio2AYvISB9lOgCVb4hbn7wvrSk4Gr9svGToT6yg1gn2WtDkotKzELTtJ4wp44Ftp4TvVBvfxPQyu6yKbhpDwaYAcrrnFV\u002BNkSd2BmObGtMtL1NmwNfwMPv4XGKD/tW1l4KKj6EEY/4vjEiItNaCboBoOvZsQcdAJ0opg/LrRiXw2vzWOIj6HxuJ6p2PDrXMSHeAtLmJMBz8LfgGt1cQsvViivTaCT5rpgRwwSB5ksR4SIU6pD5rHAHo0DfqyaRQPldvz0Dsg8FuAenUgGA0jmKhsqdkLmscAQGGLwAyKVOsH5zBMGDuIRym/BPov/wHnVKk92wNPkV1gEHjP\u002BAxwvUvMl5NdoA3uOgvCp8ummg9HgHbgN8pWOIVnrVIhPzkGPxMISqlgAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-11-18T22:52:13.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MpOrdenCompra.cs",
+              "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\DAL\\MpOrdenCompra.cs",
+              "RelativeDocumentMoniker": "DAL\\MpOrdenCompra.cs",
+              "ToolTip": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\DAL\\MpOrdenCompra.cs",
+              "RelativeToolTip": "DAL\\MpOrdenCompra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T22:52:08.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Usuario.cs",
               "RelativeDocumentMoniker": "BLL\\Usuario.cs",
@@ -76,12 +111,11 @@
               "RelativeToolTip": "BLL\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAtwEcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T18:52:41.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T18:52:41.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Proveedor.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Proveedor.cs",
               "RelativeDocumentMoniker": "BLL\\Proveedor.cs",
@@ -89,12 +123,11 @@
               "RelativeToolTip": "BLL\\Proveedor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:04:57.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:04:57.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Producto.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Producto.cs",
               "RelativeDocumentMoniker": "BLL\\Producto.cs",
@@ -102,12 +135,11 @@
               "RelativeToolTip": "BLL\\Producto.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAIwBgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:04:44.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:04:44.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PedidoCotizacion.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\PedidoCotizacion.cs",
               "RelativeDocumentMoniker": "BLL\\PedidoCotizacion.cs",
@@ -115,12 +147,11 @@
               "RelativeToolTip": "BLL\\PedidoCotizacion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:04:30.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:04:30.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "OrdenCompra.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\OrdenCompra.cs",
               "RelativeDocumentMoniker": "BLL\\OrdenCompra.cs",
@@ -128,12 +159,11 @@
               "RelativeToolTip": "BLL\\OrdenCompra.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:04:20.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:04:20.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Factura.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Factura.cs",
               "RelativeDocumentMoniker": "BLL\\Factura.cs",
@@ -141,12 +171,11 @@
               "RelativeToolTip": "BLL\\Factura.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:04:16.652Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:04:16.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Cliente.cs",
               "RelativeDocumentMoniker": "BLL\\Cliente.cs",
@@ -154,12 +183,11 @@
               "RelativeToolTip": "BLL\\Cliente.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAIwDcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:03:44.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:03:44.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Carrito.cs",
               "DocumentMoniker": "C:\\Users\\tomas\\source\\repos\\Proyecto-Integrador\\BLL\\Carrito.cs",
               "RelativeDocumentMoniker": "BLL\\Carrito.cs",
@@ -167,8 +195,7 @@
               "RelativeToolTip": "BLL\\Carrito.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T19:01:40.984Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T19:01:40.984Z"
             }
           ]
         }
